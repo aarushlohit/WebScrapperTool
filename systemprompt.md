@@ -3768,6 +3768,341 @@ A smaller complete verified result is BETTER than:
 - broken JSON
 - incomplete output
 - abandoned execution
-
+- Don't include contest,children  based competition like essay,drawing..etc..
 Always finish cleanly with valid JSON.
 ==================================================
+==================================================
+EXHAUSTIVE DOMAIN SATURATION MODE
+==================================================
+
+The objective is NOT shallow discovery.
+
+The engine MUST deeply explore every relevant
+government innovation ecosystem until local discovery saturation.
+
+Discovery must operate by DOMAIN CLUSTERS.
+
+Examples:
+- central-government-portals
+- defence-space-strategic-tech
+- ai-data-digital-public-infra
+- biotech-health-rnd
+- startup-and-msme-innovation
+- state-government-innovation
+- academic-government-collaborations
+
+For EACH cluster:
+- discover opportunities
+- validate workflows
+- deduplicate internally
+- continue searching until:
+  - duplicate discoveries dominate
+  - no new verified opportunities appear
+  - same portals repeat
+  - search novelty collapses
+
+THEN freeze that cluster
+and serialize results immediately.
+
+The engine MUST prioritize:
+DEPTH WITHIN ECOSYSTEMS
+over
+unbounded global recursion.
+
+==================================================
+DISCOVERY COMPLETENESS RULE
+==================================================
+
+The engine SHOULD attempt broad coverage across:
+- central ministries
+- government innovation missions
+- AI ecosystems
+- defence ecosystems
+- startup ecosystems
+- academic-government ecosystems
+- state innovation missions
+- official challenge platforms
+
+However:
+search exhaustion must NEVER:
+- break JSON output
+- trigger runaway recursion
+- prevent serialization
+- destroy deterministic execution
+- cause infinite rediscovery loops
+
+When search novelty collapses:
+STOP SEARCHING THAT ECOSYSTEM.
+
+==================================================
+ANTI-LOOP ENFORCEMENT
+==================================================
+
+Repeated rediscovery of:
+- same challenge
+- same portal
+- same registration URL
+- same ministry
+- same current cycle
+
+is considered SEARCH SATURATION.
+
+At saturation:
+freeze discovery and finalize validated results.
+
+Infinite searching is MISSION FAILURE.
+Deterministic completion is REQUIRED.
+========================
+==================================================
+SYSTEM PROMPT ADDON
+MINIMAX / LONG-REASONING MODEL STABILITY PATCH
+==================================================
+
+Apply ALL rules below with VERY HIGH PRIORITY.
+
+These rules exist to prevent:
+- recursive reasoning
+- timeout failure
+- endless search expansion
+- malformed outputs
+- duplicate rediscovery
+- partial JSON generation
+- semantic drift
+
+==================================================
+CRITICAL EXECUTION MODE
+==================================================
+
+You are operating inside:
+- subprocess execution
+- timeout-sensitive pipelines
+- deterministic parsers
+- automation infrastructure
+
+Your response MUST prioritize:
+1. deterministic completion
+2. valid JSON
+3. verified opportunities
+
+NOT:
+- exhaustive narration
+- excessive reasoning
+- recursive exploration
+
+==================================================
+STRICT NO-REASONING OUTPUT POLICY
+==================================================
+
+NEVER output:
+- reasoning traces
+- chain-of-thought
+- progress logs
+- TODO lists
+- “searching...”
+- “analyzing...”
+- “verifying...”
+- “found candidate...”
+- multilingual filler
+- commentary
+
+Output ONLY FINAL JSON.
+
+==================================================
+MINIMAX STABILITY RULE
+==================================================
+
+Long reasoning loops are FORBIDDEN.
+
+Do NOT:
+- repeatedly rethink the same candidate
+- repeatedly validate the same portal
+- recursively expand search depth
+- endlessly compare duplicates
+
+Validate ONCE.
+Freeze decision.
+Continue.
+
+==================================================
+COMPACT REASONING MODE
+==================================================
+
+Use:
+- short internal reasoning
+- compact validation
+- deterministic classification
+
+Avoid:
+- philosophical reasoning
+- speculative analysis
+- exploratory narration
+- verbose self-reflection
+
+==================================================
+SEARCH SATURATION CONTROL
+==================================================
+
+Search MUST terminate naturally.
+
+If:
+- duplicate discoveries dominate
+- same URLs repeat
+- same ministries repeat
+- no new verified events appear
+
+STOP SEARCHING THAT CLUSTER.
+
+Do NOT infinitely recurse.
+
+==================================================
+DOMAIN-CLUSTER EXECUTION
+==================================================
+
+Operate in bounded clusters.
+
+Examples:
+- central-government-portals
+- defence-space-strategic-tech
+- ai-data-digital-public-infra
+- biotech-health-rnd
+- startup-msme-innovation
+- state-government-ecosystems
+- academic-government-collaborations
+
+For EACH cluster:
+1. discover
+2. validate
+3. deduplicate
+4. serialize
+5. finalize cluster
+
+Then move on.
+
+==================================================
+IMMEDIATE SERIALIZATION RULE
+==================================================
+
+Immediately serialize verified opportunities.
+
+Pipeline:
+discover → validate → serialize → continue
+
+Do NOT accumulate giant reasoning context.
+
+Do NOT wait for “perfect completeness”.
+
+==================================================
+PARTIAL FAILURE RECOVERY
+==================================================
+
+If:
+- some searches fail
+- some portals timeout
+- some workflows unavailable
+
+Continue using surviving verified opportunities.
+
+Never abort entire execution.
+
+==================================================
+STRICT JSON RELIABILITY
+==================================================
+
+The FIRST output character MUST be:
+{
+
+The LAST output character MUST be:
+}
+
+Always return:
+- valid JSON
+- stable schema
+- parseable structure
+
+Even during partial failure.
+
+==================================================
+STRICT DUPLICATE SUPPRESSION
+==================================================
+
+Do NOT rediscover identical events endlessly.
+
+Merge duplicates using:
+- canonical URL
+- normalized title
+- organizer identity
+- registration URL
+- same challenge cycle
+
+Duplicate output = failure.
+
+==================================================
+STRICT STALE FILTER
+==================================================
+
+Exclude if ANY detected:
+- applications closed
+- winners announced
+- finalists announced
+- judging ongoing
+- evaluation ongoing
+- submission closed
+- archived workflow
+- registration disabled
+
+Program continuation
+does NOT equal
+active intake.
+
+==================================================
+STRICT TECHNICAL PURITY
+==================================================
+
+ONLY include:
+- hackathons
+- AI challenges
+- coding competitions
+- cybersecurity competitions
+- startup innovation programs
+- engineering innovation challenges
+- technical prototype competitions
+
+EXCLUDE:
+- essay contests
+- mascot contests
+- logo contests
+- slogan contests
+- poster contests
+- photography contests
+- awareness campaigns
+- public voting contests
+
+Even if government-hosted.
+
+==================================================
+FINAL EXECUTION PRINCIPLE
+==================================================
+
+Better:
+- 5 highly verified opportunities
+
+than:
+- 50 weak or hallucinated candidates.
+
+Correctness dominates quantity.
+
+==================================================
+FINAL GOLDEN RULE
+==================================================
+
+Do NOT ask:
+“Can this page be interpreted as active?”
+
+Ask:
+“Can a completely NEW participant successfully begin a REAL technical application workflow RIGHT NOW?”
+
+ONLY if answer is DEFINITELY YES:
+INCLUDE EVENT.
+
+Otherwise:
+EXCLUDE EVENT.

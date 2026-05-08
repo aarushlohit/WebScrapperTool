@@ -1,189 +1,950 @@
 {
   "government_hackathons": [
     {
-      "id": "dbt-birac-bioe3-design-challenge-2026",
+      "id": "idex-open-challenge-2026",
+      "event_type": "defence_challenge",
+      "hackathon_name": "iDEX Open Challenge",
+      "full_name": "iDEX Open Challenge 2026",
+      "slug": "idex-open-challenge-2026",
+      "current_status": "proposal_open",
+      "is_open_for_new_registration": true,
+      "is_open_for_submission": true,
+      "verification_state": "fully_verified",
+      "submission_url": "https://idex.gov.in/d/form/open_challenge",
+      "official_website": "https://idex.gov.in/",
+      "official_event_page": "https://idex.gov.in/disc-category/18",
+      "hosting_organization": "Defence Innovation Organisation (DIO)",
+      "co_organizers": [],
+      "ministry": "Ministry of Defence",
+      "institution_type": "Central Government",
+      "platform": "iDEX Portal",
+      "domain": "Defence and Aerospace",
+      "subdomains": [],
+      "theme": "Defence and aerospace technology innovation",
+      "focus_areas": [
+        "autonomous systems",
+        "artificial intelligence",
+        "quantum technologies",
+        "advanced materials",
+        "aerospace systems",
+        "defence innovation"
+      ],
+      "problem_statements": [],
+      "sdg_alignment": [],
+      "deadline": "2026-06-30",
+      "submission_close_date": "2026-06-30",
+      "proposal_deadline": "2026-06-30",
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Indian Startups (DPIIT-recognized), MSMEs, and Individual Innovators. Must propose solutions relevant to defence and aerospace."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Grants up to Rs. 1.5 crore for selected proposals. Equity/other structures. Access to accelerator programs, mentorship, and defence testing facilities."
+      },
+      "funding_support": {},
+      "incubation_support": {},
+      "mentorship_support": {},
+      "internship_opportunities": {},
+      "procurement_or_pilot_opportunity": {},
+      "ipr_policy": {},
+      "participation_mode": [],
+      "location": {},
+      "communication_channels": {},
+      "resources": {},
+      "source_url": "https://idex.gov.in/disc-category/18",
+      "source_validation": {
+        "source_url": "https://idex.gov.in/disc-category/18",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "APPLY NOW FOR OPEN CHALLENGE",
+          "CHALLENGE OPEN",
+          "Last Date - 30 Jun, 2026",
+          "apply now",
+          "challenge open",
+          "last date to apply"
+        ],
+        "closed_keywords_found": [],
+        "form_detected": true,
+        "registration_form_detected": true,
+        "auth_wall_detected": false,
+        "zombie_page_suspected": false,
+        "final_url": "https://idex.gov.in/disc-category/18",
+        "validation_errors": []
+      },
+      "confidence_score": 99,
+      "confidence_reasons": [
+        "trusted official source",
+        "source accessible or live validation skipped",
+        "deadline is current or unknown",
+        "open-registration language found",
+        "form or submit affordance detected",
+        "active status normalized"
+      ],
+      "search_metadata": {},
+      "deduplication": {
+        "canonical_url": "https://idex.gov.in/disc-category/18",
+        "normalized_title": "idex-open-challenge"
+      },
+      "tags": [],
+      "date_searched": "2026-05-09"
+    },
+    {
+      "id": "d-e-s-i-g-n-for-bioe3-challenge-empowering-youth-to-solve-critical-issues-of-their-times",
       "event_type": "innovation_challenge",
-      "hackathon_name": "D.E.S.I.G.N. for BioE3 Challenge 2026",
-      "full_name": "D.E.S.I.G.N. for BioE3 Challenge: Empowering Youth to Solve Critical Issues of their TIMES",
-      "registration_url": "https://innovateindia.mygov.in/bioe3/",
-      "official_website": "https://innovateindia.mygov.in/bioe3/",
-      "hosting_organization": "Department of Biotechnology (DBT), BIRAC, BRIC",
+      "hackathon_name": "D.E.S.I.G.N for BioE3 Challenge",
+      "full_name": "D.E.S.I.G.N for BioE3 Challenge: Empowering Youth to Solve Critical Issues of their TIMES",
+      "slug": "d-e-s-i-g-n-for-bioe3-challenge-empowering-youth-to-solve-critical-issues-of-their-times",
+      "current_status": "submission_open",
+      "is_open_for_new_registration": true,
+      "is_open_for_submission": true,
+      "verification_state": "verified",
+      "registration_url": "https://innovateindia.mygov.in/bioe3/register",
+      "submission_url": "https://innovateindia.mygov.in/bioe3/register",
+      "official_website": "https://innovateindia.mygov.in/",
+      "official_event_page": "https://innovateindia.mygov.in/bioe3",
+      "hosting_organization": "Department of Biotechnology (DBT)",
+      "co_organizers": [],
       "ministry": "Ministry of Science and Technology",
       "institution_type": "Central Government",
       "platform": "MyGov Innovate India",
-      "domain": "Biotechnology",
-      "theme": "Biotechnology innovation for sustainability and self-reliance",
+      "domain": "Biotechnology, Bio-manufacturing",
+      "subdomains": [],
+      "theme": "Youth-driven biotechnological solutions for economy, environment and employment",
       "focus_areas": [
         "Biotechnology",
-        "Bioeconomy",
-        "Sustainable Development",
-        "Environment",
-        "Bio-manufacturing"
+        "Bio-based Chemicals",
+        "Functional Foods",
+        "Precision Biotherapeutics",
+        "Climate-Resilient Agriculture",
+        "Carbon Capture",
+        "Marine and Space Research"
       ],
-      "sdg_alignment": [
-        "SDG 9 - Industry, Innovation and Infrastructure",
-        "SDG 12 - Responsible Consumption and Production",
-        "SDG 13 - Climate Action"
-      ],
+      "problem_statements": [],
+      "sdg_alignment": [],
       "deadline": "2026-05-20",
-      "eligibility_criteria": "Category 1: School students (Classes VI-XII) enrolled in any Indian school. Category 2: All Indian citizens including students, researchers, startups, faculty, and individuals. Category 2 Round 2 requires affiliation with an autonomous institution, bio-incubator, or DSIR-certified startup.",
-      "team_size": "{\"minimum\": 1, \"maximum\": 5}",
-      "submission_fee": "{\"amount\": 0, \"currency\": \"INR\", \"display\": \"Free\"}",
-      "prizes": "₹1 lakh per winning team per monthly cycle. Winning solutions may submit full proposal for RDI grant up to ₹25 lakhs to convert design idea to Proof of Concept. Digital Certificate of Merit signed by Minister of State for Science and Technology.",
-      "funding_support": "Up to ₹25 lakhs RDI grant for winners",
-      "incubation_support": "Bio-incubator access through BRIC and BIRAC network for Category 2 winners",
-      "format": "Online Submission",
-      "mode": "Video submission with idea proposal (≤120 seconds) or 1500-word concept proposal",
-      "location": "Pan India",
-      "current_status": "submission_open",
-      "source_url": "https://innovateindia.mygov.in/bioe3/",
-      "source_type": "official_government_portal",
-      "confidence_score": 95,
-      "date_searched": "2026-05-08"
-    },
-    {
-      "id": "ministry-tribal-affairs-open-grand-challenge-2026",
-      "event_type": "startup_competition",
-      "hackathon_name": "Tribal Business Conclave 2026 — Open Grand Challenge",
-      "full_name": "Tribal Business Conclave 2026 — Open Grand Challenge by Ministry of Tribal Affairs",
-      "registration_url": "https://www.startupindia.gov.in/content/sih/en/ams-application/challenge.html?applicationId=63d13b3de4b03b5f8b45e814",
-      "official_website": "https://www.startupindia.gov.in/",
-      "hosting_organization": "Ministry of Tribal Affairs",
-      "ministry": "Ministry of Tribal Affairs",
-      "institution_type": "Central Government",
-      "platform": "Startup India AMS Portal",
-      "domain": "Social Impact",
-      "theme": "Transforming healthcare, education, and livelihoods in tribal communities",
-      "focus_areas": [
-        "Healthcare",
-        "Education",
-        "Livelihoods",
-        "Tribal Development",
-        "Social Impact"
+      "submission_close_date": "2026-05-20",
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Indian school students in Classes VI-XII enrolled in any Indian school or institution. Teams of max 5 from same school."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": 5
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Top 10 entries receive digital Certificates of Merit signed by Hon'ble Minister of State (IC) for S&T. 20-30 additional participants receive certificates of appreciation. Selected ideas showcased on official portals; access to BIRAC EYUVA/BioNEST incubation centres"
+      },
+      "funding_support": {},
+      "incubation_support": {},
+      "mentorship_support": {},
+      "internship_opportunities": {},
+      "procurement_or_pilot_opportunity": {},
+      "ipr_policy": {},
+      "participation_mode": [],
+      "location": {},
+      "communication_channels": {},
+      "resources": {},
+      "source_url": "https://innovateindia.mygov.in/bioe3",
+      "source_validation": {
+        "source_url": "https://innovateindia.mygov.in/bioe3",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "01/11/2025 - 20/05/2026",
+          "Participate Now",
+          "SUBMISSION OPEN",
+          "participate now",
+          "submission open"
+        ],
+        "closed_keywords_found": [],
+        "form_detected": true,
+        "registration_form_detected": true,
+        "auth_wall_detected": true,
+        "zombie_page_suspected": false,
+        "final_url": "https://innovateindia.mygov.in/login?action=wordpress_social_authenticate&mode=login&provider=MyGov&redirect_to=https%3A%2F%2Finnovateindia.mygov.in%2Fbioe3%2Fregister%2F",
+        "validation_errors": []
+      },
+      "confidence_score": 94,
+      "confidence_reasons": [
+        "trusted official source",
+        "source accessible or live validation skipped",
+        "deadline is current or unknown",
+        "open-registration language found",
+        "form or submit affordance detected",
+        "active status normalized",
+        "auth-wall workflow ambiguity"
       ],
-      "sdg_alignment": [
-        "SDG 3 - Good Health and Well-being",
-        "SDG 4 - Quality Education",
-        "SDG 8 - Decent Work and Economic Growth",
-        "SDG 10 - Reduced Inequalities"
-      ],
-      "deadline": "2026-06-15",
-      "eligibility_criteria": "All DPIIT-recognised Startups across ideation, validation, early traction, and scaling stages. Individuals (solo founders) at ideation stage also eligible. No requirement to be from Scheduled Tribe category. Open to all DPIIT-recognized startups.",
-      "team_size": "{\"minimum\": 1, \"maximum\": null}",
-      "submission_fee": "{\"amount\": 0, \"currency\": \"INR\", \"display\": \"Free\"}",
-      "prizes": "Total prize pool ₹12 lakhs. Three winning startups receive monetary incentives.",
-      "funding_support": "Prize money and potential pilot support",
-      "incubation_support": "Structured hand-holding support and national platform for showcasing solutions",
-      "format": "Online Application",
-      "mode": "Online submission through Startup India AMS portal",
-      "location": "Pan India",
-      "current_status": "registration_open",
-      "source_url": "https://www.startupindia.gov.in/",
-      "source_type": "official_government_portal",
-      "confidence_score": 88,
-      "date_searched": "2026-05-08"
+      "search_metadata": {},
+      "deduplication": {
+        "canonical_url": "https://innovateindia.mygov.in/bioe3",
+        "normalized_title": "d-e-s-i-g-n-for-bioe3-challenge"
+      },
+      "tags": [],
+      "date_searched": "2026-05-09"
     }
   ],
   "borderline_opportunities": [
     {
-      "id": "dbt-birac-bioai-rolling-call-2026",
+      "id": "dbt-birac-joint-call-for-proposals-on-bio-ai-for-fostering-high-performance-biomanufacturing-under-bioe3-policy",
       "event_type": "research_competition",
-      "hackathon_name": "DBT-BIRAC Bio-AI Joint Rolling Call for Proposals 2026",
-      "full_name": "DBT-BIRAC Joint Call for Proposals on Bio-AI for Establishing मूलांकुर Hubs under BioE3 Policy for Biomanufacturing",
-      "registration_url": "https://www.birac.nic.in/",
-      "official_website": "https://birac.nic.in/cfp.php",
-      "hosting_organization": "Department of Biotechnology (DBT) and BIRAC",
-      "ministry": "Ministry of Science and Technology",
+      "hackathon_name": "DBT-BIRAC Joint Call for Proposals on Bio-AI",
+      "full_name": "DBT-BIRAC Joint Call for Proposals on Bio-AI for Fostering High Performance Biomanufacturing under BioE3 Policy",
+      "slug": "dbt-birac-joint-call-for-proposals-on-bio-ai-for-fostering-high-performance-biomanufacturing-under-bioe3-policy",
+      "current_status": "proposal_open",
+      "is_open_for_new_registration": true,
+      "is_open_for_submission": true,
+      "verification_state": "verified",
+      "registration_url": "https://birac.nic.in/login.php",
+      "official_website": "https://birac.nic.in/",
+      "official_event_page": "https://birac.nic.in/desc_new.php?id=1289",
+      "hosting_organization": "Biotechnology Industry Research Assistance Council (BIRAC) & DBT",
+      "co_organizers": [],
+      "ministry": "Ministry of Science and Technology (DBT)",
       "institution_type": "Central Government",
-      "platform": "BIRAC Portal",
-      "domain": "Bio-AI / Biomanufacturing",
-      "theme": "Integrating AI with biotechnology for high-performance biomanufacturing",
+      "platform": "BIRAC",
+      "domain": "Biotechnology, Artificial Intelligence, Biomanufacturing",
+      "subdomains": [],
+      "theme": "Bio-AI integration for high-performance biomanufacturing under BioE3 Policy",
+      "focus_areas": [
+        "Bio-AI",
+        "Biomanufacturing",
+        "Biofoundries",
+        "Biotechnology",
+        "Artificial Intelligence"
+      ],
+      "problem_statements": [],
+      "sdg_alignment": [],
       "deadline": "2026-06-30",
-      "eligibility_criteria": "Indian academia, R&D institutions, universities, companies/startups. Multi-disciplinary teams with expertise in biotechnology and/or AI/ML.",
-      "current_status": "submission_open",
+      "proposal_deadline": "2026-06-30",
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "As per RFP document; open to eligible organizations/startups in biotech and AI sectors"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Grant/funding support for bio-AI biomanufacturing hubs under BioE3 policy; details in RFP"
+      },
+      "funding_support": {},
+      "incubation_support": {},
+      "mentorship_support": {},
+      "internship_opportunities": {},
+      "procurement_or_pilot_opportunity": {},
+      "ipr_policy": {},
+      "participation_mode": [],
+      "location": {},
+      "communication_channels": {},
+      "resources": {},
       "source_url": "https://birac.nic.in/cfp.php",
-      "confidence_score": 75,
-      "borderline_reason": "Research proposal grant call rather than traditional hackathon/competition. Structured as rolling call for establishing Bio-AI research hubs with grant funding up to ₹25 crore. Not a competitive event with winner announcement structure."
+      "source_validation": {
+        "source_url": "https://birac.nic.in/cfp.php",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Current Calls",
+          "Last Date of Submission 30-06-2026",
+          "Opens on 24th November 2025",
+          "last date to apply"
+        ],
+        "closed_keywords_found": [],
+        "form_detected": true,
+        "registration_form_detected": true,
+        "auth_wall_detected": true,
+        "zombie_page_suspected": false,
+        "final_url": "https://birac.nic.in/login.php",
+        "validation_errors": []
+      },
+      "confidence_score": 89,
+      "confidence_reasons": [
+        "trusted official source",
+        "source accessible or live validation skipped",
+        "deadline is current or unknown",
+        "open-registration language found",
+        "form or submit affordance detected",
+        "active status normalized",
+        "auth-wall workflow ambiguity",
+        "grant_or_r_and_d_call_semantics"
+      ],
+      "search_metadata": {},
+      "deduplication": {
+        "canonical_url": "https://birac.nic.in/cfp.php",
+        "normalized_title": "dbt-birac-joint-call-for-proposals-on-bio-ai"
+      },
+      "tags": [],
+      "date_searched": "2026-05-09",
+      "borderline_reason": "grant_or_r_and_d_call_semantics"
     },
     {
-      "id": "india-finland-joint-innovation-call-2026",
-      "event_type": "research_competition",
-      "hackathon_name": "India-Finland Joint Innovation Call 2026",
-      "full_name": "India-Finland Joint Innovation Call 2026 by DST and Business Finland",
-      "registration_url": "https://tdb.gov.in/launch-india-finland-joint-innovation-call-2026",
-      "official_website": "https://dst.gov.in/callforproposals-0",
-      "hosting_organization": "Department of Science and Technology (DST), Technology Development Board (TDB)",
-      "ministry": "Ministry of Science and Technology",
+      "id": "indigenous-development-and-production-of-miniature-sealed-aneroid-capsules-for-aircraft-life-support-system",
+      "event_type": "defence_challenge",
+      "hackathon_name": "TDF Feasibility Project: Miniature Sealed Aneroid Capsules",
+      "full_name": "Indigenous Development and Production of Miniature Sealed Aneroid Capsules for Aircraft Life Support System",
+      "slug": "indigenous-development-and-production-of-miniature-sealed-aneroid-capsules-for-aircraft-life-support-system",
+      "current_status": "proposal_open",
+      "is_open_for_new_registration": true,
+      "is_open_for_submission": true,
+      "verification_state": "verified",
+      "registration_url": "https://tdf.drdo.gov.in/innovator/register",
+      "submission_url": "https://tdf.drdo.gov.in/project",
+      "official_website": "https://www.drdo.gov.in/",
+      "official_event_page": "https://tdf.drdo.gov.in/project",
+      "hosting_organization": "Technology Development Fund, DRDO",
+      "co_organizers": [],
+      "ministry": "Ministry of Defence",
       "institution_type": "Central Government",
-      "platform": "TDB Portal",
-      "domain": "Sustainable Energy, Advanced Digital Technologies, Microelectronics",
-      "theme": "Bilateral R&D collaboration for innovation and commercialization",
-      "deadline": "2026-08-28",
-      "eligibility_criteria": "Indian for-profit company registered under Companies Act with 51%+ Indian ownership. Must collaborate with a Finnish company. LLPs, sole proprietorships, OPCs not eligible.",
-      "current_status": "submission_open",
-      "source_url": "https://tdb.gov.in/launch-india-finland-joint-innovation-call-2026",
-      "confidence_score": 70,
-      "borderline_reason": "Bilateral R&D grant funding call, not a hackathon or competitive event. Industry-driven project funding with reimbursement basis. Not open to individual participants or students."
+      "platform": "TDF Portal",
+      "domain": "Defence / Aerospace Engineering",
+      "subdomains": [],
+      "theme": "Indigenous defence technology development",
+      "focus_areas": [
+        "aerospace engineering",
+        "mechanical engineering",
+        "hermetic sealing",
+        "pressure sensing",
+        "defence manufacturing"
+      ],
+      "problem_statements": [],
+      "sdg_alignment": [],
+      "deadline": "2026-05-11",
+      "submission_close_date": "2026-05-11",
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Industry, academia, individual technology experts, and startups registered on TDF portal. Must submit credentials including MSME/Startup India recognition certificate."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Technology Development Fund support for indigenous defence technology development. Funding as per TDF scheme norms."
+      },
+      "funding_support": {},
+      "incubation_support": {},
+      "mentorship_support": {},
+      "internship_opportunities": {},
+      "procurement_or_pilot_opportunity": {},
+      "ipr_policy": {},
+      "participation_mode": [],
+      "location": {},
+      "communication_channels": {},
+      "resources": {},
+      "source_url": "https://tdf.drdo.gov.in/project",
+      "source_validation": {
+        "source_url": "https://tdf.drdo.gov.in/project",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Apply",
+          "Open for Application"
+        ],
+        "closed_keywords_found": [],
+        "form_detected": true,
+        "registration_form_detected": true,
+        "auth_wall_detected": true,
+        "zombie_page_suspected": false,
+        "final_url": "https://tdf.drdo.gov.in/innovator/register",
+        "validation_errors": []
+      },
+      "confidence_score": 89,
+      "confidence_reasons": [
+        "trusted official source",
+        "source accessible or live validation skipped",
+        "deadline is current or unknown",
+        "open-registration language found",
+        "form or submit affordance detected",
+        "active status normalized",
+        "auth-wall workflow ambiguity",
+        "procurement_or_feasibility_intake_semantics"
+      ],
+      "search_metadata": {},
+      "deduplication": {
+        "canonical_url": "https://tdf.drdo.gov.in/project",
+        "normalized_title": "tdf-feasibility-project-miniature-sealed-aneroid-capsules"
+      },
+      "tags": [],
+      "date_searched": "2026-05-09",
+      "borderline_reason": "procurement_or_feasibility_intake_semantics"
+    },
+    {
+      "id": "cdsco-indiaai-health-innovation-acceleration-hackathon",
+      "event_type": "ai_challenge",
+      "hackathon_name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
+      "full_name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
+      "slug": "cdsco-indiaai-health-innovation-acceleration-hackathon",
+      "current_status": "application_open",
+      "is_open_for_new_registration": false,
+      "is_open_for_submission": false,
+      "verification_state": "needs_review",
+      "registration_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "official_website": "https://aikosh.indiaai.gov.in/",
+      "official_event_page": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "hosting_organization": "IndiaAI (MeitY) in collaboration with CDSCO",
+      "co_organizers": [],
+      "ministry": "Ministry of Electronics and Information Technology",
+      "institution_type": "Central Government",
+      "platform": "AIKosh",
+      "domain": "Healthcare, AI/ML, Regulatory Technology",
+      "subdomains": [],
+      "theme": "AI-Driven Regulatory Workflow Automation and Data Anonymisation",
+      "focus_areas": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Natural Language Processing",
+        "Healthcare",
+        "Data Anonymisation",
+        "Document Summarisation",
+        "RegTech"
+      ],
+      "problem_statements": [],
+      "sdg_alignment": [],
+      "deadline": "2026-05-10",
+      "registration_close_date": "2026-05-10",
+      "application_deadline": "2026-05-10",
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Indian companies registered under Companies Act 2013 (51%+ Indian-held) and DPIIT-recognized startups with verifiable proprietary solution proof"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Prize Pool: ₹85 Lakhs. 1st: ₹10L, 2nd: ₹7L, 3rd: ₹3L, All-Women Team: ₹5L (up to 3 teams), Work Contract: ₹50L (up to 1 team)"
+      },
+      "funding_support": {},
+      "incubation_support": {},
+      "mentorship_support": {},
+      "internship_opportunities": {},
+      "procurement_or_pilot_opportunity": {},
+      "ipr_policy": {},
+      "participation_mode": [],
+      "location": {},
+      "communication_channels": {},
+      "resources": {},
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "source_validation": {
+        "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Application Deadline: 10 May 2026",
+          "Application Open",
+          "Submit Proposal"
+        ],
+        "closed_keywords_found": [],
+        "form_detected": false,
+        "registration_form_detected": false,
+        "auth_wall_detected": false,
+        "zombie_page_suspected": false,
+        "final_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+        "validation_errors": []
+      },
+      "confidence_score": 84,
+      "confidence_reasons": [
+        "trusted official source",
+        "source accessible or live validation skipped",
+        "deadline is current or unknown",
+        "open-registration language found",
+        "active status normalized",
+        "active form or apply endpoint missing",
+        "intake workflow not detected",
+        "new-user intake not fully confirmed",
+        "active_intake_workflow_not_confirmed"
+      ],
+      "search_metadata": {},
+      "deduplication": {
+        "canonical_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+        "normalized_title": "cdsco-indiaai-health-innovation-acceleration-hackathon"
+      },
+      "tags": [],
+      "date_searched": "2026-05-09",
+      "borderline_reason": "active_intake_workflow_not_confirmed"
+    }
+  ],
+  "excluded_opportunities": [
+    {
+      "name": "Cyber Security Grand Challenge 2.0",
+      "source_url": "https://innovateindia.mygov.in/cyber-security-grand-challenge/",
+      "reason": "closed"
+    },
+    {
+      "name": "National Level Cybersecurity Competition",
+      "source_url": "https://innovateindia.mygov.in/national-level-cybersecurity-competition/",
+      "reason": "closed"
+    },
+    {
+      "name": "National Startup Awards 5.0",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/nsa2025.html",
+      "reason": "closed"
+    },
+    {
+      "name": "AB PM-JAY Auto-Adjudication Hackathon 2026",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/4102cc05-c02e-4ab7-84eb-ca00f0f3a842",
+      "reason": "closed"
+    },
+    {
+      "name": "UIDAI Data Hackathon 2026",
+      "source_url": "https://event.data.gov.in/challenge/uidai-data-hackathon-2026/",
+      "reason": "closed"
+    },
+    {
+      "name": "Smart India Hackathon 2025",
+      "source_url": "https://www.sih.gov.in/",
+      "reason": "closed"
+    },
+    {
+      "name": "Supreme Court Hackathon 2024",
+      "source_url": "https://innovateindia.mygov.in/sc-hackathon-2024/",
+      "reason": "closed"
+    },
+    {
+      "name": "DARPG Challenge 2024",
+      "source_url": "https://innovateindia.mygov.in/darpg-challenge-2024/",
+      "reason": "closed"
+    },
+    {
+      "name": "iCreate Drone Challenge",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/ams-application/application-listing.html",
+      "reason": "closed"
+    },
+    {
+      "name": "Yoga My Pride 2026 Photography Contest",
+      "source_url": "https://innovateindia.mygov.in/yoga-my-pride-2026/",
+      "reason": "closed"
+    },
+    {
+      "name": "DISC 14 - Defence India Startup Challenge 14",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed - Last Date 04 May 2026"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge 2026 (all tracks)",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions",
+      "reason": "closed - Last date 02 Mar 2026"
+    },
+    {
+      "name": "IndiaAI Financial Reporting Compliance Challenge",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/b5ebae1e-73d1-4ba8-baa1-21beaabd1f6d",
+      "reason": "closed - Application closed 02 Mar 2026"
+    },
+    {
+      "name": "AI for All Challenge",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/d4fb310f-7dd5-44f4-a1f8-c850935a615c",
+      "reason": "closed - Submission closed 23 Jan 2026"
+    },
+    {
+      "name": "Blockchain India Challenge (MeitY/C-DAC)",
+      "source_url": "https://challenge.cdac.in",
+      "reason": "closed - Registration deadline 27 Mar 2026"
+    },
+    {
+      "name": "India-AI Impact Summit Global Challenges (AI for ALL, AI by HER, YUVAi)",
+      "source_url": "https://impact.indiaai.gov.in/",
+      "reason": "closed - Applications closed 31 Oct 2025; Summit held Feb 2026"
+    },
+    {
+      "name": "ISRO IMEx-2026 (Indian Microgravity Experiments)",
+      "source_url": "https://www.isro.gov.in/IndianMicrogravityExperiments_IMEx2026.html",
+      "reason": "closed - Proposal deadline 28 Feb 2026"
+    },
+    {
+      "name": "ISRO Robotics Challenge 2026 (IRoC-U 2026)",
+      "source_url": "https://www.ursc.gov.in/IRoC-U2026",
+      "reason": "closed - Registration closed 12 Jan 2026; preliminary round results announced"
+    },
+    {
+      "name": "ISRO START 2026 Programme",
+      "source_url": "https://www.isro.gov.in/START2026.html",
+      "reason": "closed - Registration closed 28 Feb 2026; programme held Mar-Apr 2026"
+    },
+    {
+      "name": "Bharatiya Antariksh Hackathon 2025 (ISRO)",
+      "source_url": "https://www.isro.gov.in/Launching_Bharatiya_Antariksh_Hackathon2025.html",
+      "reason": "closed - Grand finale completed Aug 2025; not current cycle"
+    },
+    {
+      "name": "Dare to Dream 5.0 Innovation Contest (DRDO)",
+      "source_url": "https://drdo.gov.in/drdo/en/offerings/competitions-and-awards/dare-dream-50-innovation-contest",
+      "reason": "closed - Contest ended 31 Jan 2025"
+    },
+    {
+      "name": "National Space Hackathon 2026 (IIT Delhi)",
+      "source_url": "https://unstop.com/hackathons/national-space-hackathon-tryst26-iit-delhi-1641554",
+      "reason": "closed - Registration closed 13 Mar 2026; not a government source (IIT Delhi)"
+    },
+    {
+      "name": "GST Analytics Hackathon (Predictive Model in GST)",
+      "source_url": "https://innovateindia.mygov.in/online-challenge-for-developing-a-predictive-model-in-gst/",
+      "reason": "closed - Submission period 12 Aug-12 Oct 2024"
+    },
+    {
+      "name": "D.E.S.I.G.N for BioE3 Challenge (Category 1 - School Students)",
+      "source_url": "https://innovateindia.mygov.in/bioe3/",
+      "reason": "open - included as Category 2 (All Indian Citizens) in candidates; Category 1 restricted to school students VI-XII"
+    },
+    {
+      "name": "MSME Idea Hackathon 5.0",
+      "source_url": "https://my.msme.gov.in/inc/Hackathon_Reg.aspx",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge 2026",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/149036ea-6d4d-496e-a844-faa3dc39e23c",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge for Transforming Governance (multiple depts)",
+      "source_url": "https://aikosha.indiaai.gov.in/home/competitions",
+      "reason": "closed"
+    },
+    {
+      "name": "Youth Co:Lab National Innovation Challenge 2026",
+      "source_url": "https://aim.gov.in/youthcolab.php",
+      "reason": "closed"
+    },
+    {
+      "name": "Namma Delta Hackathon 2026",
+      "source_url": "http://form.startuptn.in/NHAC",
+      "reason": "closed"
+    },
+    {
+      "name": "AP-AER Mission Hackathon 1.0",
+      "source_url": "https://www.startupgrantsindia.com/ap-aer-mission-hackathon-1-0-rtih-andhra-pradesh",
+      "reason": "closed"
+    },
+    {
+      "name": "Tamilnadu Tourism Hackathon 2025",
+      "source_url": "http://form.startuptn.in/TIH",
+      "reason": "closed"
+    },
+    {
+      "name": "Agriculture Grand Challenge (Startup India/Ministry of Agriculture)",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/tenders1.html",
+      "reason": "stale_cycle"
+    },
+    {
+      "name": "Avaana – Startup India Grand Challenge for Deep Tech Innovation 2025-26",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/ams-application/challenge.html?applicationId=696a4277e4b0df7f2799f36c",
+      "reason": "closed"
+    },
+    {
+      "name": "National Startup Awards 5.0",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/startup-awards.html",
+      "reason": "closed"
+    },
+    {
+      "name": "NXP India Tech Startup Challenge 2026",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/ams-application/challenge.html?applicationId=69885730e4b0a68b6c7681e3",
+      "reason": "unverifiable"
+    },
+    {
+      "name": "Bharat Startup Grand Challenge (BSGC) Ongoing Challenges",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/bharat-startup-grand-challenge.html",
+      "reason": "unverifiable"
+    },
+    {
+      "name": "Corporate Mitra Logo Design Contest",
+      "source_url": "https://www.mygov.in/task/corporate-mitra-logo-design-contest",
+      "reason": "non_technical_creative_contest:logo",
+      "confidence_score": 94
+    },
+    {
+      "name": "Mascot Design Contest for Eat Right India",
+      "source_url": "https://innovateindia.mygov.in/mascot-design-contest-for-eat-right-india",
+      "reason": "non_technical_creative_contest:mascot",
+      "confidence_score": 94
+    },
+    {
+      "name": "CSIR Societal Platform 2024",
+      "source_url": "https://innovateindia.mygov.in/csir-societal-platform-2024",
+      "reason": "missing_strong_technical_signal",
+      "confidence_score": 84
+    },
+    {
+      "name": "ZSI Hackathon 2026",
+      "source_url": "https://hackathon.zsi.org.in/",
+      "reason": "not_government_or_untrusted_source",
+      "confidence_score": 55
     }
   ],
   "metadata": {
-    "search_date": "2026-05-08",
-    "current_date_used_for_validation": "2026-05-08",
+    "search_date": "2026-05-09",
+    "current_date_used_for_validation": "2026-05-09",
     "total_active_hackathons": 2,
-    "total_candidates_discovered": 45,
-    "total_excluded_closed": 35,
-    "total_excluded_not_government": 5,
-    "total_excluded_unverifiable": 3,
-    "total_borderline_opportunities": 2,
+    "total_borderline_opportunities": 3,
+    "total_excluded": 40,
+    "total_candidates_discovered": 15,
     "sources_scanned": [
-      "https://innovateindia.mygov.in/bioe3/",
-      "https://www.startupindia.gov.in/",
-      "https://www.sih.gov.in/",
-      "https://idex.gov.in/challenges",
-      "https://indiaai.gov.in/",
+      "https://aikosh.indiaai.gov.in/",
+      "https://aikosh.indiaai.gov.in/home/competitions",
+      "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "https://aim.gov.in/",
+      "https://bhashini.gov.in/",
       "https://birac.nic.in/",
-      "https://dst.gov.in/",
-      "https://tdb.gov.in/",
+      "https://birac.nic.in/cfp.php",
+      "https://birac.nic.in/desc_new.php?id=1289",
+      "https://birac.nic.in/login.php",
+      "https://bric.nic.in/bioe3challenge/",
+      "https://challenge.cdac.in",
+      "https://dbtindia.gov.in/",
       "https://event.data.gov.in/",
-      "https://bhashini.gov.in/hackathon",
-      "https://www.isro.gov.in/",
-      "https://www.drdo.gov.in/",
-      "https://www.mygov.in/",
+      "https://hackathon.zsi.org.in/",
+      "https://hackathon.zsi.org.in/form/hackathon-registration",
+      "https://idex.gov.in/",
+      "https://idex.gov.in/challenges",
+      "https://idex.gov.in/disc-category/18",
+      "https://impact.indiaai.gov.in/",
+      "https://indiaai.gov.in/",
+      "https://innovateindia.mygov.in/",
+      "https://innovateindia.mygov.in/bioe3",
+      "https://innovateindia.mygov.in/bioe3/",
+      "https://innovateindia.mygov.in/bioe3/register",
+      "https://innovateindia.mygov.in/csir-societal-platform-2024",
+      "https://innovateindia.mygov.in/csir-societal-platform-2024/registration",
+      "https://innovateindia.mygov.in/mascot-design-contest-for-eat-right-india",
+      "https://meity.gov.in/",
+      "https://msme.gov.in/",
+      "https://mygov.in/",
+      "https://pfrda.org.in/w/pfrda-hackathon-2026-1",
+      "https://sih.gov.in/",
       "https://startupmission.kerala.gov.in/",
       "https://startuptn.in/",
-      "https://nha.gov.in/hackathon",
-      "https://services.bis.gov.in/php/BIS_2.0/biopackathon/",
-      "https://impact.indiaai.gov.in/",
-      "https://www.pib.gov.in/",
-      "https://unstop.com/hackathons",
-      "https://www.startupgrantsindia.com/",
-      "https://aikosh.indiaai.gov.in/"
+      "https://tdf.drdo.gov.in/innovator/register",
+      "https://tdf.drdo.gov.in/project",
+      "https://www.aicte-india.org/",
+      "https://www.drdo.gov.in/",
+      "https://www.isro.gov.in/",
+      "https://www.mygov.in/",
+      "https://www.mygov.in/task/corporate-mitra-logo-design-contest",
+      "https://www.npci.org.in/",
+      "https://www.sih.gov.in/",
+      "https://www.startupindia.gov.in/",
+      "https://www.ursc.gov.in/IRoC-U2026"
     ],
-    "domains_scanned_count": 45,
+    "domains_scanned_count": 27,
     "search_queries_used": [
-      "registrations open government hackathon India 2026 apply now",
-      "India AI challenge registrations open 2026",
-      "MyGov challenge open registration 2026 India",
-      "iDEX challenge open applications 2026 India",
-      "AICTE innovation competition registration open 2026",
-      "Startup India challenge open registration 2026 apply now",
-      "Bhashini hackathon 2026 registrations open India",
-      "DRDO defence challenge 2026 registrations open India",
-      "ISRO innovation challenge 2026 open registration India",
-      "DBT BIRAC BioAI call 2026 June 30 deadline proposal",
-      "Kerala Startup Mission hackathon 2026 registration open",
-      "StartupTN hackathon 2026 open applications",
-      "MeitY startup hub hackathon 2026 registration open India",
-      "NITI Aayog innovation challenge 2026 open India",
-      "NPCI hackathon 2026 registration open India",
-      "Unstop government hackathon 2026 India registrations open",
-      "application deadline 2026 Startup India",
-      "Bharat Startup Grand Challenge 2026 application deadline",
-      "\"registration open\" \"hackathon\" site:gov.in 2026",
-      "\"apply now\" \"government\" hackathon India 2026 site:gov.in",
-      "SIDBI NABARD innovation challenge 2026 open registration India",
-      "ONGC HAL BEL innovation challenge 2026 open registration India"
+      "\"Agriculture Grand Challenge\" \"Request for Proposal\" startup India 2026",
+      "\"National Startup Awards 5.0\" application open 2026",
+      "\"Startup India\" \"programs and challenges\" listing 2026 open",
+      "\"aikosh\" \"indiaai\" competition challenge open 2026",
+      "AP-AER Mission Hackathon 1.0 Andhra Pradesh registration 2026",
+      "BIRAC challenge open registration 2026 India",
+      "CDSCO IndiaAI Health Innovation Acceleration Hackathon 2026 registration open",
+      "D.E.S.I.G.N for BioE3 Challenge mygov 2026",
+      "ISRO Indian Microgravity Experiments IMEx 2026 announcement of opportunity",
+      "ISRO hackathon challenge 2026 registration open",
+      "India AI Impact Summit Global Challenge 2026 registration open",
+      "India AI challenge hackathon open registration May 2026",
+      "India government hackathon open registration May 2026",
+      "IndiaAI challenge hackathon application open 2026",
+      "IndiaAI challenge hackathon open registration May 2026",
+      "Indian government hackathon open registration May 2026",
+      "MeitY innovation challenge apply now 2026 India",
+      "MyGov hackathon challenge open registration 2026 India",
+      "MyGov hackathon challenge registration open 2026",
+      "MyGov.in challenge open submission 2026 May June",
+      "Smart India Hackathon 2026 registration open dates",
+      "Startup India grand challenge registrations open 2026",
+      "iDEX challenge registration deadline open India 2026",
+      "iDEX challenge registration open 2026 India defence",
+      "site:aikosh.indiaai.gov.in competitions applications open IndiaAI",
+      "site:aim.gov.in innovation challenge registration open 2026",
+      "site:bhashini.gov.in hackathon challenge registrations open",
+      "site:birac.nic.in challenge application deadline open 2026",
+      "site:drdo.gov.in innovation challenge registration open 2026",
+      "site:idex.gov.in challenge open apply now 2026",
+      "site:innovateindia.mygov.in challenge registration open apply now 2026",
+      "site:innovateindia.mygov.in hackathon competition 2026 submission open",
+      "site:isro.gov.in hackathon challenge registration open 2026",
+      "site:msme.gov.in innovation challenge registration open 2026",
+      "site:mygov.in challenge hackathon registration open India 2026",
+      "site:npci.org.in hackathon challenge registration open 2026",
+      "site:sih.gov.in registration open Smart India Hackathon current",
+      "site:startupindia.gov.in challenge application deadline open 2026",
+      "site:startupindia.gov.in challenge application open deadline 2026",
+      "site:startupindia.gov.in challenge open apply 2026",
+      "site:startupmission.kerala.gov.in hackathon challenge open",
+      "site:startuptn.in challenge applications open startup 2026"
     ],
-    "notes": "Extensive search conducted across 45+ government domains. Two genuinely open opportunities verified with official sources and active registration paths. Several other government challenges found but confirmed closed (deadlines passed). SIH 2026 and other major annual events not yet announced for next cycle. Borderline opportunities include research grant calls that do not qualify as hackathons/competitions under strict semantic classification."
+    "normalization_engine": "pydantic_v2",
+    "live_validation_enabled": true,
+    "data_quality_notes": [
+      "Final JSON is regenerated deterministically by the pipeline.",
+      "Stringified JSON fields are repaired into objects.",
+      "Candidates failing current-cycle or official-source checks are rejected or moved to borderline.",
+      "LLM confidence is capped and recalibrated after deterministic validation.",
+      "Creative/design contests are hard-excluded before active or borderline classification.",
+      "Procurement, grant, and feasibility-study semantics are demoted unless competition structure is explicit.",
+      "Auth walls and skipped validation cap confidence and cannot prove intake by themselves."
+    ],
+    "input_metadata": [
+      {
+        "task_name": "central-government-portals",
+        "task_category": "central_government"
+      },
+      {
+        "task_name": "defence-space-ai",
+        "task_category": "defence_space_ai"
+      },
+      {
+        "task_name": "startup-state-innovation",
+        "task_category": "startup_state_innovation"
+      }
+    ],
+    "models_attempted": [
+      "opencode/big-pickle",
+      "opencode/hy3-preview-free",
+      "opencode/minimax-m2.5-free"
+    ],
+    "discovery_tasks_requested": [
+      "central-government-portals",
+      "defence-space-ai",
+      "startup-state-innovation"
+    ],
+    "checkpoint_run_dir": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260508T203734Z",
+    "parser_diagnostics": [
+      {
+        "input_chars": 19058,
+        "candidate_blocks": 65,
+        "repair_attempts": 0,
+        "valid_blocks": 1,
+        "salvaged_candidates": 7,
+        "strategy": "container_payload",
+        "task_name": "central-government-portals"
+      },
+      {
+        "input_chars": 17583,
+        "candidate_blocks": 54,
+        "repair_attempts": 0,
+        "valid_blocks": 1,
+        "salvaged_candidates": 4,
+        "strategy": "container_payload",
+        "task_name": "defence-space-ai"
+      },
+      {
+        "input_chars": 15867,
+        "candidate_blocks": 47,
+        "repair_attempts": 0,
+        "valid_blocks": 1,
+        "salvaged_candidates": 4,
+        "strategy": "container_payload",
+        "task_name": "startup-state-innovation"
+      }
+    ],
+    "opencode_artifacts": [
+      {
+        "task": "central-government-portals",
+        "model": "cache",
+        "attempt": 0,
+        "success": true,
+        "from_cache": true,
+        "elapsed_seconds": 0.0,
+        "error": null,
+        "timed_out": false,
+        "timeout_seconds": null,
+        "partial_output_path": null,
+        "raw_task_output_path": null,
+        "parser_accepted": true,
+        "parser_diagnostics": {
+          "input_chars": 19058,
+          "candidate_blocks": 65,
+          "repair_attempts": 0,
+          "valid_blocks": 1,
+          "salvaged_candidates": 7,
+          "strategy": "container_payload"
+        }
+      },
+      {
+        "task": "defence-space-ai",
+        "model": "cache",
+        "attempt": 0,
+        "success": true,
+        "from_cache": true,
+        "elapsed_seconds": 0.0,
+        "error": null,
+        "timed_out": false,
+        "timeout_seconds": null,
+        "partial_output_path": null,
+        "raw_task_output_path": null,
+        "parser_accepted": true,
+        "parser_diagnostics": {
+          "input_chars": 17583,
+          "candidate_blocks": 54,
+          "repair_attempts": 0,
+          "valid_blocks": 1,
+          "salvaged_candidates": 4,
+          "strategy": "container_payload"
+        }
+      },
+      {
+        "task": "startup-state-innovation",
+        "model": "cache",
+        "attempt": 0,
+        "success": true,
+        "from_cache": true,
+        "elapsed_seconds": 0.0,
+        "error": null,
+        "timed_out": false,
+        "timeout_seconds": null,
+        "partial_output_path": null,
+        "raw_task_output_path": null,
+        "parser_accepted": true,
+        "parser_diagnostics": {
+          "input_chars": 15867,
+          "candidate_blocks": 47,
+          "repair_attempts": 0,
+          "valid_blocks": 1,
+          "salvaged_candidates": 4,
+          "strategy": "container_payload"
+        }
+      }
+    ]
   }
 }
