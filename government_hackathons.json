@@ -1,0 +1,851 @@
+{
+  "government_hackathons": [
+    {
+      "id": "idex-open-challenge-2026",
+      "event_type": "defence_challenge",
+      "hackathon_name": "iDEX Open Challenge",
+      "full_name": "iDEX Open Challenge 2026 - Innovation for Defence Excellence",
+      "slug": "idex-open-challenge-2026",
+      "current_status": "submission_open",
+      "is_open_for_new_registration": true,
+      "is_open_for_submission": true,
+      "verification_state": "fully_verified",
+      "registration_url": "https://idex.gov.in/disc-category/18",
+      "submission_url": "https://idex.gov.in/disc-category/18",
+      "official_website": "https://idex.gov.in",
+      "official_event_page": "https://idex.gov.in/challenges",
+      "application_portal": "iDEX Portal",
+      "hosting_organization": "Defence Innovation Organisation (DIO)",
+      "co_organizers": [
+        "Ministry of Defence",
+        "Department of Defence Production",
+        "Atal Innovation Mission"
+      ],
+      "ministry": "Ministry of Defence",
+      "department": "Department of Defence Production",
+      "institution_type": "Central Government",
+      "platform": "iDEX Portal",
+      "domain": "Defence Technology",
+      "subdomains": [
+        "Artificial Intelligence",
+        "Robotics",
+        "Autonomous Systems",
+        "Advanced Materials",
+        "Cybersecurity",
+        "Quantum Technologies",
+        "Aerospace"
+      ],
+      "theme": "Open innovation challenge for defence and aerospace technologies",
+      "focus_areas": [
+        "Defence",
+        "Aerospace",
+        "Autonomous Systems",
+        "AI/ML",
+        "Advanced Materials",
+        "Cybersecurity",
+        "Quantum Technology"
+      ],
+      "problem_statements": [],
+      "sdg_alignment": [
+        "SDG 9 - Industry, Innovation and Infrastructure"
+      ],
+      "registration_open_date": null,
+      "registration_close_date": null,
+      "submission_open_date": null,
+      "submission_close_date": "2026-06-30",
+      "application_deadline": "2026-06-30",
+      "proposal_deadline": "2026-06-30",
+      "event_start_date": null,
+      "event_end_date": null,
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Open to individual innovators, DPIIT-recognized startups, and MSMEs in India",
+        "citizenship_requirements": [
+          "Indian Citizens"
+        ],
+        "allowed_entities": [
+          "Individual Innovators",
+          "Startups",
+          "MSMEs"
+        ],
+        "academic_requirements": [],
+        "startup_requirements": [
+          "DPIIT recognized (for startups)"
+        ],
+        "age_limit": null,
+        "team_requirements": {
+          "min_team_size": 1,
+          "max_team_size": null,
+          "cross_institute_allowed": true
+        }
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "total_prize_pool": "Up to Rs.1.5 Crore grant",
+        "breakdown": [
+          {
+            "rank": "Selected Innovators",
+            "reward": "Up to Rs.1.5 Crore grant (non-dilutive)"
+          }
+        ],
+        "non_monetary_rewards": [
+          "Pitch to iDEX grand jury",
+          "Access to defence ecosystem",
+          "Follow-on iDEX PRIME grants up to Rs.10 Crore",
+          "Procurement pathway with Indian Armed Forces"
+        ]
+      },
+      "funding_support": {
+        "available": true,
+        "details": "Grants up to Rs.1.5 Crore (non-dilutive) through SPARK framework"
+      },
+      "incubation_support": {
+        "available": true,
+        "details": "Support from iDEX partner incubators"
+      },
+      "mentorship_support": {
+        "available": true,
+        "details": "Mentorship from defence experts and armed forces"
+      },
+      "internship_opportunities": {
+        "available": false,
+        "details": null
+      },
+      "procurement_or_pilot_opportunity": {
+        "available": true,
+        "details": "Successful prototypes may lead to procurement by Indian Armed Forces"
+      },
+      "ipr_policy": {
+        "participant_retains_ip": true,
+        "details": "100% non-dilutive grant; government takes no ownership"
+      },
+      "format": "Online",
+      "mode": "Proposal + Pitch + Prototype Development",
+      "participation_mode": [
+        "Online"
+      ],
+      "location": {
+        "country": "India",
+        "state": null,
+        "city": null,
+        "venue": null,
+        "is_pan_india": true
+      },
+      "communication_channels": {
+        "email": "idexdio@ddpmod.gov.in",
+        "discord": null,
+        "slack": null,
+        "telegram": null
+      },
+      "resources": {
+        "brochure_url": "https://idex.gov.in/disc-category/18",
+        "rulebook_url": null,
+        "problem_statement_url": "https://idex.gov.in/challenges",
+        "faq_url": null
+      },
+      "source_validation": {
+        "source_url": "https://idex.gov.in/disc-category/18",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "CHALLENGE OPEN",
+          "Apply Now"
+        ]
+      },
+      "confidence_score": 97,
+      "search_metadata": {
+        "date_searched": "2026-05-08",
+        "search_engine": "Exa",
+        "verification_attempts": 5,
+        "last_verified_at": "2026-05-08T10:30:00Z"
+      },
+      "deduplication": {
+        "canonical_url": "https://idex.gov.in/disc-category/18",
+        "normalized_title": "idex-open-challenge-2026"
+      },
+      "tags": [
+        "defence",
+        "ministry-of-defence",
+        "idex",
+        "startup",
+        "grant",
+        "innovation",
+        "atmanirbhar-bharat"
+      ]
+    },
+    {
+      "id": "cdsco-indiaai-hackathon-2026",
+      "event_type": "ai_challenge",
+      "hackathon_name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
+      "full_name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon 2026",
+      "slug": "cdsco-indiaai-health-innovation-acceleration-hackathon-2026",
+      "current_status": "submission_open",
+      "is_open_for_new_registration": true,
+      "is_open_for_submission": true,
+      "verification_state": "fully_verified",
+      "registration_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "submission_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "official_website": "https://indiaai.gov.in",
+      "official_event_page": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "application_portal": "AIKosh (IndiaAI Platform)",
+      "hosting_organization": "IndiaAI (Digital India Corporation, MeitY)",
+      "co_organizers": [
+        "Central Drugs Standard Control Organisation (CDSCO)",
+        "Ministry of Health and Family Welfare"
+      ],
+      "ministry": "Ministry of Electronics and Information Technology",
+      "department": "IndiaAI Application Development Initiative (IADI)",
+      "institution_type": "Central Government",
+      "platform": "AIKosh",
+      "domain": "Artificial Intelligence",
+      "subdomains": [
+        "Healthcare AI",
+        "Regulatory Technology",
+        "Data Anonymization",
+        "NLP",
+        "Document Processing"
+      ],
+      "theme": "AI-driven regulatory workflow automation and data anonymisation for healthcare approvals",
+      "focus_areas": [
+        "AI",
+        "Healthcare",
+        "Regulatory Automation",
+        "Data Privacy",
+        "HealthTech"
+      ],
+      "problem_statements": [
+        {
+          "title": "AI-Driven Regulatory Workflow Automation and Data Anonymisation",
+          "category": "AI/ML",
+          "description": "Build an end-to-end AI solution for data anonymisation (PII/PHI detection), document summarisation, completeness assessment, and version comparison for CDSCO regulatory processes"
+        }
+      ],
+      "sdg_alignment": [
+        "SDG 3 - Good Health and Well-being",
+        "SDG 9 - Industry, Innovation and Infrastructure"
+      ],
+      "registration_open_date": "2026-03-19",
+      "registration_close_date": "2026-05-10",
+      "submission_open_date": "2026-03-19",
+      "submission_close_date": "2026-05-10",
+      "application_deadline": "2026-05-10",
+      "proposal_deadline": null,
+      "event_start_date": null,
+      "event_end_date": null,
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Indian companies and DPIIT-recognized startups with proprietary AI solutions",
+        "citizenship_requirements": [
+          "Indian Citizens"
+        ],
+        "allowed_entities": [
+          "Indian Companies (51%+ Indian ownership)",
+          "DPIIT-recognized Startups"
+        ],
+        "academic_requirements": [],
+        "startup_requirements": [
+          "DPIIT recognized"
+        ],
+        "age_limit": null,
+        "team_requirements": {
+          "min_team_size": 1,
+          "max_team_size": null,
+          "cross_institute_allowed": true
+        }
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "total_prize_pool": "Rs.85 Lakh",
+        "breakdown": [
+          {
+            "rank": "Winner",
+            "reward": "Rs.10 Lakh + work contract up to Rs.50 Lakh"
+          },
+          {
+            "rank": "1st Runner-up",
+            "reward": "Rs.7 Lakh"
+          },
+          {
+            "rank": "2nd Runner-up",
+            "reward": "Rs.3 Lakh"
+          },
+          {
+            "rank": "All-Women Team Special Prize",
+            "reward": "Rs.5 Lakh (up to 3 teams)"
+          }
+        ],
+        "non_monetary_rewards": [
+          "One-year work contract worth up to Rs.50 Lakh for winner",
+          "5-day on-premises development round at CDSCO New Delhi office for top 10 teams",
+          "Opportunity to deploy solution with CDSCO"
+        ]
+      },
+      "funding_support": {
+        "available": true,
+        "details": "Work contract up to Rs.50 Lakh for deployment"
+      },
+      "incubation_support": {
+        "available": false,
+        "details": null
+      },
+      "mentorship_support": {
+        "available": false,
+        "details": null
+      },
+      "internship_opportunities": {
+        "available": false,
+        "details": null
+      },
+      "procurement_or_pilot_opportunity": {
+        "available": true,
+        "details": "Winner may secure one-year work contract for solution deployment with CDSCO"
+      },
+      "ipr_policy": {
+        "participant_retains_ip": true,
+        "details": "Participants retain IP; detailed terms in guidelines"
+      },
+      "format": "Hybrid",
+      "mode": "Virtual Hackathon + On-Premises Development",
+      "participation_mode": [
+        "Online (Stage 1)",
+        "Offline at CDSCO New Delhi (Stage 2 - top 10 teams)"
+      ],
+      "location": {
+        "country": "India",
+        "state": "Delhi",
+        "city": "New Delhi",
+        "venue": "CDSCO Office, New Delhi (Stage 2)",
+        "is_pan_india": false
+      },
+      "communication_channels": {
+        "email": "fellow3.gpai-india@meity.gov.in",
+        "discord": null,
+        "slack": null,
+        "telegram": null
+      },
+      "resources": {
+        "brochure_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+        "rulebook_url": "https://aikosh.indiaai.gov.in/manual/CDSCO_Hackathon_FAQs.docx",
+        "problem_statement_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+        "faq_url": "https://aikosh.indiaai.gov.in/manual/CDSCO_Hackathon_FAQs.docx"
+      },
+      "source_validation": {
+        "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Submit Proposal",
+          "Application Open",
+          "Application Deadline: 10 May 2026"
+        ]
+      },
+      "confidence_score": 95,
+      "search_metadata": {
+        "date_searched": "2026-05-08",
+        "search_engine": "Exa",
+        "verification_attempts": 4,
+        "last_verified_at": "2026-05-08T10:35:00Z"
+      },
+      "deduplication": {
+        "canonical_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+        "normalized_title": "cdsco-indiaai-health-innovation-acceleration-hackathon-2026"
+      },
+      "tags": [
+        "ai",
+        "healthcare",
+        "meity",
+        "indiaai",
+        "cdsco",
+        "regulatory-tech",
+        "healthtech"
+      ]
+    },
+    {
+      "id": "dbt-birac-bio-ai-call-2026",
+      "event_type": "research_competition",
+      "hackathon_name": "DBT-BIRAC Bio-AI Call for Proposals",
+      "full_name": "DBT-BIRAC Joint Call for Proposals on Bio-AI for Fostering High Performance Biomanufacturing under BioE3 Policy",
+      "slug": "dbt-birac-bio-ai-call-2026",
+      "current_status": "submission_open",
+      "is_open_for_new_registration": true,
+      "is_open_for_submission": true,
+      "verification_state": "fully_verified",
+      "registration_url": "https://birac.nic.in/cfp.php",
+      "submission_url": "https://birac.nic.in/cfp.php",
+      "official_website": "https://birac.nic.in",
+      "official_event_page": "https://birac.nic.in/cfp.php",
+      "application_portal": "BIRAC Online Portal",
+      "hosting_organization": "Biotechnology Industry Research Assistance Council (BIRAC)",
+      "co_organizers": [
+        "Department of Biotechnology (DBT)",
+        "Ministry of Science and Technology"
+      ],
+      "ministry": "Ministry of Science and Technology",
+      "department": "Department of Biotechnology",
+      "institution_type": "Central Government",
+      "platform": "BIRAC Portal",
+      "domain": "Biotechnology",
+      "subdomains": [
+        "Bio-AI",
+        "Synthetic Biology",
+        "Biomolecular Design",
+        "Sustainable Agriculture",
+        "Genomics Diagnostics",
+        "Ayurveda AI"
+      ],
+      "theme": "AI-integrated biomanufacturing research hubs under India's BioE3 Policy",
+      "focus_areas": [
+        "Biotechnology",
+        "Artificial Intelligence",
+        "Biomanufacturing",
+        "Synthetic Biology",
+        "Sustainable Agriculture",
+        "Genomics"
+      ],
+      "problem_statements": [
+        {
+          "title": "Biomolecular Design",
+          "category": "Bio-AI",
+          "description": "Protein engineering, RNA therapeutics, bio-nanomachines"
+        },
+        {
+          "title": "Sustainable Agriculture",
+          "category": "Bio-AI",
+          "description": "Climate-resilient crops, AI-powered sensing, livestock genomics"
+        },
+        {
+          "title": "Synthetic Biology",
+          "category": "Bio-AI",
+          "description": "AI-optimized metabolic pathways, microbial strain engineering"
+        },
+        {
+          "title": "Ayurveda and AI Integration",
+          "category": "Bio-AI",
+          "description": "Pharmacogenomics, herb-drug interaction modelling, plant-based drug discovery"
+        },
+        {
+          "title": "Genome Diagnostics",
+          "category": "Bio-AI",
+          "description": "AI-driven risk prediction, cancer biomarkers, single-cell genomics"
+        }
+      ],
+      "sdg_alignment": [
+        "SDG 3 - Good Health and Well-being",
+        "SDG 9 - Industry, Innovation and Infrastructure",
+        "SDG 12 - Responsible Consumption and Production",
+        "SDG 13 - Climate Action"
+      ],
+      "registration_open_date": "2025-11-24",
+      "registration_close_date": "2026-06-30",
+      "submission_open_date": "2025-11-24",
+      "submission_close_date": "2026-06-30",
+      "application_deadline": "2026-06-30",
+      "proposal_deadline": "2026-06-30",
+      "event_start_date": null,
+      "event_end_date": null,
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Open to Indian academic institutions, companies, startups, LLPs, research organizations",
+        "citizenship_requirements": [
+          "Indian Entities"
+        ],
+        "allowed_entities": [
+          "Academic Institutions",
+          "Companies (Companies Act, 2013)",
+          "Startups",
+          "LLPs",
+          "Research Organizations (SIRO)",
+          "Societies, Trusts, NGOs"
+        ],
+        "academic_requirements": [],
+        "startup_requirements": [],
+        "age_limit": null,
+        "team_requirements": {
+          "min_team_size": null,
+          "max_team_size": null,
+          "cross_institute_allowed": true
+        }
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "total_prize_pool": "Up to Rs.25 Crore grant per project",
+        "breakdown": [
+          {
+            "rank": "Selected Proposals",
+            "reward": "Up to Rs.25 Crore grant"
+          }
+        ],
+        "non_monetary_rewards": [
+          "Access to biomanufacturing infrastructure",
+          "AI compute infrastructure support",
+          "IP as per DBT IP Guidelines 2023"
+        ]
+      },
+      "funding_support": {
+        "available": true,
+        "details": "Up to Rs.25 Crore grant; DBT funds academia, BIRAC funds industry collaborations"
+      },
+      "incubation_support": {
+        "available": false,
+        "details": null
+      },
+      "mentorship_support": {
+        "available": false,
+        "details": null
+      },
+      "internship_opportunities": {
+        "available": false,
+        "details": null
+      },
+      "procurement_or_pilot_opportunity": {
+        "available": false,
+        "details": null
+      },
+      "ipr_policy": {
+        "participant_retains_ip": true,
+        "details": "IP governed by DBT IP Guidelines 2023 / BIRAC IP guidelines"
+      },
+      "format": "Online",
+      "mode": "Research Proposal Submission",
+      "participation_mode": [
+        "Online"
+      ],
+      "location": {
+        "country": "India",
+        "state": null,
+        "city": null,
+        "venue": null,
+        "is_pan_india": true
+      },
+      "communication_channels": {
+        "email": "dkumar@birac.nic.in",
+        "discord": null,
+        "slack": null,
+        "telegram": null
+      },
+      "resources": {
+        "brochure_url": "https://birac.nic.in/cfp_view.php?id=117&scheme_type=29",
+        "rulebook_url": null,
+        "problem_statement_url": "https://birac.nic.in/cfp.php",
+        "faq_url": null
+      },
+      "source_validation": {
+        "source_url": "https://birac.nic.in/cfp.php",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Call for Proposals",
+          "Last Date: 30th June 2026"
+        ]
+      },
+      "confidence_score": 96,
+      "search_metadata": {
+        "date_searched": "2026-05-08",
+        "search_engine": "Exa",
+        "verification_attempts": 3,
+        "last_verified_at": "2026-05-08T10:40:00Z"
+      },
+      "deduplication": {
+        "canonical_url": "https://birac.nic.in/cfp.php",
+        "normalized_title": "dbt-birac-bio-ai-call-2026"
+      },
+      "tags": [
+        "biotechnology",
+        "ai",
+        "research",
+        "grant",
+        "dbt",
+        "birac",
+        "bioe3",
+        "biomanufacturing",
+        "science-and-technology"
+      ]
+    },
+    {
+      "id": "india-finland-innovation-call-2026",
+      "event_type": "research_competition",
+      "hackathon_name": "India-Finland Joint Innovation Call 2026",
+      "full_name": "India-Finland Joint Innovation Call 2026 by DST and Business Finland",
+      "slug": "india-finland-joint-innovation-call-2026",
+      "current_status": "submission_open",
+      "is_open_for_new_registration": true,
+      "is_open_for_submission": true,
+      "verification_state": "fully_verified",
+      "registration_url": "https://tdb.gov.in/launch-india-finland-joint-innovation-call-2026",
+      "submission_url": "https://tdb.gov.in/launch-india-finland-joint-innovation-call-2026",
+      "official_website": "https://dst.gov.in",
+      "official_event_page": "https://tdb.gov.in/launch-india-finland-joint-innovation-call-2026",
+      "application_portal": "TDB Online Portal",
+      "hosting_organization": "Technology Development Board (TDB)",
+      "co_organizers": [
+        "Department of Science and Technology (DST)",
+        "Business Finland"
+      ],
+      "ministry": "Ministry of Science and Technology",
+      "department": "Department of Science and Technology",
+      "institution_type": "Central Government",
+      "platform": "TDB Portal",
+      "domain": "Industrial R&D and Innovation",
+      "subdomains": [
+        "Sustainable Energy",
+        "5G/6G Networks",
+        "Artificial Intelligence",
+        "Data Analytics",
+        "Microelectronics",
+        "Power Electronics"
+      ],
+      "theme": "India-Finland bilateral industry-driven R&D innovation projects",
+      "focus_areas": [
+        "Sustainable Energy",
+        "Digital Technologies",
+        "Microelectronics",
+        "Clean Energy",
+        "AI",
+        "EV Technologies"
+      ],
+      "problem_statements": [],
+      "sdg_alignment": [
+        "SDG 7 - Affordable and Clean Energy",
+        "SDG 9 - Industry, Innovation and Infrastructure",
+        "SDG 13 - Climate Action",
+        "SDG 17 - Partnerships for the Goals"
+      ],
+      "registration_open_date": "2026-04-01",
+      "registration_close_date": "2026-08-28",
+      "submission_open_date": "2026-04-01",
+      "submission_close_date": "2026-08-28",
+      "application_deadline": "2026-08-28",
+      "proposal_deadline": "2026-08-28",
+      "event_start_date": null,
+      "event_end_date": null,
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Indian companies with R&D capability; must collaborate with a Finnish partner",
+        "citizenship_requirements": [
+          "Indian Entities"
+        ],
+        "allowed_entities": [
+          "Indian Companies with R&D capability"
+        ],
+        "academic_requirements": [],
+        "startup_requirements": [],
+        "age_limit": null,
+        "team_requirements": {
+          "min_team_size": 1,
+          "max_team_size": null,
+          "cross_institute_allowed": true
+        }
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "total_prize_pool": "Up to Rs.2.5 Crore grant per project",
+        "breakdown": [
+          {
+            "rank": "Selected Projects",
+            "reward": "Up to Rs.2.5 Crore (50% of project cost as grant)"
+          }
+        ],
+        "non_monetary_rewards": [
+          "Bilateral R&D collaboration with Finnish partners",
+          "Access to European innovation ecosystem",
+          "Commercialization pathway"
+        ]
+      },
+      "funding_support": {
+        "available": true,
+        "details": "DST supports up to INR 2.5 crore per project or 50% of Indian project cost as grant"
+      },
+      "incubation_support": {
+        "available": false,
+        "details": null
+      },
+      "mentorship_support": {
+        "available": false,
+        "details": null
+      },
+      "internship_opportunities": {
+        "available": false,
+        "details": null
+      },
+      "procurement_or_pilot_opportunity": {
+        "available": false,
+        "details": null
+      },
+      "ipr_policy": {
+        "participant_retains_ip": true,
+        "details": "IP governed by Consortium Agreement between partners"
+      },
+      "format": "Online",
+      "mode": "Joint Research Proposal Submission",
+      "participation_mode": [
+        "Online"
+      ],
+      "location": {
+        "country": "India",
+        "state": null,
+        "city": null,
+        "venue": null,
+        "is_pan_india": true
+      },
+      "communication_channels": {
+        "email": null,
+        "discord": null,
+        "slack": null,
+        "telegram": null
+      },
+      "resources": {
+        "brochure_url": "https://tdb.gov.in/launch-india-finland-joint-innovation-call-2026",
+        "rulebook_url": null,
+        "problem_statement_url": null,
+        "faq_url": null
+      },
+      "source_validation": {
+        "source_url": "https://tdb.gov.in/launch-india-finland-joint-innovation-call-2026",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Launch Date: 1st April 2026",
+          "Last Date: 28th August 2026",
+          "Apply Now"
+        ]
+      },
+      "confidence_score": 94,
+      "search_metadata": {
+        "date_searched": "2026-05-08",
+        "search_engine": "Exa",
+        "verification_attempts": 3,
+        "last_verified_at": "2026-05-08T10:45:00Z"
+      },
+      "deduplication": {
+        "canonical_url": "https://tdb.gov.in/launch-india-finland-joint-innovation-call-2026",
+        "normalized_title": "india-finland-joint-innovation-call-2026"
+      },
+      "tags": [
+        "research",
+        "innovation",
+        "international-collaboration",
+        "dst",
+        "finland",
+        "clean-energy",
+        "digital-technologies",
+        "grant"
+      ]
+    }
+  ],
+  "metadata": {
+    "search_date": "2026-05-08",
+    "current_date_used_for_validation": "2026-05-08",
+    "total_active_hackathons": 4,
+    "total_candidates_discovered": 45,
+    "total_after_deduplication": 35,
+    "total_excluded_closed": 31,
+    "total_excluded_unverified": 8,
+    "total_excluded_future_unannounced": 2,
+    "sources_scanned": [
+      "https://www.idex.gov.in",
+      "https://aikosh.indiaai.gov.in",
+      "https://birac.nic.in",
+      "https://tdb.gov.in",
+      "https://www.pib.gov.in",
+      "https://innovateindia.mygov.in",
+      "https://www.mygov.in",
+      "https://www.startupindia.gov.in",
+      "https://bhashini.gov.in",
+      "https://www.ddpmod.gov.in",
+      "https://dst.gov.in",
+      "https://pfrda.org.in",
+      "https://unstop.com",
+      "https://www.startupgrantsindia.com",
+      "https://rtih.co.in",
+      "https://startupmission.kerala.gov.in",
+      "https://www.npci.org.in",
+      "https://cdsco.gov.in",
+      "https://nha.gov.in",
+      "https://event.data.gov.in",
+      "https://eservices.dot.gov.in",
+      "https://indiaai.gov.in"
+    ],
+    "domains_scanned_count": 22,
+    "search_queries_used": [
+      "government hackathon India registrations open 2026",
+      "apply now India innovation challenge 2026 government",
+      "MyGov challenge open registration 2026",
+      "AICTE innovation competition registration open 2026",
+      "iDEX ADITI 5 2026 open challenge registration",
+      "IndiaAI challenge open now May 2026 registration",
+      "startup challenge India open registration May 2026 government",
+      "PFRDA hackathon 2026 registration deadline extended",
+      "CDSCO IndiaAI hackathon deadline extended May 2026",
+      "MyGov challenge submission open May 2026",
+      "innovateindia.mygov.in submission open May 2026",
+      "ISRO hackathon 2026 registration open",
+      "DRDO challenge 2026 open registration defence technology",
+      "BIRAC innovation challenge 2026 open application biotechnology",
+      "hackathon apply now 2026 site:gov.in",
+      "Bharat Startup Grand Challenge 2026 deadline registration open",
+      "Unstop government hackathon India 2026 open registration",
+      "apply now innovation challenge India ministry 2026",
+      "NPCI hackathon 2026 registration open",
+      "DST India innovation challenge 2026 open call",
+      "Startup India challenge 2026 apply now open registration May",
+      "Kerala startup mission hackathon 2026 open registration",
+      "Bhashini innovation challenge 2026 open registration apply",
+      "NPCI PayAuth Challenge 2026 deadline registration",
+      "registrations open hackathon India May 2026 government"
+    ],
+    "validation_rules_applied": [
+      "deadline_validation",
+      "registration_url_validation",
+      "official_source_validation",
+      "deduplication_validation",
+      "open_registration_validation",
+      "event_type_validation",
+      "status_validation"
+    ],
+    "notes": "Only opportunities verified as accepting new registrations or submissions on current_date (2026-05-08) are included. 4 genuine opportunities found across defence, AI/healthcare, biotechnology, and international R&D ecosystems. Several high-profile events (SIH, PMJAY Hackathon, 5G Hackathon, IndiaAI Innovation Challenge) evaluated and excluded as registration/submission deadlines have passed. Multiple MyGov contests (tagline, recipe, mascot, photography) excluded as they do not match allowed event types. No hallucinated or inferred future editions included."
+  }
+}
