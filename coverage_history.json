@@ -1,314 +1,6 @@
 {
   "runs": [
     {
-      "timestamp": "2026-05-09T06:15:07+00:00",
-      "search_date": "2026-05-09",
-      "total_active_events": 1,
-      "portal_coverage": {
-        "aicte-india.org": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "aikosh.indiaai.gov.in": {
-          "events_found": 1,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "aikosha.indiaai.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "aim.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "app.apixplatform.com": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "bhashini.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "birac.nic.in": {
-          "events_found": 1,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "cyberchallenge.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "cystar.iitm.ac.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "dbtindia.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": false,
-          "accessible": false,
-          "timed_out": false
-        },
-        "drdo.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "dst.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": false,
-          "accessible": false,
-          "timed_out": false
-        },
-        "event.data.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "grants.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "idex.gov.in": {
-          "events_found": 1,
-          "active_events_found": 1,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "iitk.ac.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "indiaai.gov.in": {
-          "events_found": 1,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "innovateindia.mygov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "innovative.msme.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "isro.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "masaforum.com": {
-          "events_found": 1,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "meity.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "msme.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "my.msme.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "mygov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "nha.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "npci.org.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "nrdcindia.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "openinnovation.startuptn.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "pfrda.org.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "pib.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "sih.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "startupgrantsindia.com": {
-          "events_found": 1,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "startupindia.gov.in": {
-          "events_found": 1,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "startupmission.kerala.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "startuptn.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "tdf.drdo.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "uat.startupindia.gov.in": {
-          "events_found": 1,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        },
-        "ursc.gov.in": {
-          "events_found": 0,
-          "active_events_found": 0,
-          "visited": true,
-          "accessible": true,
-          "timed_out": false
-        }
-      },
-      "model_overlap": {
-        "total_events_with_provenance": 4,
-        "strong": 0,
-        "medium": 0,
-        "weak": 4,
-        "none": 0,
-        "model_event_counts": {
-          "minimax": 4
-        }
-      },
-      "failed_domains": [
-        "mygov.in",
-        "startupindia.gov.in",
-        "indiaai.gov.in",
-        "aikosh.indiaai.gov.in",
-        "drdo.gov.in",
-        "isro.gov.in",
-        "dst.gov.in",
-        "dbtindia.gov.in",
-        "birac.nic.in",
-        "meity.gov.in",
-        "sih.gov.in"
-      ],
-      "discovery_counts": {
-        "active": 1,
-        "borderline": 3,
-        "excluded": 35
-      }
-    },
-    {
       "timestamp": "2026-05-09T07:21:58+00:00",
       "search_date": "2026-05-09",
       "total_active_events": 8,
@@ -5949,6 +5641,1175 @@
         "active": 6,
         "borderline": 2,
         "excluded": 16
+      }
+    },
+    {
+      "timestamp": "2026-05-09T19:52:06+00:00",
+      "search_date": "2026-05-10",
+      "total_active_events": 3,
+      "portal_coverage": {
+        "aicte-india.org": {
+          "events_found": 2,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "aicte.gov.in": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "aikosh.indiaai.gov.in": {
+          "events_found": 1,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": true
+        },
+        "aim.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": false
+        },
+        "app.apixplatform.com": {
+          "events_found": 2,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "bhashini.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": true
+        },
+        "birac.nic.in": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": true
+        },
+        "biracrdif.org": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "csir.res.in": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "data.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "dbtindia.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": true
+        },
+        "drdo.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": true
+        },
+        "dst.gov.in": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": true
+        },
+        "e-techcom.tdb.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "eservices.dot.gov.in": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "event.data.gov.in": {
+          "events_found": 4,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "grants.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": true
+        },
+        "idex.gov.in": {
+          "events_found": 6,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": true
+        },
+        "iisc.ac.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "iitb.ac.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "iitd.ac.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "iitk.ac.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "iitm.ac.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "indiaai.gov.in": {
+          "events_found": 2,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": true
+        },
+        "innovateindia.mygov.in": {
+          "events_found": 5,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "isro.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": true
+        },
+        "meity.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": true
+        },
+        "msme.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": false
+        },
+        "mygov.in": {
+          "events_found": 9,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "nha.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "npci.org.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "nrdcindia.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": true
+        },
+        "nutritionconnect.org": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "pfrda.org.in": {
+          "events_found": 3,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "pib.gov.in": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "sih.gov.in": {
+          "events_found": 2,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "startupgrantsindia.com": {
+          "events_found": 3,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "startupindia.gov.in": {
+          "events_found": 5,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "startupmission.kerala.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": false
+        },
+        "startuptn.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": false
+        },
+        "tdb.gov.in": {
+          "events_found": 7,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": true
+        },
+        "uidai.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        }
+      },
+      "model_overlap": {
+        "total_events_with_provenance": 48,
+        "strong": 0,
+        "medium": 0,
+        "weak": 48,
+        "none": 0,
+        "model_event_counts": {
+          "big-pickle": 39,
+          "minimax": 9
+        }
+      },
+      "failed_domains": [
+        "mygov.in",
+        "idex.gov.in",
+        "indiaai.gov.in",
+        "aikosh.indiaai.gov.in",
+        "drdo.gov.in",
+        "isro.gov.in",
+        "dst.gov.in",
+        "dbtindia.gov.in",
+        "birac.nic.in",
+        "meity.gov.in",
+        "sih.gov.in",
+        "bhashini.gov.in",
+        "birac.nic.in",
+        "bric.nic.in",
+        "coers.iitm.ac.in",
+        "dbtindia.gov.in",
+        "event.data.gov.in",
+        "ils.res.in",
+        "innovateindia.mygov.in",
+        "instagram.com",
+        "mygov.in",
+        "pib.gov.in",
+        "seedfund.startupindia.gov.in",
+        "sih.gov.in",
+        "startupgrantsindia.com",
+        "tdb.gov.in",
+        "unstop.com"
+      ],
+      "discovery_counts": {
+        "active": 3,
+        "borderline": 5,
+        "excluded": 11
+      }
+    },
+    {
+      "timestamp": "2026-05-09T19:55:54+00:00",
+      "search_date": null,
+      "total_active_events": 0,
+      "portal_coverage": {
+        "aikosh.indiaai.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "birac.nic.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "dbtindia.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "drdo.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "dst.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "idex.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "indiaai.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "isro.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "meity.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "mygov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "sih.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "startupindia.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        }
+      },
+      "model_overlap": {
+        "total_events_with_provenance": 0,
+        "strong": 0,
+        "medium": 0,
+        "weak": 0,
+        "none": 0,
+        "model_event_counts": {}
+      },
+      "failed_domains": [
+        "mygov.in",
+        "startupindia.gov.in",
+        "idex.gov.in",
+        "indiaai.gov.in",
+        "aikosh.indiaai.gov.in",
+        "drdo.gov.in",
+        "isro.gov.in",
+        "dst.gov.in",
+        "dbtindia.gov.in",
+        "birac.nic.in",
+        "meity.gov.in",
+        "sih.gov.in",
+        "aikosh.indiaai.gov.in",
+        "bhashini.gov.in",
+        "birac.nic.in",
+        "bric.nic.in",
+        "coers.iitm.ac.in",
+        "dbtindia.gov.in",
+        "event.data.gov.in",
+        "idex.gov.in",
+        "ils.res.in",
+        "indiaai.gov.in",
+        "innovateindia.mygov.in",
+        "instagram.com",
+        "mygov.in",
+        "pib.gov.in",
+        "sih.gov.in",
+        "startupgrantsindia.com",
+        "startupindia.gov.in",
+        "tdb.gov.in",
+        "unstop.com"
+      ],
+      "discovery_counts": {
+        "active": 0,
+        "borderline": 0,
+        "excluded": 0
+      }
+    },
+    {
+      "timestamp": "2026-05-09T19:56:38+00:00",
+      "search_date": null,
+      "total_active_events": 0,
+      "portal_coverage": {
+        "aikosh.indiaai.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "birac.nic.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "dbtindia.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "drdo.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "dst.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "idex.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "indiaai.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "isro.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "meity.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "mygov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "sih.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "startupindia.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        }
+      },
+      "model_overlap": {
+        "total_events_with_provenance": 0,
+        "strong": 0,
+        "medium": 0,
+        "weak": 0,
+        "none": 0,
+        "model_event_counts": {}
+      },
+      "failed_domains": [
+        "mygov.in",
+        "startupindia.gov.in",
+        "idex.gov.in",
+        "indiaai.gov.in",
+        "aikosh.indiaai.gov.in",
+        "drdo.gov.in",
+        "isro.gov.in",
+        "dst.gov.in",
+        "dbtindia.gov.in",
+        "birac.nic.in",
+        "meity.gov.in",
+        "sih.gov.in",
+        "aikosh.indiaai.gov.in",
+        "bhashini.gov.in",
+        "birac.nic.in",
+        "bric.nic.in",
+        "coers.iitm.ac.in",
+        "dbtindia.gov.in",
+        "event.data.gov.in",
+        "idex.gov.in",
+        "ils.res.in",
+        "indiaai.gov.in",
+        "innovateindia.mygov.in",
+        "instagram.com",
+        "mygov.in",
+        "pib.gov.in",
+        "sih.gov.in",
+        "startupgrantsindia.com",
+        "startupindia.gov.in",
+        "tdb.gov.in",
+        "unstop.com"
+      ],
+      "discovery_counts": {
+        "active": 0,
+        "borderline": 0,
+        "excluded": 0
+      }
+    },
+    {
+      "timestamp": "2026-05-09T19:57:17+00:00",
+      "search_date": null,
+      "total_active_events": 13,
+      "portal_coverage": {
+        "aicte-india.org": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "aikosh.indiaai.gov.in": {
+          "events_found": 1,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "birac.nic.in": {
+          "events_found": 2,
+          "active_events_found": 2,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "biracrdif.org": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "csir.res.in": {
+          "events_found": 2,
+          "active_events_found": 2,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "data.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "dbtindia.gov.in": {
+          "events_found": 2,
+          "active_events_found": 2,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "drdo.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "dst.gov.in": {
+          "events_found": 3,
+          "active_events_found": 3,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "e-techcom.tdb.gov.in": {
+          "events_found": 1,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "event.data.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "idex.gov.in": {
+          "events_found": 1,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "indiaai.gov.in": {
+          "events_found": 1,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "innovateindia.mygov.in": {
+          "events_found": 4,
+          "active_events_found": 4,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "isro.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "meity.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": false,
+          "accessible": false,
+          "timed_out": false
+        },
+        "mygov.in": {
+          "events_found": 4,
+          "active_events_found": 4,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "nha.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "npci.org.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "nrdcindia.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "nutritionconnect.org": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "onlinedst.gov.in": {
+          "events_found": 2,
+          "active_events_found": 2,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "pfrda.org.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "pib.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "sih.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "startupgrantsindia.com": {
+          "events_found": 1,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "startupindia.gov.in": {
+          "events_found": 1,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "tdb.gov.in": {
+          "events_found": 2,
+          "active_events_found": 2,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "uidai.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        }
+      },
+      "model_overlap": {
+        "total_events_with_provenance": 13,
+        "strong": 0,
+        "medium": 0,
+        "weak": 0,
+        "none": 13,
+        "model_event_counts": {}
+      },
+      "failed_domains": [
+        "drdo.gov.in",
+        "isro.gov.in",
+        "meity.gov.in",
+        "sih.gov.in",
+        "event.data.gov.in",
+        "ils.res.in",
+        "instagram.com",
+        "sih.gov.in"
+      ],
+      "discovery_counts": {
+        "active": 13,
+        "borderline": 0,
+        "excluded": 0
+      }
+    },
+    {
+      "timestamp": "2026-05-09T20:24:20+00:00",
+      "search_date": "2026-05-10",
+      "total_active_events": 5,
+      "portal_coverage": {
+        "aicte-india.org": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "aikosh.indiaai.gov.in": {
+          "events_found": 2,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "aim.gov.in": {
+          "events_found": 3,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "apna.co": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "bhashini.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "birac.nic.in": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": true
+        },
+        "cpcb.nic.in": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "data.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "dbtindia.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": true
+        },
+        "drdo.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "dst.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": true
+        },
+        "event.data.gov.in": {
+          "events_found": 3,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "grants.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": true
+        },
+        "idc.icreate.org.in": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "idex.gov.in": {
+          "events_found": 7,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "iedcstartupsummit.in": {
+          "events_found": 1,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "iisc.ac.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "iitb.ac.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "iitd.ac.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "iitk.ac.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "iitm.ac.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "impact.indiaai.gov.in": {
+          "events_found": 4,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "indiaai.gov.in": {
+          "events_found": 6,
+          "active_events_found": 2,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "innovateindia.mygov.in": {
+          "events_found": 2,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "isro.gov.in": {
+          "events_found": 2,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "meity.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "msme.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "mygov.in": {
+          "events_found": 4,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "nha.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "niti.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "npci.org.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "nrdcindia.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": true
+        },
+        "pfrda.org.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "sih.gov.in": {
+          "events_found": 2,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "startupindia.gov.in": {
+          "events_found": 3,
+          "active_events_found": 1,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "startupmission.kerala.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "startuptn.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        },
+        "tdb.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": false,
+          "timed_out": true
+        },
+        "uidai.gov.in": {
+          "events_found": 0,
+          "active_events_found": 0,
+          "visited": true,
+          "accessible": true,
+          "timed_out": false
+        }
+      },
+      "model_overlap": {
+        "total_events_with_provenance": 35,
+        "strong": 0,
+        "medium": 0,
+        "weak": 35,
+        "none": 0,
+        "model_event_counts": {
+          "minimax": 35
+        }
+      },
+      "failed_domains": [
+        "drdo.gov.in",
+        "isro.gov.in",
+        "dst.gov.in",
+        "dbtindia.gov.in",
+        "birac.nic.in",
+        "meity.gov.in",
+        "sih.gov.in",
+        "birac.nic.in",
+        "csir.res.in",
+        "dbtindia.gov.in",
+        "dst.gov.in",
+        "e-techcom.tdb.gov.in",
+        "event.data.gov.in",
+        "ils.res.in",
+        "instagram.com",
+        "onlinedst.gov.in",
+        "sih.gov.in",
+        "startupgrantsindia.com",
+        "tdb.gov.in"
+      ],
+      "discovery_counts": {
+        "active": 5,
+        "borderline": 3,
+        "excluded": 12
       }
     }
   ]

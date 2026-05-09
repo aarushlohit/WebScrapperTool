@@ -624,6 +624,7 @@ OUTPUT FORMAT
 =============
 
 Return STRICT VALID JSON ONLY.
+Do not generate a report, summary, commentary, or markdown. Do not use the phrase "final report".
 
 NO:
 

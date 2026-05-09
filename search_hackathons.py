@@ -39,11 +39,11 @@ from coverage_intelligence import (
     attach_consensus_to_event,
     consensus_strength,
 )
+from generate_final_cleared import build_final_cleared_file
 
 
 PROJECT_DIR = Path(__file__).resolve().parent
 OUTPUT_JSON = PROJECT_DIR / "hackathons_results.json"
-REPORT_MD = PROJECT_DIR / "REPORT_RESULTS.md"
 CACHE_DIR = PROJECT_DIR / ".opportunity_cache"
 COVERAGE_HISTORY_JSON = PROJECT_DIR / "coverage_history.json"
 
@@ -630,11 +630,6 @@ def parse_args() -> argparse.Namespace:
         "--allow-empty-output",
         action="store_true",
         help="Allow a failed/empty discovery run to overwrite an existing output file.",
-    )
-    parser.add_argument(
-        "--report-output",
-        default=str(REPORT_MD),
-        help="Markdown report output path. Defaults to REPORT_RESULTS.md. Use an empty string to disable.",
     )
     parser.add_argument(
         "--silent",
@@ -1883,6 +1878,10 @@ competitions, cybersecurity competitions, startup competitions, research
 competitions, defence challenges, and coding competitions where a brand new
 participant can still register, apply, submit, or propose on {self.current_date}.
 
+Important output rule:
+Do not write a report, summary, commentary, or markdown. Do not use phrases
+like "final report". Return JSON only.
+
 High-recall mode:
 - Discover broadly first, then classify. Do not collapse the output to only
   perfect-certainty candidates.
@@ -3079,7 +3078,9 @@ class NormalizationEngine:
         hackathon_title_signal = "hackathon" in title_text or "coding competition" in title_text
         if hackathon_title_signal:
             return False
-        if record.current_status == "proposal_open":
+        # If the source explicitly marks the opportunity as a proposal call,
+        # treat it as non-hackathon R&D/proposal intake.
+        if record.current_status and "proposal" in str(record.current_status).lower():
             return True
         explicit_proposal_call = any(
             phrase in combined_text
@@ -3282,7 +3283,14 @@ class NormalizationEngine:
         return None
 
     def _dedupe_key(self, record: OpportunityRecord) -> str:
+        # Prefer stable, meaningful keys in this order: canonical URL, title+deadline, title+org, normalized title
         aliases = sorted(self._dedupe_aliases(record))
+        # Make a preference order for common alias prefixes
+        preferred_prefixes = ["url:", "title_deadline:", "title_org:", "title:"]
+        for prefix in preferred_prefixes:
+            for a in aliases:
+                if a.startswith(prefix):
+                    return a
         return aliases[0] if aliases else f"title:{self._normalized_title(record.hackathon_name)}"
 
     def _dedupe_aliases(self, record: OpportunityRecord) -> set[str]:
@@ -3297,6 +3305,11 @@ class NormalizationEngine:
                 aliases.add(f"title:{value}")
                 if deadline:
                     aliases.add(f"title_deadline:{value}:{deadline}")
+                # Add a simplified title alias that strips common category tokens
+                simple = re.sub(r"category\s*\d+|category-\d+|school|open to all|india", "", value)
+                simple = re.sub(r"\s+", " ", simple).strip()
+                if simple:
+                    aliases.add(f"title_simple:{simple}")
         if organizer and deadline and theme:
             aliases.add(f"org_deadline_theme:{organizer}:{deadline}:{theme}")
         if title and organizer:
@@ -3373,7 +3386,6 @@ class OpportunityIntelligenceEngine:
     def __init__(self, args: argparse.Namespace) -> None:
         self.args = args
         self.silent = bool(getattr(args, "silent", False))
-        self.report_output = Path(args.report_output) if getattr(args, "report_output", "") else None
         self.models = resolve_models(args)
         self.current_date = iso_date(args.current_date)
         if not self.current_date:
@@ -3435,96 +3447,11 @@ class OpportunityIntelligenceEngine:
         elif event == "fatal_error":
             self.dashboard.note(f"fatal error on {task_name}")
 
-    def _write_report(self, payload: dict[str, Any]) -> None:
-        if not self.report_output:
-            return
-
-        metadata = payload.get("metadata", {})
-        report_sections = [
-            ("fully_verified_opportunities", "Fully Verified"),
-            ("likely_active_opportunities", "Likely Active"),
-            ("borderline_opportunities", "Borderline"),
-        ]
-        total_reported_opportunities = (
-            metadata.get("total_active_hackathons", 0)
-            + metadata.get("total_borderline_opportunities", 0)
-        )
-
-        lines: list[str] = [
-            "# HACKATHON DISCOVERY REPORT",
-            "",
-            f"**Generated:** {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')} UTC  ",
-            f"**Search Date:** {metadata.get('search_date', 'N/A')}  ",
-            f"**Validation Date:** {metadata.get('current_date_used_for_validation', 'N/A')}  ",
-            "",
-            "---",
-            "",
-            "## Executive Summary",
-            "",
-            "| Category | Count | Status |",
-            "|----------|-------|--------|",
-            f"| Active Hackathons | {metadata.get('total_active_hackathons', 0)} | Ready to Apply |",
-            f"| Fully Verified | {metadata.get('total_fully_verified', 0)} | High Confidence |",
-            f"| Likely Active | {metadata.get('total_likely_active', 0)} | Needs Review |",
-            f"| Borderline | {metadata.get('total_borderline_opportunities', 0)} | Check Details |",
-            f"| Total Opportunities | {total_reported_opportunities} | - |",
-            f"| Sources Scanned | {len(metadata.get('sources_scanned', []))} | Coverage |",
-            f"| Domains Crawled | {metadata.get('domains_scanned_count', 0)} | Breadth |",
-            "",
-        ]
-
-        for section_key, section_title in report_sections:
-            items = [item for item in ensure_list(payload.get(section_key)) if isinstance(item, dict)]
-            if not items:
-                continue
-            lines.extend([f"## {section_title} ({len(items)})", ""])
-            for index, item in enumerate(items, 1):
-                name = item.get('hackathon_name') or item.get('full_name') or 'Unnamed opportunity'
-                org = item.get('hosting_organization') or item.get('ministry') or 'N/A'
-                domain = item.get('domain') or 'N/A'
-                status = item.get('current_status') or item.get('verification_state') or 'unknown'
-                deadline = item.get('deadline') or item.get('application_deadline') or item.get('proposal_deadline') or 'N/A'
-                confidence = item.get('confidence_score')
-                source_url = item.get('registration_url') or item.get('source_url') or item.get('official_website') or '#'
-                tier = item.get('classification_tier') or item.get('tier_reason') or item.get('borderline_reason') or 'n/a'
-                lines.extend([
-                    f"### {index}. {name}",
-                    "",
-                    f"- Organization: {org}",
-                    f"- Domain: {domain}",
-                    f"- Status: {status}",
-                    f"- Deadline: {deadline}",
-                    f"- Confidence: {confidence if confidence is not None else 'N/A'}",
-                    f"- Source: [{source_url}]({source_url})",
-                    f"- Classification: {tier}",
-                    "",
-                ])
-
-        lines.extend([
-            "---",
-            "",
-            "## Key Statistics",
-            "",
-            f"- Total Candidates Discovered: {metadata.get('total_candidates_discovered', 0)}",
-            f"- Total Sources Scanned: {len(metadata.get('sources_scanned', []))}",
-            f"- Unique Domains: {metadata.get('domains_scanned_count', 0)}",
-            f"- Coverage Confidence: {metadata.get('coverage_confidence', 0):.1%}",
-            f"- Coverage Status: {metadata.get('coverage_status', 'Unknown')}",
-            "",
-            "## Notes",
-            "",
-            "- Archived opportunities are intentionally omitted from this report.",
-            "- Report is generated automatically after each successful export.",
-            "",
-        ])
-
-        atomic_write_text(self.report_output, "\n".join(lines))
-
     def run(self) -> dict[str, Any] | None:
         if self.args.validate_existing:
             with self._typing("thinking", f"validating existing JSON: {self.args.validate_existing}"):
                 payload = read_json_file(Path(self.args.validate_existing))
-            with self._typing("hashing", "normalizing payloads into final report"):
+            with self._typing("hashing", "normalizing payloads into final JSON"):
                 final_payload = self.normalizer.normalize_payloads([payload])
             saturation_tracker = SearchSaturationTracker()
             queries = final_payload.get("metadata", {}).get("search_queries_used", [])
@@ -3536,7 +3463,7 @@ class OpportunityIntelligenceEngine:
             )
             final_payload["metadata"]["models_attempted"] = self.models
             self._attach_coverage_analysis(final_payload, [], [payload], [], saturation_tracker)
-            with self._typing("thinking", "exporting validated JSON and report"):
+            with self._typing("thinking", "exporting validated JSON"):
                 if self._export(final_payload):
                     self.coverage_engine.persist_history(final_payload)
             return final_payload
@@ -3682,7 +3609,7 @@ class OpportunityIntelligenceEngine:
                 self._tui("completed", "stopping early due to low novelty saturation")
                 break
 
-        with self._typing("hashing", "normalizing payloads into final report"):
+        with self._typing("hashing", "normalizing payloads into final JSON"):
             final_payload = self.normalizer.normalize_payloads(payloads)
         final_payload["metadata"]["models_attempted"] = self.models
         final_payload["metadata"]["discovery_tasks_requested"] = [task.name for task in tasks]
@@ -3707,7 +3634,7 @@ class OpportunityIntelligenceEngine:
             for artifact in all_artifacts
         ]
         self._attach_coverage_analysis(final_payload, tasks, payloads, all_artifacts, saturation_tracker)
-        with self._typing("thinking", "exporting final JSON and report"):
+        with self._typing("thinking", "exporting final JSON"):
             if self._export(final_payload):
                 self.coverage_engine.persist_history(final_payload)
         self.checkpoints.save_run_summary(final_payload["metadata"])
@@ -3819,7 +3746,7 @@ class OpportunityIntelligenceEngine:
                 print("  use --allow-empty-output to replace it with an empty result")
             return False
         atomic_write_json(output_path, payload)
-        self._write_report(payload)
+        self._write_final_cleared(output_path)
         if not self.silent:
             print("\ncompleted... exported deterministic JSON")
             print(f"  path: {output_path}")
@@ -3830,9 +3757,24 @@ class OpportunityIntelligenceEngine:
             print(f"  excluded: {payload['metadata']['total_excluded']}")
             print(f"  coverage_confidence: {payload['metadata'].get('coverage_confidence', 'n/a')}")
             print(f"  coverage_status: {payload['metadata'].get('coverage_status', 'n/a')}")
-            if self.report_output:
-                print(f"  report: {self.report_output}")
         return True
+
+    def _write_final_cleared(self, source_path: Path) -> None:
+        final_path = PROJECT_DIR / "hackathons_final_cleared.json"
+        try:
+            result = build_final_cleared_file(source_path, final_path)
+        except (OSError, json.JSONDecodeError, FileNotFoundError) as exc:
+            if not self.silent:
+                print(f"  final_clear: skipped ({exc})")
+            return
+
+        stats = result["stats"]
+        if not self.silent:
+            print(f"  final_clear: {final_path}")
+            print(f"    kept: {stats.kept_records}")
+            print(f"    removed_proposal_rnd: {stats.removed_proposal_rnd}")
+            print(f"    removed_startup: {stats.removed_startup}")
+            print(f"    removed_duplicate: {stats.removed_duplicate}")
 
 
 def main() -> int:

@@ -1,0 +1,223 @@
+{
+  "candidates": [
+    {
+      "event_type": "research_competition",
+      "hackathon_name": "D.E.S.I.G.N for BioE3 Challenge",
+      "full_name": "D.E.S.I.G.N for BioE3 Challenge - Empowering Youth to Solve Critical Issues of their TIMES",
+      "current_status": "submission_open",
+      "registration_url": "https://innovateindia.mygov.in/bioe3/",
+      "submission_url": "https://innovateindia.mygov.in/bioe3/",
+      "official_website": "https://www.mygov.in/",
+      "official_event_page": "https://innovateindia.mygov.in/bioe3/",
+      "source_url": "https://www.mygov.in/",
+      "hosting_organization": "MyGov, Department of Biotechnology",
+      "ministry": "Ministry of Science and Technology",
+      "institution_type": "Central Government",
+      "platform": "MyGov Innovate India",
+      "domain": "biotechnology",
+      "theme": "BioE3 biotechnology innovation for youth",
+      "focus_areas": ["biotechnology", "biomanufacturing", "sustainable solutions", "BioE3 policy"],
+      "deadline": "2026-05-20",
+      "registration_close_date": "2026-05-20",
+      "submission_close_date": "2026-05-20",
+      "application_deadline": null,
+      "proposal_deadline": null,
+      "eligibility_criteria": {
+        "summary": "Young students and researchers in India working on biotechnological solutions"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Participation in BioE3 innovation program"
+      },
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Submission Open", "BioE3 Challenge", "participate"],
+        "deadline_verified": true
+      },
+      "confidence_score": 0.75,
+      "classification_tier": "likely_active",
+      "admin_review_recommended": false,
+      "human_verification_needed": true,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "Bharat Startup Grand Challenge 2026",
+      "full_name": "Bharat Startup Grand Challenge (BSGC) 2026",
+      "current_status": "application_open",
+      "registration_url": "https://www.startupindia.gov.in/content/sih/en/bharat-startup-grand-challenge.html",
+      "submission_url": null,
+      "official_website": "https://www.startupindia.gov.in/",
+      "official_event_page": "https://www.startupindia.gov.in/content/sih/en/bharat-startup-grand-challenge.html",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/bharat-startup-grand-challenge.html",
+      "hosting_organization": "Startup India, DPIIT",
+      "ministry": "Ministry of Commerce and Industry",
+      "institution_type": "Central Government",
+      "platform": "Startup India Portal",
+      "domain": "startup",
+      "theme": "Solving real-world challenges across multiple sectors",
+      "focus_areas": ["Agriculture", "Electric Mobility", "FinTech", "Healthcare", "Defence", "Manufacturing", "Social Impact"],
+      "deadline": null,
+      "registration_close_date": null,
+      "submission_close_date": null,
+      "application_deadline": null,
+      "proposal_deadline": null,
+      "eligibility_criteria": {
+        "summary": "DPIIT-recognized startups working on solutions aligned with challenge statements"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Grants up to INR 5 lakhs, mentorship, incubation support, pan-India visibility"
+      },
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Ongoing Challenges", "Bharat Startup Grand Challenge", "no participation fee"],
+        "deadline_verified": false
+      },
+      "confidence_score": 0.7,
+      "classification_tier": "likely_active",
+      "admin_review_recommended": true,
+      "human_verification_needed": true,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "National Startup Awards 5.0",
+      "full_name": "National Startup Awards 5.0 (NSA 5.0)",
+      "current_status": "application_open",
+      "registration_url": "https://www.startupindia.gov.in/content/sih/en/nsa2025.html",
+      "submission_url": null,
+      "official_website": "https://www.startupindia.gov.in/",
+      "official_event_page": "https://www.startupindia.gov.in/content/sih/en/nsa2025.html",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/ams-application/application-listing.html",
+      "hosting_organization": "Startup India, DPIIT",
+      "ministry": "Ministry of Commerce and Industry",
+      "institution_type": "Central Government",
+      "platform": "Startup India Portal",
+      "domain": "startup",
+      "theme": "Recognizing outstanding startups driving measurable social impact",
+      "focus_areas": ["20+ Categories across various sectors"],
+      "deadline": null,
+      "registration_close_date": null,
+      "submission_close_date": null,
+      "application_deadline": null,
+      "proposal_deadline": null,
+      "eligibility_criteria": {
+        "summary": "DPIIT-recognized startups with innovative solutions and measurable impact"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Cash Prize of INR 10 Lakhs, handholding support, mentorship opportunities"
+      },
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Applications for National Startup Awards 5.0 are now open", "APPLY NOW"],
+        "deadline_verified": false
+      },
+      "confidence_score": 0.75,
+      "classification_tier": "likely_active",
+      "admin_review_recommended": false,
+      "human_verification_needed": true,
+      "blue_tick_eligible": true
+    }
+  ],
+  "excluded": [
+    {
+      "name": "AIM-ICDK Water Challenge 6.0",
+      "source_url": "https://aim.gov.in/ICDK-water-innovation-challenge-6.php",
+      "reason": "closed"
+    },
+    {
+      "name": "Youth Co:Lab National Innovation Challenge 2026",
+      "source_url": "https://aim.gov.in/youthcolab.php",
+      "reason": "closed"
+    },
+    {
+      "name": "Hackathon on Eco-alternatives to Single Use Plastics",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/ams-application/application-listing.html",
+      "reason": "closed"
+    },
+    {
+      "name": "iCreate Drone Challenge",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/ams-application/application-listing.html",
+      "reason": "closed"
+    },
+    {
+      "name": "Bharat Livelihood Challenge",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/ams-application/application-listing.html",
+      "reason": "closed"
+    },
+    {
+      "name": "ATL, AIC, ACIC Application Portals",
+      "source_url": "https://aim.gov.in/",
+      "reason": "not_government"
+    },
+    {
+      "name": "Corporate Mitra Logo Design Contest",
+      "source_url": "https://www.mygov.in/task/corporate-mitra-logo-design-contest",
+      "reason": "not_technical"
+    },
+    {
+      "name": "Logo Design Competition for Urban Challenge Fund",
+      "source_url": "https://www.mygov.in/task/logo-design-competition-urban-challenge-fund",
+      "reason": "not_technical"
+    },
+    {
+      "name": "Drop the Oil Challenge",
+      "source_url": "https://www.mygov.in/task/drop-oil-challenge-oil-free-cooking-challenge-healthier-india",
+      "reason": "not_technical"
+    },
+    {
+      "name": "Akashvani at 90 Jingle Contest",
+      "source_url": "https://www.mygov.in/task/akashvani-90-national-channel-jingle-contest",
+      "reason": "not_technical"
+    },
+    {
+      "name": "Various MyGov Quizzes",
+      "source_url": "https://www.mygov.in/",
+      "reason": "not_technical"
+    }
+  ],
+  "sources_scanned": [
+    "https://www.startupindia.gov.in/",
+    "https://aim.gov.in/",
+    "https://www.birac.nic.in/",
+    "https://www.mygov.in/"
+  ],
+  "search_queries_used": [
+    "site:startupindia.gov.in challenge application open deadline 2026",
+    "Startup India grand challenge registrations open 2026",
+    "site:aim.gov.in innovation challenge registration open 2026",
+    "site:startupmission.kerala.gov.in hackathon challenge open",
+    "site:startuptn.in challenge applications open startup 2026",
+    "site:npci.org.in hackathon challenge registration open 2026",
+    "site:msme.gov.in innovation challenge registration open 2026"
+  ]
+}

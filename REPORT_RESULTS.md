@@ -1,8 +1,8 @@
 # HACKATHON DISCOVERY REPORT
 
-**Generated:** 2026-05-09 17:21:04 UTC  
-**Search Date:** 2026-05-09  
-**Validation Date:** 2026-05-09  
+**Generated:** 2026-05-09 19:52:06 UTC  
+**Search Date:** 2026-05-10  
+**Validation Date:** 2026-05-10  
 
 ---
 
@@ -10,109 +10,109 @@
 
 | Category | Count | Status |
 |----------|-------|--------|
-| Active Hackathons | 6 | Ready to Apply |
-| Fully Verified | 4 | High Confidence |
-| Likely Active | 2 | Needs Review |
-| Borderline | 2 | Check Details |
+| Active Hackathons | 3 | Ready to Apply |
+| Fully Verified | 2 | High Confidence |
+| Likely Active | 1 | Needs Review |
+| Borderline | 5 | Check Details |
 | Total Opportunities | 8 | - |
-| Sources Scanned | 134 | Coverage |
-| Domains Crawled | 50 | Breadth |
+| Sources Scanned | 97 | Coverage |
+| Domains Crawled | 27 | Breadth |
 
-## Fully Verified (4)
+## Fully Verified (2)
 
-### 1. CDSCO-IndiaAI Health Innovation Acceleration Hackathon
+### 1. iDEX Open Challenge
 
-- Organization: IndiaAI (MeitY) in collaboration with CDSCO
-- Domain: Healthcare / HealthTech
+- Organization: Defence Innovation Organisation (DIO), Ministry of Defence
+- Domain: Defence & Aerospace Technology
+- Status: application_open
+- Deadline: 2026-06-30
+- Confidence: 99
+- Source: [https://idex.gov.in/user/form/open_challenge_19](https://idex.gov.in/user/form/open_challenge_19)
+- Classification: fully_verified
+
+### 2. CDSCO-IndiaAI Health Innovation Acceleration Hackathon
+
+- Organization: IndiaAI (MeitY) in collaboration with Central Drugs Standard Control Organisation (CDSCO)
+- Domain: Healthcare AI, RegTech
 - Status: submission_open
 - Deadline: 2026-05-10
-- Confidence: 90
+- Confidence: 92
 - Source: [https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1](https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1)
 - Classification: fully_verified
 
-### 2. India Pitch Pilot Scale Startup Challenge
-
-- Organization: Ministry of Housing and Urban Affairs
-- Domain: Urban Technology
-- Status: submission_open
-- Deadline: 2026-12-31
-- Confidence: 90
-- Source: [https://innovateindia.mygov.in/](https://innovateindia.mygov.in/)
-- Classification: fully_verified
-
-### 3. Online Challenge for Developing a Predictive Model in GST
-
-- Organization: Ministry of Finance / GST Council / NIC
-- Domain: Tax / Data Science
-- Status: submission_open
-- Deadline: 2026-05-17
-- Confidence: 90
-- Source: [https://event.data.gov.in/](https://event.data.gov.in/)
-- Classification: fully_verified
-
-### 4. iDEX Open Challenge
-
-- Organization: iDEX - Innovation for Defence Excellence, Ministry of Defence
-- Domain: Defence & Aerospace
-- Status: application_open
-- Deadline: 2026-06-30
-- Confidence: 90
-- Source: [https://idex.gov.in/d/form/open_challenge](https://idex.gov.in/d/form/open_challenge)
-- Classification: fully_verified
-
-## Likely Active (2)
+## Likely Active (1)
 
 ### 1. Bharat Startup Grand Challenge
 
-- Organization: DPIIT, Startup India
-- Domain: Innovation
-- Status: application_open
-- Deadline: N/A
-- Confidence: 89
-- Source: [https://www.startupgrantsindia.com/bharat-startup-grand-challenge-2026-dpiit-startup-india-351](https://www.startupgrantsindia.com/bharat-startup-grand-challenge-2026-dpiit-startup-india-351)
-- Classification: likely_active
-
-### 2. D.E.S.I.G.N. for BioE3 Challenge Category 2 (Open to All)
-
-- Organization: Department of Biotechnology (DBT) via BRIC-ILS
-- Domain: Biotechnology
+- Organization: Department for Promotion of Industry and Internal Trade (DPIIT), Startup India
+- Domain: Cross-sectoral startup innovation
 - Status: submission_open
 - Deadline: N/A
 - Confidence: 89
-- Source: [https://www.ils.res.in/bioe3challenge](https://www.ils.res.in/bioe3challenge)
+- Source: [https://www.startupindia.gov.in/content/sih/en/bharat-startup-grand-challenge.html](https://www.startupindia.gov.in/content/sih/en/bharat-startup-grand-challenge.html)
 - Classification: likely_active
 
-## Borderline (2)
+## Borderline (5)
 
-### 1. ISRO START 2026
+### 1. Tribal Business Conclave 2026 — Open Grand Challenge
+
+- Organization: Ministry of Tribal Affairs, Government of India
+- Domain: Healthcare, Education, Livelihoods for Tribal Communities
+- Status: application_open
+- Deadline: 2026-06-15
+- Confidence: 69
+- Source: [https://www.startupindia.gov.in/content/sih/en/ams-application/challenge.html?applicationId=69885730e4b0a68b6c7681e3](https://www.startupindia.gov.in/content/sih/en/ams-application/challenge.html?applicationId=69885730e4b0a68b6c7681e3)
+- Classification: borderline
+
+### 2. PFRDA Hackathon 2026
+
+- Organization: Pension Fund Regulatory and Development Authority (PFRDA)
+- Domain: FinTech, Pension Technology
+- Status: application_open
+- Deadline: N/A
+- Confidence: 55
+- Source: [https://app.apixplatform.com/h1/pfrda2026](https://app.apixplatform.com/h1/pfrda2026)
+- Classification: borderline
+
+### 3. ATAL Faculty Development Programme 2026-27
 
 - Organization: N/A
 - Domain: N/A
 - Status: unknown
 - Deadline: N/A
-- Confidence: 69
-- Source: [https://www.isro.gov.in/START2026.html](https://www.isro.gov.in/START2026.html)
+- Confidence: 40
+- Source: [https://www.aicte-india.org/](https://www.aicte-india.org/)
 - Classification: borderline
 
-### 2. Tribal Business Conclave 2026 - Open Grand Challenge
+### 4. Drop the Oil Challenge (MyGov)
 
-- Organization: Ministry of Tribal Affairs, Government of India
-- Domain: Social Innovation
-- Status: application_open
-- Deadline: 2026-06-15
-- Confidence: 69
-- Source: [https://www.startupgrantsindia.com/competitions/tribal-business-conclave-2026-open-grand-challenge](https://www.startupgrantsindia.com/competitions/tribal-business-conclave-2026-open-grand-challenge)
+- Organization: N/A
+- Domain: N/A
+- Status: unknown
+- Deadline: N/A
+- Confidence: 40
+- Source: [https://www.mygov.in/task/drop-oil-challenge-oil-free-cooking-challenge-healthier-india](https://www.mygov.in/task/drop-oil-challenge-oil-free-cooking-challenge-healthier-india)
+- Classification: borderline
+
+### 5. Tagline Competition for Online Gaming Authority of India
+
+- Organization: N/A
+- Domain: N/A
+- Status: unknown
+- Deadline: N/A
+- Confidence: 40
+- Source: [https://www.mygov.in/task/tagline-competition-online-gaming-authority-india](https://www.mygov.in/task/tagline-competition-online-gaming-authority-india)
 - Classification: borderline
 
 ---
 
 ## Key Statistics
 
-- Total Candidates Discovered: 16
-- Total Sources Scanned: 134
-- Unique Domains: 50
-- Coverage Confidence: 88.2%
-- Coverage Status: high_confidence
+- Total Candidates Discovered: 84
+- Total Sources Scanned: 97
+- Unique Domains: 27
+- Coverage Confidence: 50.9%
+- Coverage Status: moderate_confidence
 
 ## Notes
 

@@ -1,0 +1,419 @@
+{
+  "candidates": [
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "iDEX Open Challenge",
+      "full_name": "iDEX Open Challenge (Innovations for Defence Excellence)",
+      "current_status": "proposal_open",
+      "registration_url": "https://idex.gov.in/d/form/open_challenge",
+      "submission_url": "https://idex.gov.in/d/form/open_challenge",
+      "official_website": "https://idex.gov.in",
+      "official_event_page": "https://idex.gov.in/disc-category/18",
+      "source_url": "https://idex.gov.in/challenges",
+      "hosting_organization": "Defence Innovation Organisation (DIO), Department of Defence Production",
+      "ministry": "Ministry of Defence",
+      "institution_type": "Central Government",
+      "platform": "iDEX Portal",
+      "domain": "Defence and Aerospace",
+      "theme": "Defence innovation for startups/MSMEs/innovators",
+      "focus_areas": ["autonomous systems", "intelligent machines", "advanced materials", "predictive algorithms", "aerospace", "defence technology", "AI/ML", "cybersecurity", "quantum technologies", "sensors", "drones", "robotics"],
+      "deadline": "2026-06-30",
+      "registration_close_date": "2026-06-30",
+      "submission_close_date": "2026-06-30",
+      "application_deadline": "2026-06-30",
+      "proposal_deadline": "2026-06-30",
+      "eligibility_criteria": {"summary": "Indian startups (DPIIT-recognized), MSMEs, and individual innovators. Research/academic institutions may apply as individual innovators."},
+      "team_size": {"minimum": 1, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Up to Rs. 1.5 crore grant per selected proposal via SPARK framework. Access to accelerator programs, testing facilities, and procurement pathway."},
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["CHALLENGE OPEN", "APPLY NOW FOR OPEN CHALLENGE", "Last Date - 30 Jun, 2026"],
+        "deadline_verified": true
+      },
+      "confidence_score": 95,
+      "classification_tier": "fully_verified",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "research_competition",
+      "hackathon_name": "DBT-BIRAC Bio-AI Joint Call for Proposals",
+      "full_name": "DBT-BIRAC Joint Call for Proposals on 'Bio AI' for Fostering High Performance Biomanufacturing under BioE3 Policy",
+      "current_status": "proposal_open",
+      "registration_url": "https://birac.nic.in/cfp.php",
+      "submission_url": null,
+      "official_website": "https://birac.nic.in",
+      "official_event_page": "https://birac.nic.in/cfp_view.php?id=25&scheme_type=3",
+      "source_url": "https://birac.nic.in/cfp.php",
+      "hosting_organization": "Biotechnology Industry Research Assistance Council (BIRAC) and Department of Biotechnology (DBT)",
+      "ministry": "Ministry of Science and Technology",
+      "institution_type": "Central Government",
+      "platform": "BIRAC Portal",
+      "domain": "Biotechnology / Artificial Intelligence",
+      "theme": "AI-integrated biomanufacturing under BioE3 Policy",
+      "focus_areas": ["Bio-AI", "biomanufacturing", "machine learning", "biomolecular design", "synthetic biology", "sustainable agriculture", "Ayurveda bioinformatics", "genome diagnostics", "multi-omics", "computational biology"],
+      "deadline": "2026-06-30",
+      "registration_close_date": null,
+      "submission_close_date": "2026-06-30",
+      "application_deadline": null,
+      "proposal_deadline": "2026-06-30",
+      "eligibility_criteria": {"summary": "Indian academia, R&D institutions, universities, companies/startups registered in India. Multi-disciplinary teams combining biological sciences with AI/ML, data science, and computation. Academia supported by DBT, industry by BIRAC."},
+      "team_size": {"minimum": null, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Competitive grant funding up to Rs. 25 crore for multi-institution, multi-disciplinary Bio-AI biomanufacturing projects. Rolling evaluation."},
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["DBT-BIRAC Joint Call for Proposals on 'Bio AI'", "Last Date :30th June,2026", "Current Calls"],
+        "deadline_verified": true
+      },
+      "confidence_score": 95,
+      "classification_tier": "fully_verified",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "research_competition",
+      "hackathon_name": "India-Finland Joint Innovation Call 2026",
+      "full_name": "India-Finland Joint Innovation Call 2026 (DST-TDB / Business Finland)",
+      "current_status": "proposal_open",
+      "registration_url": "https://tdb.gov.in/call-for-proposal",
+      "submission_url": null,
+      "official_website": "https://tdb.gov.in",
+      "official_event_page": "https://tdb.gov.in/launch-india-finland-joint-innovation-call-2026",
+      "source_url": "https://dst.gov.in/callforproposals-0",
+      "hosting_organization": "Technology Development Board (TDB) / Department of Science and Technology (DST)",
+      "ministry": "Ministry of Science and Technology",
+      "institution_type": "Central Government",
+      "platform": "TDB Portal",
+      "domain": "Innovation / R&D Commercialization",
+      "theme": "India-Finland bilateral innovation for industry-driven R&D",
+      "focus_areas": ["industrial R&D", "innovation commercialization", "technology collaboration", "deep tech", "AI", "clean technology", "digital health", "manufacturing"],
+      "deadline": "2026-08-28",
+      "registration_close_date": null,
+      "submission_close_date": "2026-08-28",
+      "application_deadline": null,
+      "proposal_deadline": "2026-08-28",
+      "eligibility_criteria": {"summary": "Indian company having requisite understanding and capability to undertake R&D activities. Finnish side must apply through Business Finland. Joint applications required."},
+      "team_size": {"minimum": null, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "DST will support up to INR 2.5 crore per project or 50% of Indian project cost (whichever is lower) as grant-in-aid for max 24 months. Reimbursement basis."},
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["India-Finland Joint Innovation Call 2026", "deadline for submission of application is 28.08.2026", "Active Calls"],
+        "deadline_verified": true
+      },
+      "confidence_score": 90,
+      "classification_tier": "fully_verified",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "hackathon",
+      "hackathon_name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
+      "full_name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
+      "current_status": "submission_open",
+      "registration_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "submission_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "official_website": "https://aikosh.indiaai.gov.in",
+      "official_event_page": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
+      "hosting_organization": "IndiaAI (MeitY) in collaboration with CDSCO",
+      "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+      "institution_type": "Central Government",
+      "platform": "AIKosh / IndiaAI",
+      "domain": "Healthcare / AI / Regulatory Technology",
+      "theme": "AI-driven regulatory workflow automation for drug/medical device approvals",
+      "focus_areas": ["AI/ML", "NLP", "data anonymization", "document summarization", "regulatory compliance", "healthtech", "privacy engineering", "workflow automation", "PHI/PII detection", "DPDP Act 2023 compliance"],
+      "deadline": "2026-05-10",
+      "registration_close_date": "2026-05-10",
+      "submission_close_date": "2026-05-10",
+      "application_deadline": "2026-05-10",
+      "proposal_deadline": null,
+      "eligibility_criteria": {"summary": "Indian companies registered under Companies Act 2013 (51%+ Indian shareholding), DPIIT-recognized startups. Must demonstrate proprietary solution with verifiable documentation."},
+      "team_size": {"minimum": null, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Prize pool Rs. 85 Lakhs. 1st: Rs. 10L, 2nd: Rs. 7L, 3rd: Rs. 3L, All-Women Team: Rs. 5L (up to 3 teams). Winner may secure 1-year work contract up to Rs. 50L for solution deployment."},
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Application Deadline: 10 May 2026", "Application Open: 19 Mar 2026", "Submit Proposal"],
+        "deadline_verified": true
+      },
+      "confidence_score": 75,
+      "classification_tier": "likely_active",
+      "admin_review_recommended": true,
+      "human_verification_needed": true,
+      "blue_tick_eligible": false
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "D.E.S.I.G.N for BioE3 Challenge (Category 2)",
+      "full_name": "D.E.S.I.G.N for BioE3 Challenge - Empowering Youth to Solve Critical Issues of their TIMES (Category 2: Open to all Indian Nationals)",
+      "current_status": "submission_open",
+      "registration_url": "https://www.bric.nic.in/bioe3challenge/",
+      "submission_url": "https://innovateindia.mygov.in/bioe3/",
+      "official_website": "https://birac.nic.in",
+      "official_event_page": "https://innovateindia.mygov.in/bioe3/",
+      "source_url": "https://innovateindia.mygov.in/bioe3/",
+      "hosting_organization": "Department of Biotechnology (DBT) / BIRAC",
+      "ministry": "Ministry of Science and Technology",
+      "institution_type": "Central Government",
+      "platform": "MyGov Innovate India",
+      "domain": "Biotechnology",
+      "theme": "Youth-driven biotechnological solutions under BioE3 Policy",
+      "focus_areas": ["biotechnology", "synthetic biology", "bio-based chemicals", "smart proteins", "climate-resilient agriculture", "carbon capture", "marine research", "space research", "biomanufacturing"],
+      "deadline": "2026-10-20",
+      "registration_close_date": null,
+      "submission_close_date": null,
+      "application_deadline": null,
+      "proposal_deadline": null,
+      "eligibility_criteria": {"summary": "Category 2: Open to all Indian nationals (any age). Monthly cycles 1st-20th of each month until October 2026. Submit a 1500-word idea."},
+      "team_size": {"minimum": 1, "maximum": 5},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Top 10 solutions each month receive Rs. 1 Lakh cash prize. Up to 100 grants of up to Rs. 25 Lakh each for implementation round."},
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["D.E.S.I.G.N for BioE3 Challenge", "Category 2: Open to all Indian Nationals", "monthly cycles starting 1st November 2025"],
+        "deadline_verified": true
+      },
+      "confidence_score": 65,
+      "classification_tier": "borderline",
+      "admin_review_recommended": true,
+      "human_verification_needed": false,
+      "blue_tick_eligible": false
+    },
+    {
+      "event_type": "research_competition",
+      "hackathon_name": "TDB RDI Fund Open Call",
+      "full_name": "Technology Development Board Research Development and Innovation (RDI) Fund Open Call under ANRF",
+      "current_status": "proposal_open",
+      "registration_url": "https://tdb.gov.in/rdi_slfm",
+      "submission_url": null,
+      "official_website": "https://tdb.gov.in",
+      "official_event_page": "https://tdb.gov.in/rdi_slfm",
+      "source_url": "https://tdb.gov.in/rdi_slfm",
+      "hosting_organization": "Technology Development Board (TDB), Department of Science and Technology",
+      "ministry": "Ministry of Science and Technology",
+      "institution_type": "Central Government",
+      "platform": "TDB Portal / ANRF RDIF",
+      "domain": "Technology Commercialization / Deep Tech R&D",
+      "theme": "Commercialization of indigenous technologies TRL 4+",
+      "focus_areas": ["AI/ML", "energy security", "quantum computing", "robotics", "space technology", "deep tech", "semiconductor", "climate tech", "manufacturing", "healthcare technology"],
+      "deadline": null,
+      "registration_close_date": null,
+      "submission_close_date": null,
+      "application_deadline": null,
+      "proposal_deadline": null,
+      "eligibility_criteria": {"summary": "Indian legal entities (Companies Act 2013, Partnership Act 1932, LLP Act 2008) with technology at TRL 4+. Maximum 50% project funding. Collateral-free loans at 2-4% interest with 12-15 year tenure."},
+      "team_size": {"minimum": 1, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Up to 50% of total project cost funding. Loans at 2-4% interest. Rolling evaluation with 8-week approval timeline."},
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["first Open Call", "rolling basis", "TRL 4 and above", "RDI Fund", "Active Calls"],
+        "deadline_verified": false
+      },
+      "confidence_score": 70,
+      "classification_tier": "likely_active",
+      "admin_review_recommended": true,
+      "human_verification_needed": false,
+      "blue_tick_eligible": false
+    }
+  ],
+  "excluded": [
+    {
+      "name": "ADITI 4 Challenge (iDEX)",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed - deadline was 04 May 2026"
+    },
+    {
+      "name": "DISC 14 (Defence India Startup Challenge)",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed - deadline was 04 May 2026"
+    },
+    {
+      "name": "DRISHTI Challenges (iDEX)",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed - deadline was 04 May 2026"
+    },
+    {
+      "name": "DISC 12 Re Open IAF",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed - deadline was 09 March 2026"
+    },
+    {
+      "name": "iDEX Prime Re Open",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed - deadline was 09 March 2026"
+    },
+    {
+      "name": "PMJAY Auto Adjudication Hackathon",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/4102cc05-c02e-4ab7-84eb-ca00f0f3a842",
+      "reason": "closed - grand finale held 8-9 May 2026"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge 2026 (Ministry of AYUSH)",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fecad37f-d959-4e9c-acb6-397ddd86e6c8",
+      "reason": "closed - deadline 02 March 2026"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge 2026 (MSME - TEAMS)",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/149036ea-6d4d-496e-a844-faa3dc39e23c",
+      "reason": "closed - deadline 02 March 2026"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge 2026 (MSME - ODR)",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fd1889f2-bcd8-477b-aa36-901cc0941ed9",
+      "reason": "closed - deadline 02 March 2026"
+    },
+    {
+      "name": "IndiaAI Financial Reporting Compliance Challenge",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/b5ebae1e-73d1-4ba8-baa1-21beaabd1f6d",
+      "reason": "closed - deadline 22 February 2026"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge for Transforming Governance (multiple departments)",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/all",
+      "reason": "closed - all variants ended by 25 March 2026"
+    },
+    {
+      "name": "AI for All Challenge",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/d4fb310f-7dd5-44f4-a1f8-c850935a615c",
+      "reason": "closed - deadline 23 January 2026"
+    },
+    {
+      "name": "DRDO Dare to Dream 5.0 Innovation Contest",
+      "source_url": "https://drdo.gov.in/drdo/en/offerings/competitions-and-awards/dare-dream-50-innovation-contest",
+      "reason": "closed - deadline 31 January 2025"
+    },
+    {
+      "name": "DRDO Technology Development Fund (TDF)",
+      "source_url": "https://www.drdo.gov.in/drdo/en/offerings/schemes-and-services/startups-support",
+      "reason": "no_current_open_call - ongoing scheme, no specific open challenge found"
+    },
+    {
+      "name": "Cyber Security Grand Challenge 2.0 (MeitY)",
+      "source_url": "https://innovateindia.mygov.in/cyber-security-grand-challenge/",
+      "reason": "closed - deadline 02 April 2025"
+    },
+    {
+      "name": "ISRO IMEx-2026 (Indian Microgravity Experiments)",
+      "source_url": "https://www.isro.gov.in/IndianMicrogravityExperiments_IMEx2026.html",
+      "reason": "closed - proposals due 28 February 2026"
+    },
+    {
+      "name": "ISRO Aditya-L1 AO Second Cycle",
+      "source_url": "https://www.isro.gov.in/AdityaL1_second_cycle_AO.html",
+      "reason": "closed - proposals due 30 April 2026"
+    },
+    {
+      "name": "ISRO Robotics Challenge IRoC-U 2026",
+      "source_url": "https://www.ursc.gov.in/IRoC-U2026/contactUs.jsp",
+      "reason": "closed - qualification round submission due 02 April 2026"
+    },
+    {
+      "name": "National Space Hackathon 2026 (IIT Delhi)",
+      "source_url": "https://unstop.com/hackathons/national-space-hackathon-tryst26-iit-delhi-1641554/amp",
+      "reason": "closed - registration deadline 13 March 2026"
+    },
+    {
+      "name": "National Startup Awards 5.0",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/nsa2025.html",
+      "reason": "closed - applications closed per official page"
+    },
+    {
+      "name": "Bharat Startup Grand Challenge (BSGC)",
+      "source_url": "https://uat.startupindia.gov.in/content/sih/en/bharat-startup-grand-challenge.html",
+      "reason": "closed - individual challenges ended by January 2026"
+    },
+    {
+      "name": "GST Analytics Hackathon (GSTN)",
+      "source_url": "https://innovateindia.mygov.in/online-challenge-for-developing-a-predictive-model-in-gst/",
+      "reason": "closed - 2024 edition (12 Aug - 12 Oct 2024)"
+    },
+    {
+      "name": "BIRAC Product Commercialization Program (PCP) Fund",
+      "source_url": "https://birac.nic.in/cfp_view.php?id=117&scheme_type=29",
+      "reason": "closed - deadline 15 March 2026"
+    },
+    {
+      "name": "TDB Semiconductor Call for Proposal",
+      "source_url": "https://tdb.gov.in/call-for-proposal",
+      "reason": "closed - deadline 30 October 2025"
+    },
+    {
+      "name": "Drop the Oil Challenge (FSSAI/MyGov)",
+      "source_url": "https://www.mygov.in/task/drop-oil-challenge-oil-free-cooking-challenge-healthier-india/",
+      "reason": "not_technical - recipe competition, no technical implementation"
+    },
+    {
+      "name": "Mascot Design Contest for Eat Right India (FSSAI/MyGov)",
+      "source_url": "https://innovateindia.mygov.in/mascot-design-contest-for-eat-right-india/",
+      "reason": "not_technical - mascot/design contest, no technical implementation"
+    },
+    {
+      "name": "D.E.S.I.G.N for BioE3 Challenge Category 1 (School Students)",
+      "source_url": "https://innovateindia.mygov.in/bioe3/",
+      "reason": "not_technical - school-level video submission challenge (classes 6-12), awareness focus"
+    },
+    {
+      "name": "ISRO Bharatiya Antariksh Hackathon 2025",
+      "source_url": "https://www.isro.gov.in/BAH2025_NRSC_Hyderabad.html",
+      "reason": "closed - 2025 edition completed; 2026 not announced"
+    }
+  ],
+  "sources_scanned": [
+    "https://idex.gov.in/challenges",
+    "https://indiaai.gov.in/",
+    "https://aikosh.indiaai.gov.in/",
+    "https://aikosh.indiaai.gov.in/home/competitions/all",
+    "https://bhashini.gov.in/",
+    "https://meity.gov.in/",
+    "https://www.drdo.gov.in/",
+    "https://www.isro.gov.in/",
+    "https://innovateindia.mygov.in/",
+    "https://www.mygov.in/",
+    "https://www.startupindia.gov.in/",
+    "https://birac.nic.in/",
+    "https://birac.nic.in/cfp.php",
+    "https://tdb.gov.in/",
+    "https://dst.gov.in/",
+    "https://www.ddpmod.gov.in/offerings/innovations",
+    "https://www.ursc.gov.in/IRoC-U2026/",
+    "https://event.data.gov.in/"
+  ],
+  "search_queries_used": [
+    "site:idex.gov.in challenge open apply now 2026",
+    "iDEX challenge registration deadline open India 2026",
+    "site:aikosh.indiaai.gov.in competitions applications open IndiaAI",
+    "IndiaAI challenge hackathon application open 2026",
+    "site:bhashini.gov.in hackathon challenge registrations open",
+    "MeitY innovation challenge apply now 2026 India",
+    "site:drdo.gov.in innovation challenge registration open 2026",
+    "site:isro.gov.in hackathon challenge registration open 2026",
+    "site:mygov.in hackathon challenge registration open 2026 India",
+    "CDSCO IndiaAI Health Innovation Acceleration Hackathon registration deadline 2026",
+    "IndiaAI Financial Reporting Compliance Challenge application deadline 2026",
+    "site:startupindia.gov.in challenge open application 2026",
+    "BIRAC innovation challenge biotechnology grant 2026 India apply",
+    "ISRO hackathon challenge space technology 2026 apply",
+    "ISRO IMEx 2026 microgravity experiments proposal deadline",
+    "ISRO Aditya-L1 Announcement Opportunity second AO cycle 2026 proposal deadline",
+    "DRDO innovation challenge startup registration open 2026 India",
+    "Bharat Startup Grand Challenge 2026 application deadline India",
+    "National Startup Awards 5.0 India 2026 apply deadline",
+    "DST technology development board challenge India 2026 open application",
+    "D.E.S.I.G.N for BioE3 Challenge 2026 MyGov details biotechnology",
+    "TDB RDI Fund rolling call 2026 India application open",
+    "MyGov GST predictive model challenge 2026 submission open April May"
+  ]
+}

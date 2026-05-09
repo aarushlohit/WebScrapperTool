@@ -1,0 +1,1995 @@
+{
+  "final_cleared_hackathons": [
+    {
+      "id": "idex-open-challenge",
+      "event_type": "defence_challenge",
+      "hackathon_name": "iDEX Open Challenge",
+      "full_name": "iDEX Open Challenge",
+      "slug": "idex-open-challenge",
+      "current_status": "application_open",
+      "is_open_for_new_registration": true,
+      "is_open_for_submission": false,
+      "verification_state": "fully_verified",
+      "registration_url": "https://idex.gov.in/user/form/open_challenge_19",
+      "official_website": "https://idex.gov.in/",
+      "official_event_page": "https://idex.gov.in/disc-category/18",
+      "hosting_organization": "Defence Innovation Organisation (DIO)",
+      "co_organizers": [],
+      "ministry": "Ministry of Defence",
+      "institution_type": "Central Government",
+      "platform": "iDEX Portal",
+      "domain": "Defence and Aerospace",
+      "subdomains": [],
+      "theme": "Open Innovation for Defence",
+      "focus_areas": [
+        "Autonomous Systems",
+        "Intelligent Machines",
+        "Advanced Materials",
+        "Predictive Algorithms",
+        "Rocket Engines",
+        "Defence Technology"
+      ],
+      "problem_statements": [],
+      "sdg_alignment": [],
+      "deadline": "2026-06-30",
+      "registration_close_date": "2026-06-30",
+      "application_deadline": "2026-06-30",
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Innovators, Startups and MSMEs can engage directly with the military through iDEX Open Challenge to showcase their technologies"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Up to Rs. 1.5 crore grant, opportunity to pitch to iDEX grand jury, organized periodically throughout the year"
+      },
+      "funding_support": {},
+      "incubation_support": {},
+      "mentorship_support": {},
+      "internship_opportunities": {},
+      "procurement_or_pilot_opportunity": {},
+      "ipr_policy": {},
+      "participation_mode": [],
+      "location": {},
+      "communication_channels": {},
+      "resources": {},
+      "source_url": "https://idex.gov.in/challenges",
+      "source_validation": {
+        "source_url": "https://idex.gov.in/challenges",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "APPLY NOW FOR OPEN CHALLENGE",
+          "CHALLENGE OPEN",
+          "Last Date - 30 Jun, 2026",
+          "apply now",
+          "challenge open",
+          "register now"
+        ],
+        "closed_keywords_found": [],
+        "form_detected": true,
+        "registration_form_detected": true,
+        "auth_wall_detected": false,
+        "zombie_page_suspected": false,
+        "final_url": "https://idex.gov.in/login",
+        "validation_errors": []
+      },
+      "confidence_score": 99,
+      "confidence_reasons": [
+        "trusted official source",
+        "source accessible or live validation skipped",
+        "deadline is current or unknown",
+        "open-registration language found",
+        "form or submit affordance detected",
+        "active status normalized",
+        "official_source_active_workflow_and_deadline_confirmed"
+      ],
+      "search_metadata": {
+        "task_name": "defence-space-ai",
+        "task_category": "defence_space_ai",
+        "discovery_model": "opencode/minimax-m2.5-free",
+        "search_queries_used": [
+          "CDSCO IndiaAI Health Innovation Hackathon registration 2026 apply",
+          "India government innovation challenge hackathon open May 2026 registration",
+          "IndiaAI challenge hackathon application open 2026",
+          "iDEX challenge registration deadline open India 2026",
+          "site:aikosh.indiaai.gov.in competitions applications open IndiaAI 2026",
+          "site:idex.gov.in challenge open apply now 2026"
+        ]
+      },
+      "deduplication": {
+        "canonical_url": "https://idex.gov.in/challenges",
+        "normalized_title": "idex-open-challenge"
+      },
+      "discovery_provenance": {
+        "discovered_by_models": [
+          "minimax"
+        ],
+        "source_domains": [
+          "aicte-india.org",
+          "aikosh.indiaai.gov.in",
+          "aim.gov.in",
+          "bhashini.gov.in",
+          "birac.nic.in",
+          "drdo.gov.in",
+          "event.data.gov.in",
+          "idc.icreate.org.in",
+          "idex.gov.in",
+          "impact.indiaai.gov.in",
+          "indiaai.gov.in",
+          "innovateindia.mygov.in",
+          "isro.gov.in",
+          "meity.gov.in",
+          "mygov.in",
+          "niti.gov.in",
+          "sih.gov.in",
+          "startupindia.gov.in",
+          "startupmission.kerala.gov.in"
+        ],
+        "discovery_query_count": 7,
+        "consensus_strength": "weak"
+      },
+      "classification_tier": "fully_verified",
+      "tier_reason": "official_source_active_workflow_and_deadline_confirmed",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true,
+      "tags": [],
+      "date_searched": "2026-05-10"
+    },
+    {
+      "id": "cdsco-indiaai-health-innovation-acceleration-hackathon",
+      "event_type": "ai_challenge",
+      "hackathon_name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
+      "full_name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
+      "slug": "cdsco-indiaai-health-innovation-acceleration-hackathon",
+      "current_status": "submission_open",
+      "is_open_for_new_registration": false,
+      "is_open_for_submission": false,
+      "verification_state": "likely_active",
+      "official_website": "https://aikosh.indiaai.gov.in/",
+      "official_event_page": "https://aikosh.indiaai.gov.in/home/competitions/details/cdsco-indiaai-health-innovation-acceleration-hackathon",
+      "hosting_organization": "IndiaAI, CDSCO",
+      "co_organizers": [],
+      "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+      "institution_type": "Central Government",
+      "platform": "AIKosh",
+      "domain": "Healthcare AI",
+      "subdomains": [],
+      "theme": "AI for Drug Regulatory Innovation",
+      "focus_areas": [
+        "RegTech",
+        "HealthTech",
+        "Intelligent Document Processing",
+        "Process Automation",
+        "Clinical Trials",
+        "Drug Approvals",
+        "Data Anonymisation",
+        "Document Summarisation"
+      ],
+      "problem_statements": [],
+      "sdg_alignment": [],
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Open to innovators building AI solutions for regulatory review and decision expedited by CDSCO"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Prize Pool: Rs. 85 L"
+      },
+      "funding_support": {},
+      "incubation_support": {},
+      "mentorship_support": {},
+      "internship_opportunities": {},
+      "procurement_or_pilot_opportunity": {},
+      "ipr_policy": {},
+      "participation_mode": [],
+      "location": {},
+      "communication_channels": {},
+      "resources": {},
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/active",
+      "source_validation": {
+        "source_url": "https://aikosh.indiaai.gov.in/home/competitions/active",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": false,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "1 Day left",
+          "Active Competitions",
+          "CDSCO-IndiaAI Health Innovation Acceleration Hackathon"
+        ],
+        "closed_keywords_found": [],
+        "form_detected": false,
+        "registration_form_detected": false,
+        "auth_wall_detected": false,
+        "zombie_page_suspected": false,
+        "final_url": "https://aikosh.indiaai.gov.in/home/competitions/details/cdsco-indiaai-health-innovation-acceleration-hackathon",
+        "validation_errors": []
+      },
+      "confidence_score": 89,
+      "confidence_reasons": [
+        "trusted official source",
+        "source accessible or live validation skipped",
+        "deadline is current or unknown",
+        "open-registration language found",
+        "active status normalized",
+        "active form or apply endpoint missing",
+        "intake workflow not detected",
+        "new-user intake not fully confirmed",
+        "active_intake_workflow_not_confirmed"
+      ],
+      "search_metadata": {
+        "task_name": "defence-space-ai",
+        "task_category": "defence_space_ai",
+        "discovery_model": "opencode/minimax-m2.5-free",
+        "search_queries_used": [
+          "CDSCO IndiaAI Health Innovation Hackathon registration 2026 apply",
+          "India government innovation challenge hackathon open May 2026 registration",
+          "IndiaAI challenge hackathon application open 2026",
+          "iDEX challenge registration deadline open India 2026",
+          "site:aikosh.indiaai.gov.in competitions applications open IndiaAI 2026",
+          "site:idex.gov.in challenge open apply now 2026"
+        ]
+      },
+      "deduplication": {
+        "canonical_url": "https://aikosh.indiaai.gov.in/home/competitions/active",
+        "normalized_title": "cdsco-indiaai-health-innovation-acceleration-hackathon"
+      },
+      "discovery_provenance": {
+        "discovered_by_models": [
+          "minimax"
+        ],
+        "source_domains": [
+          "aikosh.indiaai.gov.in",
+          "bhashini.gov.in",
+          "drdo.gov.in",
+          "idex.gov.in",
+          "impact.indiaai.gov.in",
+          "indiaai.gov.in",
+          "isro.gov.in",
+          "meity.gov.in"
+        ],
+        "discovery_query_count": 6,
+        "consensus_strength": "weak"
+      },
+      "classification_tier": "likely_active",
+      "tier_reason": "active_intake_workflow_not_confirmed",
+      "admin_review_recommended": true,
+      "human_verification_needed": true,
+      "blue_tick_eligible": false,
+      "tags": [],
+      "date_searched": "2026-05-10"
+    },
+    {
+      "id": "india-ai-impact-summit-2026",
+      "event_type": "ai_challenge",
+      "hackathon_name": "India AI Impact Summit 2026 - Pre-Summit Events",
+      "full_name": "India AI Impact Summit 2026",
+      "slug": "india-ai-impact-summit-2026",
+      "current_status": "application_open",
+      "is_open_for_new_registration": false,
+      "is_open_for_submission": false,
+      "verification_state": "likely_active",
+      "registration_url": "https://impact.indiaai.gov.in/registration",
+      "official_website": "https://impact.indiaai.gov.in/",
+      "official_event_page": "https://impact.indiaai.gov.in/home/main-summit-events",
+      "hosting_organization": "IndiaAI Mission",
+      "co_organizers": [],
+      "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+      "institution_type": "Central Government",
+      "platform": "India AI Impact Summit",
+      "domain": "AI",
+      "subdomains": [],
+      "theme": "AI Impact for Humanity",
+      "focus_areas": [
+        "AI for Good",
+        "Responsible AI",
+        "AI Innovation"
+      ],
+      "problem_statements": [],
+      "sdg_alignment": [],
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Open to startups, entrepreneurs, academia, researchers, industry leaders globally"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Awards up to INR 2.50 Cr for Global Impact Challenges"
+      },
+      "funding_support": {},
+      "incubation_support": {},
+      "mentorship_support": {},
+      "internship_opportunities": {},
+      "procurement_or_pilot_opportunity": {},
+      "ipr_policy": {},
+      "participation_mode": [],
+      "location": {},
+      "communication_channels": {},
+      "resources": {},
+      "source_url": "https://impact.indiaai.gov.in/",
+      "source_validation": {
+        "source_url": "https://impact.indiaai.gov.in/",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": false,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Register Now",
+          "Venue & Date: Bharat Mandapam",
+          "last date for submission",
+          "register now"
+        ],
+        "closed_keywords_found": [],
+        "form_detected": true,
+        "registration_form_detected": true,
+        "auth_wall_detected": false,
+        "zombie_page_suspected": false,
+        "final_url": "https://impact.indiaai.gov.in/registration",
+        "validation_errors": []
+      },
+      "confidence_score": 89,
+      "confidence_reasons": [
+        "trusted official source",
+        "source accessible or live validation skipped",
+        "deadline is current or unknown",
+        "open-registration language found",
+        "form or submit affordance detected",
+        "active status normalized",
+        "new-user intake not fully confirmed",
+        "strong_official_current_cycle_evidence"
+      ],
+      "search_metadata": {
+        "task_name": "defence-space-ai",
+        "task_category": "defence_space_ai",
+        "discovery_model": "opencode/minimax-m2.5-free",
+        "search_queries_used": [
+          "CDSCO IndiaAI Health Innovation Hackathon registration 2026 apply",
+          "India government innovation challenge hackathon open May 2026 registration",
+          "IndiaAI challenge hackathon application open 2026",
+          "iDEX challenge registration deadline open India 2026",
+          "site:aikosh.indiaai.gov.in competitions applications open IndiaAI 2026",
+          "site:idex.gov.in challenge open apply now 2026"
+        ]
+      },
+      "deduplication": {
+        "canonical_url": "https://impact.indiaai.gov.in/",
+        "normalized_title": "india-ai-impact-summit-2026-pre-summit-events"
+      },
+      "discovery_provenance": {
+        "discovered_by_models": [
+          "minimax"
+        ],
+        "source_domains": [
+          "aikosh.indiaai.gov.in",
+          "bhashini.gov.in",
+          "drdo.gov.in",
+          "idex.gov.in",
+          "impact.indiaai.gov.in",
+          "indiaai.gov.in",
+          "isro.gov.in",
+          "meity.gov.in"
+        ],
+        "discovery_query_count": 6,
+        "consensus_strength": "weak"
+      },
+      "classification_tier": "likely_active",
+      "tier_reason": "strong_official_current_cycle_evidence",
+      "admin_review_recommended": true,
+      "human_verification_needed": true,
+      "blue_tick_eligible": false,
+      "tags": [],
+      "date_searched": "2026-05-10"
+    },
+    {
+      "id": "d-e-s-i-g-n-for-bioe3-challenge-empowering-youth-to-solve-critical-issues-of-their-times",
+      "event_type": "innovation_challenge",
+      "hackathon_name": "D.E.S.I.G.N for BioE3 Challenge",
+      "full_name": "D.E.S.I.G.N for BioE3 Challenge \"Empowering Youth to Solve Critical Issues of their TIMES\"",
+      "slug": "d-e-s-i-g-n-for-bioe3-challenge-empowering-youth-to-solve-critical-issues-of-their-times",
+      "current_status": "submission_open",
+      "is_open_for_new_registration": true,
+      "is_open_for_submission": true,
+      "verification_state": "likely_active",
+      "registration_url": "https://innovateindia.mygov.in/bioe3/register",
+      "submission_url": "https://innovateindia.mygov.in/bioe3/register",
+      "official_website": "https://innovateindia.mygov.in/",
+      "official_event_page": "https://innovateindia.mygov.in/bioe3",
+      "hosting_organization": "Department of Biotechnology, Government of India",
+      "co_organizers": [],
+      "ministry": "Ministry of Science and Technology",
+      "institution_type": "Central Government",
+      "platform": "MyGov Innovate India",
+      "domain": "Biotechnology",
+      "subdomains": [],
+      "theme": "BioE3 Biomanufacturing Innovation",
+      "focus_areas": [
+        "Bio-based Chemicals and Enzymes",
+        "Functional Foods and Smart Proteins",
+        "Precision Biotherapeutics",
+        "Climate-Resilient Agriculture",
+        "Carbon Capture and Utilization",
+        "Futuristic Marine and Space Research"
+      ],
+      "problem_statements": [],
+      "sdg_alignment": [],
+      "deadline": "2026-05-20",
+      "registration_close_date": "2026-05-20",
+      "submission_close_date": "2026-05-20",
+      "application_deadline": "2026-05-20",
+      "timezone": "Asia/Kolkata",
+      "eligibility_criteria": {
+        "summary": "Students of Classes VI-XII enrolled in any school or institution pan India. Teams of up to 5 members from same school. 7th application window: 1-20 May 2026."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": 5
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Top 10 winning entries receive digital Certificate of Merit signed by Hon'ble MoS for Science and Technology. 20-30 additional participants receive certificates of appreciation. Selected ideas showcased on digital platforms. Winners may access BIRAC's EYUVA/BioNEST incubation centres."
+      },
+      "funding_support": {},
+      "incubation_support": {},
+      "mentorship_support": {},
+      "internship_opportunities": {},
+      "procurement_or_pilot_opportunity": {},
+      "ipr_policy": {},
+      "participation_mode": [],
+      "location": {},
+      "communication_channels": {},
+      "resources": {},
+      "source_url": "https://innovateindia.mygov.in/bioe3",
+      "source_validation": {
+        "source_url": "https://innovateindia.mygov.in/bioe3",
+        "source_type": "official_government_portal",
+        "registration_page_verified": true,
+        "registration_page_status_code": 200,
+        "deadline_verified": true,
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "01/11/2025 - 20/05/2026",
+          "Participate Now",
+          "SUBMISSION OPEN",
+          "participate now",
+          "submission open"
+        ],
+        "closed_keywords_found": [],
+        "form_detected": true,
+        "registration_form_detected": true,
+        "auth_wall_detected": true,
+        "zombie_page_suspected": false,
+        "final_url": "https://innovateindia.mygov.in/login?action=wordpress_social_authenticate&mode=login&provider=MyGov&redirect_to=https%3A%2F%2Finnovateindia.mygov.in%2Fbioe3%2Fregister%2F",
+        "validation_errors": []
+      },
+      "confidence_score": 70,
+      "confidence_reasons": [
+        "trusted official source",
+        "source accessible or live validation skipped",
+        "deadline is current or unknown",
+        "open-registration language found",
+        "form or submit affordance detected",
+        "active status normalized",
+        "auth-wall workflow ambiguity",
+        "strong_official_current_cycle_evidence"
+      ],
+      "search_metadata": {
+        "task_name": "central-government-portals",
+        "task_category": "central_government",
+        "discovery_model": "opencode/minimax-m2.5-free",
+        "search_queries_used": [
+          "site:birac.nic.in challenge application deadline open 2026",
+          "site:innovateindia.mygov.in challenge registration open apply now 2026",
+          "site:mygov.in challenge hackathon registration open India 2026",
+          "site:sih.gov.in registration open Smart India Hackathon current",
+          "site:startupindia.gov.in challenge application deadline open 2026"
+        ]
+      },
+      "deduplication": {
+        "canonical_url": "https://innovateindia.mygov.in/bioe3",
+        "normalized_title": "d-e-s-i-g-n-for-bioe3-challenge"
+      },
+      "discovery_provenance": {
+        "discovered_by_models": [
+          "minimax"
+        ],
+        "source_domains": [
+          "aim.gov.in",
+          "birac.nic.in",
+          "event.data.gov.in",
+          "idc.icreate.org.in",
+          "idex.gov.in",
+          "indiaai.gov.in",
+          "innovateindia.mygov.in",
+          "mygov.in",
+          "niti.gov.in",
+          "sih.gov.in",
+          "startupindia.gov.in",
+          "startupmission.kerala.gov.in"
+        ],
+        "discovery_query_count": 7,
+        "consensus_strength": "weak"
+      },
+      "classification_tier": "likely_active",
+      "tier_reason": "strong_official_current_cycle_evidence",
+      "admin_review_recommended": true,
+      "human_verification_needed": true,
+      "blue_tick_eligible": false,
+      "tags": [],
+      "date_searched": "2026-05-10"
+    }
+  ],
+  "metadata": {
+    "source_file": "hackathons_results.json",
+    "total_input_records": 8,
+    "total_cleared_records": 4,
+    "removed_proposal_rnd": 0,
+    "removed_non_hackathon": 0,
+    "removed_duplicate": 0,
+    "removed_inactive": 2,
+    "removed_startup": 2,
+    "source_metadata": {
+      "search_date": "2026-05-10",
+      "current_date_used_for_validation": "2026-05-10",
+      "total_active_hackathons": 5,
+      "total_fully_verified": 1,
+      "total_likely_active": 4,
+      "total_borderline_opportunities": 3,
+      "total_archived_opportunities": 24,
+      "total_ecosystem_opportunities": 3,
+      "total_excluded": 12,
+      "classification_tiers": {
+        "fully_verified": 1,
+        "likely_active": 4,
+        "borderline": 3,
+        "archived": 24,
+        "rejected": 12
+      },
+      "recall_analysis": {
+        "useful_opportunities_exported": 8,
+        "under_discovery_risk": false,
+        "false_negative_priority": "high",
+        "tiered_review_enabled": true
+      },
+      "total_candidates_discovered": 71,
+      "sources_scanned": [
+        "https://aikosh.indiaai.gov.in/",
+        "https://aikosh.indiaai.gov.in/home/competitions/active",
+        "https://aikosh.indiaai.gov.in/home/competitions/all",
+        "https://aikosh.indiaai.gov.in/home/competitions/details/cdsco-indiaai-health-innovation-acceleration-hackathon",
+        "https://aim.gov.in/",
+        "https://aim.gov.in/youthcolab.php",
+        "https://apna.co/contests/bharat-livelihood-challenge",
+        "https://bhashini.gov.in/",
+        "https://birac.nic.in/",
+        "https://birac.nic.in/cfp.php",
+        "https://cpcb.nic.in/pp-hackathon-cpcb",
+        "https://event.data.gov.in/",
+        "https://event.data.gov.in/challenge/darpg-challenge-2024",
+        "https://event.data.gov.in/challenge/uidai-data-hackathon-2026",
+        "https://event.data.gov.in/event/gst-analytics-hackathon",
+        "https://idc.icreate.org.in/",
+        "https://idex.gov.in/",
+        "https://idex.gov.in/challenges",
+        "https://idex.gov.in/disc-category/18",
+        "https://idex.gov.in/disc-category/44",
+        "https://idex.gov.in/disc-category/45",
+        "https://idex.gov.in/disc-category/46",
+        "https://idex.gov.in/user/form/open_challenge_19",
+        "https://iedcstartupsummit.in/",
+        "https://impact.indiaai.gov.in/",
+        "https://impact.indiaai.gov.in/events/ai-by-her",
+        "https://impact.indiaai.gov.in/events/ai-for-all",
+        "https://impact.indiaai.gov.in/events/yuvai",
+        "https://impact.indiaai.gov.in/home/main-summit-events",
+        "https://impact.indiaai.gov.in/registration",
+        "https://indiaai.gov.in/",
+        "https://innovateindia.mygov.in/",
+        "https://innovateindia.mygov.in/bioe3",
+        "https://innovateindia.mygov.in/bioe3/",
+        "https://innovateindia.mygov.in/bioe3/register",
+        "https://innovateindia.mygov.in/csir-societal-platform-2024",
+        "https://innovateindia.mygov.in/csir-societal-platform-2024/",
+        "https://meity.gov.in/",
+        "https://mygov.in/",
+        "https://sih.gov.in",
+        "https://sih.gov.in/",
+        "https://startupmission.kerala.gov.in/",
+        "https://www.aicte-india.org/",
+        "https://www.birac.nic.in/",
+        "https://www.drdo.gov.in/",
+        "https://www.idex.gov.in",
+        "https://www.idex.gov.in/",
+        "https://www.idex.gov.in/challenges",
+        "https://www.idex.gov.in/disc-category/44",
+        "https://www.idex.gov.in/disc-category/45",
+        "https://www.idex.gov.in/disc-category/46",
+        "https://www.indiaai.gov.in",
+        "https://www.indiaai.gov.in/",
+        "https://www.isro.gov.in/",
+        "https://www.isro.gov.in/BAH2025_NRSC_Hyderabad.html",
+        "https://www.mygov.in",
+        "https://www.mygov.in/",
+        "https://www.mygov.in/task/drop-oil-challenge-oil-free-cooking-challenge-healthier-india",
+        "https://www.mygov.in/task/logo-design-competition-national-dental-commission",
+        "https://www.mygov.in/task/logo-design-competition-urban-challenge-fund",
+        "https://www.niti.gov.in/",
+        "https://www.sih.gov.in/",
+        "https://www.startupindia.gov.in",
+        "https://www.startupindia.gov.in/",
+        "https://www.startupindia.gov.in/content/sih/en/ams-application/application-listing.html",
+        "https://www.startupindia.gov.in/content/sih/en/bharat-startup-grand-challenge.html",
+        "https://www.startupindia.gov.in/content/sih/en/nsa-landing.html",
+        "https://www.startupindia.gov.in/content/sih/en/nsa2025.html"
+      ],
+      "domains_scanned_count": 22,
+      "search_queries_used": [
+        "CDSCO IndiaAI Health Innovation Hackathon registration 2026 apply",
+        "India government hackathon 2026 registration open",
+        "India government innovation challenge hackathon open May 2026 registration",
+        "IndiaAI challenge hackathon application open 2026",
+        "defence innovation challenge India 2026 open",
+        "iDEX challenge registration deadline open India 2026",
+        "public digital infrastructure hackathon India government open 2026",
+        "site:aicte-india.org hackathon challenge registration open 2026",
+        "site:aikosh.indiaai.gov.in competitions applications open IndiaAI 2026",
+        "site:aim.gov.in innovation challenge registration open 2026",
+        "site:birac.nic.in challenge application deadline open 2026",
+        "site:data.gov.in hackathon challenge registration deadline 2026",
+        "site:event.data.gov.in challenge hackathon registration open 2026",
+        "site:idex.gov.in challenge open 2026",
+        "site:idex.gov.in challenge open apply now 2026",
+        "site:idex.gov.in challenge registration open 2026",
+        "site:innovateindia.mygov.in challenge registration open apply now 2026",
+        "site:mygov.in challenge hackathon registration open India 2026",
+        "site:mygov.in innovation challenge open 2026",
+        "site:nha.gov.in hackathon challenge application open 2026",
+        "site:pfrda.org.in hackathon innovation challenge registration 2026",
+        "site:sih.gov.in registration open Smart India Hackathon current",
+        "site:startupindia.gov.in challenge application deadline open 2026",
+        "site:startupindia.gov.in challenge application open deadline 2026",
+        "site:startupindia.gov.in programs challenges 2026",
+        "site:startupmission.kerala.gov.in hackathon challenge open",
+        "site:uidai.gov.in data hackathon challenge open 2026"
+      ],
+      "normalization_engine": "pydantic_v2",
+      "recall_mode": "high_recall_tiered",
+      "live_validation_enabled": true,
+      "data_quality_notes": [
+        "Final JSON is regenerated deterministically by the pipeline.",
+        "Stringified JSON fields are repaired into objects.",
+        "Discovery and validation are separated; uncertain real opportunities are tiered instead of prematurely rejected.",
+        "LLM confidence is capped and recalibrated after deterministic validation.",
+        "Creative/design contests and clearly stale or closed pages remain hard-excluded.",
+        "Grant, proposal, accelerator, and R&D challenge hybrids are retained when technical implementation signals exist.",
+        "Auth walls, external registration, PDFs, and poor government portal UX reduce tier confidence but do not imply invalidity."
+      ],
+      "input_metadata": [
+        {
+          "task_name": "central-government-portals",
+          "task_category": "central_government",
+          "discovery_model": "opencode/minimax-m2.5-free"
+        },
+        {
+          "task_name": "defence-space-ai",
+          "task_category": "defence_space_ai",
+          "discovery_model": "opencode/minimax-m2.5-free"
+        },
+        {
+          "task_name": "startup-state-innovation",
+          "task_category": "startup_state_innovation",
+          "discovery_model": "opencode/minimax-m2.5-free"
+        },
+        {
+          "task_name": "govtech-data-public-infra",
+          "task_category": "govtech_data_public_infra",
+          "discovery_model": "opencode/minimax-m2.5-free"
+        },
+        {
+          "task_name": "academic-incubator-government",
+          "task_category": "academic_incubator_government",
+          "discovery_model": "opencode/minimax-m2.5-free"
+        }
+      ],
+      "models_attempted": [
+        "opencode/minimax-m2.5-free"
+      ],
+      "discovery_tasks_requested": [
+        "central-government-portals",
+        "defence-space-ai",
+        "startup-state-innovation",
+        "bio-science-research-innovation",
+        "govtech-data-public-infra",
+        "academic-incubator-government"
+      ],
+      "checkpoint_run_dir": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z",
+      "parser_diagnostics": [
+        {
+          "input_chars": 22194,
+          "candidate_blocks": 70,
+          "repair_attempts": 0,
+          "valid_blocks": 1,
+          "salvaged_candidates": 7,
+          "strategy": "container_payload",
+          "task_name": "central-government-portals"
+        },
+        {
+          "input_chars": 11719,
+          "candidate_blocks": 40,
+          "repair_attempts": 0,
+          "valid_blocks": 1,
+          "salvaged_candidates": 3,
+          "strategy": "container_payload",
+          "task_name": "defence-space-ai"
+        },
+        {
+          "input_chars": 15202,
+          "candidate_blocks": 49,
+          "repair_attempts": 0,
+          "valid_blocks": 1,
+          "salvaged_candidates": 5,
+          "strategy": "container_payload",
+          "task_name": "startup-state-innovation"
+        },
+        {
+          "input_chars": 2478,
+          "candidate_blocks": 0,
+          "repair_attempts": 0,
+          "valid_blocks": 0,
+          "salvaged_candidates": 0,
+          "strategy": "failed",
+          "task_name": "bio-science-research-innovation"
+        },
+        {
+          "input_chars": 8963,
+          "candidate_blocks": 33,
+          "repair_attempts": 0,
+          "valid_blocks": 1,
+          "salvaged_candidates": 2,
+          "strategy": "container_payload",
+          "task_name": "govtech-data-public-infra"
+        },
+        {
+          "input_chars": 4803,
+          "candidate_blocks": 21,
+          "repair_attempts": 0,
+          "valid_blocks": 1,
+          "salvaged_candidates": 1,
+          "strategy": "container_payload",
+          "task_name": "academic-incubator-government"
+        }
+      ],
+      "opencode_artifacts": [
+        {
+          "task": "central-government-portals",
+          "model": "opencode/minimax-m2.5-free",
+          "attempt": 1,
+          "success": true,
+          "from_cache": false,
+          "elapsed_seconds": 115.92,
+          "error": null,
+          "timed_out": false,
+          "timeout_seconds": 330,
+          "partial_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/partial_output_opencode-minimax-m2-5-free.log",
+          "raw_task_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/raw_output_central-government-portals.txt",
+          "parser_accepted": true,
+          "parser_diagnostics": {
+            "input_chars": 22194,
+            "candidate_blocks": 70,
+            "repair_attempts": 0,
+            "valid_blocks": 1,
+            "salvaged_candidates": 7,
+            "strategy": "container_payload"
+          }
+        },
+        {
+          "task": "defence-space-ai",
+          "model": "opencode/minimax-m2.5-free",
+          "attempt": 1,
+          "success": true,
+          "from_cache": false,
+          "elapsed_seconds": 170.3,
+          "error": null,
+          "timed_out": false,
+          "timeout_seconds": 330,
+          "partial_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/partial_output_opencode-minimax-m2-5-free.log",
+          "raw_task_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/raw_output_defence-space-ai.txt",
+          "parser_accepted": true,
+          "parser_diagnostics": {
+            "input_chars": 11719,
+            "candidate_blocks": 40,
+            "repair_attempts": 0,
+            "valid_blocks": 1,
+            "salvaged_candidates": 3,
+            "strategy": "container_payload"
+          }
+        },
+        {
+          "task": "startup-state-innovation",
+          "model": "opencode/minimax-m2.5-free",
+          "attempt": 1,
+          "success": true,
+          "from_cache": false,
+          "elapsed_seconds": 115.78,
+          "error": null,
+          "timed_out": false,
+          "timeout_seconds": 330,
+          "partial_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/partial_output_opencode-minimax-m2-5-free.log",
+          "raw_task_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/raw_output_startup-state-innovation.txt",
+          "parser_accepted": true,
+          "parser_diagnostics": {
+            "input_chars": 15202,
+            "candidate_blocks": 49,
+            "repair_attempts": 0,
+            "valid_blocks": 1,
+            "salvaged_candidates": 5,
+            "strategy": "container_payload"
+          }
+        },
+        {
+          "task": "bio-science-research-innovation",
+          "model": "opencode/minimax-m2.5-free",
+          "attempt": 1,
+          "success": false,
+          "from_cache": false,
+          "elapsed_seconds": 330.26,
+          "error": "Timeout after 330s",
+          "timed_out": true,
+          "timeout_seconds": 330,
+          "partial_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/partial_output_opencode-minimax-m2-5-free.log",
+          "raw_task_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/raw_output_bio-science-research-innovation.txt",
+          "parser_accepted": null,
+          "parser_diagnostics": {}
+        },
+        {
+          "task": "govtech-data-public-infra",
+          "model": "opencode/minimax-m2.5-free",
+          "attempt": 1,
+          "success": true,
+          "from_cache": false,
+          "elapsed_seconds": 265.35,
+          "error": null,
+          "timed_out": false,
+          "timeout_seconds": 330,
+          "partial_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/partial_output_opencode-minimax-m2-5-free.log",
+          "raw_task_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/raw_output_govtech-data-public-infra.txt",
+          "parser_accepted": true,
+          "parser_diagnostics": {
+            "input_chars": 8963,
+            "candidate_blocks": 33,
+            "repair_attempts": 0,
+            "valid_blocks": 1,
+            "salvaged_candidates": 2,
+            "strategy": "container_payload"
+          }
+        },
+        {
+          "task": "academic-incubator-government",
+          "model": "opencode/minimax-m2.5-free",
+          "attempt": 1,
+          "success": true,
+          "from_cache": false,
+          "elapsed_seconds": 88.72,
+          "error": null,
+          "timed_out": false,
+          "timeout_seconds": 330,
+          "partial_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/partial_output_opencode-minimax-m2-5-free.log",
+          "raw_task_output_path": "/home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/.opportunity_cache/runs/20260509T200115Z/raw_output_academic-incubator-government.txt",
+          "parser_accepted": true,
+          "parser_diagnostics": {
+            "input_chars": 4803,
+            "candidate_blocks": 21,
+            "repair_attempts": 0,
+            "valid_blocks": 1,
+            "salvaged_candidates": 1,
+            "strategy": "container_payload"
+          }
+        }
+      ],
+      "coverage_analysis": {
+        "coverage_confidence": 0.6472,
+        "coverage_status": "moderate_confidence",
+        "search_saturation_reached": true,
+        "high_signal_portals_scanned": 12,
+        "failed_portals": 6,
+        "portal_timeout_count": 6,
+        "high_signal_empty_count": 5,
+        "duplicate_discovery_ratio": 0.8588,
+        "multi_model_consensus_enabled": false,
+        "possible_missed_domains": [
+          {
+            "domain": "drdo.gov.in",
+            "reason": "no_active_results_detected"
+          },
+          {
+            "domain": "isro.gov.in",
+            "reason": "no_active_results_detected"
+          },
+          {
+            "domain": "dst.gov.in",
+            "reason": "timeout"
+          },
+          {
+            "domain": "dbtindia.gov.in",
+            "reason": "timeout"
+          },
+          {
+            "domain": "birac.nic.in",
+            "reason": "timeout"
+          },
+          {
+            "domain": "meity.gov.in",
+            "reason": "no_active_results_detected"
+          },
+          {
+            "domain": "sih.gov.in",
+            "reason": "no_active_results_detected"
+          },
+          {
+            "domain": "birac.nic.in",
+            "reason": "historical_activity_now_zero"
+          },
+          {
+            "domain": "csir.res.in",
+            "reason": "historical_activity_not_scanned"
+          },
+          {
+            "domain": "dbtindia.gov.in",
+            "reason": "historical_activity_now_zero"
+          },
+          {
+            "domain": "dst.gov.in",
+            "reason": "historical_activity_now_zero"
+          },
+          {
+            "domain": "e-techcom.tdb.gov.in",
+            "reason": "historical_activity_not_scanned"
+          },
+          {
+            "domain": "event.data.gov.in",
+            "reason": "historical_activity_now_zero"
+          },
+          {
+            "domain": "ils.res.in",
+            "reason": "historical_activity_not_scanned"
+          },
+          {
+            "domain": "instagram.com",
+            "reason": "historical_activity_not_scanned"
+          },
+          {
+            "domain": "onlinedst.gov.in",
+            "reason": "historical_activity_not_scanned"
+          },
+          {
+            "domain": "sih.gov.in",
+            "reason": "historical_activity_now_zero"
+          },
+          {
+            "domain": "startupgrantsindia.com",
+            "reason": "historical_activity_not_scanned"
+          },
+          {
+            "domain": "tdb.gov.in",
+            "reason": "historical_activity_now_zero"
+          }
+        ],
+        "coverage_warnings": [
+          "birac.nic.in repeatedly timed out across coverage runs",
+          "birac.nic.in returned zero active events despite historical activity",
+          "birac.nic.in timed out during current coverage audit",
+          "csir.res.in was not scanned despite historical activity",
+          "dbtindia.gov.in repeatedly timed out across coverage runs",
+          "dbtindia.gov.in returned zero active events despite historical activity",
+          "dbtindia.gov.in timed out during current coverage audit",
+          "drdo.gov.in returned zero active events in current coverage audit",
+          "dst.gov.in repeatedly timed out across coverage runs",
+          "dst.gov.in returned zero active events despite historical activity",
+          "dst.gov.in timed out during current coverage audit",
+          "e-techcom.tdb.gov.in was not scanned despite historical activity",
+          "event.data.gov.in returned zero active events despite historical activity",
+          "ils.res.in was not scanned despite historical activity",
+          "instagram.com was not scanned despite historical activity",
+          "isro.gov.in returned zero active events in current coverage audit",
+          "meity.gov.in returned zero active events in current coverage audit",
+          "multiple high-signal portals timed out",
+          "onlinedst.gov.in was not scanned despite historical activity",
+          "sih.gov.in returned zero active events despite historical activity",
+          "sih.gov.in returned zero active events in current coverage audit",
+          "startupgrantsindia.com was not scanned despite historical activity",
+          "tdb.gov.in returned zero active events despite historical activity"
+        ],
+        "historical_baseline_delta": 0.1364,
+        "discovery_velocity": 0.16,
+        "multi_model_overlap": {
+          "total_events_with_provenance": 35,
+          "strong": 0,
+          "medium": 0,
+          "weak": 35,
+          "none": 0,
+          "model_event_counts": {
+            "minimax": 35
+          }
+        },
+        "portal_coverage": {
+          "aicte-india.org": {
+            "domain": "aicte-india.org",
+            "category": "central_government",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "IIT incubator government startup challenge applications open 2026",
+              "site:aicte-india.org hackathon challenge registration open 2026",
+              "site:birac.nic.in challenge application deadline open 2026",
+              "site:iitb.ac.in hackathon challenge government registration open",
+              "site:iitd.ac.in startup innovation challenge government open 2026",
+              "site:iitk.ac.in ministry hackathon challenge registration 2026",
+              "site:iitm.ac.in government innovation challenge hackathon open 2026",
+              "site:innovateindia.mygov.in challenge registration open apply now 2026",
+              "site:mygov.in challenge hackathon registration open India 2026",
+              "site:sih.gov.in registration open Smart India Hackathon current",
+              "site:startupindia.gov.in challenge application deadline open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "aikosh.indiaai.gov.in": {
+            "domain": "aikosh.indiaai.gov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 2,
+            "active_events_found": 1,
+            "search_queries_used": [
+              "6_event_discovery_queries",
+              "IndiaAI challenge hackathon application open 2026",
+              "MeitY innovation challenge apply now 2026 India",
+              "iDEX challenge registration deadline open India 2026",
+              "site:aikosh.indiaai.gov.in competitions applications open IndiaAI",
+              "site:bhashini.gov.in hackathon challenge registrations open",
+              "site:drdo.gov.in innovation challenge registration open 2026",
+              "site:idex.gov.in challenge open apply now 2026",
+              "site:isro.gov.in hackathon challenge registration open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "borderline_event_found"
+          },
+          "aim.gov.in": {
+            "domain": "aim.gov.in",
+            "category": "startup_state_innovation",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 3,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "6_event_discovery_queries",
+              "7_event_discovery_queries",
+              "Startup India grand challenge registrations open 2026",
+              "site:aim.gov.in innovation challenge registration open 2026",
+              "site:msme.gov.in innovation challenge registration open 2026",
+              "site:npci.org.in hackathon challenge registration open 2026",
+              "site:startupindia.gov.in challenge application open deadline 2026",
+              "site:startupmission.kerala.gov.in hackathon challenge open",
+              "site:startuptn.in challenge applications open startup 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_active_events_detected"
+          },
+          "apna.co": {
+            "domain": "apna.co",
+            "category": "observed_source",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 1,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "7_event_discovery_queries"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [
+              "No trusted official government or academic source URL."
+            ],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_active_events_detected"
+          },
+          "bhashini.gov.in": {
+            "domain": "bhashini.gov.in",
+            "category": "defence_space_ai",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "IndiaAI challenge hackathon application open 2026",
+              "MeitY innovation challenge apply now 2026 India",
+              "iDEX challenge registration deadline open India 2026",
+              "site:aikosh.indiaai.gov.in competitions applications open IndiaAI",
+              "site:bhashini.gov.in hackathon challenge registrations open",
+              "site:drdo.gov.in innovation challenge registration open 2026",
+              "site:idex.gov.in challenge open apply now 2026",
+              "site:isro.gov.in hackathon challenge registration open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "birac.nic.in": {
+            "domain": "birac.nic.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": true,
+            "timed_out": true,
+            "events_found": 1,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "7_event_discovery_queries",
+              "government biotechnology AI innovation call proposal open India 2026",
+              "site:birac.nic.in challenge application deadline open 2026",
+              "site:birac.nic.in current calls proposal innovation challenge 2026",
+              "site:dbtindia.gov.in challenge call for proposals innovation open 2026",
+              "site:dst.gov.in innovation challenge proposal call deadline 2026",
+              "site:innovateindia.mygov.in challenge registration open apply now 2026",
+              "site:mygov.in challenge hackathon registration open India 2026",
+              "site:nrdcindia.gov.in innovation challenge startup application open",
+              "site:sih.gov.in registration open Smart India Hackathon current",
+              "site:startupindia.gov.in challenge application deadline open 2026",
+              "site:tdb.gov.in startup innovation challenge application open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "timed_out"
+          },
+          "cpcb.nic.in": {
+            "domain": "cpcb.nic.in",
+            "category": "observed_source",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 1,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "7_event_discovery_queries"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [
+              "No probed URL returned an accessible page."
+            ],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_active_events_detected"
+          },
+          "data.gov.in": {
+            "domain": "data.gov.in",
+            "category": "govtech_data_public_infra",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "public digital infrastructure hackathon India government open 2026",
+              "site:data.gov.in hackathon challenge registration deadline 2026",
+              "site:event.data.gov.in challenge hackathon registration open 2026",
+              "site:nha.gov.in hackathon challenge application open 2026",
+              "site:pfrda.org.in hackathon innovation challenge registration 2026",
+              "site:uidai.gov.in data hackathon challenge open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "dbtindia.gov.in": {
+            "domain": "dbtindia.gov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": false,
+            "timed_out": true,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "government biotechnology AI innovation call proposal open India 2026",
+              "site:birac.nic.in current calls proposal innovation challenge 2026",
+              "site:dbtindia.gov.in challenge call for proposals innovation open 2026",
+              "site:dst.gov.in innovation challenge proposal call deadline 2026",
+              "site:nrdcindia.gov.in innovation challenge startup application open",
+              "site:tdb.gov.in startup innovation challenge application open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "timed_out"
+          },
+          "drdo.gov.in": {
+            "domain": "drdo.gov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "IndiaAI challenge hackathon application open 2026",
+              "MeitY innovation challenge apply now 2026 India",
+              "iDEX challenge registration deadline open India 2026",
+              "site:aikosh.indiaai.gov.in competitions applications open IndiaAI",
+              "site:bhashini.gov.in hackathon challenge registrations open",
+              "site:drdo.gov.in innovation challenge registration open 2026",
+              "site:idex.gov.in challenge open apply now 2026",
+              "site:isro.gov.in hackathon challenge registration open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "dst.gov.in": {
+            "domain": "dst.gov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": false,
+            "timed_out": true,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "government biotechnology AI innovation call proposal open India 2026",
+              "site:birac.nic.in current calls proposal innovation challenge 2026",
+              "site:dbtindia.gov.in challenge call for proposals innovation open 2026",
+              "site:dst.gov.in innovation challenge proposal call deadline 2026",
+              "site:nrdcindia.gov.in innovation challenge startup application open",
+              "site:tdb.gov.in startup innovation challenge application open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "timed_out"
+          },
+          "event.data.gov.in": {
+            "domain": "event.data.gov.in",
+            "category": "govtech_data_public_infra",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 3,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "6_event_discovery_queries",
+              "public digital infrastructure hackathon India government open 2026",
+              "site:data.gov.in hackathon challenge registration deadline 2026",
+              "site:event.data.gov.in challenge hackathon registration open 2026",
+              "site:nha.gov.in hackathon challenge application open 2026",
+              "site:pfrda.org.in hackathon innovation challenge registration 2026",
+              "site:uidai.gov.in data hackathon challenge open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [
+              "Closed lifecycle keywords found on probed page.",
+              "Zombie or stale-cycle page suspected."
+            ],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_active_events_detected"
+          },
+          "grants.gov.in": {
+            "domain": "grants.gov.in",
+            "category": "bio_science_research",
+            "visited": true,
+            "accessible": false,
+            "timed_out": true,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "government biotechnology AI innovation call proposal open India 2026",
+              "site:birac.nic.in current calls proposal innovation challenge 2026",
+              "site:dbtindia.gov.in challenge call for proposals innovation open 2026",
+              "site:dst.gov.in innovation challenge proposal call deadline 2026",
+              "site:nrdcindia.gov.in innovation challenge startup application open",
+              "site:tdb.gov.in startup innovation challenge application open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "timed_out"
+          },
+          "idc.icreate.org.in": {
+            "domain": "idc.icreate.org.in",
+            "category": "observed_source",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 1,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "7_event_discovery_queries"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [
+              "No trusted official government or academic source URL."
+            ],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_active_events_detected"
+          },
+          "idex.gov.in": {
+            "domain": "idex.gov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 7,
+            "active_events_found": 1,
+            "search_queries_used": [
+              "6_event_discovery_queries",
+              "7_event_discovery_queries",
+              "IndiaAI challenge hackathon application open 2026",
+              "MeitY innovation challenge apply now 2026 India",
+              "iDEX challenge registration deadline open India 2026",
+              "site:aikosh.indiaai.gov.in competitions applications open IndiaAI",
+              "site:bhashini.gov.in hackathon challenge registrations open",
+              "site:drdo.gov.in innovation challenge registration open 2026",
+              "site:idex.gov.in challenge open apply now 2026",
+              "site:isro.gov.in hackathon challenge registration open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "borderline_event_found"
+          },
+          "iedcstartupsummit.in": {
+            "domain": "iedcstartupsummit.in",
+            "category": "observed_source",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 1,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "7_event_discovery_queries"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [
+              "No probed URL returned an accessible page.",
+              "No trusted official government or academic source URL."
+            ],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_active_events_detected"
+          },
+          "iisc.ac.in": {
+            "domain": "iisc.ac.in",
+            "category": "academic_incubator_government",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "IIT incubator government startup challenge applications open 2026",
+              "site:aicte-india.org hackathon challenge registration open 2026",
+              "site:iitb.ac.in hackathon challenge government registration open",
+              "site:iitd.ac.in startup innovation challenge government open 2026",
+              "site:iitk.ac.in ministry hackathon challenge registration 2026",
+              "site:iitm.ac.in government innovation challenge hackathon open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "iitb.ac.in": {
+            "domain": "iitb.ac.in",
+            "category": "academic_incubator_government",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "IIT incubator government startup challenge applications open 2026",
+              "site:aicte-india.org hackathon challenge registration open 2026",
+              "site:iitb.ac.in hackathon challenge government registration open",
+              "site:iitd.ac.in startup innovation challenge government open 2026",
+              "site:iitk.ac.in ministry hackathon challenge registration 2026",
+              "site:iitm.ac.in government innovation challenge hackathon open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "iitd.ac.in": {
+            "domain": "iitd.ac.in",
+            "category": "academic_incubator_government",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "IIT incubator government startup challenge applications open 2026",
+              "site:aicte-india.org hackathon challenge registration open 2026",
+              "site:iitb.ac.in hackathon challenge government registration open",
+              "site:iitd.ac.in startup innovation challenge government open 2026",
+              "site:iitk.ac.in ministry hackathon challenge registration 2026",
+              "site:iitm.ac.in government innovation challenge hackathon open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "iitk.ac.in": {
+            "domain": "iitk.ac.in",
+            "category": "academic_incubator_government",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "IIT incubator government startup challenge applications open 2026",
+              "site:aicte-india.org hackathon challenge registration open 2026",
+              "site:iitb.ac.in hackathon challenge government registration open",
+              "site:iitd.ac.in startup innovation challenge government open 2026",
+              "site:iitk.ac.in ministry hackathon challenge registration 2026",
+              "site:iitm.ac.in government innovation challenge hackathon open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "iitm.ac.in": {
+            "domain": "iitm.ac.in",
+            "category": "academic_incubator_government",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "IIT incubator government startup challenge applications open 2026",
+              "site:aicte-india.org hackathon challenge registration open 2026",
+              "site:iitb.ac.in hackathon challenge government registration open",
+              "site:iitd.ac.in startup innovation challenge government open 2026",
+              "site:iitk.ac.in ministry hackathon challenge registration 2026",
+              "site:iitm.ac.in government innovation challenge hackathon open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "impact.indiaai.gov.in": {
+            "domain": "impact.indiaai.gov.in",
+            "category": "observed_source",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 4,
+            "active_events_found": 1,
+            "search_queries_used": [
+              "6_event_discovery_queries"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "borderline_event_found"
+          },
+          "indiaai.gov.in": {
+            "domain": "indiaai.gov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 6,
+            "active_events_found": 2,
+            "search_queries_used": [
+              "6_event_discovery_queries",
+              "IndiaAI challenge hackathon application open 2026",
+              "MeitY innovation challenge apply now 2026 India",
+              "iDEX challenge registration deadline open India 2026",
+              "site:aikosh.indiaai.gov.in competitions applications open IndiaAI",
+              "site:bhashini.gov.in hackathon challenge registrations open",
+              "site:drdo.gov.in innovation challenge registration open 2026",
+              "site:idex.gov.in challenge open apply now 2026",
+              "site:isro.gov.in hackathon challenge registration open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "borderline_event_found"
+          },
+          "innovateindia.mygov.in": {
+            "domain": "innovateindia.mygov.in",
+            "category": "central_government",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 2,
+            "active_events_found": 1,
+            "search_queries_used": [
+              "7_event_discovery_queries",
+              "site:birac.nic.in challenge application deadline open 2026",
+              "site:innovateindia.mygov.in challenge registration open apply now 2026",
+              "site:mygov.in challenge hackathon registration open India 2026",
+              "site:sih.gov.in registration open Smart India Hackathon current",
+              "site:startupindia.gov.in challenge application deadline open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [
+              "Zombie or stale-cycle page suspected."
+            ],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "borderline_event_found"
+          },
+          "isro.gov.in": {
+            "domain": "isro.gov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 2,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "6_event_discovery_queries",
+              "IndiaAI challenge hackathon application open 2026",
+              "MeitY innovation challenge apply now 2026 India",
+              "iDEX challenge registration deadline open India 2026",
+              "site:aikosh.indiaai.gov.in competitions applications open IndiaAI",
+              "site:bhashini.gov.in hackathon challenge registrations open",
+              "site:drdo.gov.in innovation challenge registration open 2026",
+              "site:idex.gov.in challenge open apply now 2026",
+              "site:isro.gov.in hackathon challenge registration open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_active_events_detected"
+          },
+          "meity.gov.in": {
+            "domain": "meity.gov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "IndiaAI challenge hackathon application open 2026",
+              "MeitY innovation challenge apply now 2026 India",
+              "iDEX challenge registration deadline open India 2026",
+              "site:aikosh.indiaai.gov.in competitions applications open IndiaAI",
+              "site:bhashini.gov.in hackathon challenge registrations open",
+              "site:drdo.gov.in innovation challenge registration open 2026",
+              "site:idex.gov.in challenge open apply now 2026",
+              "site:isro.gov.in hackathon challenge registration open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "msme.gov.in": {
+            "domain": "msme.gov.in",
+            "category": "startup_state_innovation",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "Startup India grand challenge registrations open 2026",
+              "site:aim.gov.in innovation challenge registration open 2026",
+              "site:msme.gov.in innovation challenge registration open 2026",
+              "site:npci.org.in hackathon challenge registration open 2026",
+              "site:startupindia.gov.in challenge application open deadline 2026",
+              "site:startupmission.kerala.gov.in hackathon challenge open",
+              "site:startuptn.in challenge applications open startup 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "mygov.in": {
+            "domain": "mygov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 4,
+            "active_events_found": 1,
+            "search_queries_used": [
+              "5_event_discovery_queries",
+              "7_event_discovery_queries",
+              "site:birac.nic.in challenge application deadline open 2026",
+              "site:innovateindia.mygov.in challenge registration open apply now 2026",
+              "site:mygov.in challenge hackathon registration open India 2026",
+              "site:sih.gov.in registration open Smart India Hackathon current",
+              "site:startupindia.gov.in challenge application deadline open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [
+              "Zombie or stale-cycle page suspected."
+            ],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "borderline_event_found"
+          },
+          "nha.gov.in": {
+            "domain": "nha.gov.in",
+            "category": "govtech_data_public_infra",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "public digital infrastructure hackathon India government open 2026",
+              "site:data.gov.in hackathon challenge registration deadline 2026",
+              "site:event.data.gov.in challenge hackathon registration open 2026",
+              "site:nha.gov.in hackathon challenge application open 2026",
+              "site:pfrda.org.in hackathon innovation challenge registration 2026",
+              "site:uidai.gov.in data hackathon challenge open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "niti.gov.in": {
+            "domain": "niti.gov.in",
+            "category": "observed_source",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [],
+            "models_used": [],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "npci.org.in": {
+            "domain": "npci.org.in",
+            "category": "startup_state_innovation",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "Startup India grand challenge registrations open 2026",
+              "public digital infrastructure hackathon India government open 2026",
+              "site:aim.gov.in innovation challenge registration open 2026",
+              "site:data.gov.in hackathon challenge registration deadline 2026",
+              "site:event.data.gov.in challenge hackathon registration open 2026",
+              "site:msme.gov.in innovation challenge registration open 2026",
+              "site:nha.gov.in hackathon challenge application open 2026",
+              "site:npci.org.in hackathon challenge registration open 2026",
+              "site:pfrda.org.in hackathon innovation challenge registration 2026",
+              "site:startupindia.gov.in challenge application open deadline 2026",
+              "site:startupmission.kerala.gov.in hackathon challenge open",
+              "site:startuptn.in challenge applications open startup 2026",
+              "site:uidai.gov.in data hackathon challenge open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "nrdcindia.gov.in": {
+            "domain": "nrdcindia.gov.in",
+            "category": "bio_science_research",
+            "visited": true,
+            "accessible": false,
+            "timed_out": true,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "government biotechnology AI innovation call proposal open India 2026",
+              "site:birac.nic.in current calls proposal innovation challenge 2026",
+              "site:dbtindia.gov.in challenge call for proposals innovation open 2026",
+              "site:dst.gov.in innovation challenge proposal call deadline 2026",
+              "site:nrdcindia.gov.in innovation challenge startup application open",
+              "site:tdb.gov.in startup innovation challenge application open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "timed_out"
+          },
+          "pfrda.org.in": {
+            "domain": "pfrda.org.in",
+            "category": "govtech_data_public_infra",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "public digital infrastructure hackathon India government open 2026",
+              "site:data.gov.in hackathon challenge registration deadline 2026",
+              "site:event.data.gov.in challenge hackathon registration open 2026",
+              "site:nha.gov.in hackathon challenge application open 2026",
+              "site:pfrda.org.in hackathon innovation challenge registration 2026",
+              "site:uidai.gov.in data hackathon challenge open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "sih.gov.in": {
+            "domain": "sih.gov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 2,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "3_event_discovery_queries",
+              "5_event_discovery_queries",
+              "site:birac.nic.in challenge application deadline open 2026",
+              "site:innovateindia.mygov.in challenge registration open apply now 2026",
+              "site:mygov.in challenge hackathon registration open India 2026",
+              "site:sih.gov.in registration open Smart India Hackathon current",
+              "site:startupindia.gov.in challenge application deadline open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_active_events_detected"
+          },
+          "startupindia.gov.in": {
+            "domain": "startupindia.gov.in",
+            "category": "high_signal",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 3,
+            "active_events_found": 1,
+            "search_queries_used": [
+              "5_event_discovery_queries",
+              "7_event_discovery_queries",
+              "Startup India grand challenge registrations open 2026",
+              "site:aim.gov.in innovation challenge registration open 2026",
+              "site:birac.nic.in challenge application deadline open 2026",
+              "site:innovateindia.mygov.in challenge registration open apply now 2026",
+              "site:msme.gov.in innovation challenge registration open 2026",
+              "site:mygov.in challenge hackathon registration open India 2026",
+              "site:npci.org.in hackathon challenge registration open 2026",
+              "site:sih.gov.in registration open Smart India Hackathon current",
+              "site:startupindia.gov.in challenge application deadline open 2026",
+              "site:startupindia.gov.in challenge application open deadline 2026",
+              "site:startupmission.kerala.gov.in hackathon challenge open",
+              "site:startuptn.in challenge applications open startup 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "borderline_event_found"
+          },
+          "startupmission.kerala.gov.in": {
+            "domain": "startupmission.kerala.gov.in",
+            "category": "startup_state_innovation",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "Startup India grand challenge registrations open 2026",
+              "site:aim.gov.in innovation challenge registration open 2026",
+              "site:msme.gov.in innovation challenge registration open 2026",
+              "site:npci.org.in hackathon challenge registration open 2026",
+              "site:startupindia.gov.in challenge application open deadline 2026",
+              "site:startupmission.kerala.gov.in hackathon challenge open",
+              "site:startuptn.in challenge applications open startup 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "startuptn.in": {
+            "domain": "startuptn.in",
+            "category": "startup_state_innovation",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "Startup India grand challenge registrations open 2026",
+              "site:aim.gov.in innovation challenge registration open 2026",
+              "site:msme.gov.in innovation challenge registration open 2026",
+              "site:npci.org.in hackathon challenge registration open 2026",
+              "site:startupindia.gov.in challenge application open deadline 2026",
+              "site:startupmission.kerala.gov.in hackathon challenge open",
+              "site:startuptn.in challenge applications open startup 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          },
+          "tdb.gov.in": {
+            "domain": "tdb.gov.in",
+            "category": "bio_science_research",
+            "visited": true,
+            "accessible": false,
+            "timed_out": true,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "government biotechnology AI innovation call proposal open India 2026",
+              "site:birac.nic.in current calls proposal innovation challenge 2026",
+              "site:dbtindia.gov.in challenge call for proposals innovation open 2026",
+              "site:dst.gov.in innovation challenge proposal call deadline 2026",
+              "site:nrdcindia.gov.in innovation challenge startup application open",
+              "site:tdb.gov.in startup innovation challenge application open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "timed_out"
+          },
+          "uidai.gov.in": {
+            "domain": "uidai.gov.in",
+            "category": "govtech_data_public_infra",
+            "visited": true,
+            "accessible": true,
+            "timed_out": false,
+            "events_found": 0,
+            "active_events_found": 0,
+            "search_queries_used": [
+              "public digital infrastructure hackathon India government open 2026",
+              "site:data.gov.in hackathon challenge registration deadline 2026",
+              "site:event.data.gov.in challenge hackathon registration open 2026",
+              "site:nha.gov.in hackathon challenge application open 2026",
+              "site:pfrda.org.in hackathon innovation challenge registration 2026",
+              "site:uidai.gov.in data hackathon challenge open 2026"
+            ],
+            "models_used": [
+              "minimax"
+            ],
+            "validation_failures": [],
+            "last_scan_timestamp": "2026-05-10",
+            "coverage_signal": "zero_events_detected"
+          }
+        },
+        "saturation_metrics": {
+          "queries_executed": 38,
+          "new_events_discovered": 12,
+          "duplicate_events_discovered": 6,
+          "rejected_events_discovered": 67,
+          "discovery_velocity": 0.16,
+          "duplicate_discovery_ratio": 0.8588,
+          "search_saturation_reached": true
+        }
+      },
+      "coverage_confidence": 0.6472,
+      "coverage_status": "moderate_confidence"
+    }
+  }
+}
