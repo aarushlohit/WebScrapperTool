@@ -21,7 +21,30 @@ Search the public internet exhaustively and return ONLY opportunities that are g
 * accessible to new participants RIGHT NOW
 
 The user ONLY wants opportunities where a BRAND NEW participant can still apply today.
+STRICT TECHNICAL COMPETITION DEFINITION
 
+An event qualifies ONLY if ALL are TRUE:
+
+- direct participant competition exists
+- technical solutions are submitted
+- submissions are comparatively evaluated
+- winners/finalists are selected
+- challenge/problem statements exist
+- software/hardware/AI/prototype implementation expected
+- public competitive participation workflow exists
+
+Exclude immediately if event primarily focuses on:
+- grants
+- funding
+- incubation
+- acceleration
+- proposal solicitation
+- R&D funding
+- fellowships
+- procurement
+- tenders
+- startup support schemes
+- investment programs
 ==================================================
 DISCOVERY SCOPE
 ===============
@@ -35,15 +58,12 @@ CENTRAL GOVERNMENT:
 * MyGov
 * IndiaAI
 * Bhashini
-* Startup India
 * Skill India
 * iDEX
 * DRDO
 * ISRO
 * NIC
 * DST
-* DBT
-* BIRAC
 * NITI Aayog
 * Ministry of Defence
 * Ministry of Education
@@ -62,10 +82,8 @@ CENTRAL GOVERNMENT:
 STATE GOVERNMENT:
 
 * state innovation missions
-* state startup missions
 * state IT departments
 * state innovation societies
-* state incubators
 * smart city missions
 * state universities
 
@@ -77,7 +95,6 @@ ACADEMIC & RESEARCH:
 * IISc
 * Central Universities
 * Government Universities
-* Government incubators
 * research institutes
 
 PSUs & GOVERNMENT ECOSYSTEMS:
@@ -116,7 +133,6 @@ VALID REGISTRATION PLATFORMS:
 * Hack2Skill
 * Google Forms
 * Airmeet
-* Startup India
 * AIKosh
 * MyGov
 * institutional ERP systems

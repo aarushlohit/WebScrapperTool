@@ -1,0 +1,294 @@
+{
+  "candidates": [
+    {
+      "event_type": "defence_challenge",
+      "hackathon_name": "iDEX Open Challenge",
+      "full_name": "iDEX Open Challenge for Defence & Aerospace Innovation",
+      "current_status": "application_open",
+      "registration_url": "https://idex.gov.in/disc-category/18",
+      "submission_url": "https://idex.gov.in/disc-category/18",
+      "official_website": "https://idex.gov.in/",
+      "official_event_page": "https://idex.gov.in/disc-category/18",
+      "source_url": "https://idex.gov.in/disc-category/18",
+      "hosting_organization": "Defence Innovation Organisation (DIO), Ministry of Defence",
+      "ministry": "Ministry of Defence",
+      "institution_type": "Central Government",
+      "platform": "iDEX Portal",
+      "domain": "Defence Technology",
+      "theme": "Autonomous systems, AI/ML, Advanced Materials, Aerospace",
+      "focus_areas": ["Autonomous Systems", "Intelligent Machines", "Advanced Materials", "Predictive Algorithms", "Rocket Engines", "Defence", "Aerospace"],
+      "deadline": "2026-06-30",
+      "registration_close_date": "2026-06-30",
+      "submission_close_date": "2026-06-30",
+      "application_deadline": "2026-06-30",
+      "proposal_deadline": "2026-06-30",
+      "eligibility_criteria": {
+        "summary": "Indian Startups, MSMEs, and Individual Innovators can apply. Must have technology relevant to defence and aerospace applications."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Grants up to Rs. 1.5 crore, opportunity to pitch to iDEX grand jury, potential investment and procurement pathway"
+      },
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["CHALLENGE OPEN", "30 June, 2026"],
+        "deadline_verified": true
+      },
+      "confidence_score": 1,
+      "classification_tier": "fully_verified",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "research_competition",
+      "hackathon_name": "DBT-BIRAC Bio-AI Joint Call",
+      "full_name": "DBT-BIRAC Joint Call for Proposals on Bio-AI for establishing Mulankur hubs under BioE3 Policy",
+      "current_status": "proposal_open",
+      "registration_url": "https://birac.nic.in/cfp.php/portal/cfp_view.php?id=25&scheme_type=3",
+      "submission_url": "https://birac.nic.in/desc_new.php?id=1289",
+      "official_website": "https://birac.nic.in",
+      "official_event_page": "https://birac.nic.in/cfp.php/portal/cfp_view.php?id=25&scheme_type=3",
+      "source_url": "https://birac.nic.in/cfp.php/portal/cfp_view.php?id=25&scheme_type=3",
+      "hosting_organization": "Department of Biotechnology (DBT) & Biotechnology Industry Research Assistance Council (BIRAC)",
+      "ministry": "Ministry of Science & Technology",
+      "institution_type": "Central Government",
+      "platform": "BIRAC Portal / DBT e-ProMIS",
+      "domain": "Biotechnology",
+      "theme": "AI-guided biomanufacturing, Bio-AI, Synthetic Biology",
+      "focus_areas": ["Biomolecular Design", "Sustainable Agriculture", "Synthetic Biology", "Ayurveda", "Genome Diagnostics", "High-Performance Biomanufacturing"],
+      "deadline": "2026-06-30",
+      "registration_close_date": "2026-06-30",
+      "submission_close_date": "2026-06-30",
+      "application_deadline": "2026-06-30",
+      "proposal_deadline": "2026-06-30",
+      "eligibility_criteria": {
+        "summary": "Researchers in Government Organizations, Universities, Academic Institutions, National Laboratories, DSIR-recognized Non-Profit Organizations, startups, and industries. PI must have at least 4 years remaining employment. Companies/startups require minimum 51% Indian shareholding."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Funding through Bio-RIDE scheme under BioE3 Policy for establishing Mulankur hubs"
+      },
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Last Date :30th June,2026", "Current Calls for Proposal"],
+        "deadline_verified": true
+      },
+      "confidence_score": 1,
+      "classification_tier": "fully_verified",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "BIRAC Product Commercialization Program (PCP) Fund",
+      "full_name": "BIRAC Product Commercialization Program Fund 2026",
+      "current_status": "application_open",
+      "registration_url": "https://birac.nic.in/desc_new.php?id=114&scheme_type=46",
+      "submission_url": "https://birac.nic.in/desc_new.php?id=114&scheme_type=46",
+      "official_website": "https://birac.nic.in",
+      "official_event_page": "https://birac.nic.in/desc_new.php?id=114&scheme_type=46",
+      "source_url": "https://birac.nic.in/desc_new.php?id=114&scheme_type=46",
+      "hosting_organization": "Biotechnology Industry Research Assistance Council (BIRAC)",
+      "ministry": "Ministry of Science & Technology",
+      "institution_type": "Central Government",
+      "platform": "BIRAC Portal",
+      "domain": "Biotechnology",
+      "theme": "Late-stage biotech commercialization",
+      "focus_areas": ["Biotechnology Product Commercialization", "TRL High", "Pre-commercial Deployment", "Scale-up", "Regulatory Compliance"],
+      "deadline": "2026-06-30",
+      "registration_close_date": "2026-06-30",
+      "submission_close_date": "2026-06-30",
+      "application_deadline": "2026-06-30",
+      "proposal_deadline": "2026-06-30",
+      "eligibility_criteria": {
+        "summary": "Indian entities including registered Indian startups, SMEs, Indian biotechnology companies, and technology firms. Must demonstrate validated technology at high TRL with detailed commercialization plan and readiness for scale-up."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Funding support for late-stage biotech innovations transitioning from validated prototype to commercial deployment"
+      },
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Product Commercialization Program Fund", "Tuesday, June 30, 2026"],
+        "deadline_verified": true
+      },
+      "confidence_score": 1,
+      "classification_tier": "fully_verified",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "hackathon",
+      "hackathon_name": "Flying Wings 2026",
+      "full_name": "Flying Wings: National Level Drone Hackathon 2026",
+      "current_status": "registration_open",
+      "registration_url": "https://www.iitj.ac.in/flying-wings",
+      "submission_url": "https://www.iitj.ac.in/flying-wings",
+      "official_website": "https://www.iitj.ac.in/",
+      "official_event_page": "https://www.iitj.ac.in/flying-wings",
+      "source_url": "https://www.iitj.ac.in/flying-wings",
+      "hosting_organization": "IIT Jodhpur in association with The Manekshaw Center (MCOENSSR) and Konark Corps, Indian Army",
+      "ministry": "Ministry of Defence",
+      "institution_type": "Government Academic",
+      "platform": "IIT Jodhpur",
+      "domain": "Drone Technology",
+      "theme": "Defence Drone Innovation",
+      "focus_areas": ["Drone Technology", "Autonomous Drones", "Defence Applications", "National Security"],
+      "deadline": "2026-05-10",
+      "registration_close_date": "2026-05-10",
+      "submission_close_date": null,
+      "application_deadline": "2026-05-10",
+      "proposal_deadline": null,
+      "eligibility_criteria": {
+        "summary": "Students, researchers, startup founders, and industry professionals. Government organizations may participate in industry categories."
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": 0,
+        "currency": "INR",
+        "display": "Free"
+      },
+      "prizes": {
+        "summary": "Opportunity to contribute to Atmanirbhar Bharat in defence, national-level recognition"
+      },
+      "source_validation": {
+        "source_type": "official_academic_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Registration extended to 10th May 2026", "Round 1 Virtual - 16th May 2026"],
+        "deadline_verified": true
+      },
+      "confidence_score": 0.85,
+      "classification_tier": "likely_active",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true
+    }
+  ],
+  "excluded": [
+    {
+      "name": "UIDAI Data Hackathon 2026",
+      "source_url": "https://event.data.gov.in/challenge/uidai-data-hackathon-2026/",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge 2026",
+      "source_url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026",
+      "reason": "closed"
+    },
+    {
+      "name": "AB PM-JAY Auto-Adjudication Hackathon 2026",
+      "source_url": "https://nha.gov.in/hackathon",
+      "reason": "closed"
+    },
+    {
+      "name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
+      "source_url": "https://aikosh.indiaai.gov.in/home",
+      "reason": "closed"
+    },
+    {
+      "name": "iDEX DISC 14",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed"
+    },
+    {
+      "name": "iDEX ADITI 4.0",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed"
+    },
+    {
+      "name": "iDEX DRISHTI Challenges",
+      "source_url": "https://idex.gov.in/disc-category/46",
+      "reason": "closed"
+    },
+    {
+      "name": "RKVY-RAFTAAR Agri-Business Incubation Program",
+      "source_url": "https://agristartup.gov.in/",
+      "reason": "closed"
+    },
+    {
+      "name": "ISRO Robotics Challenge 2026 (IRoC-U 2026)",
+      "source_url": "https://ursc.gov.in/IRoC-U2026/challenge.jsp",
+      "reason": "closed"
+    },
+    {
+      "name": "National Startup Awards 5.0",
+      "source_url": "https://www.startupindia.gov.in/",
+      "reason": "unverifiable"
+    },
+    {
+      "name": "India Pitch Pilot Scale Startup Challenge",
+      "source_url": "https://innovate.mygov.in/",
+      "reason": "stale_cycle"
+    },
+    {
+      "name": "D.E.S.I.G.N for BioE3 Challenge",
+      "source_url": "https://innovate.mygov.in/",
+      "reason": "closed"
+    }
+  ],
+  "sources_scanned": [
+    "https://event.data.gov.in/",
+    "https://data.gov.in/",
+    "https://www.nha.gov.in/",
+    "https://uidai.gov.in/",
+    "https://www.pfrda.org.in/",
+    "https://www.npci.org.in/",
+    "https://idex.gov.in/",
+    "https://birac.nic.in/",
+    "https://innovate.mygov.in/",
+    "https://innovateindia.mygov.in/",
+    "https://indiaai.gov.in/",
+    "https://aikosh.indiaai.gov.in/",
+    "https://www.startupindia.gov.in/",
+    "https://isro.gov.in/",
+    "https://agristartup.gov.in/"
+  ],
+  "search_queries_used": [
+    "site:event.data.gov.in challenge hackathon registration open 2026",
+    "site:data.gov.in hackathon challenge registration deadline 2026",
+    "site:nha.gov.in hackathon challenge application open 2026",
+    "site:uidai.gov.in data hackathon challenge open 2026",
+    "site:pfrda.org.in hackathon innovation challenge registration 2026",
+    "public digital infrastructure hackathon India government open 2026",
+    "India government hackathon 2026 registration open innovation challenge",
+    "MyGov India hackathon 2026 registration open innovation challenge",
+    "India government defence hackathon startup challenge 2026 May registration open",
+    "site:idex.gov.in challenges open 2026 May",
+    "ISRO DRDO hackathon registration 2026 open",
+    "Startup India RKVY hackathon 2026 registration open",
+    "BIRAC TDB biotechnology challenge 2026 registration open"
+  ]
+}

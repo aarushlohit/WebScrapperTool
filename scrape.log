@@ -1,0 +1,140 @@
+╭─ Hackathon Intelligence TUI
+thinking... current_date: 2026-05-09
+hashing... models: opencode/big-pickle, opencode/hy3-preview-free, opencode/minimax-m2.5-free
+thinking... tasks queued: 6
+hashing... live_validation: True
+thinking... timeout_mode: model-specific
+completed... run context loaded
+thinking... central-government-portals: building prompt
+completed... central-government-portals: building prompt
+thinking... central-government-portals: running scrape attempt 1
+  [central-government-portals] model=opencode/big-pickle attempt=1/1 timeout=330s
+    timed out after 330s; partial output preserved
+    completed in 330.3s success=False
+  fallback activated after opencode/big-pickle
+  [central-government-portals] model=opencode/hy3-preview-free attempt=1/1 timeout=330s
+    completed in 6.5s success=False
+  fallback activated after opencode/hy3-preview-free
+  [central-government-portals] model=opencode/minimax-m2.5-free attempt=1/1 timeout=330s
+    timed out after 330s; partial output preserved
+    completed in 330.4s success=False
+  fallback activated after opencode/minimax-m2.5-free
+completed... central-government-portals: running scrape attempt 1
+parsing... central-government-portals: parsing model output
+completed... central-government-portals: parsing model output
+completed... central-government-portals: candidates accepted
+hashing... central-government-portals: scoring discovery yield
+completed... central-government-portals: scoring discovery yield
+hashing... central-government-portals: novelty=6 candidates=6 rejected=20
+thinking... defence-space-ai: building prompt
+completed... defence-space-ai: building prompt
+thinking... defence-space-ai: running scrape attempt 1
+  [defence-space-ai] model=opencode/big-pickle attempt=1/1 timeout=330s
+    timed out after 330s; partial output preserved
+    completed in 330.4s success=False
+  fallback activated after opencode/big-pickle
+  [defence-space-ai] model=opencode/hy3-preview-free attempt=1/1 timeout=330s
+    completed in 7.1s success=False
+  fallback activated after opencode/hy3-preview-free
+  [defence-space-ai] model=opencode/minimax-m2.5-free attempt=1/1 timeout=330s
+    completed in 249.8s success=True
+parsing... defence-space-ai: accepted=False strategy=array_payload salvaged=0 blocks=1
+  parser rejected opencode/minimax-m2.5-free; activating fallback
+  fallback activated after opencode/minimax-m2.5-free
+completed... defence-space-ai: running scrape attempt 1
+parsing... defence-space-ai: parsing model output
+completed... defence-space-ai: parsing model output
+completed... defence-space-ai: candidates accepted
+hashing... defence-space-ai: scoring discovery yield
+completed... defence-space-ai: scoring discovery yield
+hashing... defence-space-ai: novelty=0 candidates=0 rejected=0
+thinking... startup-state-innovation: building prompt
+completed... startup-state-innovation: building prompt
+thinking... startup-state-innovation: running scrape attempt 1
+  [startup-state-innovation] model=opencode/big-pickle attempt=1/1 timeout=330s
+    timed out after 330s; partial output preserved
+    completed in 330.3s success=False
+  fallback activated after opencode/big-pickle
+  [startup-state-innovation] model=opencode/hy3-preview-free attempt=1/1 timeout=330s
+    completed in 6.3s success=False
+  fallback activated after opencode/hy3-preview-free
+  [startup-state-innovation] model=opencode/minimax-m2.5-free attempt=1/1 timeout=330s
+    timed out after 330s; partial output preserved
+    completed in 330.5s success=False
+  fallback activated after opencode/minimax-m2.5-free
+completed... startup-state-innovation: running scrape attempt 1
+parsing... startup-state-innovation: parsing model output
+completed... startup-state-innovation: parsing model output
+completed... startup-state-innovation: candidates accepted
+hashing... startup-state-innovation: scoring discovery yield
+completed... startup-state-innovation: scoring discovery yield
+hashing... startup-state-innovation: novelty=0 candidates=0 rejected=0
+thinking... bio-science-research-innovation: building prompt
+completed... bio-science-research-innovation: building prompt
+thinking... bio-science-research-innovation: running scrape attempt 1
+  [bio-science-research-innovation] model=opencode/big-pickle attempt=1/1 timeout=330s
+    timed out after 330s; partial output preserved
+    completed in 330.4s success=False
+  fallback activated after opencode/big-pickle
+  [bio-science-research-innovation] model=opencode/hy3-preview-free attempt=1/1 timeout=330s
+    completed in 3.4s success=False
+  fallback activated after opencode/hy3-preview-free
+  [bio-science-research-innovation] model=opencode/minimax-m2.5-free attempt=1/1 timeout=330s
+    completed in 24.0s success=True
+parsing... bio-science-research-innovation: accepted=False strategy=failed salvaged=0 blocks=0
+  parser rejected opencode/minimax-m2.5-free; activating fallback
+  fallback activated after opencode/minimax-m2.5-free
+completed... bio-science-research-innovation: running scrape attempt 1
+parsing... bio-science-research-innovation: parsing model output
+completed... bio-science-research-innovation: parsing model output
+warning... bio-science-research-innovation: No valid JSON payload or candidate objects found.
+warning... bio-science-research-innovation: no usable candidates
+thinking... govtech-data-public-infra: building prompt
+completed... govtech-data-public-infra: building prompt
+thinking... govtech-data-public-infra: running scrape attempt 1
+  [govtech-data-public-infra] model=opencode/big-pickle attempt=1/1 timeout=330s
+    completed in 324.4s success=True
+parsing... govtech-data-public-infra: accepted=True strategy=container_payload salvaged=7 blocks=75
+completed... govtech-data-public-infra: running scrape attempt 1
+parsing... govtech-data-public-infra: parsing model output
+completed... govtech-data-public-infra: parsing model output
+completed... govtech-data-public-infra: candidates accepted
+hashing... govtech-data-public-infra: scoring discovery yield
+completed... govtech-data-public-infra: scoring discovery yield
+hashing... govtech-data-public-infra: novelty=6 candidates=7 rejected=22
+thinking... academic-incubator-government: building prompt
+completed... academic-incubator-government: building prompt
+thinking... academic-incubator-government: running scrape attempt 1
+  [academic-incubator-government] model=opencode/big-pickle attempt=1/1 timeout=330s
+    timed out after 330s; partial output preserved
+    completed in 330.4s success=False
+  fallback activated after opencode/big-pickle
+  [academic-incubator-government] model=opencode/hy3-preview-free attempt=1/1 timeout=330s
+    completed in 3.0s success=False
+  fallback activated after opencode/hy3-preview-free
+  [academic-incubator-government] model=opencode/minimax-m2.5-free attempt=1/1 timeout=330s
+    completed in 128.9s success=True
+parsing... academic-incubator-government: accepted=True strategy=container_payload salvaged=19 blocks=132
+completed... academic-incubator-government: running scrape attempt 1
+parsing... academic-incubator-government: parsing model output
+completed... academic-incubator-government: parsing model output
+completed... academic-incubator-government: candidates accepted
+hashing... academic-incubator-government: scoring discovery yield
+completed... academic-incubator-government: scoring discovery yield
+hashing... academic-incubator-government: novelty=14 candidates=19 rejected=7
+hashing... normalizing payloads into final report
+completed... normalizing payloads into final report
+thinking... exporting final JSON and report
+
+completed... exported deterministic JSON
+  path: /home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/hackathons_results.json
+  active: 1
+  likely_active: 1
+  borderline: 0
+  ecosystem: 0
+  excluded: 11
+  coverage_confidence: 0.1845
+  coverage_status: low_confidence
+  report: /home/aarush/Myoffice/CodeLab Projects/WebSearch-Agent/REPORT_RESULTS.md
+completed... exporting final JSON and report
+completed... export finished

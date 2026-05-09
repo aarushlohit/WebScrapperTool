@@ -19,20 +19,33 @@ import selectors
 import subprocess
 import sys
 import time
+import threading
+import itertools
+from contextlib import AbstractContextManager
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any, Callable
 from urllib.error import HTTPError, URLError
+from http.client import IncompleteRead, HTTPException
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 from urllib.request import Request, urlopen
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError, field_validator, model_validator
 
+from coverage_intelligence import (
+    CoverageIntelligenceEngine,
+    SearchSaturationTracker,
+    attach_consensus_to_event,
+    consensus_strength,
+)
+
 
 PROJECT_DIR = Path(__file__).resolve().parent
 OUTPUT_JSON = PROJECT_DIR / "hackathons_results.json"
+REPORT_MD = PROJECT_DIR / "REPORT_RESULTS.md"
 CACHE_DIR = PROJECT_DIR / ".opportunity_cache"
+COVERAGE_HISTORY_JSON = PROJECT_DIR / "coverage_history.json"
 
 DEFAULT_MODELS = [
     "opencode/big-pickle",
@@ -41,13 +54,13 @@ DEFAULT_MODELS = [
 ]
 
 MODEL_TIMEOUTS = {
-    "opencode/big-pickle": 300,
-    "opencode/hy3-preview-free": 300,
-    "opencode/minimax-m2.5-free": 300,
-    "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.6": 300,
+    "opencode/big-pickle": 330,
+    "opencode/hy3-preview-free": 330,
+    "opencode/minimax-m2.5-free": 330,
+    "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.6": 330,
 }
 
-DEFAULT_MODEL_TIMEOUT = 300
+DEFAULT_MODEL_TIMEOUT = 330
 
 MODEL_ALIASES = {
     "big-pickle": "opencode/big-pickle",
@@ -158,6 +171,29 @@ GRANT_ONLY_KEYWORDS = [
     "expression of interest",
 ]
 
+R_AND_D_PROPOSAL_ONLY_KEYWORDS = [
+    "call for proposal",
+    "call for proposals",
+    "callforproposals",
+    "request for proposal",
+    "request for proposals",
+    "research proposal",
+    "research proposals",
+    "joint research",
+    "collaborative research",
+    "r&d",
+    "r & d",
+    "research and development",
+    "rdi fund",
+    "rdif",
+    "cfp",
+    "project funding",
+    "funding call",
+    "grant call",
+    "howtosubmitproposal",
+    "s&t cooperation call",
+]
+
 COMPETITION_KEYWORDS = [
     "hackathon",
     "challenge",
@@ -165,6 +201,27 @@ COMPETITION_KEYWORDS = [
     "contest",
     "grand challenge",
     "innovation challenge",
+]
+
+STARTUP_FUND_KEYWORDS = [
+    "startup",
+    "seed",
+    "seed funding",
+    "seed-stage",
+    "pre-seed",
+    "incubator",
+    "incubation",
+    "accelerator",
+    "accelerator program",
+    "funding",
+    "grant",
+    "venture",
+    "vc ",
+    "angel",
+    "investor",
+    "pitch",
+    "pitch day",
+    "demo day",
 ]
 
 ABSOLUTE_NON_TECHNICAL_KEYWORDS = [
@@ -296,6 +353,18 @@ NON_IMPLEMENTATION_ONLY_KEYWORDS = [
     "creative submission",
 ]
 
+SCHOOL_AWARENESS_ONLY_KEYWORDS = [
+    "school student",
+    "school students",
+    "category 1",
+    "category-1",
+    "awareness",
+    "awareness content",
+    "video submission",
+    "essay",
+    "poster",
+]
+
 PROCUREMENT_OR_GRANT_INTAKE_KEYWORDS = [
     "procurement",
     "procurement notice",
@@ -353,6 +422,13 @@ COMPETITIVE_STRUCTURE_SIGNALS = [
     "jury",
     "evaluation",
     "judging",
+    "accelerator",
+    "incubation",
+    "pilot",
+    "mission",
+    "program",
+    "programme",
+    "call for proposals",
 ]
 
 TECHNICAL_EVALUATION_SIGNALS = [
@@ -433,10 +509,47 @@ EXTERNAL_REGISTRATION_HOSTS = {
     "devfolio.co",
     "devpost.com",
     "docs.google.com",
+    "form.startuptn.in",
     "forms.gle",
     "hack2skill.com",
+    "hackerearth.com",
+    "masaforum.com",
+    "typeform.com",
     "unstop.com",
+    "www.hackerearth.com",
+    "www.typeform.com",
 }
+
+RECALL_TIER_ORDER = {
+    "rejected": 0,
+    "archived": 1,
+    "borderline": 2,
+    "likely_active": 3,
+    "fully_verified": 4,
+}
+
+SOFT_EXCLUDED_REASONS = {
+    "borderline",
+    "unverifiable",
+    "partial_verification",
+    "no_new_registration",
+    "workflow_unclear",
+    "auth_wall",
+    "external_registration",
+}
+
+ARCHIVED_REASON_KEYWORDS = (
+    "closed",
+    "stale",
+    "archived",
+    "expired",
+    "deadline passed",
+    "winner",
+    "finalist",
+    "finale",
+    "completed",
+    "historical",
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -519,9 +632,19 @@ def parse_args() -> argparse.Namespace:
         help="Allow a failed/empty discovery run to overwrite an existing output file.",
     )
     parser.add_argument(
+        "--report-output",
+        default=str(REPORT_MD),
+        help="Markdown report output path. Defaults to REPORT_RESULTS.md. Use an empty string to disable.",
+    )
+    parser.add_argument(
+        "--silent",
+        action="store_true",
+        help="Disable all TUI output, including the dashboard and typing indicators.",
+    )
+    parser.add_argument(
         "--max-candidates-per-task",
         type=int,
-        default=12,
+        default=20,
         help="Candidate cap requested from each bounded discovery task.",
     )
     parser.add_argument(
@@ -562,6 +685,277 @@ def atomic_write_json(path: Path, payload: Any) -> None:
         json.dump(payload, handle, indent=2, ensure_ascii=False)
         handle.write("\n")
     temp_path.replace(path)
+
+
+def atomic_write_text(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp_path = path.with_suffix(path.suffix + ".tmp")
+    with temp_path.open("w", encoding="utf-8") as handle:
+        handle.write(content)
+    temp_path.replace(path)
+
+
+class TypingIndicator:
+    def __init__(self, state: str, message: str, enabled: bool | None = None, interval: float = 0.12) -> None:
+        self.state = state
+        self.message = message
+        self.enabled = sys.stdout.isatty() if enabled is None else enabled
+        self.interval = interval
+        self._stop = threading.Event()
+        self._thread: threading.Thread | None = None
+        self._lock = threading.Lock()
+        self._frames = itertools.cycle(["·", "··", "···", "····", "···", "··", "·"])
+
+    def __enter__(self) -> "TypingIndicator":
+        if self.enabled:
+            self._thread = threading.Thread(target=self._run, daemon=True)
+            self._thread.start()
+        else:
+            print(f"{self.state}... {self.message}")
+        return self
+
+    def __exit__(self, exc_type, exc, tb) -> None:
+        if self.enabled:
+            self._stop.set()
+            if self._thread:
+                self._thread.join(timeout=1)
+            sys.stdout.write("\r\x1b[K")
+            sys.stdout.flush()
+        print(f"completed... {self.message}")
+
+    def update(self, message: str) -> None:
+        with self._lock:
+            self.message = message
+
+    def _snapshot(self) -> tuple[str, str]:
+        with self._lock:
+            return self.state, self.message
+
+    def _run(self) -> None:
+        while not self._stop.is_set():
+            state, message = self._snapshot()
+            frame = next(self._frames)
+            sys.stdout.write(f"\r\x1b[K{state}... {message} {frame}")
+            sys.stdout.flush()
+            if self._stop.wait(self.interval):
+                break
+
+
+class NullContext(AbstractContextManager):
+    def __enter__(self) -> "NullContext":
+        return self
+
+    def __exit__(self, exc_type, exc, tb) -> bool:
+        return False
+
+
+class DashboardStage(AbstractContextManager):
+    def __init__(self, dashboard: "TerminalDashboard", state: str, message: str) -> None:
+        self.dashboard = dashboard
+        self.state = state
+        self.message = message
+
+    def __enter__(self) -> "DashboardStage":
+        self.dashboard.set_phase(self.state, self.message)
+        return self
+
+    def __exit__(self, exc_type, exc, tb) -> bool:
+        if exc_type is None:
+            self.dashboard.set_phase("completed", self.message)
+        return False
+
+
+class TerminalDashboard:
+    def __init__(self, enabled: bool = False, refresh_interval: float = 0.12) -> None:
+        self.enabled = enabled
+        self.refresh_interval = refresh_interval
+        self._stop = threading.Event()
+        self._thread: threading.Thread | None = None
+        self._lock = threading.Lock()
+        self._spinner = itertools.cycle(["|", "/", "-", "\\"])
+        self._started_at = time.monotonic()
+        self._task_started_at = self._started_at
+        self._title = "Hackathon Intelligence TUI"
+        self._phase = "thinking"
+        self._phase_message = "starting"
+        self._task_name = "idle"
+        self._task_detail = "waiting"
+        self._model_name = "n/a"
+        self._model_detail = "n/a"
+        self._counters = {
+            "tasks_total": 0,
+            "tasks_done": 0,
+            "tasks_failed": 0,
+            "accepted": 0,
+            "novelty": 0,
+            "candidates": 0,
+            "rejected": 0,
+        }
+        self._summary = {
+            "current_date": "n/a",
+            "models": "n/a",
+            "live_validation": "n/a",
+            "coverage_confidence": "n/a",
+            "coverage_status": "n/a",
+        }
+        self._last_note = ""
+
+    def __enter__(self) -> "TerminalDashboard":
+        if self.enabled:
+            self._started_at = time.monotonic()
+            self._task_started_at = self._started_at
+            sys.stdout.write("\x1b[?25l\x1b[2J\x1b[H")
+            sys.stdout.flush()
+            self._thread = threading.Thread(target=self._run, daemon=True)
+            self._thread.start()
+        return self
+
+    def __exit__(self, exc_type, exc, tb) -> bool:
+        if self.enabled:
+            self._stop.set()
+            if self._thread:
+                self._thread.join(timeout=1)
+            self.render(final=True)
+            sys.stdout.write("\x1b[?25h\n")
+            sys.stdout.flush()
+        return False
+
+    def stage(self, state: str, message: str) -> AbstractContextManager:
+        if not self.enabled:
+            return NullContext()
+        return DashboardStage(self, state, message)
+
+    def set_phase(self, state: str, message: str) -> None:
+        if not self.enabled:
+            return
+        with self._lock:
+            self._phase = state
+            self._phase_message = message
+
+    def set_summary(self, **fields: Any) -> None:
+        if not self.enabled:
+            return
+        with self._lock:
+            for key, value in fields.items():
+                if key in self._summary:
+                    self._summary[key] = value
+
+    def set_task(self, name: str, detail: str | None = None) -> None:
+        if not self.enabled:
+            return
+        with self._lock:
+            self._task_name = name
+            self._task_started_at = time.monotonic()
+            if detail is not None:
+                self._task_detail = detail
+
+    def set_model(self, name: str, detail: str | None = None) -> None:
+        if not self.enabled:
+            return
+        with self._lock:
+            self._model_name = name
+            if detail is not None:
+                self._model_detail = detail
+
+    def bump(self, **fields: int) -> None:
+        if not self.enabled:
+            return
+        with self._lock:
+            for key, value in fields.items():
+                if key in self._counters:
+                    self._counters[key] = value
+
+    def note(self, message: str) -> None:
+        if not self.enabled:
+            return
+        with self._lock:
+            self._last_note = message
+
+    def render(self, final: bool = False) -> None:
+        if not self.enabled:
+            return
+        with self._lock:
+            spinner = next(self._spinner)
+            elapsed_seconds = max(0.0, time.monotonic() - self._started_at)
+            eta_seconds = self._estimate_eta()
+            progress = self._progress_fraction()
+            lines = [
+                "+------------------------------------------------------------+",
+                f"| {self._title:<58} |",
+                "+------------------------------------------------------------+",
+                f"| {spinner} {self._phase:<12} {self._phase_message:<41} |",
+                "+-------------------------+-------------------------------+",
+                f"| Current Task            | {self._task_name:<29} |",
+                f"| Task Detail             | {self._task_detail:<29} |",
+                "+-------------------------+-------------------------------+",
+                f"| Model Status            | {self._model_name:<29} |",
+                f"| Model Detail            | {self._model_detail:<29} |",
+                "+-------------------------+-------------------------------+",
+                f"| Tasks Total             | {self._counters['tasks_total']:<29} |",
+                f"| Tasks Done              | {self._counters['tasks_done']:<29} |",
+                f"| Tasks Failed            | {self._counters['tasks_failed']:<29} |",
+                f"| Accepted                | {self._counters['accepted']:<29} |",
+                f"| Novelty                 | {self._counters['novelty']:<29} |",
+                f"| Candidates              | {self._counters['candidates']:<29} |",
+                f"| Rejected                | {self._counters['rejected']:<29} |",
+                "+-------------------------+-------------------------------+",
+                f"| Current Date            | {self._summary['current_date']:<29} |",
+                f"| Models                  | {self._summary['models']:<29} |",
+                f"| Live Validation         | {self._summary['live_validation']:<29} |",
+                f"| Coverage Confidence     | {self._summary['coverage_confidence']:<29} |",
+                f"| Coverage Status         | {self._summary['coverage_status']:<29} |",
+                "+-------------------------+-------------------------------+",
+                f"| Note                    | {self._last_note:<29} |",
+                "+------------------------------------------------------------+",
+                self._status_footer(elapsed_seconds, eta_seconds, progress),
+            ]
+            sys.stdout.write("\x1b[H" + "\n".join(lines))
+            if final:
+                sys.stdout.write("\n")
+            sys.stdout.flush()
+
+    def _run(self) -> None:
+        while not self._stop.is_set():
+            self.render(final=False)
+            if self._stop.wait(self.refresh_interval):
+                break
+
+    def _progress_fraction(self) -> float:
+        total = max(0, self._counters.get("tasks_total", 0))
+        done = min(max(0, self._counters.get("tasks_done", 0)), total)
+        if total <= 0:
+            return 0.0
+        return done / total
+
+    def _estimate_eta(self) -> float | None:
+        total = max(0, self._counters.get("tasks_total", 0))
+        done = min(max(0, self._counters.get("tasks_done", 0)), total)
+        if total <= 0 or done <= 0:
+            return None
+        elapsed = max(0.0, time.monotonic() - self._started_at)
+        avg_per_task = elapsed / done
+        remaining = max(0, total - done)
+        return max(0.0, avg_per_task * remaining)
+
+    def _format_duration(self, seconds: float | None) -> str:
+        if seconds is None:
+            return "--:--"
+        seconds = max(0.0, seconds)
+        minutes, remainder = divmod(int(seconds), 60)
+        hours, minutes = divmod(minutes, 60)
+        if hours:
+            return f"{hours:02d}:{minutes:02d}:{remainder:02d}"
+        return f"{minutes:02d}:{remainder:02d}"
+
+    def _status_footer(self, elapsed_seconds: float, eta_seconds: float | None, progress: float) -> str:
+        bar_width = 12
+        filled = min(bar_width, max(0, int(progress * bar_width)))
+        bar = "█" * filled + "░" * (bar_width - filled)
+        eta_text = self._format_duration(eta_seconds)
+        elapsed_text = self._format_duration(elapsed_seconds)
+        percent_text = f"{progress * 100:5.1f}%"
+        footer = f"{percent_text} [{bar}] el {elapsed_text} eta {eta_text}"
+        return f"| {footer[:58]:<58} |"
 
 
 def read_json_file(path: Path) -> Any:
@@ -835,6 +1229,12 @@ class OpportunityRecord(BaseModel):
     confidence_reasons: list[str] = Field(default_factory=list)
     search_metadata: dict[str, Any] = Field(default_factory=dict)
     deduplication: dict[str, Any] = Field(default_factory=dict)
+    discovery_provenance: dict[str, Any] = Field(default_factory=dict)
+    classification_tier: str = "borderline"
+    tier_reason: str | None = None
+    admin_review_recommended: bool = False
+    human_verification_needed: bool = False
+    blue_tick_eligible: bool = False
     tags: list[Any] = Field(default_factory=list)
     date_searched: str | None = None
     exclusion_reason: str | None = None
@@ -871,6 +1271,7 @@ class OpportunityRecord(BaseModel):
         "resources",
         "search_metadata",
         "deduplication",
+        "discovery_provenance",
         mode="before",
     )
     @classmethod
@@ -1030,6 +1431,17 @@ class CheckpointStore:
         self.task_cache_dir.mkdir(parents=True, exist_ok=True)
 
     def load_success(self, task: DiscoveryTask, current_date: str, refresh: bool) -> str | None:
+        payload = self.load_success_payload(task, current_date, refresh)
+        if not payload:
+            return None
+        return payload.get("output")
+
+    def load_success_payload(
+        self,
+        task: DiscoveryTask,
+        current_date: str,
+        refresh: bool,
+    ) -> dict[str, Any] | None:
         if refresh:
             return None
         path = self.task_cache_dir / f"{task.key}.json"
@@ -1041,7 +1453,7 @@ class CheckpointStore:
             return None
         if payload.get("current_date") != current_date:
             return None
-        return payload.get("output")
+        return payload
 
     def save_success(self, task: DiscoveryTask, current_date: str, model: str, output: str) -> None:
         atomic_write_json(
@@ -1392,6 +1804,69 @@ class DiscoveryPlanner:
                     "site:msme.gov.in innovation challenge registration open 2026",
                 ],
             ),
+            DiscoveryTask(
+                name="bio-science-research-innovation",
+                category="bio_science_research",
+                priority=4,
+                seed_urls=[
+                    "https://dbtindia.gov.in/",
+                    "https://birac.nic.in/",
+                    "https://dst.gov.in/",
+                    "https://www.tdb.gov.in/",
+                    "https://nrdcindia.gov.in/",
+                    "https://grants.gov.in/",
+                ],
+                queries=[
+                    "site:dbtindia.gov.in challenge call for proposals innovation open 2026",
+                    "site:birac.nic.in current calls proposal innovation challenge 2026",
+                    "site:dst.gov.in innovation challenge proposal call deadline 2026",
+                    "site:tdb.gov.in startup innovation challenge application open 2026",
+                    "site:nrdcindia.gov.in innovation challenge startup application open",
+                    "government biotechnology AI innovation call proposal open India 2026",
+                ],
+            ),
+            DiscoveryTask(
+                name="govtech-data-public-infra",
+                category="govtech_data_public_infra",
+                priority=5,
+                seed_urls=[
+                    "https://event.data.gov.in/",
+                    "https://data.gov.in/",
+                    "https://www.nha.gov.in/",
+                    "https://uidai.gov.in/",
+                    "https://www.pfrda.org.in/",
+                    "https://www.npci.org.in/",
+                ],
+                queries=[
+                    "site:event.data.gov.in challenge hackathon registration open 2026",
+                    "site:data.gov.in hackathon challenge registration deadline 2026",
+                    "site:nha.gov.in hackathon challenge application open 2026",
+                    "site:uidai.gov.in data hackathon challenge open 2026",
+                    "site:pfrda.org.in hackathon innovation challenge registration 2026",
+                    "public digital infrastructure hackathon India government open 2026",
+                ],
+            ),
+            DiscoveryTask(
+                name="academic-incubator-government",
+                category="academic_incubator_government",
+                priority=6,
+                seed_urls=[
+                    "https://www.aicte-india.org/",
+                    "https://www.iitm.ac.in/",
+                    "https://www.iitk.ac.in/",
+                    "https://www.iitd.ac.in/",
+                    "https://www.iitb.ac.in/",
+                    "https://www.iisc.ac.in/",
+                ],
+                queries=[
+                    "site:aicte-india.org hackathon challenge registration open 2026",
+                    "site:iitm.ac.in government innovation challenge hackathon open 2026",
+                    "site:iitk.ac.in ministry hackathon challenge registration 2026",
+                    "site:iitd.ac.in startup innovation challenge government open 2026",
+                    "site:iitb.ac.in hackathon challenge government registration open",
+                    "IIT incubator government startup challenge applications open 2026",
+                ],
+            ),
         ]
 
     def build_prompt(self, task: DiscoveryTask) -> str:
@@ -1408,6 +1883,16 @@ competitions, cybersecurity competitions, startup competitions, research
 competitions, defence challenges, and coding competitions where a brand new
 participant can still register, apply, submit, or propose on {self.current_date}.
 
+High-recall mode:
+- Discover broadly first, then classify. Do not collapse the output to only
+  perfect-certainty candidates.
+- Include real government-backed innovation ecosystem opportunities even when
+  intake is partially obscured by login, external portals, PDFs, or fragmented
+  government UX.
+- Prefer tiering uncertainty as likely_active or borderline over excluding a
+  plausible real opportunity. Preserve explicit closed/historical pages as
+  archived rather than rejected.
+
 Seed official URLs:
 {json.dumps(task.seed_urls, indent=2)}
 
@@ -1416,28 +1901,33 @@ Search queries to execute or approximate:
 
 Hard validation rules:
 - Include only current-cycle opportunities with an official source URL.
-- Exclude closed, archived, winner/finalist, judging-only, historical, or speculative pages.
+- Exclude only clearly closed, archived, winner/finalist, judging-only,
+  historical, fake, clearly unrelated, or clearly non-technical pages.
 - Exclude logo, mascot, slogan, essay, poetry, debate, photography, poster,
   drawing, art, reel, social media, branding, public-voting, cultural, quiz,
   talent, or awareness contests from both active and borderline results.
-- Include only opportunities with a real technical implementation signal:
+- Include opportunities with a real technical implementation or ecosystem signal:
   AI/ML, coding, cybersecurity, robotics, engineering, hardware, software,
   automation, biotechnology R&D, aerospace, defence tech, semiconductors,
-  blockchain, APIs, cloud systems, GovTech, technical prototype, proof of
-  concept, or technical commercialization.
+  blockchain, APIs, cloud systems, GovTech, accelerator, incubation,
+  technical prototype, proof of concept, applied research, proposal,
+  startup solution, pilot, or technical commercialization.
 - Do not treat ideas, opinions, branding, writing, visual design, artwork, or
   awareness content as technical implementation.
-- Treat procurement notices, RFPs, feasibility studies, vendor onboarding,
-  acquisition workflows, grant intake portals, and funding applications as
-  borderline unless the official source clearly frames them as a public
-  innovation competition with competitive evaluation.
-- "Apply Now" alone is insufficient; verify an active form, authenticated
-  intake flow, direct apply endpoint, or active submit endpoint.
+- Treat grant, proposal, accelerator, and R&D challenge hybrids as valuable
+  ecosystem opportunities when technical implementation, prototype, startup
+  solution, engineering output, or applied research output is expected.
+- "Apply Now" alone is not fully verified, but it can support likely_active or
+  borderline classification when official current-cycle evidence exists.
+- Accept Unstop, Devfolio, HackerEarth, Google Forms, Typeform, Startup India
+  AMS, and partner-hosted registration systems when linked or referenced by an
+  official/ministry-backed source.
 - Do not invent URLs, deadlines, prize amounts, emails, or ministries.
 - Prefer official .gov.in, .nic.in, .ac.in, ministry, MyGov, Startup India,
   IndiaAI, AIKosh, BIRAC, DST, TDB, iDEX, ISRO, DRDO, or state government sources.
 - External registration platforms are allowed only if the official source links to them.
-- Return at most {self.max_candidates_per_task} high-confidence candidates.
+- Return at most {self.max_candidates_per_task} useful candidates across all
+  tiers, prioritizing recall and transparent classification.
 
 Return ONLY strict JSON in this exact shape:
 {{
@@ -1474,7 +1964,11 @@ Return ONLY strict JSON in this exact shape:
         "official_open_keywords_found": ["short exact phrases"],
         "deadline_verified": true
       }},
-      "confidence_score": 0
+      "confidence_score": 0,
+      "classification_tier": "fully_verified | likely_active | borderline | archived | rejected",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": false
     }}
   ],
   "excluded": [
@@ -1521,12 +2015,24 @@ class OpenCodeRunner:
         retries: int,
         current_date: str,
         refresh_cache: bool,
+        status_callback: Callable[[str, dict[str, Any]], None] | None = None,
+        quiet: bool = False,
     ) -> None:
         self.models = models
         self.checkpoint_store = checkpoint_store
         self.retries = max(1, retries)
         self.current_date = current_date
         self.refresh_cache = refresh_cache
+        self.status_callback = status_callback
+        self.quiet = quiet
+
+    def _emit(self, message: str) -> None:
+        if not self.quiet:
+            print(message)
+
+    def _notify(self, event: str, **payload: Any) -> None:
+        if self.status_callback:
+            self.status_callback(event, payload)
 
     def run_task(
         self,
@@ -1534,21 +2040,28 @@ class OpenCodeRunner:
         prompt: str,
         output_acceptor: Callable[[RunArtifact], bool] | None = None,
     ) -> tuple[str | None, list[RunArtifact]]:
-        cached = self.checkpoint_store.load_success(task, self.current_date, self.refresh_cache)
+        self._notify("task_start", task_name=task.name, task_category=task.category)
+        cached_payload = self.checkpoint_store.load_success_payload(task, self.current_date, self.refresh_cache)
+        cached = cached_payload.get("output") if cached_payload else None
         if cached:
-            print(f"  [{task.name}] cache hit")
-            artifact = RunArtifact(task.name, "cache", 0, True, cached, None, 0.0, from_cache=True)
+            self._emit(f"  [{task.name}] cache hit")
+            self._notify("cache_hit", task_name=task.name, model=cached_payload.get("model") if cached_payload else "cache")
+            cached_model = cached_payload.get("model") if cached_payload else "cache"
+            artifact = RunArtifact(task.name, cached_model or "cache", 0, True, cached, None, 0.0, from_cache=True)
             if output_acceptor:
                 artifact.parser_accepted = output_acceptor(artifact)
             self.checkpoint_store.save_artifact(artifact)
             if artifact.parser_accepted is False:
-                print(f"  [{task.name}] cached output failed parser; rerunning fallback chain")
+                self._emit(f"  [{task.name}] cached output failed parser; rerunning fallback chain")
+                self._notify("parser_rejected", task_name=task.name, model=cached_model or "cache")
                 self.checkpoint_store.delete_success(task)
             else:
+                self._notify("task_complete", task_name=task.name, success=True, from_cache=True)
                 return cached, [artifact]
 
         artifacts: list[RunArtifact] = []
         for model in self.models:
+            self._notify("model_selected", task_name=task.name, model=model)
             for attempt in range(1, self.retries + 1):
                 timeout = self._model_timeout(model)
                 artifact = self._run_once(task, model, attempt, prompt, timeout)
@@ -1561,17 +2074,23 @@ class OpenCodeRunner:
                         artifact.success = False
                         artifact.error = "Parser rejected model output; activating fallback"
                         self.checkpoint_store.save_artifact(artifact)
-                        print(f"  parser rejected {model}; activating fallback")
+                        self._emit(f"  parser rejected {model}; activating fallback")
+                        self._notify("parser_rejected", task_name=task.name, model=model)
                         break
+                    self._notify("task_complete", task_name=task.name, success=True, model=model)
                     return artifact.output, artifacts
                 self.checkpoint_store.save_artifact(artifact)
                 if artifact.error and self._is_fatal(artifact.error + "\n" + artifact.output):
+                    self._notify("fatal_error", task_name=task.name, model=model, error=artifact.error)
                     break
                 if attempt < self.retries:
                     delay = min(20, 2 ** attempt)
-                    print(f"  retrying {model} for {task.name} in {delay}s")
+                    self._emit(f"  retrying {model} for {task.name} in {delay}s")
+                    self._notify("retrying", task_name=task.name, model=model, delay=delay)
                     time.sleep(delay)
-            print(f"  fallback activated after {model}")
+            self._emit(f"  fallback activated after {model}")
+            self._notify("fallback", task_name=task.name, model=model)
+        self._notify("task_complete", task_name=task.name, success=False)
         return self._best_partial(artifacts), artifacts
 
     def _best_partial(self, artifacts: list[RunArtifact]) -> str | None:
@@ -1585,7 +2104,8 @@ class OpenCodeRunner:
 
     def _run_once(self, task: DiscoveryTask, model: str, attempt: int, prompt: str, timeout: int) -> RunArtifact:
         started = time.monotonic()
-        print(f"  [{task.name}] model={model} attempt={attempt}/{self.retries} timeout={timeout}s")
+        self._emit(f"  [{task.name}] model={model} attempt={attempt}/{self.retries} timeout={timeout}s")
+        self._notify("model_start", task_name=task.name, model=model, attempt=attempt, timeout=timeout)
         partial_path = self.checkpoint_store.partial_output_path(task, model, attempt)
         raw_task_path = self.checkpoint_store.raw_task_output_path(task)
         header = (
@@ -1689,7 +2209,8 @@ class OpenCodeRunner:
                 break
         selector.close()
         if timed_out:
-            print(f"    timed out after {timeout}s; partial output preserved")
+            self._emit(f"    timed out after {timeout}s; partial output preserved")
+            self._notify("model_timeout", task_name=task.name, model=model, timeout=timeout)
         return "".join(output_parts), timed_out
 
     def _has_model_error(self, output: str) -> bool:
@@ -1779,7 +2300,7 @@ class ValidationEngine:
         )
         accepting_entries = deadline_future and status_active and official_source and not closed_keywords and not zombie
         if self.live_validation:
-            accepting_entries = accepting_entries and workflow_detected and bool(open_keywords) and deadline_date is not None
+            accepting_entries = accepting_entries and bool(open_keywords) and deadline_date is not None
 
         record.source_validation.source_url = record.source_validation.source_url or record.source_url
         record.source_validation.source_type = record.source_validation.source_type or self._source_type(record)
@@ -1873,7 +2394,14 @@ class ValidationEngine:
                 elapsed_seconds=time.monotonic() - started,
                 error=f"HTTP {exc.code}",
             )
-        except (URLError, TimeoutError, OSError) as exc:
+        except IncompleteRead as exc:
+            # Handle incomplete HTTP responses gracefully
+            return PageProbe(
+                url=url,
+                elapsed_seconds=time.monotonic() - started,
+                error=f"IncompleteRead: {exc.args[0] if exc.args else 'partial response'}",
+            )
+        except (HTTPException, URLError, TimeoutError, OSError) as exc:
             return PageProbe(
                 url=url,
                 elapsed_seconds=time.monotonic() - started,
@@ -2043,16 +2571,16 @@ class ValidationEngine:
             cap = min(cap, 89)
             reasons.append("live validation skipped")
         if auth_wall:
-            cap = min(cap, 94)
+            cap = min(cap, 96)
             reasons.append("auth-wall workflow ambiguity")
         if not form_detected:
-            cap = min(cap, 89)
+            cap = min(cap, 95)
             reasons.append("active form or apply endpoint missing")
         if not workflow_detected:
-            cap = min(cap, 84)
+            cap = min(cap, 92)
             reasons.append("intake workflow not detected")
         if not accepting_entries:
-            cap = min(cap, 84)
+            cap = min(cap, 90)
             reasons.append("new-user intake not fully confirmed")
         return max(0, min(cap, score)), reasons
 
@@ -2064,41 +2592,56 @@ class NormalizationEngine:
         self.validator = ValidationEngine(current_date, live_validation=live_validation)
 
     def normalize_payloads(self, payloads: list[dict[str, Any]]) -> dict[str, Any]:
-        raw_candidates: list[tuple[dict[str, Any], str]] = []
+        raw_candidates: list[tuple[dict[str, Any], str, dict[str, Any]]] = []
         excluded: list[dict[str, Any]] = []
         sources_scanned: set[str] = set()
         queries_used: set[str] = set()
         metadata_in: list[dict[str, Any]] = []
 
         for payload in payloads:
+            payload_sources = set(str(item) for item in ensure_list(payload.get("sources_scanned")) if item)
+            payload_queries = set(str(item) for item in ensure_list(payload.get("search_queries_used")) if item)
             metadata = payload.get("metadata")
             if isinstance(metadata, dict):
                 metadata_in.append(metadata)
-                sources_scanned.update(str(item) for item in ensure_list(metadata.get("sources_scanned")))
-                queries_used.update(str(item) for item in ensure_list(metadata.get("search_queries_used")))
+                payload_sources.update(str(item) for item in ensure_list(metadata.get("sources_scanned")) if item)
+                payload_queries.update(str(item) for item in ensure_list(metadata.get("search_queries_used")) if item)
 
-            sources_scanned.update(str(item) for item in ensure_list(payload.get("sources_scanned")))
-            queries_used.update(str(item) for item in ensure_list(payload.get("search_queries_used")))
+            sources_scanned.update(payload_sources)
+            queries_used.update(payload_queries)
+            context = {
+                "task_name": metadata.get("task_name") if isinstance(metadata, dict) else None,
+                "task_category": metadata.get("task_category") if isinstance(metadata, dict) else None,
+                "discovery_model": metadata.get("discovery_model") if isinstance(metadata, dict) else None,
+                "sources_scanned": sorted(payload_sources),
+                "search_queries_used": sorted(payload_queries),
+            }
 
             for key in ("government_hackathons", "candidates", "opportunities", "active_opportunities"):
                 for item in ensure_list(payload.get(key)):
                     if isinstance(item, dict):
-                        raw_candidates.append((item, "active_candidate"))
+                        raw_candidates.append((item, "active_candidate", context))
 
             for item in ensure_list(payload.get("borderline_opportunities")):
                 if isinstance(item, dict):
-                    raw_candidates.append((item, "borderline_candidate"))
+                    raw_candidates.append((item, "borderline_candidate", context))
 
             for item in ensure_list(payload.get("excluded")) + ensure_list(payload.get("excluded_opportunities")):
                 if isinstance(item, dict):
-                    excluded.append(item)
+                    if self._should_preserve_excluded_candidate(item):
+                        raw_candidates.append((item, "excluded_candidate", context))
+                    else:
+                        excluded.append(item)
 
         decisions = self._normalize_candidates(raw_candidates)
-        active = [decision.record for decision in decisions if decision.bucket == "active"]
+        fully_verified = [decision.record for decision in decisions if decision.bucket == "fully_verified"]
+        likely_active = [decision.record for decision in decisions if decision.bucket == "likely_active"]
+        active = fully_verified + likely_active
         borderline = [decision.record for decision in decisions if decision.bucket == "borderline"]
-        rejected = [decision.record for decision in decisions if decision.bucket == "excluded"]
+        archived = [decision.record for decision in decisions if decision.bucket == "archived"]
+        rejected = [decision.record for decision in decisions if decision.bucket == "rejected"]
 
-        for record in active + borderline + rejected:
+        for record in fully_verified + likely_active + borderline + archived + rejected:
             for url in [
                 record.source_url,
                 record.official_event_page,
@@ -2119,42 +2662,95 @@ class NormalizationEngine:
             )
 
         active_dump = [self._dump_record(record) for record in active]
+        fully_verified_dump = [self._dump_record(record) for record in fully_verified]
+        likely_active_dump = [self._dump_record(record) for record in likely_active]
         borderline_dump = [self._dump_record(record) for record in borderline]
+        archived_dump = [self._dump_record(record) for record in archived]
         excluded_dump = self._dedupe_excluded(excluded)
+        tier_counts = {
+            "fully_verified": len(fully_verified_dump),
+            "likely_active": len(likely_active_dump),
+            "borderline": len(borderline_dump),
+            "archived": len(archived_dump),
+            "rejected": len(excluded_dump),
+        }
+        domains_scanned_count = len({hostname(url) for url in sources_scanned if url})
+        useful_count = len(active_dump) + len(borderline_dump)
+        recall_analysis = {
+            "useful_opportunities_exported": useful_count,
+            "under_discovery_risk": useful_count < 3 and domains_scanned_count >= 10,
+            "false_negative_priority": "high",
+            "tiered_review_enabled": True,
+        }
 
         return {
             "government_hackathons": active_dump,
+            "fully_verified_opportunities": fully_verified_dump,
+            "likely_active_opportunities": likely_active_dump,
             "borderline_opportunities": borderline_dump,
+            "archived_opportunities": archived_dump,
+            "ecosystem_opportunities": borderline_dump,
             "excluded_opportunities": excluded_dump,
             "metadata": {
                 "search_date": self.current_date,
                 "current_date_used_for_validation": self.current_date,
                 "total_active_hackathons": len(active_dump),
+                "total_fully_verified": len(fully_verified_dump),
+                "total_likely_active": len(likely_active_dump),
                 "total_borderline_opportunities": len(borderline_dump),
+                "total_archived_opportunities": len(archived_dump),
+                "total_ecosystem_opportunities": len(borderline_dump),
                 "total_excluded": len(excluded_dump),
+                "classification_tiers": tier_counts,
+                "recall_analysis": recall_analysis,
                 "total_candidates_discovered": len(raw_candidates),
                 "sources_scanned": sorted(sources_scanned),
-                "domains_scanned_count": len({hostname(url) for url in sources_scanned if url}),
+                "domains_scanned_count": domains_scanned_count,
                 "search_queries_used": sorted(queries_used),
                 "normalization_engine": "pydantic_v2",
+                "recall_mode": "high_recall_tiered",
                 "live_validation_enabled": self.validator.live_validation,
                 "data_quality_notes": [
                     "Final JSON is regenerated deterministically by the pipeline.",
                     "Stringified JSON fields are repaired into objects.",
-                    "Candidates failing current-cycle or official-source checks are rejected or moved to borderline.",
+                    "Discovery and validation are separated; uncertain real opportunities are tiered instead of prematurely rejected.",
                     "LLM confidence is capped and recalibrated after deterministic validation.",
-                    "Creative/design contests are hard-excluded before active or borderline classification.",
-                    "Procurement, grant, and feasibility-study semantics are demoted unless competition structure is explicit.",
-                    "Auth walls and skipped validation cap confidence and cannot prove intake by themselves.",
+                    "Creative/design contests and clearly stale or closed pages remain hard-excluded.",
+                    "Grant, proposal, accelerator, and R&D challenge hybrids are retained when technical implementation signals exist.",
+                    "Auth walls, external registration, PDFs, and poor government portal UX reduce tier confidence but do not imply invalidity.",
                 ],
                 "input_metadata": metadata_in,
             },
         }
 
-    def _normalize_candidates(self, raw_candidates: list[tuple[dict[str, Any], str]]) -> list[CandidateDecision]:
+    def _should_preserve_excluded_candidate(self, item: dict[str, Any]) -> bool:
+        reason = str(item.get("reason") or item.get("exclusion_reason") or "").strip().lower()
+        if reason in {"fake", "spam", "scam", "malicious"}:
+            return False
+        if self._is_archived_reason(reason):
+            return True
+        if reason in SOFT_EXCLUDED_REASONS:
+            return True
+        text = normalize_space(json.dumps(item, ensure_ascii=False, sort_keys=True).lower())
+        ecosystem_signal = self._matched_keywords(text, COMPETITIVE_STRUCTURE_SIGNALS + GRANT_ONLY_KEYWORDS)
+        technical_signal = self._matched_keywords(text, STRONG_TECHNICAL_SIGNALS + IMPLEMENTATION_SIGNALS)
+        has_governmentish_url = any(
+            is_trusted_government_url(item.get(key))
+            for key in ("source_url", "official_event_page", "official_website", "registration_url")
+        )
+        return bool(has_governmentish_url and (ecosystem_signal or technical_signal))
+
+    def _is_archived_reason(self, reason: str) -> bool:
+        return any(keyword in reason for keyword in ARCHIVED_REASON_KEYWORDS)
+
+    def _normalize_candidates(
+        self,
+        raw_candidates: list[tuple[dict[str, Any], str, dict[str, Any]]],
+    ) -> list[CandidateDecision]:
         deduped: dict[str, CandidateDecision] = {}
         alias_to_key: dict[str, str] = {}
-        for raw, source_bucket in raw_candidates:
+        for raw, source_bucket, context in raw_candidates:
+            raw = self._with_discovery_provenance(raw, context)
             try:
                 record = OpportunityRecord.model_validate(raw)
             except ValidationError as exc:
@@ -2164,7 +2760,7 @@ class NormalizationEngine:
                     confidence_score=0,
                     exclusion_reason=f"schema_validation_failed: {exc.errors()[0].get('msg')}",
                 )
-                decision = CandidateDecision("excluded", fallback, fallback.exclusion_reason or "schema_validation_failed")
+                decision = CandidateDecision("rejected", fallback, fallback.exclusion_reason or "schema_validation_failed")
                 self._upsert_decision(deduped, alias_to_key, decision)
                 continue
 
@@ -2175,62 +2771,218 @@ class NormalizationEngine:
 
         return sorted(deduped.values(), key=lambda item: (-item.record.confidence_score, item.record.hackathon_name))
 
+    def _with_discovery_provenance(self, raw: dict[str, Any], context: dict[str, Any]) -> dict[str, Any]:
+        item = dict(raw)
+        if not item.get("hackathon_name") and item.get("name"):
+            item["hackathon_name"] = item.get("name")
+        if not item.get("source_url"):
+            item["source_url"] = item.get("official_event_page") or item.get("registration_url") or item.get("official_website")
+        provenance = ensure_dict(item.get("discovery_provenance"))
+        models = set(str(model) for model in ensure_list(provenance.get("discovered_by_models")) if model)
+        if context.get("discovery_model"):
+            models.add(str(context["discovery_model"]))
+        source_domains = set(str(domain) for domain in ensure_list(provenance.get("source_domains")) if domain)
+        urls = list(context.get("sources_scanned") or [])
+        urls.extend(
+            [
+                item.get("source_url"),
+                item.get("official_event_page"),
+                item.get("official_website"),
+                item.get("registration_url"),
+            ]
+        )
+        for url in urls:
+            domain = hostname(canonicalize_url(url))
+            if domain:
+                source_domains.add(domain)
+        query_count = ensure_int(provenance.get("discovery_query_count"), 0)
+        query_count = max(query_count, len(context.get("search_queries_used") or []))
+        provenance["discovered_by_models"] = sorted(models)
+        provenance["source_domains"] = sorted(source_domains)
+        provenance["discovery_query_count"] = query_count
+        provenance["consensus_strength"] = consensus_strength(list(models))
+        item["discovery_provenance"] = provenance
+        search_metadata = ensure_dict(item.get("search_metadata"))
+        for key in ("task_name", "task_category", "discovery_model"):
+            if context.get(key):
+                search_metadata.setdefault(key, context[key])
+        if context.get("search_queries_used"):
+            search_metadata.setdefault("search_queries_used", context["search_queries_used"])
+        item["search_metadata"] = search_metadata
+        return item
+
     def _classify(self, record: OpportunityRecord, source_bucket: str) -> CandidateDecision:
-        reason = "active_verified"
+        record.classification_tier = "borderline"
         if not self._has_minimum_identity(record):
-            record.exclusion_reason = "missing_identity_or_url"
-            return CandidateDecision("excluded", record, record.exclusion_reason)
-        if not self._has_government_source(record):
-            record.exclusion_reason = "not_government_or_untrusted_source"
-            return CandidateDecision("excluded", record, record.exclusion_reason)
+            return self._reject(record, "missing_identity_or_url")
+
+        raw_reason = str(record.exclusion_reason or getattr(record, "reason", "") or "").strip().lower()
+        if source_bucket == "excluded_candidate" and self._is_archived_reason(raw_reason):
+            return self._archived(record, raw_reason or "archived_or_closed_source")
+        if record.current_status in {"archived", "completed", "closed", "finalist", "judging"} or record.current_status.endswith("_closed"):
+            return self._archived(record, f"current_status_{record.current_status}")
+
+        official_source = self._has_government_source(record)
+        government_or_ecosystem = official_source or self._has_government_or_ecosystem_affiliation(record)
         semantic_failure = self._semantic_purity_failure(record)
-        if semantic_failure:
-            record.exclusion_reason = semantic_failure
-            return CandidateDecision("excluded", record, semantic_failure)
+        if self._is_proposal_or_r_and_d_only(record):
+            return self._reject(record, "proposal_or_r_and_d_call_not_hackathon")
+        if self._is_school_awareness_only(record):
+            return self._reject(record, "school_awareness_category_not_hackathon")
+        # Filter pure startup/seed/funding listings while preserving startup challenges/hackathons.
+        if self._is_startup_seed_funding(record):
+            return self._reject(record, "startup_or_funding_related")
+        if semantic_failure and semantic_failure.startswith("non_technical_creative_contest"):
+            return self._reject(record, semantic_failure)
         if self._deadline_is_past(record):
-            record.exclusion_reason = "deadline_closed"
-            return CandidateDecision("excluded", record, record.exclusion_reason)
+            return self._archived(record, "deadline_closed")
         if record.source_validation.zombie_page_suspected:
-            record.exclusion_reason = "zombie_or_stale_page"
-            return CandidateDecision("excluded", record, record.exclusion_reason)
+            return self._archived(record, "zombie_or_stale_page")
         if record.source_validation.closed_keywords_found:
-            record.exclusion_reason = "closed_lifecycle_keywords_detected"
-            return CandidateDecision("excluded", record, record.exclusion_reason)
+            return self._archived(record, "closed_lifecycle_keywords_detected")
+        if not government_or_ecosystem:
+            return self._reject(record, "not_government_or_ecosystem_affiliated")
+
+        tier_score = self._recall_tier_score(record, official_source)
+        current_cycle = self._has_current_cycle_evidence(record)
+        ecosystem_relevant = self._is_ecosystem_relevant(record)
+        active_intake_issue = self._active_intake_issue(record)
 
         procurement_or_grant_issue = self._procurement_or_grant_ambiguity(record)
-        if procurement_or_grant_issue:
-            return self._borderline(record, procurement_or_grant_issue, cap=89)
-        intake_issue = self._active_intake_issue(record)
-        if intake_issue:
-            return self._borderline(record, intake_issue, cap=89)
-        if source_bucket == "borderline_candidate":
-            return self._borderline(
-                record,
-                record.borderline_reason or "Input source marked this opportunity as borderline.",
-                cap=89,
-            )
-        if record.confidence_score < self.min_confidence:
-            return self._borderline(
-                record,
-                f"Confidence {record.confidence_score} is below active threshold {self.min_confidence}.",
-                cap=79,
-            )
-        if not record.is_open_for_new_registration and not record.is_open_for_submission:
-            return self._borderline(
-                record,
-                "Could not deterministically confirm new-user registration or submission.",
-                cap=84,
-            )
-        return CandidateDecision("active", record, reason)
+        if semantic_failure and not ecosystem_relevant:
+            return self._reject(record, semantic_failure)
 
-    def _borderline(self, record: OpportunityRecord, reason: str, cap: int = 89) -> CandidateDecision:
-        record.borderline_reason = reason
-        record.confidence_score = min(record.confidence_score, cap)
+        if self._is_fully_verified(record, official_source):
+            return self._tier(record, "fully_verified", "official_source_active_workflow_and_deadline_confirmed")
+        if (
+            official_source
+            and current_cycle
+            and tier_score >= max(62, self.min_confidence - 10)
+            and semantic_failure != "missing_strong_technical_signal"
+            and not procurement_or_grant_issue
+        ):
+            reason = active_intake_issue or "strong_official_current_cycle_evidence"
+            return self._tier(record, "likely_active", reason)
+        if source_bucket == "borderline_candidate":
+            return self._tier(
+                record,
+                "borderline",
+                record.borderline_reason or "Input source marked this opportunity as borderline.",
+            )
+        if procurement_or_grant_issue and self._has_implementation_signal(self._semantic_text(record)):
+            return self._tier(record, "borderline", procurement_or_grant_issue)
+        if ecosystem_relevant and (tier_score >= 45 or source_bucket == "excluded_candidate"):
+            return self._tier(record, "borderline", semantic_failure or "government_ecosystem_relevance")
+        if active_intake_issue or tier_score >= 50:
+            return self._tier(
+                record,
+                "borderline",
+                active_intake_issue or f"weighted_recall_score_{tier_score}_requires_human_review",
+            )
+        return self._reject(record, semantic_failure or "insufficient_recall_signals")
+
+    def _is_fully_verified(self, record: OpportunityRecord, official_source: bool) -> bool:
+        validation = record.source_validation
+        has_apply_cta = self._has_apply_cta(record)
+        return bool(
+            official_source
+            and validation.registration_page_verified
+            and validation.deadline_verified
+            and validation.official_confirmation_found
+            and not validation.auth_wall_detected
+            and (validation.registration_form_detected or has_apply_cta or self._uses_external_intake(record))
+            and (record.is_open_for_new_registration or record.is_open_for_submission)
+        )
+
+    def _tier(self, record: OpportunityRecord, tier: str, reason: str) -> CandidateDecision:
+        record.classification_tier = tier
+        record.tier_reason = reason
+        record.verification_state = tier
+        if tier == "fully_verified":
+            record.confidence_score = max(record.confidence_score, 90)
+        elif tier == "likely_active":
+            record.confidence_score = max(70, min(record.confidence_score, 89))
+        elif tier == "borderline":
+            record.confidence_score = max(40, min(record.confidence_score, 69))
+        if tier == "borderline":
+            record.borderline_reason = reason
         if reason not in record.confidence_reasons:
             record.confidence_reasons.append(reason)
-        if record.verification_state == "fully_verified":
-            record.verification_state = "needs_review"
-        return CandidateDecision("borderline", record, reason)
+        self._apply_review_flags(record)
+        return CandidateDecision(tier, record, reason)
+
+    def _archived(self, record: OpportunityRecord, reason: str) -> CandidateDecision:
+        record.classification_tier = "archived"
+        record.tier_reason = reason
+        record.verification_state = "archived"
+        record.confidence_score = max(record.confidence_score, 80)
+        record.exclusion_reason = None
+        if reason not in record.confidence_reasons:
+            record.confidence_reasons.append(reason)
+        self._apply_review_flags(record)
+        return CandidateDecision("archived", record, reason)
+
+    def _reject(self, record: OpportunityRecord, reason: str) -> CandidateDecision:
+        record.classification_tier = "rejected"
+        record.tier_reason = reason
+        record.verification_state = "rejected"
+        record.exclusion_reason = reason
+        self._apply_review_flags(record)
+        return CandidateDecision("rejected", record, reason)
+
+    def _apply_review_flags(self, record: OpportunityRecord) -> None:
+        record.admin_review_recommended = 60 <= record.confidence_score <= 89 and record.classification_tier != "archived"
+        record.human_verification_needed = record.classification_tier in {"likely_active", "borderline"} or record.admin_review_recommended
+        record.blue_tick_eligible = record.classification_tier == "fully_verified" and record.confidence_score >= 90
+
+    def _has_apply_cta(self, record: OpportunityRecord) -> bool:
+        open_text = " ".join(str(item).lower() for item in record.source_validation.official_open_keywords_found)
+        return any(
+            phrase in open_text
+            for phrase in (
+                "apply now",
+                "challenge open",
+                "registration open",
+                "application open",
+                "submission open",
+                "submit",
+                "register",
+            )
+        )
+
+    def _recall_tier_score(self, record: OpportunityRecord, official_source: bool) -> int:
+        validation = record.source_validation
+        text = self._semantic_text(record)
+        score = 0
+        if official_source:
+            score += 24
+        elif self._has_government_or_ecosystem_affiliation(record):
+            score += 14
+        if self._has_current_cycle_evidence(record):
+            score += 16
+        if validation.registration_page_verified:
+            score += 10
+        if validation.registration_form_detected:
+            score += 10
+        elif validation.auth_wall_detected or self._uses_external_intake(record):
+            score += 6
+        if validation.official_confirmation_found or validation.official_open_keywords_found:
+            score += 12
+        if validation.deadline_verified:
+            score += 12
+        elif not record.deadline:
+            score += 4
+        if self._matched_keywords(text, STRONG_TECHNICAL_SIGNALS):
+            score += 8
+        if self._is_ecosystem_relevant(record):
+            score += 8
+        if len(ensure_list(record.discovery_provenance.get("source_domains"))) >= 2:
+            score += 6
+        if record.confidence_score >= 80:
+            score += 6
+        elif record.confidence_score >= 65:
+            score += 3
+        return min(100, score)
 
     def _upsert_decision(
         self,
@@ -2243,10 +2995,34 @@ class NormalizationEngine:
         key = existing_key or self._dedupe_key(decision.record)
         previous = deduped.get(key)
         if previous and self._rank(previous) >= self._rank(decision):
+            self._merge_discovery_provenance(previous.record, decision.record)
             return
+        if previous:
+            self._merge_discovery_provenance(decision.record, previous.record)
         deduped[key] = decision
         for alias in aliases:
             alias_to_key[alias] = key
+
+    def _merge_discovery_provenance(self, target: OpportunityRecord, incoming: OpportunityRecord) -> None:
+        target_provenance = ensure_dict(target.discovery_provenance)
+        incoming_provenance = ensure_dict(incoming.discovery_provenance)
+        models = sorted(
+            set(str(item) for item in ensure_list(target_provenance.get("discovered_by_models")) if item)
+            | set(str(item) for item in ensure_list(incoming_provenance.get("discovered_by_models")) if item)
+        )
+        domains = sorted(
+            set(str(item) for item in ensure_list(target_provenance.get("source_domains")) if item)
+            | set(str(item) for item in ensure_list(incoming_provenance.get("source_domains")) if item)
+        )
+        query_count = max(
+            ensure_int(target_provenance.get("discovery_query_count"), 0),
+            ensure_int(incoming_provenance.get("discovery_query_count"), 0),
+        )
+        target_provenance["discovered_by_models"] = models
+        target_provenance["source_domains"] = domains
+        target_provenance["discovery_query_count"] = query_count
+        target_provenance["consensus_strength"] = consensus_strength(models)
+        target.discovery_provenance = target_provenance
 
     def _semantic_purity_failure(self, record: OpportunityRecord) -> str | None:
         text = self._semantic_text(record)
@@ -2259,6 +3035,85 @@ class NormalizationEngine:
         if not self._has_implementation_signal(text):
             return "missing_technical_implementation_submission"
         return None
+
+    def _is_startup_seed_funding(self, record: OpportunityRecord) -> bool:
+        text = self._semantic_text(record)
+        funding_terms = [
+            "seed",
+            "seed funding",
+            "seed-stage",
+            "pre-seed",
+            "funding",
+            "grant",
+            "venture",
+            "vc ",
+            "angel",
+            "investor",
+        ]
+        funding_signal = bool(self._matched_keywords(text, funding_terms))
+        competition_signal = bool(self._matched_keywords(text, COMPETITION_KEYWORDS + COMPETITIVE_STRUCTURE_SIGNALS))
+        implementation_signal = self._has_implementation_signal(text)
+        return bool(funding_signal and not (competition_signal and implementation_signal))
+
+    def _is_proposal_or_r_and_d_only(self, record: OpportunityRecord) -> bool:
+        text = self._semantic_text(record)
+        url_text = normalize_space(
+            " ".join(
+                str(url or "").lower()
+                for url in [
+                    record.source_url,
+                    record.official_event_page,
+                    record.registration_url,
+                    record.submission_url,
+                ]
+            )
+        )
+        title_text = normalize_space(f"{record.hackathon_name or ''} {record.full_name or ''}".lower())
+        combined_text = normalize_space(f"{text} {title_text} {url_text}")
+        proposal_signal = bool(
+            self._matched_keywords(
+                combined_text,
+                R_AND_D_PROPOSAL_ONLY_KEYWORDS + GRANT_ONLY_KEYWORDS + PROCUREMENT_OR_GRANT_INTAKE_KEYWORDS,
+            )
+        )
+        hackathon_title_signal = "hackathon" in title_text or "coding competition" in title_text
+        if hackathon_title_signal:
+            return False
+        if record.current_status == "proposal_open":
+            return True
+        explicit_proposal_call = any(
+            phrase in combined_text
+            for phrase in (
+                "call for proposal",
+                "call for proposals",
+                "callforproposals",
+                "request for proposal",
+                "request for proposals",
+                "joint innovation call",
+                "research proposal",
+                "r&d",
+                "research and development",
+                "rdi fund",
+                "rdif",
+                "cfp",
+                "howtosubmitproposal",
+                "s&t cooperation call",
+            )
+        )
+        return bool(proposal_signal and (explicit_proposal_call or record.event_type == "research_competition"))
+
+    def _is_school_awareness_only(self, record: OpportunityRecord) -> bool:
+        text = self._semantic_text(record)
+        if "bioe3" not in text:
+            return False
+        has_school_category = (
+            ("category 1" in text or "category-1" in text)
+            and ("school" in text or "school student" in text or "school students" in text)
+        )
+        has_awareness_only_signal = bool(self._matched_keywords(text, SCHOOL_AWARENESS_ONLY_KEYWORDS)) and (
+            "awareness" in text or "video submission" in text or "school" in text
+        )
+        return bool(has_school_category or has_awareness_only_signal)
 
     def _has_implementation_signal(self, text: str) -> bool:
         direct_implementation = self._matched_keywords(text, IMPLEMENTATION_SIGNALS)
@@ -2304,6 +3159,74 @@ class NormalizationEngine:
     def _has_government_source(self, record: OpportunityRecord) -> bool:
         official_urls = [record.source_url, record.official_event_page, record.official_website]
         return any(is_trusted_government_url(url) for url in official_urls)
+
+    def _has_government_or_ecosystem_affiliation(self, record: OpportunityRecord) -> bool:
+        text = self._semantic_text(record)
+        government_terms = [
+            "government",
+            "ministry",
+            "department",
+            "dpiit",
+            "startup india",
+            "indiaai",
+            "mygov",
+            "idex",
+            "birac",
+            "aicte",
+            "meity",
+            "drdo",
+            "isro",
+            "public sector",
+            "psu",
+            "state government",
+        ]
+        if any(term in text for term in government_terms):
+            return True
+        provenance_domains = ensure_list(record.discovery_provenance.get("source_domains"))
+        return any(is_trusted_government_url(canonicalize_url(str(domain))) for domain in provenance_domains)
+
+    def _has_current_cycle_evidence(self, record: OpportunityRecord) -> bool:
+        if record.current_status in ACTIVE_STATUSES:
+            return True
+        if record.source_validation.official_open_keywords_found:
+            return True
+        deadline = parse_date(record.deadline)
+        current = parse_date(self.current_date) or date.today()
+        return bool(deadline and deadline >= current)
+
+    def _uses_external_intake(self, record: OpportunityRecord) -> bool:
+        return any(
+            is_external_registration_url(url)
+            for url in [
+                record.registration_url,
+                record.submission_url,
+                record.source_validation.final_url,
+            ]
+        )
+
+    def _is_ecosystem_relevant(self, record: OpportunityRecord) -> bool:
+        text = self._semantic_text(record)
+        ecosystem_terms = [
+            "challenge",
+            "grand challenge",
+            "open innovation",
+            "startup challenge",
+            "proposal",
+            "accelerator",
+            "incubator",
+            "incubation",
+            "innovation mission",
+            "innovation program",
+            "innovation programme",
+            "technical call",
+            "applied research",
+            "hackathon",
+            "competition",
+            "pilot",
+            "prototype",
+            "solution",
+        ]
+        return any(term in text for term in ecosystem_terms)
 
     def _deadline_is_past(self, record: OpportunityRecord) -> bool:
         deadline = parse_date(record.deadline)
@@ -2378,14 +3301,45 @@ class NormalizationEngine:
             aliases.add(f"org_deadline_theme:{organizer}:{deadline}:{theme}")
         if title and organizer:
             aliases.add(f"title_org:{title}:{organizer}")
+        bioe3_alias = self._bioe3_category_alias(record)
+        if bioe3_alias:
+            aliases.add(bioe3_alias)
+        known_alias = self._known_program_alias(record)
+        if known_alias:
+            aliases.add(known_alias)
         canonical = canonicalize_url(record.deduplication.get("canonical_url") or record.source_url or record.registration_url)
         if canonical:
             aliases.add(f"url:{canonical}")
         return aliases
 
+    def _bioe3_category_alias(self, record: OpportunityRecord) -> str | None:
+        text = self._semantic_text(record)
+        if "bioe3" not in text:
+            return None
+        if (
+            ("category 1" in text or "category-1" in text)
+            and ("school" in text or "school student" in text or "school students" in text)
+        ):
+            return "bioe3:category1:school"
+        if "category 2" in text or "category-2" in text or "open to all indian citizens" in text:
+            return "bioe3:category2:open-to-all"
+        return None
+
+    def _known_program_alias(self, record: OpportunityRecord) -> str | None:
+        text = self._semantic_text(record)
+        title = self._normalized_title(record.hackathon_name or record.full_name or "")
+        if "bharat startup grand challenge" in text or title in {
+            "bharat startup",
+            "bharat startup 2026",
+            "bsgc 2026",
+        }:
+            return "program:bharat-startup-grand-challenge"
+        return None
+
     def _normalized_title(self, value: str) -> str:
         value = value.lower()
         value = value.replace("&", " and ")
+        value = re.sub(r"d\.?e\.?s\.?i\.?g\.?n\.?", "design", value)
         value = re.sub(r"bio[-\s]?ai", "bioai", value)
         value = re.sub(r"i\.?d\.?e\.?x\.?", "idex", value)
         value = re.sub(r"d\.?b\.?t\.?", "dbt", value)
@@ -2395,13 +3349,13 @@ class NormalizationEngine:
         return " ".join(tokens)
 
     def _rank(self, decision: CandidateDecision) -> tuple[int, int]:
-        bucket_rank = {"active": 3, "borderline": 2, "excluded": 1}.get(decision.bucket, 0)
+        bucket_rank = RECALL_TIER_ORDER.get(decision.bucket, 0)
         return bucket_rank, decision.record.confidence_score
 
     def _dump_record(self, record: OpportunityRecord) -> dict[str, Any]:
         payload = record.model_dump(mode="json", exclude_none=True)
         payload["source_validation"] = record.source_validation.model_dump(mode="json", exclude_none=True)
-        return payload
+        return attach_consensus_to_event(payload)
 
     def _dedupe_excluded(self, excluded: list[dict[str, Any]]) -> list[dict[str, Any]]:
         seen: set[str] = set()
@@ -2418,6 +3372,8 @@ class NormalizationEngine:
 class OpportunityIntelligenceEngine:
     def __init__(self, args: argparse.Namespace) -> None:
         self.args = args
+        self.silent = bool(getattr(args, "silent", False))
+        self.report_output = Path(args.report_output) if getattr(args, "report_output", "") else None
         self.models = resolve_models(args)
         self.current_date = iso_date(args.current_date)
         if not self.current_date:
@@ -2430,13 +3386,159 @@ class OpportunityIntelligenceEngine:
             min_confidence=args.min_confidence,
             live_validation=not args.skip_live_validation,
         )
+        self.coverage_engine = CoverageIntelligenceEngine(COVERAGE_HISTORY_JSON)
+        self.dashboard = TerminalDashboard(enabled=not self.silent and sys.stdout.isatty())
+        if self.dashboard.enabled:
+            self.dashboard.__enter__()
+
+    def _tui(self, state: str, message: str) -> None:
+        if self.silent:
+            return
+        if self.dashboard.enabled:
+            self.dashboard.set_phase(state, message)
+            return
+        print(f"{state}... {message}")
+
+    def _typing(self, state: str, message: str) -> TypingIndicator:
+        if self.silent:
+            return NullContext()
+        if self.dashboard.enabled:
+            return self.dashboard.stage(state, message)
+        return TypingIndicator(state, message)
+
+    def _runner_status(self, event: str, payload: dict[str, Any]) -> None:
+        if self.silent or not self.dashboard.enabled:
+            return
+        task_name = str(payload.get("task_name") or "idle")
+        model = str(payload.get("model") or self.dashboard._model_name)
+        if event == "task_start":
+            self.dashboard.set_task(task_name, "initializing")
+            self.dashboard.note(f"starting {task_name}")
+        elif event == "model_selected":
+            self.dashboard.set_model(model, "selected")
+        elif event == "model_start":
+            self.dashboard.set_model(model, f"attempt {payload.get('attempt')} / timeout {payload.get('timeout')}s")
+        elif event == "model_complete":
+            self.dashboard.set_model(model, f"done success={payload.get('success')} elapsed={payload.get('elapsed', 0):.1f}s")
+        elif event == "model_timeout":
+            self.dashboard.set_model(model, f"timed out at {payload.get('timeout')}s")
+        elif event == "cache_hit":
+            self.dashboard.set_model(model, "cache hit")
+        elif event == "retrying":
+            self.dashboard.set_model(model, f"retrying in {payload.get('delay')}s")
+        elif event == "fallback":
+            self.dashboard.set_model(model, "fallback activated")
+        elif event == "parser_rejected":
+            self.dashboard.note(f"parser rejected {task_name}")
+        elif event == "task_complete":
+            self.dashboard.set_task(task_name, "completed" if payload.get("success") else "no usable output")
+        elif event == "fatal_error":
+            self.dashboard.note(f"fatal error on {task_name}")
+
+    def _write_report(self, payload: dict[str, Any]) -> None:
+        if not self.report_output:
+            return
+
+        metadata = payload.get("metadata", {})
+        report_sections = [
+            ("fully_verified_opportunities", "Fully Verified"),
+            ("likely_active_opportunities", "Likely Active"),
+            ("borderline_opportunities", "Borderline"),
+        ]
+        total_reported_opportunities = (
+            metadata.get("total_active_hackathons", 0)
+            + metadata.get("total_borderline_opportunities", 0)
+        )
+
+        lines: list[str] = [
+            "# HACKATHON DISCOVERY REPORT",
+            "",
+            f"**Generated:** {datetime.now(UTC).strftime('%Y-%m-%d %H:%M:%S')} UTC  ",
+            f"**Search Date:** {metadata.get('search_date', 'N/A')}  ",
+            f"**Validation Date:** {metadata.get('current_date_used_for_validation', 'N/A')}  ",
+            "",
+            "---",
+            "",
+            "## Executive Summary",
+            "",
+            "| Category | Count | Status |",
+            "|----------|-------|--------|",
+            f"| Active Hackathons | {metadata.get('total_active_hackathons', 0)} | Ready to Apply |",
+            f"| Fully Verified | {metadata.get('total_fully_verified', 0)} | High Confidence |",
+            f"| Likely Active | {metadata.get('total_likely_active', 0)} | Needs Review |",
+            f"| Borderline | {metadata.get('total_borderline_opportunities', 0)} | Check Details |",
+            f"| Total Opportunities | {total_reported_opportunities} | - |",
+            f"| Sources Scanned | {len(metadata.get('sources_scanned', []))} | Coverage |",
+            f"| Domains Crawled | {metadata.get('domains_scanned_count', 0)} | Breadth |",
+            "",
+        ]
+
+        for section_key, section_title in report_sections:
+            items = [item for item in ensure_list(payload.get(section_key)) if isinstance(item, dict)]
+            if not items:
+                continue
+            lines.extend([f"## {section_title} ({len(items)})", ""])
+            for index, item in enumerate(items, 1):
+                name = item.get('hackathon_name') or item.get('full_name') or 'Unnamed opportunity'
+                org = item.get('hosting_organization') or item.get('ministry') or 'N/A'
+                domain = item.get('domain') or 'N/A'
+                status = item.get('current_status') or item.get('verification_state') or 'unknown'
+                deadline = item.get('deadline') or item.get('application_deadline') or item.get('proposal_deadline') or 'N/A'
+                confidence = item.get('confidence_score')
+                source_url = item.get('registration_url') or item.get('source_url') or item.get('official_website') or '#'
+                tier = item.get('classification_tier') or item.get('tier_reason') or item.get('borderline_reason') or 'n/a'
+                lines.extend([
+                    f"### {index}. {name}",
+                    "",
+                    f"- Organization: {org}",
+                    f"- Domain: {domain}",
+                    f"- Status: {status}",
+                    f"- Deadline: {deadline}",
+                    f"- Confidence: {confidence if confidence is not None else 'N/A'}",
+                    f"- Source: [{source_url}]({source_url})",
+                    f"- Classification: {tier}",
+                    "",
+                ])
+
+        lines.extend([
+            "---",
+            "",
+            "## Key Statistics",
+            "",
+            f"- Total Candidates Discovered: {metadata.get('total_candidates_discovered', 0)}",
+            f"- Total Sources Scanned: {len(metadata.get('sources_scanned', []))}",
+            f"- Unique Domains: {metadata.get('domains_scanned_count', 0)}",
+            f"- Coverage Confidence: {metadata.get('coverage_confidence', 0):.1%}",
+            f"- Coverage Status: {metadata.get('coverage_status', 'Unknown')}",
+            "",
+            "## Notes",
+            "",
+            "- Archived opportunities are intentionally omitted from this report.",
+            "- Report is generated automatically after each successful export.",
+            "",
+        ])
+
+        atomic_write_text(self.report_output, "\n".join(lines))
 
     def run(self) -> dict[str, Any] | None:
         if self.args.validate_existing:
-            print(f"Validating existing JSON: {self.args.validate_existing}")
-            payload = read_json_file(Path(self.args.validate_existing))
-            final_payload = self.normalizer.normalize_payloads([payload])
-            self._export(final_payload)
+            with self._typing("thinking", f"validating existing JSON: {self.args.validate_existing}"):
+                payload = read_json_file(Path(self.args.validate_existing))
+            with self._typing("hashing", "normalizing payloads into final report"):
+                final_payload = self.normalizer.normalize_payloads([payload])
+            saturation_tracker = SearchSaturationTracker()
+            queries = final_payload.get("metadata", {}).get("search_queries_used", [])
+            saturation_tracker.record_query_batch(
+                queries=ensure_list(queries),
+                new_events_discovered=final_payload["metadata"]["total_active_hackathons"],
+                duplicate_events_discovered=0,
+                rejected_events_discovered=final_payload["metadata"]["total_excluded"],
+            )
+            final_payload["metadata"]["models_attempted"] = self.models
+            self._attach_coverage_analysis(final_payload, [], [payload], [], saturation_tracker)
+            with self._typing("thinking", "exporting validated JSON and report"):
+                if self._export(final_payload):
+                    self.coverage_engine.persist_history(final_payload)
             return final_payload
 
         tasks = self.planner.tasks()
@@ -2444,17 +3546,28 @@ class OpportunityIntelligenceEngine:
             tasks = tasks[: max(0, self.args.max_tasks)]
 
         if self.args.dry_run:
-            self._print_plan(tasks)
+            if self.dashboard.enabled:
+                self.dashboard.set_summary(
+                    current_date=self.current_date,
+                    models=f"{len(self.models)} models",
+                    live_validation=str(not self.args.skip_live_validation),
+                )
+                self.dashboard.bump(tasks_total=len(tasks), tasks_done=0, tasks_failed=0, accepted=0, novelty=0, candidates=0, rejected=0)
+                self.dashboard.note(f"dry run ready with {len(tasks)} tasks")
+            else:
+                self._print_plan(tasks)
             return None
 
-        print("Opportunity intelligence run")
-        print(f"  current_date: {self.current_date}")
-        print(f"  models: {', '.join(self.models)}")
-        print(f"  tasks: {len(tasks)}")
-        print(f"  live_validation: {not self.args.skip_live_validation}")
-        print("  timeout_mode: model-specific")
+        if not (self.silent or self.dashboard.enabled):
+            print("╭─ Hackathon Intelligence TUI")
+        self._tui("thinking", f"current_date: {self.current_date}")
+        self._tui("hashing", f"models: {', '.join(self.models)}")
+        self._tui("thinking", f"tasks queued: {len(tasks)}")
+        self._tui("hashing", f"live_validation: {not self.args.skip_live_validation}")
+        self._tui("thinking", "timeout_mode: model-specific")
         if self.args.timeout is not None or self.args.run_budget:
-            print("  note: --timeout/--run-budget are ignored; MODEL_TIMEOUTS controls execution")
+            self._tui("thinking", "--timeout/--run-budget are ignored; MODEL_TIMEOUTS controls execution")
+        self._tui("completed", "run context loaded")
 
         runner = OpenCodeRunner(
             models=self.models,
@@ -2462,17 +3575,28 @@ class OpportunityIntelligenceEngine:
             retries=self.args.retries,
             current_date=self.current_date,
             refresh_cache=self.args.refresh_cache,
+            status_callback=self._runner_status,
+            quiet=self.silent or self.dashboard.enabled,
         )
 
         payloads: list[dict[str, Any]] = []
         all_artifacts: list[RunArtifact] = []
+        saturation_tracker = SearchSaturationTracker()
         low_novelty_streak = 0
         seen_keys: set[str] = set()
 
         parser_diagnostics: list[dict[str, Any]] = []
+        self.dashboard.set_summary(
+            current_date=self.current_date,
+            models=f"{len(self.models)} models",
+            live_validation=str(not self.args.skip_live_validation),
+        )
+        self.dashboard.bump(tasks_total=len(tasks), tasks_done=0, tasks_failed=0, accepted=0, novelty=0, candidates=0, rejected=0)
 
         for task in tasks:
-            prompt = self.planner.build_prompt(task)
+            current_done = self.dashboard._counters["tasks_done"]
+            with self._typing("thinking", f"{task.name}: building prompt"):
+                prompt = self.planner.build_prompt(task)
             payload = None
             artifacts: list[RunArtifact] = []
             output: str | None = None
@@ -2482,35 +3606,42 @@ class OpportunityIntelligenceEngine:
                 artifact.parser_diagnostics = dict(self.extractor.last_diagnostics)
                 accepted = parsed is not None and self._payload_has_usable_candidates(parsed)
                 artifact.parser_accepted = accepted
-                print(
-                    "  parser "
-                    f"task={task.name} model={artifact.model} "
-                    f"accepted={accepted} "
-                    f"strategy={artifact.parser_diagnostics.get('strategy')} "
-                    f"salvaged={artifact.parser_diagnostics.get('salvaged_candidates', 0)} "
-                    f"blocks={artifact.parser_diagnostics.get('candidate_blocks', 0)}"
+                self._tui(
+                    "parsing",
+                    f"{task.name}: accepted={accepted} strategy={artifact.parser_diagnostics.get('strategy')} salvaged={artifact.parser_diagnostics.get('salvaged_candidates', 0)} blocks={artifact.parser_diagnostics.get('candidate_blocks', 0)}",
                 )
                 return accepted
 
             for cache_retry in range(2):
-                output, artifacts = runner.run_task(task, prompt, output_acceptor=output_acceptor)
+                with self._typing("thinking", f"{task.name}: running scrape attempt {cache_retry + 1}"):
+                    output, artifacts = runner.run_task(task, prompt, output_acceptor=output_acceptor)
                 all_artifacts.extend(artifacts)
                 if not output:
                     break
-                payload, warnings = self.extractor.parse_payload(output)
+                with self._typing("parsing", f"{task.name}: parsing model output"):
+                    payload, warnings = self.extractor.parse_payload(output)
                 diagnostics = dict(self.extractor.last_diagnostics)
                 diagnostics["task_name"] = task.name
                 parser_diagnostics.append(diagnostics)
                 for warning in warnings:
-                    print(f"  warning[{task.name}]: {warning}")
+                    self._tui("warning", f"{task.name}: {warning}")
                 if payload:
+                    self._tui("completed", f"{task.name}: candidates accepted")
                     break
                 if any(artifact.from_cache for artifact in artifacts):
-                    print(f"  [{task.name}] deleting unusable cached output and rerunning")
+                    self._tui("thinking", f"{task.name}: deleting unusable cached output and rerunning")
                     self.checkpoints.delete_success(task)
                     continue
                 break
             if not payload:
+                self._tui("warning", f"{task.name}: no usable candidates")
+                saturation_tracker.record_query_batch(
+                    queries=task.queries,
+                    new_events_discovered=0,
+                    duplicate_events_discovered=0,
+                    rejected_events_discovered=0,
+                )
+                self.dashboard.bump(tasks_done=current_done + 1, tasks_failed=self.dashboard._counters["tasks_failed"] + 1)
                 continue
             cacheable_artifact = next(
                 (
@@ -2525,15 +3656,34 @@ class OpportunityIntelligenceEngine:
             payload.setdefault("metadata", {})
             payload["metadata"]["task_name"] = task.name
             payload["metadata"]["task_category"] = task.category
+            payload["metadata"]["discovery_model"] = self._accepted_model_for_output(artifacts, output)
             payloads.append(payload)
 
-            novelty = self._estimate_novelty(payload, seen_keys)
+            with self._typing("hashing", f"{task.name}: scoring discovery yield"):
+                novelty = self._estimate_novelty(payload, seen_keys)
+                total_candidates = self._payload_candidate_count(payload)
+                rejected_candidates = len(ensure_list(payload.get("excluded"))) + len(ensure_list(payload.get("excluded_opportunities")))
+            self._tui("hashing", f"{task.name}: novelty={novelty} candidates={total_candidates} rejected={rejected_candidates}")
+            saturation_tracker.record_query_batch(
+                queries=task.queries,
+                new_events_discovered=novelty,
+                duplicate_events_discovered=max(0, total_candidates - novelty),
+                rejected_events_discovered=rejected_candidates,
+            )
+            self.dashboard.bump(
+                tasks_done=current_done + 1,
+                accepted=self.dashboard._counters["accepted"] + 1,
+                novelty=self.dashboard._counters["novelty"] + novelty,
+                candidates=self.dashboard._counters["candidates"] + total_candidates,
+                rejected=self.dashboard._counters["rejected"] + rejected_candidates,
+            )
             low_novelty_streak = low_novelty_streak + 1 if novelty <= 1 else 0
             if self.args.stop_on_saturation and len(payloads) >= 3 and low_novelty_streak >= 2:
-                print("Stopping early due to low novelty saturation.")
+                self._tui("completed", "stopping early due to low novelty saturation")
                 break
 
-        final_payload = self.normalizer.normalize_payloads(payloads)
+        with self._typing("hashing", "normalizing payloads into final report"):
+            final_payload = self.normalizer.normalize_payloads(payloads)
         final_payload["metadata"]["models_attempted"] = self.models
         final_payload["metadata"]["discovery_tasks_requested"] = [task.name for task in tasks]
         final_payload["metadata"]["checkpoint_run_dir"] = str(self.checkpoints.run_dir)
@@ -2556,8 +3706,12 @@ class OpportunityIntelligenceEngine:
             }
             for artifact in all_artifacts
         ]
-        self._export(final_payload)
+        self._attach_coverage_analysis(final_payload, tasks, payloads, all_artifacts, saturation_tracker)
+        with self._typing("thinking", "exporting final JSON and report"):
+            if self._export(final_payload):
+                self.coverage_engine.persist_history(final_payload)
         self.checkpoints.save_run_summary(final_payload["metadata"])
+        self._tui("completed", "export finished")
         return final_payload
 
     def _payload_has_usable_candidates(self, payload: dict[str, Any]) -> bool:
@@ -2565,6 +3719,44 @@ class OpportunityIntelligenceEngine:
             if any(isinstance(item, dict) for item in ensure_list(payload.get(key))):
                 return True
         return False
+
+    def _payload_candidate_count(self, payload: dict[str, Any]) -> int:
+        total = 0
+        for key in ("government_hackathons", "candidates", "opportunities", "active_opportunities"):
+            total += len([item for item in ensure_list(payload.get(key)) if isinstance(item, dict)])
+        return total
+
+    def _accepted_model_for_output(self, artifacts: list[RunArtifact], output: str | None) -> str | None:
+        accepted = next(
+            (
+                artifact
+                for artifact in artifacts
+                if artifact.success and artifact.parser_accepted is not False and artifact.output == output
+            ),
+            None,
+        )
+        return accepted.model if accepted else None
+
+    def _attach_coverage_analysis(
+        self,
+        final_payload: dict[str, Any],
+        tasks: list[DiscoveryTask],
+        payloads: list[dict[str, Any]],
+        artifacts: list[RunArtifact],
+        saturation_tracker: SearchSaturationTracker,
+    ) -> None:
+        coverage_analysis = self.coverage_engine.analyze(
+            final_payload=final_payload,
+            discovery_tasks=tasks,
+            payloads=payloads,
+            artifacts=artifacts,
+            saturation_tracker=saturation_tracker,
+            models_attempted=self.models,
+        )
+        metadata = final_payload.setdefault("metadata", {})
+        metadata["coverage_analysis"] = coverage_analysis
+        metadata["coverage_confidence"] = coverage_analysis["coverage_confidence"]
+        metadata["coverage_status"] = coverage_analysis["coverage_status"]
 
     def _estimate_novelty(self, payload: dict[str, Any], seen_keys: set[str]) -> int:
         novelty = 0
@@ -2583,6 +3775,8 @@ class OpportunityIntelligenceEngine:
         return novelty
 
     def _print_plan(self, tasks: list[DiscoveryTask]) -> None:
+        if self.silent:
+            return
         print("Discovery plan")
         print(f"  current_date: {self.current_date}")
         print(f"  models: {', '.join(self.models)}")
@@ -2596,11 +3790,12 @@ class OpportunityIntelligenceEngine:
             for query in task.queries:
                 print(f"   - {query}")
 
-    def _export(self, payload: dict[str, Any]) -> None:
+    def _export(self, payload: dict[str, Any]) -> bool:
         output_path = Path(self.args.output)
         is_empty_discovery = (
             payload["metadata"]["total_active_hackathons"] == 0
             and payload["metadata"]["total_borderline_opportunities"] == 0
+            and payload["metadata"].get("total_ecosystem_opportunities", 0) == 0
             and payload["metadata"]["total_excluded"] == 0
         )
         if (
@@ -2609,23 +3804,35 @@ class OpportunityIntelligenceEngine:
             and not self.args.allow_empty_output
             and not self.args.validate_existing
         ):
-            print("\nSkipped overwriting existing JSON because this discovery run produced no usable candidates.")
-            print(f"  preserved: {output_path}")
+            if not self.silent:
+                print("\ncompleted... skipped overwriting existing JSON because this discovery run produced no usable candidates.")
+                print(f"  preserved: {output_path}")
             try:
                 existing = read_json_file(output_path)
                 metadata = existing.get("metadata", {}) if isinstance(existing, dict) else {}
-                print(f"  existing_active: {metadata.get('total_active_hackathons', 'unknown')}")
-                print(f"  existing_borderline: {metadata.get('total_borderline_opportunities', 'unknown')}")
+                if not self.silent:
+                    print(f"  existing_active: {metadata.get('total_active_hackathons', 'unknown')}")
+                    print(f"  existing_borderline: {metadata.get('total_borderline_opportunities', 'unknown')}")
             except (OSError, json.JSONDecodeError):
                 pass
-            print("  use --allow-empty-output to replace it with an empty result")
-            return
+            if not self.silent:
+                print("  use --allow-empty-output to replace it with an empty result")
+            return False
         atomic_write_json(output_path, payload)
-        print("\nExported deterministic JSON")
-        print(f"  path: {output_path}")
-        print(f"  active: {payload['metadata']['total_active_hackathons']}")
-        print(f"  borderline: {payload['metadata']['total_borderline_opportunities']}")
-        print(f"  excluded: {payload['metadata']['total_excluded']}")
+        self._write_report(payload)
+        if not self.silent:
+            print("\ncompleted... exported deterministic JSON")
+            print(f"  path: {output_path}")
+            print(f"  active: {payload['metadata']['total_active_hackathons']}")
+            print(f"  likely_active: {payload['metadata'].get('total_likely_active', 0)}")
+            print(f"  borderline: {payload['metadata']['total_borderline_opportunities']}")
+            print(f"  ecosystem: {payload['metadata'].get('total_ecosystem_opportunities', 0)}")
+            print(f"  excluded: {payload['metadata']['total_excluded']}")
+            print(f"  coverage_confidence: {payload['metadata'].get('coverage_confidence', 'n/a')}")
+            print(f"  coverage_status: {payload['metadata'].get('coverage_status', 'n/a')}")
+            if self.report_output:
+                print(f"  report: {self.report_output}")
+        return True
 
 
 def main() -> int:
@@ -2636,7 +3843,11 @@ def main() -> int:
         pass
     args = parse_args()
     engine = OpportunityIntelligenceEngine(args)
-    engine.run()
+    try:
+        engine.run()
+    finally:
+        if getattr(engine, "dashboard", None) and engine.dashboard.enabled:
+            engine.dashboard.__exit__(None, None, None)
     return 0
 
 

@@ -1,0 +1,486 @@
+{
+  "candidates": [
+    {
+      "event_type": "defence_challenge",
+      "hackathon_name": "iDEX Open Challenge",
+      "full_name": "Innovations for Defence Excellence (iDEX) Open Challenge",
+      "current_status": "proposal_open",
+      "registration_url": "https://idex.gov.in/form/application-form-open-challenge",
+      "submission_url": "https://idex.gov.in/form/application-form-open-challenge",
+      "official_website": "https://idex.gov.in/",
+      "official_event_page": "https://idex.gov.in/disc-category/18",
+      "source_url": "https://idex.gov.in/disc-category/18",
+      "hosting_organization": "Defence Innovation Organisation (DIO), iDEX",
+      "ministry": "Ministry of Defence",
+      "institution_type": "Central Government",
+      "platform": "iDEX Portal",
+      "domain": "Defence & Aerospace",
+      "theme": "Defence technology innovation for military superiority",
+      "focus_areas": ["autonomous systems", "artificial intelligence", "quantum technologies", "advanced materials", "predictive algorithms", "robotics", "aerospace", "cybersecurity"],
+      "deadline": "2026-06-30",
+      "registration_close_date": null,
+      "submission_close_date": null,
+      "application_deadline": null,
+      "proposal_deadline": "2026-06-30",
+      "eligibility_criteria": {"summary": "Indian startups (DPIIT-recognized), MSMEs, and individual innovators. Solutions must have defence/aerospace applicability. Open to all technology domains with military relevance."},
+      "team_size": {"minimum": 1, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Grants up to Rs 1.5 crore for prototype development via SPARK framework. Follow-on iDEX PRIME grants up to Rs 10 crore possible."},
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["CHALLENGE OPEN", "APPLY NOW", "30 June, 2026 11:59 PM"],
+        "deadline_verified": true
+      },
+      "confidence_score": 90,
+      "classification_tier": "fully_verified",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "research_competition",
+      "hackathon_name": "DBT-BIRAC Bio-AI Call for Proposals",
+      "full_name": "DBT-BIRAC Joint Call for Proposals on 'Bio AI' for Fostering High Performance Biomanufacturing under BioE3 Policy",
+      "current_status": "proposal_open",
+      "registration_url": "https://birac.nic.in/cfp.php/portal/cfp_view.php?id=25&scheme_type=3",
+      "submission_url": "https://birac.nic.in/",
+      "official_website": "https://birac.nic.in/",
+      "official_event_page": "https://birac.nic.in/cfp.php/portal/cfp_view.php?id=25&scheme_type=3",
+      "source_url": "https://birac.nic.in/cfp.php/portal/cfp_view.php?id=25&scheme_type=3",
+      "hosting_organization": "Department of Biotechnology (DBT) & Biotechnology Industry Research Assistance Council (BIRAC)",
+      "ministry": "Ministry of Science and Technology (DBT)",
+      "institution_type": "Central Government",
+      "platform": "BIRAC Online Portal",
+      "domain": "Biotechnology / Artificial Intelligence",
+      "theme": "AI-guided biomanufacturing and Bio-AI hubs",
+      "focus_areas": ["Biomolecular Design", "Sustainable Agriculture", "Synthetic Biology", "Ayurveda AI", "Genome Diagnostics", "AI/ML in Biotech", "biomanufacturing"],
+      "deadline": "2026-06-30",
+      "registration_close_date": null,
+      "submission_close_date": null,
+      "application_deadline": null,
+      "proposal_deadline": "2026-06-30",
+      "eligibility_criteria": {"summary": "Multi-disciplinary teams from academia, industry, startups/SMEs. Must form inter-institutional consortia with AI/ML expertise and biomanufacturing capability. Proposals evaluated on rolling basis."},
+      "team_size": {"minimum": null, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Grants up to Rs 25 crore per hub proposal for establishing Bio-AI Hubs in PPP mode. Two-year duration."},
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Current Calls for Proposal", "Last Date :30th June,2026"],
+        "deadline_verified": true
+      },
+      "confidence_score": 90,
+      "classification_tier": "fully_verified",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "startup_competition",
+      "hackathon_name": "KIIT-TBI Incubation LaunchPad 2026",
+      "full_name": "KIIT Technology Business Incubator Incubation LaunchPad 2026",
+      "current_status": "application_open",
+      "registration_url": "https://www.kiitincubator.in/",
+      "submission_url": null,
+      "official_website": "https://www.kiitincubator.in/",
+      "official_event_page": "https://www.startupgrantsindia.com/kiit-tbi-incubation-launchpad-2026",
+      "source_url": "https://www.startupgrantsindia.com/kiit-tbi-incubation-launchpad-2026",
+      "hosting_organization": "KIIT Technology Business Incubator (KIIT-TBI)",
+      "ministry": "DPIIT (through empanelment)",
+      "institution_type": "Government Academic",
+      "platform": "KIIT-TBI Portal",
+      "domain": "ClimateTech / MedTech / AI / Biotechnology",
+      "theme": "Incubation with funding for deep-tech and climate startups",
+      "focus_areas": ["ClimateTech", "MedTech", "Artificial Intelligence", "Biotechnology", "deep-tech incubation"],
+      "deadline": "2026-05-10",
+      "registration_close_date": "2026-05-10",
+      "submission_close_date": null,
+      "application_deadline": "2026-05-10",
+      "proposal_deadline": null,
+      "eligibility_criteria": {"summary": "Early-stage startups working in ClimateTech, MedTech, AI, or Biotechnology. Open to applicants pan-India. Startups must be building scalable, technology-led ventures."},
+      "team_size": {"minimum": null, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Funding support up to Rs 1 crore per startup. Access to lab infrastructure, mentorship, KIIT research ecosystem."},
+      "source_validation": {
+        "source_type": "official_partner_registration",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Applications close on 10 May 2026", "Incubation LaunchPad 2026"],
+        "deadline_verified": true
+      },
+      "confidence_score": 85,
+      "classification_tier": "fully_verified",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": false
+    },
+    {
+      "event_type": "hackathon",
+      "hackathon_name": "National Road Safety Hackathon 2026",
+      "full_name": "AI for Road Safety Hackathon 2026",
+      "current_status": "submission_open",
+      "registration_url": "https://unstop.com/hackathons/road-safety-hackathon-2026-iit-madras-1680515",
+      "submission_url": "https://unstop.com/hackathons/road-safety-hackathon-2026-iit-madras-1680515",
+      "official_website": "https://coers.iitm.ac.in/",
+      "official_event_page": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
+      "source_url": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
+      "hosting_organization": "Centre of Excellence for Road Safety (CoERS), IIT Madras",
+      "ministry": "Ministry of Road Transport and Highways (MoRTH) / Ministry of Electronics and IT (MeitY)",
+      "institution_type": "Government Academic",
+      "platform": "Unstop",
+      "domain": "Road Safety / Artificial Intelligence",
+      "theme": "AI solutions for road safety and accident prevention",
+      "focus_areas": ["AI/ML", "computer vision", "traffic management", "accident prevention", "ADAS", "intelligent transportation"],
+      "deadline": "2026-05-31",
+      "registration_close_date": "2026-05-31",
+      "submission_close_date": "2026-05-31",
+      "application_deadline": null,
+      "proposal_deadline": null,
+      "eligibility_criteria": {"summary": "Open to students, engineers, tech enthusiasts. Minimum age 15. No professional qualifications required. Individuals or teams (no size limit). Only one submission per team."},
+      "team_size": {"minimum": 1, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Cash prizes (amount not specified on official page). Winner announced post-evaluation."},
+      "source_validation": {
+        "source_type": "official_academic_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Registration & Submission Extended to May 31", "April 10 - May 31"],
+        "deadline_verified": true
+      },
+      "confidence_score": 80,
+      "classification_tier": "likely_active",
+      "admin_review_recommended": true,
+      "human_verification_needed": false,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "startup_competition",
+      "hackathon_name": "C3iHub Cybersecurity Startup Incubation Program Cohort VII",
+      "full_name": "C3iHub IIT Kanpur Cybersecurity Startup Incubation Program Cohort VII",
+      "current_status": "application_open",
+      "registration_url": "https://forms.gle/RiXCGMJ7jf83Ua6n6",
+      "submission_url": null,
+      "official_website": "https://www.iitk.ac.in/",
+      "official_event_page": "https://www.iitk.ac.in/cybersecurity-startup-incubation-program-cohort-vii",
+      "source_url": "https://www.iitk.ac.in/cybersecurity-startup-incubation-program-cohort-vii",
+      "hosting_organization": "C3iHub, IIT Kanpur (Technology Innovation Hub under NM-ICPS)",
+      "ministry": "Department of Science and Technology (DST)",
+      "institution_type": "Government Academic",
+      "platform": "Google Forms",
+      "domain": "Cybersecurity",
+      "theme": "Deep-tech cybersecurity incubation",
+      "focus_areas": ["mobile security", "automotive security", "privacy-enhancing technologies", "threat intelligence", "LLM security", "AI-ML security", "supply chain security", "critical infrastructure security"],
+      "deadline": null,
+      "registration_close_date": null,
+      "submission_close_date": null,
+      "application_deadline": null,
+      "proposal_deadline": null,
+      "eligibility_criteria": {"summary": "Indian-registered startups (private limited). At least one full-time founder. Preferably less than 3 years old. Focus on novel cybersecurity solutions with national security relevance."},
+      "team_size": {"minimum": 1, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Rs 30 lakh funding over 2 years (Rs 20 lakh grant + Rs 10 lakh equity-based fellowship). Mentorship, IIT Kanpur lab access, pilot deployment support."},
+      "source_validation": {
+        "source_type": "official_academic_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["launched applications", "Applications can be submitted"],
+        "deadline_verified": false
+      },
+      "confidence_score": 65,
+      "classification_tier": "likely_active",
+      "admin_review_recommended": true,
+      "human_verification_needed": true,
+      "blue_tick_eligible": true
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "ABHIYANTA 1.0",
+      "full_name": "ABHIYANTA 1.0 - Call for Innovation by IIT Mandi iHub & HCi Foundation",
+      "current_status": "application_open",
+      "registration_url": "https://form.typeform.com/to/FasJX2eB",
+      "submission_url": null,
+      "official_website": "https://www.ihubiitmandi.in/",
+      "official_event_page": "https://www.ihubiitmandi.in/call-for-innovation-defense-tech-startup-challenge/",
+      "source_url": "https://www.ihubiitmandi.in/call-for-innovation-defense-tech-startup-challenge/",
+      "hosting_organization": "IIT Mandi iHub & HCi Foundation",
+      "ministry": "Department of Science and Technology (DST) through NM-ICPS",
+      "institution_type": "Government Academic",
+      "platform": "Typeform",
+      "domain": "Defence Technology / Deep Tech / Engineering Innovation",
+      "theme": "Indigenous technology solutions for Atmanirbhar Bharat",
+      "focus_areas": ["defence technology", "VR/AR", "engineering innovation", "startup support", "indigenous manufacturing"],
+      "deadline": null,
+      "registration_close_date": null,
+      "submission_close_date": null,
+      "application_deadline": null,
+      "proposal_deadline": null,
+      "eligibility_criteria": {"summary": "Open to startups, researchers, engineers, and innovators. No specific restrictions mentioned."},
+      "team_size": {"minimum": 1, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Accelerated selection process, funding support, expert mentorship, IP guidance, access to investor networks."},
+      "source_validation": {
+        "source_type": "official_academic_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Call-for-Innovation", "Apply now"],
+        "deadline_verified": false
+      },
+      "confidence_score": 45,
+      "classification_tier": "borderline",
+      "admin_review_recommended": true,
+      "human_verification_needed": true,
+      "blue_tick_eligible": false
+    },
+    {
+      "event_type": "startup_competition",
+      "hackathon_name": "India Pitch-Pilot-Scale Startup Challenge",
+      "full_name": "India Water Pitch-Pilot-Scale Startup Challenge under AMRUT 2.0",
+      "current_status": "application_open",
+      "registration_url": "https://innovateindia.mygov.in/ipps-startup/",
+      "submission_url": "https://innovateindia.mygov.in/ipps-startup/",
+      "official_website": "https://innovateindia.mygov.in/",
+      "official_event_page": "https://innovateindia.mygov.in/ipps-startup/",
+      "source_url": "https://innovateindia.mygov.in/ipps-startup/",
+      "hosting_organization": "Ministry of Housing and Urban Affairs (MoHUA)",
+      "ministry": "Ministry of Housing and Urban Affairs",
+      "institution_type": "Central Government",
+      "platform": "MyGov Innovate India",
+      "domain": "Water / Urban Water Management",
+      "theme": "Startup solutions for urban water and wastewater sector",
+      "focus_areas": ["water management", "wastewater treatment", "water technology", "urban water infrastructure", "hydro informatics"],
+      "deadline": "2026-03-31",
+      "registration_close_date": null,
+      "submission_close_date": null,
+      "application_deadline": "2026-03-31",
+      "proposal_deadline": null,
+      "eligibility_criteria": {"summary": "DPIIT-recognized startups providing solutions in urban water sector. Must address thematic areas of fresh water, used water, hydro informatics, etc."},
+      "team_size": {"minimum": 1, "maximum": null},
+      "submission_fee": {"amount": 0, "currency": "INR", "display": "Free"},
+      "prizes": {"summary": "Grants up to Rs 20 lakh in three tranches. Mentorship support and scaling facilitation by MoHUA."},
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["21/11/2023 - 31/03/2026", "SUBMISSION CLOSED"],
+        "deadline_verified": true
+      },
+      "confidence_score": 30,
+      "classification_tier": "archived",
+      "admin_review_recommended": false,
+      "human_verification_needed": false,
+      "blue_tick_eligible": false
+    }
+  ],
+  "excluded": [
+    {
+      "name": "HACK IITK 2026 - C3iHub Cybersecurity Hackathon",
+      "source_url": "https://www.iitk.ac.in/cybersecurity-hackathon-2026",
+      "reason": "closed - registration deadline extended to Jan 10, 2026, grand finale held March 2026"
+    },
+    {
+      "name": "Innovate4NPS Hackathon 2026 (PFRDA/IIT Kanpur)",
+      "source_url": "https://www.iitk.ac.in/pfrda-hackathon-2026",
+      "reason": "closed - registration deadline was Feb 19, 2026"
+    },
+    {
+      "name": "DDWS Innovation Challenge 2025-26 (IIT Madras)",
+      "source_url": "https://jaljeevaninnovate.iitm.ac.in/",
+      "reason": "closed - registration closed Feb 7, 2026"
+    },
+    {
+      "name": "FedEx SMART Hackathon 2026 (IIT Madras)",
+      "source_url": "https://smart.iitm.ac.in/events/fedex-smart-hackathon-on-feb-06th-2026",
+      "reason": "closed - held Feb 6, 2026, deadline was Jan 8, 2026"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge 2026",
+      "source_url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026",
+      "reason": "closed - submission deadline was March 2, 2026"
+    },
+    {
+      "name": "PMJAY Auto Adjudication Hackathon 2026",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/4102cc05-c02e-4ab7-84eb-ca00f0f3a842",
+      "reason": "closed - registration closed April 13, 2026, grand finale May 8-9, 2026"
+    },
+    {
+      "name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/4102cc05-c02e-4ab7-84eb-ca00f0f3a842",
+      "reason": "closed - applications closed April 17, 2026"
+    },
+    {
+      "name": "5G Innovation Hackathon 2026",
+      "source_url": "https://eservices.dot.gov.in/5ghackathon/",
+      "reason": "closed - call for proposals closed April 17, 2026"
+    },
+    {
+      "name": "CyberGuard AI Hackathon (IndiaAI/I4C)",
+      "source_url": "https://indiaai.gov.in/article/ai-for-citizen-safety-join-the-indiaai-cyberguard-ai-hackathon",
+      "reason": "closed - submission deadline was November 22, 2024"
+    },
+    {
+      "name": "AI for All Challenge (AIKosh)",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/d4fb310f-7dd5-44f4-a1f8-c850935a615c",
+      "reason": "closed - hackathon held Jan 5-23, 2026"
+    },
+    {
+      "name": "BUILD 5.0 (Boeing University Innovation Leadership Development Program)",
+      "source_url": "https://fitt-iitd.in/web/build",
+      "reason": "closed - submissions deadline was April 4, 2026"
+    },
+    {
+      "name": "National Startup Awards 5.0",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/nsa2025.html",
+      "reason": "closed - applications closed. Official page shows 'APPLICATIONS ARE CLOSED NOW'"
+    },
+    {
+      "name": "iDEX ADITI 4.0",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed - deadline was May 4, 2026"
+    },
+    {
+      "name": "iDEX DISC 14",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed - deadline was May 4, 2026"
+    },
+    {
+      "name": "iDEX DRISHTI Challenges",
+      "source_url": "https://idex.gov.in/disc-category/46",
+      "reason": "closed - deadline was March 31, 2026"
+    },
+    {
+      "name": "iDEX Open Challenge (IAF re-open)",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed - deadline was March 9, 2026"
+    },
+    {
+      "name": "iCreate Drone Challenge 2025",
+      "source_url": "https://idc.icreate.org.in/",
+      "reason": "closed - applications closed Nov 15, 2025; prototype acceleration Jan-Feb 2026"
+    },
+    {
+      "name": "Bharat Livelihood Challenge",
+      "source_url": "https://iimaventures.com/programs/bharat-livelihood-challenge/",
+      "reason": "closed - deadline was August 30, 2025"
+    },
+    {
+      "name": "Youth Co:Lab National Innovation Challenge 2026",
+      "source_url": "https://aim.gov.in/youthcolab.php",
+      "reason": "closed - deadline was March 20, 2026"
+    },
+    {
+      "name": "Renewathon 2026 (IIT Bombay/Suzlon)",
+      "source_url": "https://gymkhana.iitb.ac.in/instiapp/event/renewathon-2026--prize-pool-25-lakh-461994c1",
+      "reason": "closed - registration deadline was Jan 2, 2026"
+    },
+    {
+      "name": "Blockchain Hackathon 2025 (IIT Bombay EnPoWER)",
+      "source_url": "https://gymkhana.iitb.ac.in/instiapp/event/blockchain-hackathon-2025--enpower--ugac-e8f44a67",
+      "reason": "closed - registration deadline was Nov 5, 2025"
+    },
+    {
+      "name": "IITB TL CTF National Edition 2025 (Trust Lab)",
+      "source_url": "https://trustlab.iitb.ac.in/event/capture-the-flag-2025-national-edition",
+      "reason": "closed - online CTF was Nov 15, 2025; offline final Dec 12-13, 2025"
+    },
+    {
+      "name": "HSBC CTF 2025 (IIT Bombay Trust Lab)",
+      "source_url": "https://trustlab.iitb.ac.in/event/hsbc-ctf-2025",
+      "reason": "closed - held July 27, 2025; selected participants already notified"
+    },
+    {
+      "name": "Hack-for-Impact 2026 (IIT Madras/UWA)",
+      "source_url": "https://ge.iitm.ac.in/programs/student-outbound/other-opportunities/opportunities/hackforimpact-2026",
+      "reason": "closed - deadline was March 25, 2026"
+    },
+    {
+      "name": "UIDAI Data Hackathon 2026",
+      "source_url": "https://event.data.gov.in/challenge/uidai-data-hackathon-2026/",
+      "reason": "closed - submission closed Jan 20, 2026"
+    },
+    {
+      "name": "IAHR YPN Hackathon 2026 (IIT Madras)",
+      "source_url": "https://ge.iitm.ac.in/iahr-ypn-hackathon2025",
+      "reason": "closed - proposal submission was Jan 2, 2026; hackathon Feb 21, 2026"
+    },
+    {
+      "name": "Wellness Hackathon 2025 (IIT Madras/C-DAC)",
+      "source_url": "https://dost.iitm.ac.in/wellness-hackathon",
+      "reason": "closed - registration closed June 15, 2025"
+    },
+    {
+      "name": "TIDE 2.0 Challenge Grant (SIIC IIT Kanpur) 2025",
+      "source_url": "https://siicincubator.com/programs/programs_tide_icg.php",
+      "reason": "closed - deadline was September 10, 2025"
+    },
+    {
+      "name": "National Medical GIS Hackathon 2025 (IIT Bombay)",
+      "source_url": "https://medicalgis.fossee.in/",
+      "reason": "closed - registration ended April 30, 2025"
+    },
+    {
+      "name": "College Youth Ideathon 2025 (IIT Delhi/MEPSC)",
+      "source_url": "https://home.iitd.ac.in/show.php?id=619&in_sections=News",
+      "reason": "closed - grand finale was April 12-13, 2025"
+    },
+    {
+      "name": "Mascot Design Contest for Eat Right India",
+      "source_url": "https://innovateindia.mygov.in/mascot-design-contest-for-eat-right-india/",
+      "reason": "not_technical - mascot design contest, no technical implementation required"
+    },
+    {
+      "name": "Yoga My Pride Photography Contest",
+      "source_url": "https://innovateindia.mygov.in/",
+      "reason": "not_technical - photography contest, no technical implementation"
+    },
+    {
+      "name": "Bharat Startup Grand Challenge (Rural Development & Drones)",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/ams-application/challenge.html?applicationId=691436d0e4b07810ba187205",
+      "reason": "unverifiable - requires DPIIT login to check current status and deadlines"
+    }
+  ],
+  "sources_scanned": [
+    "https://www.aicte-india.org/",
+    "https://www.iitm.ac.in/",
+    "https://www.iitk.ac.in/",
+    "https://www.iitd.ac.in/",
+    "https://www.iitb.ac.in/",
+    "https://www.iisc.ac.in/",
+    "https://innovateindia.mygov.in/",
+    "https://www.startupindia.gov.in/",
+    "https://indiaai.gov.in/",
+    "https://idex.gov.in/",
+    "https://birac.nic.in/",
+    "https://coers.iitm.ac.in/",
+    "https://www.ihubiitmandi.in/",
+    "https://fitt-iitd.in/",
+    "https://www.kiitincubator.in/",
+    "https://www.startupgrantsindia.com/",
+    "https://aikosh.indiaai.gov.in/",
+    "https://event.data.gov.in/",
+    "https://eservices.dot.gov.in/5ghackathon/"
+  ],
+  "search_queries_used": [
+    "site:aicte-india.org hackathon challenge registration open 2026",
+    "site:iitm.ac.in government innovation challenge hackathon open 2026",
+    "site:iitk.ac.in ministry hackathon challenge registration 2026",
+    "site:iitd.ac.in startup innovation challenge government open 2026",
+    "site:iitb.ac.in hackathon challenge government registration open",
+    "IIT incubator government startup challenge applications open 2026 India",
+    "site:mygov.in hackathon challenge registration open 2026",
+    "site:startupindia.gov.in challenge competition applications open 2026",
+    "IndiaAI hackathon challenge open registration 2026",
+    "iDEX challenge defence startup applications open 2026 India",
+    "BIRAC challenge hackathon registration open 2026 India",
+    "site:gov.in hackathon innovation challenge 2026 registration open",
+    "Road Safety Hackathon 2026 IIT Madras registration May 2026",
+    "KIIT-TBI Incubation LaunchPad 2026 deadline May 2026",
+    "DBT-BIRAC Bio AI call proposal 2026 June deadline",
+    "C3iHub Cybersecurity Startup Incubation Program Cohort VII IIT Kanpur",
+    "India Pitch Pilot Scale Startup Challenge Ministry of Housing Urban Affairs 2026",
+    "ABHIYANTA 1.0 IIT Mandi application deadline 2026",
+    "National Startup Awards 5.0 application deadline 2026",
+    "Boeing BUILD 2026 FITT IIT Delhi deadline",
+    "Bharat Startup Grand Challenge ongoing 2026",
+    "IndiaAI CyberGuard hackathon deadline",
+    "iDEX Open Challenge deadline June 2026",
+    "Startup India Hackathon Eco-alternatives Single Use Plastics deadline 2026",
+    "iCreate Drone Challenge Startup India deadline 2026",
+    "Bharat Livelihood Challenge Startup India 2026"
+  ]
+}

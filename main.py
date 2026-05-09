@@ -11,8 +11,11 @@ import sys
 import time
 import re
 import os
+from pathlib import Path
 from datetime import datetime, date, timedelta
 from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
+
+from coverage_intelligence import CoverageIntelligenceEngine, SearchSaturationTracker, attach_consensus_to_event
 
 
 # ==================================================
@@ -375,17 +378,77 @@ def calculate_confidence(event: dict) -> int:
 # ==================================================
 def serialize_immediately(events: list, output_file: str = "hackathons_results.json"):
     """PATCH 10: Immediately serialize verified candidates"""
+    for event in events:
+        if isinstance(event, dict):
+            attach_consensus_to_event(event)
+            event.setdefault(
+                "classification_tier",
+                "fully_verified" if event.get("confidence_score", 0) >= 90 else "likely_active",
+            )
+            event.setdefault("admin_review_recommended", 60 <= event.get("confidence_score", 0) <= 89)
+            event.setdefault("human_verification_needed", event["classification_tier"] == "likely_active")
+            event.setdefault("blue_tick_eligible", event["classification_tier"] == "fully_verified")
+    fully_verified = [event for event in events if event.get("classification_tier") == "fully_verified"]
+    likely_active = [event for event in events if event.get("classification_tier") == "likely_active"]
     result = {
         "government_hackathons": events,
+        "fully_verified_opportunities": fully_verified,
+        "likely_active_opportunities": likely_active,
+        "borderline_opportunities": [],
+        "archived_opportunities": [],
+        "ecosystem_opportunities": [],
+        "excluded_opportunities": [],
         "metadata": {
             "search_date": date.today().isoformat(),
             "total_active_hackathons": len(events),
+            "total_fully_verified": len(fully_verified),
+            "total_likely_active": len(likely_active),
+            "total_borderline_opportunities": 0,
+            "total_archived_opportunities": 0,
+            "total_ecosystem_opportunities": 0,
+            "total_excluded": 0,
+            "classification_tiers": {
+                "fully_verified": len(fully_verified),
+                "likely_active": len(likely_active),
+                "borderline": 0,
+                "archived": 0,
+                "rejected": 0,
+            },
             "serialization_time": datetime.now().isoformat(),
-            "execution_mode": "immediate_serialization"
+            "execution_mode": "immediate_serialization",
+            "recall_mode": "high_recall_tiered",
         }
     }
+    attach_coverage_analysis(result, queries=["legacy_immediate_serialization"], models_used=["hy3-preview"])
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
+    return result
+
+
+def attach_coverage_analysis(result: dict, queries: list[str] | None = None, models_used: list[str] | None = None) -> dict:
+    """Attach additive coverage-confidence metadata without changing event validity scores."""
+    metadata = result.setdefault("metadata", {})
+    active_count = len(result.get("government_hackathons", []) or [])
+    rejected_count = metadata.get("total_excluded", 0)
+    saturation_tracker = SearchSaturationTracker()
+    saturation_tracker.record_query_batch(
+        queries=queries or metadata.get("search_queries_used") or ["legacy_generation"],
+        new_events_discovered=active_count,
+        duplicate_events_discovered=0,
+        rejected_events_discovered=rejected_count if isinstance(rejected_count, int) else 0,
+    )
+    coverage_engine = CoverageIntelligenceEngine(Path("coverage_history.json"))
+    coverage_analysis = coverage_engine.analyze(
+        final_payload=result,
+        discovery_tasks=[],
+        payloads=[result],
+        artifacts=[],
+        saturation_tracker=saturation_tracker,
+        models_attempted=models_used or [],
+    )
+    metadata["coverage_analysis"] = coverage_analysis
+    metadata["coverage_confidence"] = coverage_analysis["coverage_confidence"]
+    metadata["coverage_status"] = coverage_analysis["coverage_status"]
     return result
 
 
@@ -521,14 +584,43 @@ class GovernmentHackathonEngine:
                 unique_events.append(event)
         
         validated_events = final_validation_gate(unique_events)
+        for event in validated_events:
+            attach_consensus_to_event(event)
+            event.setdefault(
+                "classification_tier",
+                "fully_verified" if event.get("confidence_score", 0) >= 90 else "likely_active",
+            )
+            event.setdefault("admin_review_recommended", 60 <= event.get("confidence_score", 0) <= 89)
+            event.setdefault("human_verification_needed", event["classification_tier"] == "likely_active")
+            event.setdefault("blue_tick_eligible", event["classification_tier"] == "fully_verified")
+        fully_verified = [event for event in validated_events if event.get("classification_tier") == "fully_verified"]
+        likely_active = [event for event in validated_events if event.get("classification_tier") == "likely_active"]
         
-        serialize_immediately(validated_events)
-        
-        return {
+        result = {
             "government_hackathons": validated_events,
+            "fully_verified_opportunities": fully_verified,
+            "likely_active_opportunities": likely_active,
+            "borderline_opportunities": [],
+            "archived_opportunities": [],
+            "ecosystem_opportunities": [],
+            "excluded_opportunities": [],
             "metadata": {
                 "search_date": date.today().isoformat(),
                 "total_active_hackathons": len(validated_events),
+                "total_fully_verified": len(fully_verified),
+                "total_likely_active": len(likely_active),
+                "total_borderline_opportunities": 0,
+                "total_archived_opportunities": 0,
+                "total_ecosystem_opportunities": 0,
+                "total_excluded": 0,
+                "classification_tiers": {
+                    "fully_verified": len(fully_verified),
+                    "likely_active": len(likely_active),
+                    "borderline": 0,
+                    "archived": 0,
+                    "rejected": 0,
+                },
+                "recall_mode": "high_recall_tiered",
                 "validation_rules_applied": [
                     "stale_detection", "non_technical_filter", "duplicate_suppression",
                     "cache_ttl", "cluster_saturation", "json_reliability",
@@ -537,6 +629,14 @@ class GovernmentHackathonEngine:
                 ]
             }
         }
+        attach_coverage_analysis(
+            result,
+            queries=[f"legacy_cluster:{cluster}" for cluster in DOMAIN_CLUSTERS],
+            models_used=["hy3-preview"],
+        )
+        with open("hackathons_results.json", "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
+        return result
 
 
 def main():
