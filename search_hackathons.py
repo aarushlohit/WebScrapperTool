@@ -56,7 +56,7 @@ DEFAULT_MODELS = [
 MODEL_TIMEOUTS = {
     "opencode/big-pickle": 330,
     "opencode/hy3-preview-free": 330,
-    "opencode/minimax-m2.5-free": 330,
+    "opencode/minimax-m2.5-free": 340,
     "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.6": 330,
 }
 
@@ -83,8 +83,6 @@ ALLOWED_EVENT_TYPES = {
     "innovation_challenge",
     "ai_challenge",
     "cybersecurity_competition",
-    "startup_competition",
-    "research_competition",
     "defence_challenge",
     "coding_competition",
 }
@@ -93,7 +91,6 @@ ACTIVE_STATUSES = {
     "registration_open",
     "submission_open",
     "application_open",
-    "proposal_open",
 }
 
 OPEN_KEYWORDS = [
@@ -389,6 +386,87 @@ PROCUREMENT_OR_GRANT_INTAKE_KEYWORDS = [
     "feasibility study",
     "feasibility project",
     "expression of interest",
+]
+
+FORBIDDEN_OPPORTUNITY_KEYWORDS = [
+    "accelerator",
+    "accelerator cohort",
+    "accelerator program",
+    "acquisition",
+    "bid",
+    "bidding",
+    "call for proposal",
+    "call for proposals",
+    "cfp",
+    "empanelment",
+    "expression of interest",
+    "fellowship",
+    "funding call",
+    "grant",
+    "grant call",
+    "grant funding",
+    "incubation",
+    "incubator",
+    "investment program",
+    "joint innovation call",
+    "procurement",
+    "request for proposal",
+    "request for proposals",
+    "research proposal",
+    "r&d solicitation",
+    "seed funding",
+    "startup funding",
+    "tender",
+    "vendor onboarding",
+    "vendor registration",
+]
+
+HACKATHON_TYPE_KEYWORDS = [
+    "hackathon",
+    "datathon",
+    "codeathon",
+    "ideathon",
+]
+
+CYBERSECURITY_TYPE_KEYWORDS = [
+    "cybersecurity",
+    "cyber security",
+    "ctf",
+    "capture the flag",
+    "bug bounty",
+    "security challenge",
+]
+
+DEFENCE_TYPE_KEYWORDS = [
+    "defence",
+    "defense",
+    "idex",
+    "drdo",
+    "armed forces",
+    "military",
+    "aerospace",
+    "space defence",
+]
+
+AI_TYPE_KEYWORDS = [
+    "ai",
+    "artificial intelligence",
+    "machine learning",
+    "ml",
+    "deep learning",
+    "data science",
+    "nlp",
+    "computer vision",
+    "model development",
+]
+
+CODING_TYPE_KEYWORDS = [
+    "coding",
+    "programming",
+    "software development",
+    "algorithm",
+    "app development",
+    "developer challenge",
 ]
 
 HARD_PROCUREMENT_KEYWORDS = [
@@ -1317,7 +1395,6 @@ class OpportunityRecord(BaseModel):
     def _normalize_event_type(cls, value: Any) -> str:
         text = str(value or "").strip().lower().replace("-", "_").replace(" ", "_")
         aliases = {
-            "startup_challenge": "startup_competition",
             "defense_challenge": "defence_challenge",
             "ai_competition": "ai_challenge",
             "cyber_challenge": "cybersecurity_competition",
@@ -1866,31 +1943,16 @@ class DiscoveryPlanner:
 
     def build_prompt(self, task: DiscoveryTask) -> str:
         return f"""
-You are a retrieval-only opportunity discovery worker.
+You are an evidence extraction worker for a deterministic opportunity pipeline.
+Return JSON only. Do not score, rank, deduplicate, or decide final inclusion.
 
-Current validation date: {self.current_date}
+Validation date: {self.current_date}
 Task: {task.name}
-Ecosystem category: {task.category}
+Category: {task.category}
 
-Goal:
-Find active Indian government-linked hackathons, innovation challenges, AI
-competitions, cybersecurity competitions, startup competitions, research
-competitions, defence challenges, and coding competitions where a brand new
-participant can still register, apply, submit, or propose on {self.current_date}.
-
-Important output rule:
-Do not write a report, summary, commentary, or markdown. Do not use phrases
-like "final report". Return JSON only.
-
-High-recall mode:
-- Discover broadly first, then classify. Do not collapse the output to only
-  perfect-certainty candidates.
-- Include real government-backed innovation ecosystem opportunities even when
-  intake is partially obscured by login, external portals, PDFs, or fragmented
-  government UX.
-- Prefer tiering uncertainty as likely_active or borderline over excluding a
-  plausible real opportunity. Preserve explicit closed/historical pages as
-  archived rather than rejected.
+Semantic intent:
+Find real Indian government-affiliated technical competitions that may still
+accept new registrations, applications, or submissions on {self.current_date}.
 
 Seed official URLs:
 {json.dumps(task.seed_urls, indent=2)}
@@ -1898,44 +1960,35 @@ Seed official URLs:
 Search queries to execute or approximate:
 {json.dumps(task.queries, indent=2)}
 
-Hard validation rules:
-- Include only current-cycle opportunities with an official source URL.
-- Exclude only clearly closed, archived, winner/finalist, judging-only,
-  historical, fake, clearly unrelated, or clearly non-technical pages.
-- Exclude logo, mascot, slogan, essay, poetry, debate, photography, poster,
-  drawing, art, reel, social media, branding, public-voting, cultural, quiz,
-  talent, or awareness contests from both active and borderline results.
-- Include opportunities with a real technical implementation or ecosystem signal:
-  AI/ML, coding, cybersecurity, robotics, engineering, hardware, software,
-  automation, biotechnology R&D, aerospace, defence tech, semiconductors,
-  blockchain, APIs, cloud systems, GovTech, accelerator, incubation,
-  technical prototype, proof of concept, applied research, proposal,
-  startup solution, pilot, or technical commercialization.
-- Do not treat ideas, opinions, branding, writing, visual design, artwork, or
-  awareness content as technical implementation.
-- Treat grant, proposal, accelerator, and R&D challenge hybrids as valuable
-  ecosystem opportunities when technical implementation, prototype, startup
-  solution, engineering output, or applied research output is expected.
-- "Apply Now" alone is not fully verified, but it can support likely_active or
-  borderline classification when official current-cycle evidence exists.
-- Accept Unstop, Devfolio, HackerEarth, Google Forms, Typeform, Startup India
-  AMS, and partner-hosted registration systems when linked or referenced by an
-  official/ministry-backed source.
-- Do not invent URLs, deadlines, prize amounts, emails, or ministries.
-- Prefer official .gov.in, .nic.in, .ac.in, ministry, MyGov, Startup India,
-  IndiaAI, AIKosh, BIRAC, DST, TDB, iDEX, ISRO, DRDO, or state government sources.
-- External registration platforms are allowed only if the official source links to them.
-- Return at most {self.max_candidates_per_task} useful candidates across all
-  tiers, prioritizing recall and transparent classification.
+Allowed opportunity intent:
+- hackathons
+- innovation challenges
+- AI challenges
+- cybersecurity competitions
+- defence innovation challenges
+- coding competitions
+
+Forbidden primary intent:
+- grants, startup funding, incubators, accelerators, fellowships
+- proposal calls, R&D funding solicitations, procurement notices, RFPs, tenders
+- logo, slogan, mascot, essay, poster, quiz, photography, awareness contests
+
+Extraction rules:
+- Extract only facts visible in source evidence.
+- Use null when a fact is missing.
+- Do not invent deadlines, URLs, ministries, prizes, or future editions.
+- Include uncertain but plausible competitions; Python will validate and filter.
+- Put clearly invalid or closed pages in "excluded" with the observed reason.
+- Return at most {self.max_candidates_per_task} candidates.
 
 Return ONLY strict JSON in this exact shape:
 {{
   "candidates": [
     {{
-      "event_type": "hackathon | innovation_challenge | ai_challenge | cybersecurity_competition | startup_competition | research_competition | defence_challenge | coding_competition",
+      "event_type": "hackathon | innovation_challenge | ai_challenge | cybersecurity_competition | defence_challenge | coding_competition | null",
       "hackathon_name": "official public name",
-      "full_name": "complete official name if different",
-      "current_status": "registration_open | submission_open | application_open | proposal_open",
+      "full_name": "complete official name if different or null",
+      "current_status": "registration_open | submission_open | application_open | closed | archived | unknown",
       "registration_url": "direct apply/register URL or null",
       "submission_url": "direct submit URL or null",
       "official_website": "official organization URL",
@@ -1952,22 +2005,18 @@ Return ONLY strict JSON in this exact shape:
       "registration_close_date": "YYYY-MM-DD or null",
       "submission_close_date": "YYYY-MM-DD or null",
       "application_deadline": "YYYY-MM-DD or null",
-      "proposal_deadline": "YYYY-MM-DD or null",
       "eligibility_criteria": {{"summary": "verifiable summary"}},
       "team_size": {{"minimum": null, "maximum": null}},
       "submission_fee": {{"amount": 0, "currency": "INR", "display": "Free or Unknown"}},
       "prizes": {{"summary": "verifiable rewards only"}},
+      "problem_statements": ["verifiable challenge/problem statement"],
+      "tags": ["observed semantic signals"],
       "source_validation": {{
         "source_type": "official_government_portal | official_academic_portal | official_partner_registration",
         "official_confirmation_found": true,
         "official_open_keywords_found": ["short exact phrases"],
         "deadline_verified": true
-      }},
-      "confidence_score": 0,
-      "classification_tier": "fully_verified | likely_active | borderline | archived | rejected",
-      "admin_review_recommended": false,
-      "human_verification_needed": false,
-      "blue_tick_eligible": false
+      }}
     }}
   ],
   "excluded": [
@@ -2317,7 +2366,7 @@ class ValidationEngine:
         record.source_validation.validation_errors = errors
 
         record.is_open_for_new_registration = accepting_entries
-        record.is_open_for_submission = accepting_entries and record.current_status in {"submission_open", "proposal_open"}
+        record.is_open_for_submission = accepting_entries and record.current_status == "submission_open"
         record.confidence_score, record.confidence_reasons = self._score(
             record=record,
             official_source=official_source,
@@ -2529,8 +2578,7 @@ class ValidationEngine:
         accepting_entries: bool,
         zombie: bool,
     ) -> tuple[int, list[str]]:
-        base = min(record.confidence_score or 0, 65)
-        score = base
+        score = 0
         cap = 99
         reasons: list[str] = []
         if official_source:
@@ -2713,9 +2761,9 @@ class NormalizationEngine:
                     "Final JSON is regenerated deterministically by the pipeline.",
                     "Stringified JSON fields are repaired into objects.",
                     "Discovery and validation are separated; uncertain real opportunities are tiered instead of prematurely rejected.",
-                    "LLM confidence is capped and recalibrated after deterministic validation.",
+                    "LLM confidence is ignored; confidence is calculated after deterministic validation.",
                     "Creative/design contests and clearly stale or closed pages remain hard-excluded.",
-                    "Grant, proposal, accelerator, and R&D challenge hybrids are retained when technical implementation signals exist.",
+                    "Grants, proposal calls, accelerators, incubators, procurement, and R&D funding solicitations are hard-excluded.",
                     "Auth walls, external registration, PDFs, and poor government portal UX reduce tier confidence but do not imply invalidity.",
                 ],
                 "input_metadata": metadata_in,
@@ -2820,9 +2868,15 @@ class NormalizationEngine:
             return self._archived(record, raw_reason or "archived_or_closed_source")
         if record.current_status in {"archived", "completed", "closed", "finalist", "judging"} or record.current_status.endswith("_closed"):
             return self._archived(record, f"current_status_{record.current_status}")
+        if "proposal" in str(record.current_status).lower():
+            return self._reject(record, "proposal_call_status_not_competition_intake")
 
         official_source = self._has_government_source(record)
         government_or_ecosystem = official_source or self._has_government_or_ecosystem_affiliation(record)
+        deterministic_type, type_reason = self._deterministic_event_type(record)
+        if deterministic_type == "reject":
+            return self._reject(record, type_reason)
+        record.event_type = deterministic_type
         semantic_failure = self._semantic_purity_failure(record)
         if self._is_proposal_or_r_and_d_only(record):
             return self._reject(record, "proposal_or_r_and_d_call_not_hackathon")
@@ -3035,6 +3089,35 @@ class NormalizationEngine:
             return "missing_technical_implementation_submission"
         return None
 
+    def _deterministic_event_type(self, record: OpportunityRecord) -> tuple[str, str]:
+        text = self._semantic_text(record)
+        title_text = normalize_space(f"{record.hackathon_name or ''} {record.full_name or ''}".lower())
+        invalid = self._matched_keywords(text, FORBIDDEN_OPPORTUNITY_KEYWORDS)
+        competition = self._matched_keywords(text, COMPETITION_KEYWORDS + COMPETITIVE_STRUCTURE_SIGNALS)
+        implementation = self._has_implementation_signal(text)
+        hackathon_named = bool(self._matched_keywords(title_text, HACKATHON_TYPE_KEYWORDS))
+
+        if invalid and not (hackathon_named and implementation):
+            return "reject", f"forbidden_opportunity_type:{','.join(invalid[:4])}"
+        if not competition and not hackathon_named:
+            return "reject", "missing_competition_structure"
+        if not implementation:
+            return "reject", "missing_technical_implementation_submission"
+
+        if self._matched_keywords(text, CYBERSECURITY_TYPE_KEYWORDS):
+            return "cybersecurity_competition", "deterministic_keyword_classifier"
+        if self._matched_keywords(text, DEFENCE_TYPE_KEYWORDS):
+            return "defence_challenge", "deterministic_keyword_classifier"
+        if self._matched_keywords(text, AI_TYPE_KEYWORDS):
+            return "ai_challenge", "deterministic_keyword_classifier"
+        if hackathon_named:
+            return "hackathon", "deterministic_keyword_classifier"
+        if self._matched_keywords(text, CODING_TYPE_KEYWORDS):
+            return "coding_competition", "deterministic_keyword_classifier"
+        if self._matched_keywords(text, ["challenge", "competition", "contest", "grand challenge", "innovation challenge"]):
+            return "innovation_challenge", "deterministic_keyword_classifier"
+        return "reject", "unclassified_opportunity_type"
+
     def _is_startup_seed_funding(self, record: OpportunityRecord) -> bool:
         text = self._semantic_text(record)
         funding_terms = [
@@ -3101,7 +3184,7 @@ class NormalizationEngine:
                 "s&t cooperation call",
             )
         )
-        return bool(proposal_signal and (explicit_proposal_call or record.event_type == "research_competition"))
+        return bool(proposal_signal and explicit_proposal_call)
 
     def _is_school_awareness_only(self, record: OpportunityRecord) -> bool:
         text = self._semantic_text(record)
@@ -3212,10 +3295,6 @@ class NormalizationEngine:
             "grand challenge",
             "open innovation",
             "startup challenge",
-            "proposal",
-            "accelerator",
-            "incubator",
-            "incubation",
             "innovation mission",
             "innovation program",
             "innovation programme",
@@ -3241,8 +3320,6 @@ class NormalizationEngine:
         hard_procurement_signal = bool(self._matched_keywords(text, HARD_PROCUREMENT_KEYWORDS))
         if not (grant_signal or procurement_signal):
             return None
-        if record.event_type == "research_competition" and (grant_signal or procurement_signal):
-            return "grant_or_r_and_d_call_semantics"
         if hard_procurement_signal:
             return "procurement_or_feasibility_intake_semantics"
         if not self._has_primary_competition_structure(record):
@@ -3614,25 +3691,28 @@ class OpportunityIntelligenceEngine:
         final_payload["metadata"]["models_attempted"] = self.models
         final_payload["metadata"]["discovery_tasks_requested"] = [task.name for task in tasks]
         final_payload["metadata"]["checkpoint_run_dir"] = str(self.checkpoints.run_dir)
-        final_payload["metadata"]["parser_diagnostics"] = parser_diagnostics
-        final_payload["metadata"]["opencode_artifacts"] = [
-            {
-                "task": artifact.task_name,
-                "model": artifact.model,
-                "attempt": artifact.attempt,
-                "success": artifact.success,
-                "from_cache": artifact.from_cache,
-                "elapsed_seconds": round(artifact.elapsed_seconds, 2),
-                "error": artifact.error,
-                "timed_out": artifact.timed_out,
-                "timeout_seconds": artifact.timeout_seconds,
-                "partial_output_path": artifact.partial_output_path,
-                "raw_task_output_path": artifact.raw_task_output_path,
-                "parser_accepted": artifact.parser_accepted,
-                "parser_diagnostics": artifact.parser_diagnostics,
-            }
-            for artifact in all_artifacts
-        ]
+        final_payload["metadata"]["parser_summary"] = {
+            "tasks_parsed": len(parser_diagnostics),
+            "strategies": sorted(
+                {
+                    str(item.get("strategy"))
+                    for item in parser_diagnostics
+                    if isinstance(item, dict) and item.get("strategy")
+                }
+            ),
+            "salvaged_candidates": sum(
+                ensure_int(item.get("salvaged_candidates"), 0)
+                for item in parser_diagnostics
+                if isinstance(item, dict)
+            ),
+        }
+        final_payload["metadata"]["opencode_artifact_summary"] = {
+            "attempts": len(all_artifacts),
+            "successful_attempts": sum(1 for artifact in all_artifacts if artifact.success),
+            "cache_hits": sum(1 for artifact in all_artifacts if artifact.from_cache),
+            "timeouts": sum(1 for artifact in all_artifacts if artifact.timed_out),
+            "failed_tasks": sorted({artifact.task_name for artifact in all_artifacts if not artifact.success}),
+        }
         self._attach_coverage_analysis(final_payload, tasks, payloads, all_artifacts, saturation_tracker)
         with self._typing("thinking", "exporting final JSON"):
             if self._export(final_payload):

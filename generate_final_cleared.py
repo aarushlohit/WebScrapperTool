@@ -41,7 +41,6 @@ PROPOSAL_OR_R_AND_D_KEYWORDS = (
     "call for proposal",
     "call for proposals",
     "proposal",
-    "proposal_open",
     "r&d",
     "research and development",
     "research proposal",
@@ -198,19 +197,12 @@ def is_proposal_or_rnd(record: dict[str, Any]) -> bool:
     if not explicit_proposal:
         return False
 
-    event_type = normalize_text(record.get("event_type") or "")
-
-    # Proposal-first research competitions should be removed even if they look
-    # like generic calls or mention competition in the title.
-    if "proposal_open" in status and event_type == "research_competition":
+    if "proposal" in status:
         return True
 
-    # Keep clearly hackathon-like challenges even if the source status is proposal_open.
+    # Keep clearly hackathon-like challenges even if the page mentions proposals
+    # as a submission artifact rather than as the primary opportunity type.
     if is_hackathon_like(record):
-        if "proposal_open" in status and any(
-            keyword in text for keyword in ("hackathon", "challenge", "competition", "contest", "innovation")
-        ):
-            return False
         if any(keyword in text for keyword in ("open challenge", "hackathon", "competition", "challenge")):
             return False
 
@@ -219,10 +211,6 @@ def is_proposal_or_rnd(record: dict[str, Any]) -> bool:
 
 def is_startup_listing(record: dict[str, Any]) -> bool:
     text = record_text(record)
-    event_type = normalize_text(record.get("event_type") or "")
-    if event_type == "startup_competition":
-        return True
-
     if not any(keyword in text for keyword in STARTUP_KEYWORDS):
         return False
 
