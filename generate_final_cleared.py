@@ -27,14 +27,14 @@ HACKATHON_LIKE_KEYWORDS = (
     "hackathon",
     "challenge",
     "competition",
-    "contest",
-    "innovation challenge",
+    "capture the flag",
+    "ctf",
     "open challenge",
     "coding challenge",
-    "ideathon",
     "datathon",
-    "design challenge",
-    "startup challenge",
+    "ai challenge",
+    "cyber challenge",
+    "technical challenge",
 )
 
 PROPOSAL_OR_R_AND_D_KEYWORDS = (
@@ -53,6 +53,16 @@ PROPOSAL_OR_R_AND_D_KEYWORDS = (
     "seed funding",
     "pre-seed",
     "research competition",
+    "accelerator",
+    "incubation",
+    "incubator",
+    "cohort",
+    "fellowship",
+    "scholarship",
+    "procurement",
+    "tender",
+    "expression of interest",
+    "eoi",
 )
 
 STARTUP_KEYWORDS = (
@@ -64,6 +74,7 @@ STARTUP_KEYWORDS = (
     "startup competition",
     "tech startup challenge",
     "startup",
+    "venture",
 )
 
 ACTIVE_STATUS_KEYWORDS = (
@@ -194,19 +205,7 @@ def is_proposal_or_rnd(record: dict[str, Any]) -> bool:
     text = record_text(record)
     status = record_status(record)
     explicit_proposal = any(keyword in text or keyword in status for keyword in PROPOSAL_OR_R_AND_D_KEYWORDS)
-    if not explicit_proposal:
-        return False
-
-    if "proposal" in status:
-        return True
-
-    # Keep clearly hackathon-like challenges even if the page mentions proposals
-    # as a submission artifact rather than as the primary opportunity type.
-    if is_hackathon_like(record):
-        if any(keyword in text for keyword in ("open challenge", "hackathon", "competition", "challenge")):
-            return False
-
-    return True
+    return bool(explicit_proposal or "proposal" in status)
 
 
 def is_startup_listing(record: dict[str, Any]) -> bool:
@@ -377,7 +376,8 @@ def build_output(source_payload: Any, records: list[dict[str, Any]], stats: Clea
         metadata["source_metadata"] = source_payload["metadata"]
 
     return {
-        "final_cleared_hackathons": records,
+        "government_hackathons": records,
+        "excluded_opportunities": [],
         "metadata": metadata,
     }
 

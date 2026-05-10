@@ -5,28 +5,37 @@ scores, validation decisions, or reasoning traces.
 
 Purpose:
 Extract factual evidence about Indian government-affiliated technical
-competitions that may currently accept new registrations, applications, or
-submissions.
+competitions that may currently accept new registrations or submissions.
 
 Allowed opportunity intent:
 - hackathons
-- innovation challenges
 - AI challenges
 - cybersecurity competitions
 - defence innovation challenges
 - coding competitions
+- capture the flag competitions
+- technical innovation challenges with explicit competition structure
 
 Forbidden primary intent:
 - grants
+- funding calls
 - startup funding
+- startup programs
+- incubation programs
 - proposal calls
 - R&D funding solicitations
 - incubators
 - accelerators
+- cohorts
 - fellowships
+- startup recognition
+- startup ecosystem programs
+- innovation ecosystem programs
 - procurement notices
 - RFPs
 - tenders
+- awards
+- ideathons
 - logo, slogan, mascot, essay, poster, quiz, photography, awareness contests
 
 Openness evidence:
@@ -39,8 +48,11 @@ Anti-hallucination:
   future editions.
 - Do not infer a new annual edition from an older event.
 - Use null for unknown facts.
-- Include uncertain but plausible technical competitions as candidates; backend
-  code will validate, classify, score, deduplicate, and filter.
+- Do not include uncertain "may qualify", "could be", or "possibly technical"
+  opportunities.
+- Include only records with explicit competition structure such as hackathon,
+  CTF, challenge, competition, problem statement, team size, judging criteria,
+  leaderboard, prototype submission, winner, cash prize, or grand finale.
 - Put clearly closed, archived, non-government, or forbidden records in
   "excluded".
 
@@ -48,7 +60,7 @@ Output schema:
 {
   "candidates": [
     {
-      "event_type": "hackathon | innovation_challenge | ai_challenge | cybersecurity_competition | defence_challenge | coding_competition | null",
+      "event_type": "hackathon | ai_challenge | cybersecurity_competition | coding_competition | defence_innovation_challenge | technical_challenge | ctf | null",
       "hackathon_name": "official public name",
       "full_name": "complete official name or null",
       "current_status": "registration_open | submission_open | application_open | closed | archived | unknown",
