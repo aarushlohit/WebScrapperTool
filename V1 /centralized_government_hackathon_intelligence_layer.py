@@ -66,6 +66,7 @@ class ChallengeCandidate:
     platform: str = ""
     domain: str = ""
     theme: str = ""
+    sdg_alignment: list[str] = field(default_factory=list)
     focus_areas: list[str] = field(default_factory=list)
     problem_statements: list[str] = field(default_factory=list)
     deadline: str = ""
@@ -354,6 +355,7 @@ class CentralizedGovernmentHackathonIntelligenceLayer:
             platform=self._derive_platform(portal.root_url),
             domain=urlparse(portal.root_url).netloc,
             theme=self._derive_theme(text),
+            sdg_alignment=self._extract_sdg_alignment(text),
             focus_areas=self._extract_focus_areas(text),
             problem_statements=self._extract_problem_statements(text),
             deadline=self._extract_deadline(text),
@@ -439,6 +441,10 @@ class CentralizedGovernmentHackathonIntelligenceLayer:
         normalized["registration_url"] = normalize_space(normalized.get("registration_url", ""))
         normalized["submission_url"] = normalize_space(normalized.get("submission_url", ""))
         normalized["domain"] = normalize_space(normalized.get("domain", "")).lower()
+        sdg_alignment = normalized.get("sdg_alignment", [])
+        if not isinstance(sdg_alignment, list):
+            sdg_alignment = [str(sdg_alignment)] if sdg_alignment else []
+        normalized["sdg_alignment"] = sorted({normalize_space(str(sdg)) for sdg in sdg_alignment if normalize_space(str(sdg))})
         return normalized
 
     def build_recursive_discovery_prompt(self, candidates: list[dict[str, Any]], excluded: list[dict[str, Any]]) -> str:
@@ -535,6 +541,32 @@ class CentralizedGovernmentHackathonIntelligenceLayer:
     def _extract_problem_statements(text: str) -> list[str]:
         sentences = re.split(r"(?<=[.!?])\s+", text)
         return [sentence.strip() for sentence in sentences if any(token in sentence.lower() for token in ("problem", "statement", "challenge"))][:5]
+
+    @staticmethod
+    def _extract_sdg_alignment(text: str) -> list[str]:
+        lowered = text.lower()
+        sdg_keywords = {
+            "SDG 2: Zero Hunger": ("agri", "agriculture", "food security", "nutrition", "farmer"),
+            "SDG 3: Good Health and Well-being": ("health", "medical", "hospital", "wellness", "telemedicine"),
+            "SDG 4: Quality Education": ("education", "learning", "edtech", "school", "student"),
+            "SDG 6: Clean Water and Sanitation": ("water", "sanitation", "wastewater", "jal"),
+            "SDG 7: Affordable and Clean Energy": ("energy", "renewable", "solar", "wind", "battery"),
+            "SDG 8: Decent Work and Economic Growth": ("employment", "jobs", "skill development", "msme"),
+            "SDG 9: Industry, Innovation and Infrastructure": ("innovation", "manufacturing", "infrastructure", "industry"),
+            "SDG 10: Reduced Inequalities": ("inclusion", "accessibility", "divyang", "social equity"),
+            "SDG 11: Sustainable Cities and Communities": ("smart city", "urban", "mobility", "transport", "housing"),
+            "SDG 12: Responsible Consumption and Production": ("recycling", "circular economy", "waste management"),
+            "SDG 13: Climate Action": ("climate", "carbon", "emission", "sustainability", "green"),
+            "SDG 14: Life Below Water": ("marine", "ocean", "coastal", "fisheries"),
+            "SDG 15: Life on Land": ("biodiversity", "forest", "wildlife", "land restoration"),
+            "SDG 16: Peace, Justice and Strong Institutions": ("cybersecurity", "justice", "governance", "digital public infrastructure"),
+            "SDG 17: Partnerships for the Goals": ("partnership", "collaboration", "co-creation", "ecosystem"),
+        }
+        matched: list[str] = []
+        for sdg, keywords in sdg_keywords.items():
+            if any(keyword in lowered for keyword in keywords):
+                matched.append(sdg)
+        return sorted(set(matched))
 
     @staticmethod
     def _extract_deadline(text: str) -> str:

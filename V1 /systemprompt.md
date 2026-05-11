@@ -307,6 +307,7 @@ Each candidate MUST contain:
   "platform": "",
   "domain": "",
   "theme": "",
+  "sdg_alignment": [],
   "focus_areas": [],
   "problem_statements": [],
   "deadline": "",
@@ -370,6 +371,7 @@ NEVER invent:
 - prizes
 - URLs
 - organizations
+- SDG alignment
 
 Prefer NULL over hallucination.
 

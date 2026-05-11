@@ -397,6 +397,7 @@ class CandidateRecord:
     platform: str = ""
     domain: str = ""
     theme: str = ""
+    sdg_alignment: list[str] = field(default_factory=list)
     focus_areas: list[str] = field(default_factory=list)
     problem_statements: list[str] = field(default_factory=list)
     deadline: str = ""
@@ -482,6 +483,7 @@ class CandidateSchema(BaseModel):  # type: ignore[misc]
     platform: str = ""
     domain: str = ""
     theme: str = ""
+    sdg_alignment: list[str] = []
     focus_areas: list[str] = []
     problem_statements: list[str] = []
     deadline: str = ""
@@ -738,6 +740,7 @@ Candidate fields if you include any candidate:
 - platform
 - domain
 - theme
+- sdg_alignment
 - focus_areas
 - problem_statements
 - deadline
@@ -795,6 +798,7 @@ Hard requirement:
                 "platform": str(item.get("platform", "")).strip(),
                 "domain": str(item.get("domain", "")).strip(),
                 "theme": str(item.get("theme", "")).strip(),
+                "sdg_alignment": listify(item.get("sdg_alignment")),
                 "focus_areas": listify(item.get("focus_areas")),
                 "problem_statements": listify(item.get("problem_statements")),
                 "deadline": str(item.get("deadline", "")).strip(),
@@ -1102,6 +1106,7 @@ def normalize_candidate(candidate: CandidateRecord, current_date: date) -> Candi
     candidate.platform = normalize_space(candidate.platform)
     candidate.domain = normalize_domain(candidate.domain)
     candidate.theme = normalize_space(candidate.theme)
+    candidate.sdg_alignment = unique_list(candidate.sdg_alignment)
     candidate.focus_areas = unique_list(candidate.focus_areas)
     candidate.problem_statements = unique_list(candidate.problem_statements)
     candidate.tags = unique_list(candidate.tags)
