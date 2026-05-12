@@ -1,0 +1,369 @@
+{
+  "candidates": [
+    {
+      "event_type": "defence_innovation_challenge",
+      "hackathon_name": "iDEX Open Challenge",
+      "full_name": "iDEX Open Challenge for Defence Innovation",
+      "current_status": "active",
+      "registration_url": "https://idex.gov.in/challenges",
+      "submission_url": "https://idex.gov.in/challenges",
+      "official_website": "https://idex.gov.in",
+      "official_event_page": "https://idex.gov.in/challenges",
+      "source_url": "https://idex.gov.in/challenges",
+      "hosting_organization": "Innovations for Defence Excellence (iDEX), Defence Innovation Organisation (DIO)",
+      "ministry": "Ministry of Defence",
+      "institution_type": "government_agency",
+      "platform": "idex.gov.in",
+      "domain": "defence",
+      "theme": "Defence and aerospace technology innovation for national security",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "defence technology",
+        "aerospace systems",
+        "AI/ML",
+        "drone technology",
+        "cybersecurity",
+        "communication systems",
+        "sensor technology",
+        "radar systems",
+        "navigation systems",
+        "quantum technology",
+        "material science",
+        "autonomous systems"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-06-30",
+      "registration_close_date": "2026-06-30",
+      "submission_close_date": "2026-06-30",
+      "application_deadline": "2026-06-30T23:59:00",
+      "eligibility_criteria": {
+        "summary": "Open to startups, MSMEs, individual innovators, and registered companies"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": ""
+      },
+      "prizes": {
+        "summary": "Grant and prototyping support for selected innovations"
+      },
+      "tags": [
+        "defence",
+        "innovation",
+        "iDEX",
+        "ministry_of_defence",
+        "startup",
+        "prototyping",
+        "national_security"
+      ],
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "APPLY NOW FOR OPEN CHALLENGE",
+          "Last Date - 30 Jun, 2026"
+        ],
+        "deadline_verified": true
+      }
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "D.E.S.I.G.N for BioE3 Challenge",
+      "full_name": "D.E.S.I.G.N for BioE3 Challenge - Empowering Youth to Solve Critical Issues of their TIMES",
+      "current_status": "active",
+      "registration_url": "https://innovateindia.mygov.in/bioe3/",
+      "submission_url": "https://innovateindia.mygov.in/bioe3/",
+      "official_website": "https://innovateindia.mygov.in",
+      "official_event_page": "https://innovateindia.mygov.in/bioe3/",
+      "source_url": "https://innovateindia.mygov.in/",
+      "hosting_organization": "Department of Biotechnology",
+      "ministry": "Ministry of Science and Technology",
+      "institution_type": "government_ministry",
+      "platform": "MyGov Innovate India",
+      "domain": "biotechnology",
+      "theme": "Biotechnological solutions for economy, environment and employment under the BioE3 policy framework",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "biotechnology",
+        "sustainable solutions",
+        "environment",
+        "economy",
+        "employment",
+        "bioeconomy"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-05-20",
+      "registration_close_date": "2026-05-20",
+      "submission_close_date": "2026-05-20",
+      "application_deadline": "2026-05-20",
+      "eligibility_criteria": {
+        "summary": "Open to young students and researchers of India"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": ""
+      },
+      "prizes": {
+        "summary": ""
+      },
+      "tags": [
+        "biotechnology",
+        "innovation",
+        "BioE3",
+        "department_of_biotechnology",
+        "students",
+        "researchers",
+        "sustainability"
+      ],
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "SUBMISSION OPEN",
+          "01/11/2025 - 20/05/2026"
+        ],
+        "deadline_verified": true
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Smart India Hackathon 2025 Grand Finale",
+      "source_url": "https://sih.gov.in",
+      "reason": "closed"
+    },
+    {
+      "name": "Bharatiya Antariksh Hackathon 2025 (ISRO)",
+      "source_url": "https://www.isro.gov.in/Launching_Bharatiya_Antariksh_Hackathon2025.html",
+      "reason": "closed"
+    },
+    {
+      "name": "NCIIPC-AICTE PENTATHON 2024",
+      "source_url": "https://nciipc.gov.in/Initiatives/Pentathon.html",
+      "reason": "closed"
+    },
+    {
+      "name": "CII SECEX (Critical Information Infrastructure Security Exercise)",
+      "source_url": "https://nciipc.gov.in/NCIIPC_Initiatives.html",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "DRDO Competitions and Awards",
+      "source_url": "https://www.drdo.gov.in/drdo/en/offerings/competitions-and-awards",
+      "reason": "no_active_content"
+    },
+    {
+      "name": "YUVIKA-2026 (ISRO Young Scientist Programme)",
+      "source_url": "https://www.isro.gov.in",
+      "reason": "closed"
+    },
+    {
+      "name": "Mascot Design Contest for Eat Right India",
+      "source_url": "https://innovateindia.mygov.in/",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "8CPC Memorandum Submission",
+      "source_url": "https://innovateindia.mygov.in/",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "CSIR Societal Platform 2024",
+      "source_url": "https://innovateindia.mygov.in/",
+      "reason": "no_active_workflow"
+    },
+    {
+      "name": "AI Innovation Challenge 2026 (Ministry of AYUSH) - IndiaAI",
+      "source_url": "https://aikosh.indiaai.gov.in",
+      "reason": "closed"
+    },
+    {
+      "name": "AI Innovation Challenge 2026 (MSME – TEAMS) - IndiaAI",
+      "source_url": "https://aikosh.indiaai.gov.in",
+      "reason": "closed"
+    },
+    {
+      "name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
+      "source_url": "https://aikosh.indiaai.gov.in",
+      "reason": "closed"
+    },
+    {
+      "name": "AI Innovation Challenge 2026 (MSME – ODR) - IndiaAI",
+      "source_url": "https://aikosh.indiaai.gov.in",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI Financial Reporting Compliance Challenge (NFRA)",
+      "source_url": "https://aikosh.indiaai.gov.in",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge for Transforming Governance (Multiple Departments)",
+      "source_url": "https://aikosh.indiaai.gov.in",
+      "reason": "closed"
+    },
+    {
+      "name": "PMJAY Auto Adjudication Hackathon - IndiaAI",
+      "source_url": "https://aikosh.indiaai.gov.in",
+      "reason": "closed"
+    },
+    {
+      "name": "DISC 12 Re Open IAF - iDEX",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed"
+    },
+    {
+      "name": "iDEX Prime Re Open - iDEX",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed"
+    },
+    {
+      "name": "ADITI 4 - iDEX",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed"
+    },
+    {
+      "name": "DISC 14 - iDEX",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed"
+    },
+    {
+      "name": "DRISHTI Challenges - iDEX",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed"
+    },
+    {
+      "name": "MyGov Quiz Platform Quizzes",
+      "source_url": "https://quiz.mygov.in",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "MyGov Campaigns (Read The Preamble, AI Impact, NHRC, etc.)",
+      "source_url": "https://www.mygov.in/campaigns",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "Logo Design Competition for Urban Challenge Fund (MoHUA)",
+      "source_url": "https://www.mygov.in/task/logo-design-competition-urban-challenge-fund",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "Drop the Oil Challenge (FSSAI/Ministry of Health)",
+      "source_url": "https://www.mygov.in/task/drop-oil-challenge-oil-free-cooking-challenge-healthier-india",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "Logo Design Competition for National Dental Commission",
+      "source_url": "https://www.mygov.in/task/logo-design-competition-national-dental-commission",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "Akashvani Jingle Contest / Signature Tune Contest",
+      "source_url": "https://www.mygov.in/home/do",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "Tagline Competition for Online Gaming Authority of India",
+      "source_url": "https://www.mygov.in/task/tagline-competition-online-gaming-authority-india",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "Logo Design Competition for Online Gaming Authority of India",
+      "source_url": "https://www.mygov.in/task/logo-design-competition-online-gaming-authority-india",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "5G Innovation Hackathon 2026 (DoT)",
+      "source_url": "https://www.bharat5glabs.gov.in",
+      "reason": "closed"
+    },
+    {
+      "name": "DCIS Digital Communication Innovation Square (DoT)",
+      "source_url": "https://dcis.dot.gov.in",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "AI Impact Activities and Updates (MyGov Campaign)",
+      "source_url": "https://www.mygov.in/campaigns/ai-impact",
+      "reason": "forbidden_type"
+    }
+  ],
+  "sources_scanned": [
+    "https://sih.gov.in",
+    "https://idex.gov.in/challenges",
+    "https://aikosh.indiaai.gov.in",
+    "https://innovateindia.mygov.in",
+    "https://event.data.gov.in/challenge",
+    "https://bhashini.gov.in",
+    "https://www.mygov.in/campaigns",
+    "https://www.drdo.gov.in",
+    "https://challenge.cdac.in",
+    "https://www.cdac.in/index.aspx?id=events",
+    "https://www.isro.gov.in",
+    "https://www.nciipc.gov.in",
+    "https://www.digitalindia.gov.in/initiatives",
+    "https://www.meity.gov.in",
+    "https://pib.gov.in",
+    "https://www.nic.in",
+    "https://www.mygov.in",
+    "https://quiz.mygov.in",
+    "https://www.aicte-india.org",
+    "https://www.csir.res.in",
+    "https://www.startupindia.gov.in",
+    "https://www.niti.gov.in",
+    "https://www.ugc.gov.in",
+    "https://www.dbtindia.gov.in",
+    "https://www.bharat5glabs.gov.in",
+    "https://dcis.dot.gov.in",
+    "https://www.drdo.gov.in/drdo/en/offerings/competitions-and-awards",
+    "https://cert-in.org.in",
+    "https://smartcities.gov.in",
+    "https://www.inspace.gov.in",
+    "https://www.education.gov.in",
+    "https://www.mohfw.gov.in",
+    "https://powermin.gov.in",
+    "https://www.indianrailways.gov.in",
+    "https://mohua.gov.in",
+    "https://www.mygov.in/home/do",
+    "https://vision.hack2skill.com/event/bah2025"
+  ],
+  "search_queries_used": [
+    "Indian government hackathon 2026 registration open",
+    "India AI challenge 2026 applications open government",
+    "Indian government cybersecurity competition CTF 2026",
+    "defence innovation challenge India 2026 registration open",
+    "MyGov hackathon India 2026 active registration",
+    "IndiaAI competition challenge 2026 open registration",
+    "Government of India hackathon 2026 May June application open",
+    "site:gov.in hackathon 2026 registration",
+    "site:mygov.in challenge hackathon 2026",
+    "site:nic.in hackathon 2026"
+  ],
+  "discovery_metadata": {
+    "round_number": 6,
+    "novel_candidates_found": 0,
+    "duplicates_skipped": 16,
+    "items_excluded_round6": 11,
+    "active_candidates": 2,
+    "coverage_expansion_focus": [
+      "defence_innovation_ecosystem",
+      "ministry_science_biotechnology",
+      "mygov_innovate_india_portal",
+      "indiaai_competitions_portal",
+      "cybersecurity_ctf_platforms",
+      "isro_space_challenges",
+      "drdo_competitions",
+      "ministry_education_health_power_railways_housing",
+      "mygov_do_tasks"
+    ]
+  }
+}

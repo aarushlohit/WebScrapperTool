@@ -7,7 +7,6 @@ Your mission is to discover ONLY currently active Indian government-backed:
 - AI challenges
 - coding competitions
 - cybersecurity competitions
-- CTF competitions
 - defence innovation competitions
 - govtech technical competitions
 
@@ -20,7 +19,7 @@ Your job is to produce clean machine-readable intelligence.
 ────────────────────────
 CORE OBJECTIVE
 ────────────────────────
-
+RUN 3 - 4 ROUNDS OF WEBSEARCH 
 Find ACTIVE and CURRENTLY OPEN Indian government technical competitions.
 
 You must maximize:
@@ -409,6 +408,7 @@ The following domains are HIGH PRIORITY ROOT SOURCES and MUST always be checked 
 * https://pib.gov.in
 * https://meity.gov.in
 * https://digitalindia.gov.in
+* https://bhashini.gov.in/hackathons
 
 ## MANDATORY WEB SEARCH UPDATE
 
@@ -641,7 +641,7 @@ Coverage confidence MUST be estimated using:
 * fresh domain discovery rate
 
 ## CANONICAL SOURCE RULE
-
+ignore 
 If multiple sources exist:
 
 * official portal always wins
@@ -649,6 +649,7 @@ If multiple sources exist:
 * official PDF overrides blog summary
 * PIB overrides third-party article
 * government notification overrides aggregator
+RUN 3 - 4 ROUNDS OF WEBSEARCH 
 
 ## OUTPUT REQUIREMENTS
 

@@ -1,0 +1,141 @@
+{
+  "total_count": 2,
+  "generated_date": "2026-05-12",
+  "hack_count": 2,
+  "hackathons": [
+    {
+      "event_type": "defence_innovation_challenge",
+      "hackathon_name": "iDEX Open Challenge",
+      "full_name": "iDEX Open Challenge for Defence Innovation",
+      "current_status": "active",
+      "registration_url": "https://idex.gov.in/challenges",
+      "submission_url": "https://idex.gov.in/challenges",
+      "official_website": "https://idex.gov.in",
+      "official_event_page": "https://idex.gov.in/challenges",
+      "source_url": "https://idex.gov.in/challenges",
+      "hosting_organization": "Innovations for Defence Excellence (iDEX), Defence Innovation Organisation (DIO)",
+      "ministry": "Ministry of Defence",
+      "institution_type": "government_agency",
+      "platform": "idex.gov.in",
+      "domain": "defence",
+      "theme": "Defence and aerospace technology innovation for national security",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "defence technology",
+        "aerospace systems",
+        "AI/ML",
+        "drone technology",
+        "cybersecurity",
+        "communication systems",
+        "sensor technology",
+        "radar systems",
+        "navigation systems",
+        "quantum technology",
+        "material science",
+        "autonomous systems"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-06-30",
+      "registration_close_date": "2026-06-30",
+      "submission_close_date": "2026-06-30",
+      "application_deadline": "2026-06-30T23:59:00",
+      "eligibility_criteria": {
+        "summary": "Open to startups, MSMEs, individual innovators, and registered companies"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": ""
+      },
+      "prizes": {
+        "summary": "Grant and prototyping support for selected innovations"
+      },
+      "tags": [
+        "defence",
+        "innovation",
+        "iDEX",
+        "ministry_of_defence",
+        "startup",
+        "prototyping",
+        "national_security"
+      ],
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "APPLY NOW FOR OPEN CHALLENGE",
+          "Last Date - 30 Jun, 2026"
+        ],
+        "deadline_verified": true
+      }
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "D.E.S.I.G.N for BioE3 Challenge",
+      "full_name": "D.E.S.I.G.N for BioE3 Challenge - Empowering Youth to Solve Critical Issues of their TIMES",
+      "current_status": "active",
+      "registration_url": "https://innovateindia.mygov.in/",
+      "submission_url": "https://innovateindia.mygov.in/",
+      "official_website": "https://innovateindia.mygov.in",
+      "official_event_page": "https://innovateindia.mygov.in/",
+      "source_url": "https://innovateindia.mygov.in/",
+      "hosting_organization": "Department of Biotechnology",
+      "ministry": "Ministry of Science and Technology",
+      "institution_type": "government_ministry",
+      "platform": "MyGov Innovate India",
+      "domain": "biotechnology",
+      "theme": "Biotechnological solutions for economy, environment and employment under the BioE3 policy framework",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "biotechnology",
+        "sustainable solutions",
+        "environment",
+        "economy",
+        "employment",
+        "bioeconomy"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-05-20",
+      "registration_close_date": "2026-05-20",
+      "submission_close_date": "2026-05-20",
+      "application_deadline": "2026-05-20",
+      "eligibility_criteria": {
+        "summary": "Open to young students and researchers of India"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": ""
+      },
+      "prizes": {
+        "summary": ""
+      },
+      "tags": [
+        "biotechnology",
+        "innovation",
+        "BioE3",
+        "department_of_biotechnology",
+        "students",
+        "researchers",
+        "sustainability"
+      ],
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "SUBMISSION OPEN",
+          "01/11/2025 - 20/05/2026"
+        ],
+        "deadline_verified": true
+      }
+    }
+  ]
+}
