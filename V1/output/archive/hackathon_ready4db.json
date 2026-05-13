@@ -1,8 +1,4 @@
 {
-  "total_count": 4,
-  "generated_date": "2026-05-13",
-  "generated_at": "2026-05-13T21:30:41.499540",
-  "hack_count": 4,
   "hackathons": [
     {
       "event_type": "innovation_challenge",
@@ -274,11 +270,5 @@
         "deadline_verified": true
       }
     }
-  ],
-  "processing_summary": {
-    "total_rounds": 3,
-    "successful_rounds": 3,
-    "rounds_with_candidates": 3,
-    "rounds_with_issues": []
-  }
+  ]
 }
