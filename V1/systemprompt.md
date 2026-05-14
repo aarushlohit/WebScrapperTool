@@ -115,7 +115,7 @@ TECHNICAL / MINISTRY ECOSYSTEMS
 - nciipc.gov.in
 - stpi.in
 - digitalindia.gov.in
-
+- aikosh.indiaai.gov.in/home/competitions
 ACADEMIC / GOV-AFFILIATED
 - IITs
 - IIITs

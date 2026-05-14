@@ -1,0 +1,1459 @@
+[0m
+> build · big-pickle
+[0m
+[0m◈ [0mExa Web Search "IIT Gandhinagar incubation center 2026 startup application"
+[0m◈ [0mExa Web Search "IIT Jodhpur Technology Innovation Center incubation 2026"
+[0m◈ [0mExa Web Search "NIT Warangal incubation center startup 2026 applications"
+[0m◈ [0mExa Web Search "IIT Mandi startup incubator 2026 application open Catapult"
+[0m◈ [0mExa Web Search "NIT Calicut NITC TBI incubation program 2026 startup"
+[0m◈ [0mExa Web Search "Anna University incubation centre TBI startup 2026 application"
+[0m◈ [0mExa Web Search "Karnataka startup cell innovation hub 2026 program applications open"
+[0m◈ [0mExa Web Search "Maharashtra State Innovation Society startup program 2026 applications"
+[0m◈ [0mExa Web Search "Tamil Nadu startup mission TN startup funding 2026 incubation program"
+[0m◈ [0mExa Web Search "Gujarat startup incubation iHub 2026 program applications"
+[0m◈ [0mExa Web Search "Rajasthan startup oxygen funding 2026 incubation program applications"
+[0m◈ [0mExa Web Search "Odisha startup mission program 2026 incubation applications"
+[0m◈ [0mExa Web Search "IIT Bhubaneswar incubation centre TBI 2026 startup applications"
+[0m◈ [0mExa Web Search "NIT Surathkal incubation centre startup 2026 program"
+[0m◈ [0mExa Web Search "BHU Udai incubator Varanasi 2026 startup application program"
+[0m◈ [0mExa Web Search "Tata Social Enterprise Challenge 2026 application startup"
+[0m◈ [0mExa Web Search "Reliance Foundation startup incubation program 2026 India"
+[0m◈ [0mExa Web Search "SPPU Pune University incubation centre startup 2026 program"
+[0m
+Now compiling all Round 3 discoveries into strict JSON.
+
+```json
+{
+  "funding_opportunities": [
+    {
+      "program_name": "IIT Mandi Catalyst Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.iitmandicatalyst.in/",
+      "official_website": "https://www.iitmandicatalyst.in/",
+      "official_program_page": "https://research.iitmandi.ac.in/main/Catalyst/iitmandi_catalyst.php",
+      "source_url": "https://www.iitmandicatalyst.in/",
+      "organization": "IIT Mandi Catalyst",
+      "program_owner": "IIT Mandi and DST",
+      "sector": "deep-tech",
+      "focus_areas": ["healthtech", "edutech", "fintech", "agrotech", "biotech", "renewable energy", "AI/ML", "IoT", "human-computer interaction"],
+      "benefits": ["incubation infrastructure", "lab and prototyping facilities", "mentoring", "grant linkages up to INR 25 Lakhs", "seed funding access", "state-backed schemes"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 2500000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Technology startups with innovative ideas; programs: Ignite (ideation), Exploration (prototype), Investment Readiness; open across all sectors"
+      },
+      "startup_stage": ["idea", "prototype", "early-stage"],
+      "incubation_support": ["co-working space", "lab facilities", "prototyping", "maker lab"],
+      "mentorship_support": ["IIT Mandi faculty mentorship", "industry mentors", "structured training"],
+      "geography": {
+        "country": "India",
+        "state": "Himachal Pradesh",
+        "city": "Mandi"
+      },
+      "sdg_alignment": [],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "iit-mandi-catalyst-incubation",
+      "tags": ["academic", "government", "iit-mandi", "incubation", "himachal-pradesh", "dst"]
+    },
+    {
+      "program_name": "IIEC IIT Gandhinagar Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://iieciitgn.com/",
+      "official_website": "https://iieciitgn.com/",
+      "official_program_page": "https://iieciitgn.com/",
+      "source_url": "https://iieciitgn.com/",
+      "organization": "IIT Gandhinagar Innovation and Entrepreneurship Center",
+      "program_owner": "IIT Gandhinagar",
+      "sector": "technology",
+      "focus_areas": ["deep tech", "engineering", "computer science", "ICT", "hardware", "biotech"],
+      "benefits": ["incubation space", "wet and dry labs", "rapid prototyping", "mentoring", "seed funding facilitation", "IP support", "legal guidance"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Technology startups at ideation, pre-incubation, incubation, or acceleration stage; open to IITGN community and external entrepreneurs"
+      },
+      "startup_stage": ["idea", "proof-of-concept", "early-stage", "growth-stage"],
+      "incubation_support": ["co-working space", "tinkering labs", "prototype development center"],
+      "mentorship_support": ["faculty mentorship", "industry mentors", "investor connections"],
+      "geography": {
+        "country": "India",
+        "state": "Gujarat",
+        "city": "Gandhinagar"
+      },
+      "sdg_alignment": [],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "iiec-iit-gandhinagar-incubation",
+      "tags": ["academic", "iit-gandhinagar", "incubation", "gujarat"]
+    },
+    {
+      "program_name": "IIEC IIT Gandhinagar NIDHI PRAYAS Prototyping Grant",
+      "program_type": "grant",
+      "status": "active",
+      "deadline_type": "date",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://iieciitgn.com/prayas/",
+      "official_website": "https://iieciitgn.com/",
+      "official_program_page": "https://iieciitgn.com/prayas/",
+      "source_url": "https://iieciitgn.com/prayas/",
+      "organization": "IIT Gandhinagar Innovation and Entrepreneurship Center",
+      "program_owner": "DST and IIT Gandhinagar",
+      "sector": "deep-tech / hardware",
+      "focus_areas": ["hardware", "IoT", "engineering prototypes", "product development", "societal solutions"],
+      "benefits": ["prototyping grant up to INR 10 Lakhs", "co-working space", "IITGN lab access", "IP support", "commercialization guidance"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 1000000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Indian citizens 18+; individual innovators, teams, or startups less than 7 years old; annual turnover/funding under INR 15 Lakhs; hardware/deeptech prototypes; pure software excluded"
+      },
+      "startup_stage": ["idea", "proof-of-concept"],
+      "incubation_support": ["pre-incubation", "tinkerer's lab access"],
+      "mentorship_support": ["design and development mentorship", "IP support", "commercialization guidance"],
+      "geography": {
+        "country": "India",
+        "state": "Gujarat",
+        "city": "Gandhinagar"
+      },
+      "sdg_alignment": ["SDG9"],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "iiec-nidhi-prayas-iitgn",
+      "tags": ["academic", "government", "iit-gandhinagar", "prayas", "prototype-funding", "dst"]
+    },
+    {
+      "program_name": "IIT Jodhpur TISC Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.iitj.ac.in/tisc/en/programs",
+      "official_website": "https://www.iitj.ac.in/tisc/en/tisc",
+      "official_program_page": "https://www.iitj.ac.in/tisc/en/programs",
+      "source_url": "https://www.iitj.ac.in/tisc/en/programs",
+      "organization": "Technology Innovation and Start-up Center, IIT Jodhpur",
+      "program_owner": "IIT Jodhpur",
+      "sector": "deep-tech",
+      "focus_areas": ["AI", "biotechnology", "renewable energy", "medtech", "deeptech", "fintech"],
+      "benefits": ["BIRAC BioNEST centre", "pre-incubation (3-12 months)", "physical incubation (2-3 years)", "virtual incubation (2-3 years)", "seed funding", "lab facilities", "IP support"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Pre-incubation: individual innovators with early ideas; Physical Incubation: registered DPIIT-recognized startups; Virtual Incubation: remote startups; deep tech startups can extend up to 5 years"
+      },
+      "startup_stage": ["idea", "early-stage", "growth-stage"],
+      "incubation_support": ["co-working space", "biotech labs", "prototyping labs", "conference facilities"],
+      "mentorship_support": ["IIT Jodhpur faculty", "industry experts", "entrepreneur mentorship"],
+      "geography": {
+        "country": "India",
+        "state": "Rajasthan",
+        "city": "Jodhpur"
+      },
+      "sdg_alignment": [],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "iit-jodhpur-tisc-incubation",
+      "tags": ["academic", "iit-jodhpur", "incubation", "deeptech", "rajasthan"]
+    },
+    {
+      "program_name": "NIT Warangal NITWIEF Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://nitwief.org/apply-for-incubation/",
+      "official_website": "https://nitwief.org/",
+      "official_program_page": "https://nitwief.org/",
+      "source_url": "https://nitwief.org/",
+      "organization": "NIT Warangal Innovation and Entrepreneurship Foundation",
+      "program_owner": "NIT Warangal",
+      "sector": "sector-agnostic",
+      "focus_areas": ["deep tech", "AI/ML", "IoT", "cybersecurity", "hardware", "software", "biotech"],
+      "benefits": ["incubation space", "mentorship", "grant facilitation", "MeitY GENESIS scheme access", "student startup support", "funding facilitation"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Early-stage startups, student startups, and individual innovators; registered startups preferred but ideation stage also accepted; open to all sectors"
+      },
+      "startup_stage": ["idea", "early-stage", "student"],
+      "incubation_support": ["co-working space", "infrastructure", "innovation garage access"],
+      "mentorship_support": ["faculty mentorship", "industry experts"],
+      "geography": {
+        "country": "India",
+        "state": "Telangana",
+        "city": "Warangal"
+      },
+      "sdg_alignment": [],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "nitwarangal-nitwief-incubation",
+      "tags": ["academic", "nit-warangal", "incubation", "telangana"]
+    },
+    {
+      "program_name": "NIT Calicut TBI Incubation and GENESIS Programs",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://tbi.nitc.ac.in/apply-for-incubation/",
+      "official_website": "https://tbi.nitc.ac.in/",
+      "official_program_page": "https://tbi.nitc.ac.in/incubation-program/",
+      "source_url": "https://tbi.nitc.ac.in/",
+      "organization": "Technology Business Incubator, NIT Calicut",
+      "program_owner": "NIT Calicut and DST",
+      "sector": "IT and electronics",
+      "focus_areas": ["IT", "electronics", "software", "rubber technology", "biotechnology", "nanotechnology", "agriculture", "renewable energy"],
+      "benefits": ["incubation workspace", "GENESIS EIR up to INR 10 Lakhs", "mentoring", "lab access", "IP support", "funding facilitation"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 1000000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Technology-based startups and innovators; GENESIS EIR: early-stage, entity under 1 year, no prior funding exceeding INR 10 Lakhs; MSME Idea Hackathon 5.0 up to INR 15 Lakhs"
+      },
+      "startup_stage": ["idea", "early-stage"],
+      "incubation_support": ["co-working space", "lab facilities", "shared infrastructure"],
+      "mentorship_support": ["faculty mentorship", "industry experts", "business guidance"],
+      "geography": {
+        "country": "India",
+        "state": "Kerala",
+        "city": "Calicut"
+      },
+      "sdg_alignment": [],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "nit-calicut-tbi-incubation",
+      "tags": ["academic", "government", "nit-calicut", "incubation", "kerala", "genesis"]
+    },
+    {
+      "program_name": "Anna University CED Pre-Incubation and Innovation Voucher Program",
+      "program_type": "pre-incubation",
+      "status": "accepting_startups",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://auced.com/incubation",
+      "official_website": "https://auced.com/",
+      "official_program_page": "https://auced.com/incubation",
+      "source_url": "https://auced.com/incubation",
+      "organization": "Centre for Entrepreneurship Development, Anna University",
+      "program_owner": "Anna University",
+      "sector": "sector-agnostic",
+      "focus_areas": ["waste management", "health", "automobile", "nanotechnology", "electronics", "deep tech", "social impact"],
+      "benefits": ["Innovation Voucher A up to INR 2 Lakhs (idea-to-prototype)", "Innovation Voucher B up to INR 5 Lakhs (commercialization)", "mentorship", "company registration support", "investor connect"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 500000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Student and alumni teams with early-stage ideas; pre-incubation for idea-stage; startup associateship scheme available; open to Anna University community and external entrepreneurs"
+      },
+      "startup_stage": ["idea", "prototype"],
+      "incubation_support": ["pre-incubation funnel", "startup cafe", "pathway to formal incubation"],
+      "mentorship_support": ["faculty mentorship", "industry mentors", "investor introductions"],
+      "geography": {
+        "country": "India",
+        "state": "Tamil Nadu",
+        "city": "Chennai"
+      },
+      "sdg_alignment": [],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "anna-university-ced-pre-incubation",
+      "tags": ["academic", "anna-university", "pre-incubation", "voucher", "tamil-nadu"]
+    },
+    {
+      "program_name": "Karnataka ELEVATE Idea2PoC Grant",
+      "program_type": "grant",
+      "status": "active",
+      "deadline_type": "recurring",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.missionstartupkarnataka.org/funding",
+      "official_website": "https://www.missionstartupkarnataka.org/",
+      "official_program_page": "https://www.missionstartupkarnataka.org/elevate-karnataka",
+      "source_url": "https://www.missionstartupkarnataka.org/funding",
+      "organization": "Karnataka Innovation and Technology Society",
+      "program_owner": "Government of Karnataka",
+      "sector": "sector-agnostic",
+      "focus_areas": ["deep tech", "IT", "biotech", "social impact", "manufacturing", "clean tech"],
+      "benefits": ["grant up to INR 50 Lakhs (no equity)", "mentoring", "incubation access", "government pilot connects", "market access"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 5000000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Innovative startups from Karnataka; idea-to-proof-of-concept stages; first state in India to provide equity-free grants to startups under ELEVATE scheme"
+      },
+      "startup_stage": ["idea", "prototype", "early-stage"],
+      "incubation_support": ["subsidized incubation", "K-tech hub access"],
+      "mentorship_support": ["mentoring through KITS network", "expert panels"],
+      "geography": {
+        "country": "India",
+        "state": "Karnataka",
+        "city": ""
+      },
+      "sdg_alignment": [],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "karnataka-elevate-idea2poc",
+      "tags": ["government", "karnataka", "grant", "equity-free", "idea2poc"]
+    },
+    {
+      "program_name": "Karnataka ELEVATE Unnati SC/ST Startup Grant",
+      "program_type": "grant",
+      "status": "active",
+      "deadline_type": "recurring",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.missionstartupkarnataka.org/funding",
+      "official_website": "https://www.missionstartupkarnataka.org/",
+      "official_program_page": "https://www.missionstartupkarnataka.org/elevate-karnataka",
+      "source_url": "https://www.missionstartupkarnataka.org/funding",
+      "organization": "Karnataka Innovation and Technology Society",
+      "program_owner": "Government of Karnataka",
+      "sector": "sector-agnostic",
+      "focus_areas": ["social inclusion", "technology solutions", "innovation"],
+      "benefits": ["grant-in-aid funding", "mentoring", "incubation", "handholding support"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Startups promoted by SC/ST entrepreneurs in Karnataka; under SCSP&TCP scheme; social inclusion program"
+      },
+      "startup_stage": ["early-stage", "prototype"],
+      "incubation_support": ["incubation handholding"],
+      "mentorship_support": ["mentoring support"],
+      "geography": {
+        "country": "India",
+        "state": "Karnataka",
+        "city": ""
+      },
+      "sdg_alignment": ["SDG10", "SDG5"],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "karnataka-elevate-unnati",
+      "tags": ["government", "karnataka", "grant", "sc-st", "social-inclusion"]
+    },
+    {
+      "program_name": "MSInS Punyashlok Ahilyadevi Holkar Women Startup Scheme",
+      "program_type": "grant",
+      "status": "active",
+      "deadline_type": "date",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://msins.in/",
+      "official_website": "https://msins.in/",
+      "official_program_page": "https://msins.in/",
+      "source_url": "https://www.startupgrantsindia.com/punyashlok-ahilyadevi-holkar-women-startup-scheme-maharashtra-349",
+      "organization": "Maharashtra State Innovation Society",
+      "program_owner": "Government of Maharashtra",
+      "sector": "sector-agnostic",
+      "focus_areas": ["women entrepreneurship", "innovation-led business", "scalable growth"],
+      "benefits": ["grant INR 1-25 Lakhs", "financial assistance for early-to-growth stage women-led startups"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": 100000,
+        "amount_max": 2500000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "DPIIT-recognized startup registered in Maharashtra; women founders hold >51% equity; operational >1 year; annual revenue INR 10 Lakhs - INR 1 Cr; not availed other GoM grants"
+      },
+      "startup_stage": ["early-stage", "growth-stage"],
+      "incubation_support": [],
+      "mentorship_support": [],
+      "geography": {
+        "country": "India",
+        "state": "Maharashtra",
+        "city": ""
+      },
+      "sdg_alignment": ["SDG5"],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "msins-women-startup-scheme",
+      "tags": ["government", "maharashtra", "grant", "women-entrepreneurs"]
+    },
+    {
+      "program_name": "MSInS-Bhau Seed Fund 2026 at COEP",
+      "program_type": "seed_funding",
+      "status": "active",
+      "deadline_type": "date",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "",
+      "official_website": "https://msins.in/",
+      "official_program_page": "",
+      "source_url": "https://www.startupgrantsindia.com/msins-bhau-seed-fund-2026-at-coeps-bhau-institute-of-innovation-entrepreneurship-and-leadership-370",
+      "organization": "COEP Bhau Institute and MSInS",
+      "program_owner": "Maharashtra State Innovation Society",
+      "sector": "deep-tech",
+      "focus_areas": ["healthcare technologies", "renewable energy", "IoT", "cybersecurity", "grassroot innovations", "EV and smart mobility"],
+      "benefits": ["seed funding up to INR 9 Lakhs via CCPS", "institutional ecosystem support", "prototype development", "market entry support"],
+      "funding_support": {
+        "type": "convertible_note",
+        "amount_min": null,
+        "amount_max": 900000,
+        "currency": "INR",
+        "equity_taken": "true",
+        "grant_or_equity": "equity"
+      },
+      "eligibility": {
+        "summary": "Startups in healthcare, renewable energy, IoT, cybersecurity, grassroot innovations, EV and smart mobility; funding via CCPS (Compulsory Convertible Preference Shares)"
+      },
+      "startup_stage": ["prototype", "early-revenue"],
+      "incubation_support": [],
+      "mentorship_support": ["ecosystem mentorship"],
+      "geography": {
+        "country": "India",
+        "state": "Maharashtra",
+        "city": "Pune"
+      },
+      "sdg_alignment": ["SDG3", "SDG7", "SDG9"],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "msins-bhau-seed-2026",
+      "tags": ["government", "academic", "maharashtra", "seed-fund", "ccps", "coep"]
+    },
+    {
+      "program_name": "Tamil Nadu iAccelerate 4.0 (TN-HAPP Hardware Accelerator)",
+      "program_type": "accelerator",
+      "status": "accepting_startups",
+      "deadline_type": "date",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "",
+      "official_website": "https://itnthub.com/",
+      "official_program_page": "",
+      "source_url": "https://www.startupgrantsindia.com/iaccelerate-4-0-tamil-nadu-hardware-accelerator-by-itnt-hub-353",
+      "organization": "Tamil Nadu Technology Hub (iTNT Hub)",
+      "program_owner": "Government of Tamil Nadu",
+      "sector": "hardware",
+      "focus_areas": ["hardware product development", "electronics", "manufacturing", "prototyping", "design"],
+      "benefits": ["design voucher INR 7.5-15 Lakhs", "12-week hybrid accelerator", "design validation", "MSME manufacturer connections", "tri-partite agreement support"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": 750000,
+        "amount_max": 1500000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Hardware-focused startup registered in Tamil Nadu, operational >1 year; TRL 2-9; CIBIL score 650+ for 2/3 directors; Design Track or Scale Track"
+      },
+      "startup_stage": ["prototype", "pre-production"],
+      "incubation_support": [],
+      "mentorship_support": ["design validation", "engineering support", "manufacturing connect"],
+      "geography": {
+        "country": "India",
+        "state": "Tamil Nadu",
+        "city": ""
+      },
+      "sdg_alignment": ["SDG9"],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": false,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "tn-iaccelerate-4-2026",
+      "tags": ["government", "tamil-nadu", "hardware", "accelerator", "design-voucher"]
+    },
+    {
+      "program_name": "i-Hub Gujarat Startup Grow Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://ihubgujarat.in/incubation",
+      "official_website": "https://ihubgujarat.in/",
+      "official_program_page": "https://ihubgujarat.in/incubation",
+      "source_url": "https://ihubgujarat.in/incubation",
+      "organization": "Gujarat Student Startup and Innovation Hub",
+      "program_owner": "Education Department, Government of Gujarat",
+      "sector": "sector-agnostic",
+      "focus_areas": ["technology", "innovation", "student startups", "social impact"],
+      "benefits": ["18-month incubation program", "360-degree mentorship", "co-working space", "IPR support", "funding and grant access", "conference facilities"],
+      "funding_support": {
+        "type": "",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Early-stage startups and innovators; multiple programs: Mind to Market, Startup Engage, Startup Grow; 137 academic partners network"
+      },
+      "startup_stage": ["idea", "early-stage"],
+      "incubation_support": ["co-working space", "capacity building", "mentorship", "conference rooms"],
+      "mentorship_support": ["360-degree mentorship", "IP support", "capacity building"],
+      "geography": {
+        "country": "India",
+        "state": "Gujarat",
+        "city": "Ahmedabad"
+      },
+      "sdg_alignment": [],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "ihub-gujarat-startup-grow",
+      "tags": ["government", "academic", "gujarat", "incubation", "ssip"]
+    },
+    {
+      "program_name": "i-Hub Gujarat Startup Srujan Seed Support (S4) Cohort 4",
+      "program_type": "seed_funding",
+      "status": "application_open",
+      "deadline_type": "date",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://ihubgujarat.in/",
+      "official_website": "https://ihubgujarat.in/",
+      "official_program_page": "",
+      "source_url": "https://ihubgujarat.in/",
+      "organization": "Gujarat Student Startup and Innovation Hub",
+      "program_owner": "Education Department, Government of Gujarat",
+      "sector": "sector-agnostic",
+      "focus_areas": ["student innovation", "technology", "social impact", "early-stage"],
+      "benefits": ["seed funding support", "incubation", "mentorship"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Startups registered under SSIP framework in Gujarat; open to student and early-stage startups"
+      },
+      "startup_stage": ["idea", "early-stage"],
+      "incubation_support": [],
+      "mentorship_support": [],
+      "geography": {
+        "country": "India",
+        "state": "Gujarat",
+        "city": "Ahmedabad"
+      },
+      "sdg_alignment": [],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "ihub-srujan-s4-cohort4",
+      "tags": ["government", "academic", "gujarat", "seed-fund", "ssip"]
+    },
+    {
+      "program_name": "iStart Rajasthan Startup Seed Funding and Sustenance Allowance",
+      "program_type": "seed_funding",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://istart.rajasthan.gov.in/",
+      "official_website": "https://istart.rajasthan.gov.in/",
+      "official_program_page": "https://istart.rajasthan.gov.in/pages/schemes",
+      "source_url": "https://istart.rajasthan.gov.in/",
+      "organization": "Department of Information Technology and Communication, Government of Rajasthan",
+      "program_owner": "Government of Rajasthan",
+      "sector": "sector-agnostic",
+      "focus_areas": ["clean-tech", "mobile and IT", "IoT", "social impact", "grassroot innovations", "garment and crafts", "mining", "SME manufacturing"],
+      "benefits": ["sustenance allowance INR 10,000/month for 1 year", "seed funding up to INR 25 Lakhs via QRate", "Bhamashah Startup Fund INR 500 Cr corpus", "incubation support", "QRate assessment"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": 120000,
+        "amount_max": 2500000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "DPIIT-recognized startups registered in Rajasthan; idea/prototype stage for sustenance allowance; QRate ranked for seed funding; women founders get additional INR 60,000"
+      },
+      "startup_stage": ["idea", "prototype", "early-stage", "growth-stage"],
+      "incubation_support": ["Techno Hub", "iStart Nest", "virtual incubation"],
+      "mentorship_support": ["QRate mentoring", "deep mentor engagements"],
+      "geography": {
+        "country": "India",
+        "state": "Rajasthan",
+        "city": ""
+      },
+      "sdg_alignment": [],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "istart-rajasthan-seed-funding",
+      "tags": ["government", "rajasthan", "seed-funding", "sustenance-allowance", "qrate"]
+    },
+    {
+      "program_name": "Odisha Startup Fund of Funds",
+      "program_type": "fund_of_funds",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://startupodisha.gov.in/",
+      "official_website": "https://startupodisha.gov.in/",
+      "official_program_page": "https://startupodisha.gov.in/",
+      "source_url": "https://startupodisha.gov.in/",
+      "organization": "MSME Department, Government of Odisha",
+      "program_owner": "Startup Odisha",
+      "sector": "sector-agnostic",
+      "focus_areas": ["agritech", "IT", "AI", "healthcare", "fintech", "biotechnology"],
+      "benefits": ["fund of funds corpus INR 100 Cr over 5 years", "subsidized incubation", "startup recognition", "capital grant for incubators"],
+      "funding_support": {
+        "type": "fund_of_funds",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Seed-stage startups registered under Startup Odisha; fund of funds disbursed over 5 years targeting 5,000 startups; sector-agnostic"
+      },
+      "startup_stage": ["seed-stage"],
+      "incubation_support": ["subsidized incubation 50% rental up to INR 5,000/month"],
+      "mentorship_support": [],
+      "geography": {
+        "country": "India",
+        "state": "Odisha",
+        "city": ""
+      },
+      "sdg_alignment": [],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "odisha-fund-of-funds",
+      "tags": ["government", "odisha", "fund-of-funds", "seed-funding"]
+    },
+    {
+      "program_name": "KIIT-TBI Incubation LaunchPad 2026",
+      "program_type": "incubation",
+      "status": "application_open",
+      "deadline_type": "date",
+      "deadline": "May 10, 2026",
+      "deadline_iso": "2026-05-10",
+      "application_url": "https://kiitincubator.in/",
+      "official_website": "https://kiitincubator.in/",
+      "official_program_page": "https://kiitincubator.in/",
+      "source_url": "https://www.startupgrantsindia.com/kiit-tbi-incubation-launchpad-2026",
+      "organization": "KIIT Technology Business Incubator",
+      "program_owner": "KIIT University",
+      "sector": "deep-tech",
+      "focus_areas": ["climate tech", "medtech", "AI", "biotechnology"],
+      "benefits": ["incubation funding up to INR 1 Cr", "130,000 sq ft incubation facility", "lab infrastructure", "academic and industry mentorship", "IP support via TTO", "pilot and validation support"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 10000000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Early to growth-stage DPIIT-recognized startups in climate tech, medtech, AI, or biotech; working prototype/MVP; scalable and manufacturing-oriented solutions"
+      },
+      "startup_stage": ["early-stage", "growth-stage", "mvp-stage"],
+      "incubation_support": ["lab access", "prototyping", "testing facilities", "subsidized incubation via Startup Odisha"],
+      "mentorship_support": ["academic mentorship", "industry experts", "research ecosystem"],
+      "geography": {
+        "country": "India",
+        "state": "Odisha",
+        "city": "Bhubaneswar"
+      },
+      "sdg_alignment": ["SDG3", "SDG9", "SDG13"],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "kiit-tbi-incubation-launchpad-2026",
+      "tags": ["academic", "odisha", "incubation", "climate-tech", "biotech", "kiit"]
+    },
+    {
+      "program_name": "IIT Bhubaneswar REP Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://rep.iitbbs.ac.in/incubation-program/",
+      "official_website": "https://rep.iitbbs.ac.in/",
+      "official_program_page": "https://rep.iitbbs.ac.in/incubation-program/",
+      "source_url": "https://rep.iitbbs.ac.in/",
+      "organization": "Research and Entrepreneurship Park, IIT Bhubaneswar",
+      "program_owner": "IIT Bhubaneswar",
+      "sector": "technology",
+      "focus_areas": ["deep tech", "engineering", "IT", "software", "hardware", "multidisciplinary"],
+      "benefits": ["pre-incubation (3 months)", "incubation (18-36 months)", "seed funding", "mentorship", "lab access", "workshop facilities", "investor connect"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Early-stage startups from diverse industries; pre-incubation for ideas; incubation for registered startups; open to external entrepreneurs"
+      },
+      "startup_stage": ["idea", "early-stage"],
+      "incubation_support": ["co-working space", "lab and workshop facilities", "company registration support"],
+      "mentorship_support": ["IIT Bhubaneswar faculty mentors", "industry experts", "technology validation"],
+      "geography": {
+        "country": "India",
+        "state": "Odisha",
+        "city": "Bhubaneswar"
+      },
+      "sdg_alignment": [],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "iit-bhubaneswar-rep-incubation",
+      "tags": ["academic", "iit-bhubaneswar", "incubation", "odisha"]
+    },
+    {
+      "program_name": "NITK Surathkal STEP Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://step.nitk.ac.in/about.html",
+      "official_website": "https://step.nitk.ac.in/",
+      "official_program_page": "https://step.nitk.ac.in/",
+      "source_url": "https://step.nitk.ac.in/",
+      "organization": "Science and Technology Entrepreneurs Park, NITK Surathkal",
+      "program_owner": "NIT Karnataka",
+      "sector": "technology",
+      "focus_areas": ["IT", "electronics", "robotics", "multidisciplinary technology", "engineering design"],
+      "benefits": ["3-year incubation period", "extendable for deep tech", "mentoring", "seed funding", "IP support", "legal compliance guidance"],
+      "funding_support": {
+        "type": "",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Open to all eligible applicants (no NITK affiliation required); idea-stage startups welcome; no application fee; student startups encouraged"
+      },
+      "startup_stage": ["idea", "early-stage", "student"],
+      "incubation_support": ["co-working space", "refundable security deposit", "lab access"],
+      "mentorship_support": ["mentoring", "legal compliance support", "IP guidance"],
+      "geography": {
+        "country": "India",
+        "state": "Karnataka",
+        "city": "Surathkal"
+      },
+      "sdg_alignment": [],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "nitk-step-incubation",
+      "tags": ["academic", "nit-karnataka", "incubation", "karnataka"]
+    },
+    {
+      "program_name": "IIT BHU I-DAPT HUB Incubation Cohort 3",
+      "program_type": "incubation",
+      "status": "application_open",
+      "deadline_type": "date",
+      "deadline": "May 31, 2026",
+      "deadline_iso": "2026-05-31",
+      "application_url": "https://www.idapthub.org/applications/startup_incubation",
+      "official_website": "https://www.idapthub.org/",
+      "official_program_page": "https://www.idapthub.org/applications/startup_incubation",
+      "source_url": "https://www.startupgrantsindia.com/i-dapt-hub-incubation-cohort-3-iit-bhu-varanasi",
+      "organization": "I-DAPT HUB Foundation, IIT (BHU) Varanasi",
+      "program_owner": "DST and IIT (BHU) Varanasi",
+      "sector": "deep-tech",
+      "focus_areas": ["AI", "ML", "data analytics", "IoT", "cyber-physical systems", "robotics", "AR/VR", "cleantech", "agritech", "healthtech", "smart mobility", "industry 4.0"],
+      "benefits": ["non-dilutive grants up to INR 1 Cr", "incubation at IIT BHU", "IIT BHU faculty mentorship", "cutting-edge labs", "office space", "legal support", "market access"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 10000000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Indian-incorporated DPIIT-recognized startups; at least one full-time founder holding 51% equity; sector-agnostic with DAPT (Data Analytics & Predictive Technologies) core focus; idea stage through series A"
+      },
+      "startup_stage": ["idea", "prototype", "seed", "series-a"],
+      "incubation_support": ["co-working space", "IIT BHU labs", "infrastructure"],
+      "mentorship_support": ["IIT BHU faculty", "industry experts", "technology mentorship"],
+      "geography": {
+        "country": "India",
+        "state": "Uttar Pradesh",
+        "city": "Varanasi"
+      },
+      "sdg_alignment": ["SDG9"],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "iitbhu-idapthub-cohort3",
+      "tags": ["academic", "government", "iit-bhu", "incubation", "deep-tech", "dapt", "nm-icps"]
+    },
+    {
+      "program_name": "IIT BHU RKVY-RAFTAAR Agri-Business Incubation (R-ABI)",
+      "program_type": "incubation",
+      "status": "accepting_startups",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.idapthub.org/",
+      "official_website": "https://www.idapthub.org/",
+      "official_program_page": "",
+      "source_url": "https://cassgc.com/Blog/1013/startup-incubators-iit-bhu-varanasi.aspx",
+      "organization": "IIT (BHU) Varanasi and Ministry of Agriculture",
+      "program_owner": "Ministry of Agriculture and Farmers Welfare",
+      "sector": "agriculture",
+      "focus_areas": ["precision farming", "post-harvest management", "food technology", "agri-tech"],
+      "benefits": ["pre-seed grants up to INR 5 Lakhs", "seed-stage funding up to INR 25 Lakhs", "incubation support", "domain experts"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 2500000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Agri-tech startups in Eastern UP region; focus on precision farming, post-harvest management, and food technology"
+      },
+      "startup_stage": ["early-stage", "seed-stage"],
+      "incubation_support": ["incubation at IIT BHU"],
+      "mentorship_support": ["domain experts", "technical guidance"],
+      "geography": {
+        "country": "India",
+        "state": "Uttar Pradesh",
+        "city": "Varanasi"
+      },
+      "sdg_alignment": ["SDG2", "SDG9"],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": false,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "iitbhu-rkvy-raftaar-abi",
+      "tags": ["academic", "government", "iit-bhu", "agritech", "incubation", "ministry-of-agriculture"]
+    },
+    {
+      "program_name": "SPPU CIIE Incubation Program (Savitribai Phule Pune University)",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "http://iil.unipune.ac.in/applicationProcess.aspx",
+      "official_website": "http://iil.unipune.ac.in/",
+      "official_program_page": "http://iil.unipune.ac.in/",
+      "source_url": "http://iil.unipune.ac.in/",
+      "organization": "Centre for Innovation, Incubation, Enterprise and Linkages, SPPU",
+      "program_owner": "Savitribai Phule Pune University",
+      "sector": "sector-agnostic",
+      "focus_areas": ["intelligent systems", "IoT", "micro and nano electronics", "biotech", "clean tech", "environmental tech", "social impact"],
+      "benefits": ["incubation support", "mentoring", "IP guidance", "pre-incubation bootcamps", "pre-seed funding access", "startup olympiad"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Technology startups with focus on intelligent systems, IoT, biotech, cleantech; also social startups; students, alumni, grassroots innovators; must register as Pvt Ltd within 3 months"
+      },
+      "startup_stage": ["idea", "proof-of-concept", "early-stage"],
+      "incubation_support": ["co-working", "pre-incubation", "bootcamp series"],
+      "mentorship_support": ["faculty mentorship", "industry mentors", "investor network"],
+      "geography": {
+        "country": "India",
+        "state": "Maharashtra",
+        "city": "Pune"
+      },
+      "sdg_alignment": [],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "sppu-ciie-incubation",
+      "tags": ["academic", "pune-university", "incubation", "maharashtra"]
+    },
+    {
+      "program_name": "AIC-SEED IISER Pune Deep Science Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://seedforstartup.in/",
+      "official_website": "https://seedforstartup.in/",
+      "official_program_page": "https://seedforstartup.in/",
+      "source_url": "https://seedforstartup.in/",
+      "organization": "AIC-SEED, IISER Pune",
+      "program_owner": "Atal Innovation Mission and IISER Pune",
+      "sector": "deep-science",
+      "focus_areas": ["deep science", "biotech", "health tech", "materials science", "chemistry", "physics", "life sciences"],
+      "benefits": ["incubation at IISER Pune", "AIM-backed funding access", "research infrastructure", "mentoring", "investor connect", "grant facilitation"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Deep science-based startups; technology business incubator for academic and research-driven entrepreneurship; open to external deep science founders"
+      },
+      "startup_stage": ["idea", "early-stage"],
+      "incubation_support": ["IISER research labs", "incubation space"],
+      "mentorship_support": ["IISER Pune faculty", "science mentorship"],
+      "geography": {
+        "country": "India",
+        "state": "Maharashtra",
+        "city": "Pune"
+      },
+      "sdg_alignment": ["SDG3", "SDG9"],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "aic-seed-iiser-pune",
+      "tags": ["academic", "government", "iiser-pune", "incubation", "deep-science", "aim"]
+    },
+    {
+      "program_name": "AIC NITTE Incubation Centre",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://aicnitte.com/",
+      "official_website": "https://aicnitte.com/",
+      "official_program_page": "https://aicnitte.com/",
+      "source_url": "https://aicnitte.com/",
+      "organization": "AIC NITTE Incubation Centre",
+      "program_owner": "Nitte Education Trust and Atal Innovation Mission",
+      "sector": "sector-agnostic",
+      "focus_areas": ["deeptech", "healthcare", "agritech", "food tech", "social impact", "coastal innovation"],
+      "benefits": ["incubation support", "SISFS access up to INR 50 Lakhs", "fabrication lab", "mentoring", "investor connect", "market entry support"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 5000000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Early-stage startups with innovative ideas; access to Startup India Seed Fund Scheme (SISFS) through AIC NITTE; focus on coastal Karnataka ecosystem"
+      },
+      "startup_stage": ["idea", "early-stage"],
+      "incubation_support": ["co-working space", "fabrication lab", "AIM network"],
+      "mentorship_support": ["domain mentors", "industry leaders", "investor connections"],
+      "geography": {
+        "country": "India",
+        "state": "Karnataka",
+        "city": "Mangaluru"
+      },
+      "sdg_alignment": [],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "aic-nitte-incubation",
+      "tags": ["academic", "government", "atal-innovation-mission", "incubation", "karnataka", "nitte"]
+    },
+    {
+      "program_name": "JioGenNext Market Access Program (MAP)",
+      "program_type": "accelerator",
+      "status": "rolling_applications",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://jiogennext.com/",
+      "official_website": "https://jiogennext.com/",
+      "official_program_page": "https://www.ril.com/about/jiogennext",
+      "source_url": "https://jiogennext.com/",
+      "organization": "Reliance Industries Limited and Jio Platforms",
+      "program_owner": "JioGenNext",
+      "sector": "technology",
+      "focus_areas": ["AI/ML", "enterprise software", "IoT", "blockchain", "drones", "AR/VR", "agritech", "fintech", "healthtech", "edtech", "SaaS"],
+      "benefits": ["zero-equity program", "no participation fee", "90-day PoC program", "Reliance ecosystem access", "mentorship from industry leaders", "enterprise-scale deployment", "startup alumni offers"],
+      "funding_support": {
+        "type": "program",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "B2B technology startups with initial traction; continuous applications (no cohort model); sectors: AI/ML, blockchain, IoT, AR/VR, drones, SaaS, enterprise software; 170+ startups incubated"
+      },
+      "startup_stage": ["early-stage", "growth-stage"],
+      "incubation_support": [],
+      "mentorship_support": ["Reliance and Jio leaders", "industry CXOs", "visionary founders"],
+      "geography": {
+        "country": "India",
+        "state": "Maharashtra",
+        "city": "Mumbai"
+      },
+      "sdg_alignment": [],
+      "is_government": false,
+      "is_private": false,
+      "is_corporate": true,
+      "is_academic": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "jiogennext-map",
+      "tags": ["corporate", "reliance", "accelerator", "zero-equity", "b2b", "pan-india"]
+    },
+    {
+      "program_name": "SheConnects Digital Accelerator (Reliance Foundation + Gates Foundation)",
+      "program_type": "accelerator",
+      "status": "application_open",
+      "deadline_type": "date",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://beta.reliancefoundation.org/media/media-release/SheConnects",
+      "official_website": "https://www.reliancefoundation.org/",
+      "official_program_page": "",
+      "source_url": "https://beta.reliancefoundation.org/media/media-release/SheConnects",
+      "organization": "Reliance Foundation and Gates Foundation",
+      "program_owner": "Reliance Foundation",
+      "sector": "digital inclusion",
+      "focus_areas": ["women's digital inclusion", "digital access", "financial inclusion", "livelihood", "health information", "gender digital divide"],
+      "benefits": ["grants for scaling solutions", "technical support", "south-south knowledge sharing", "3-year accelerator program"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "India-based organizations with proven high-impact evidence-backed solutions advancing women's digital inclusion; INR 200 Cr total corpus over 3 years"
+      },
+      "startup_stage": ["growth-stage", "scale-stage"],
+      "incubation_support": [],
+      "mentorship_support": ["cross-region knowledge sharing", "technical assistance"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": ["SDG5", "SDG10"],
+      "is_government": false,
+      "is_private": false,
+      "is_corporate": true,
+      "is_academic": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "sheconnects-digital-accelerator-2026",
+      "tags": ["corporate", "reliance-foundation", "gates-foundation", "women", "digital-inclusion", "accelerator"]
+    },
+    {
+      "program_name": "AIC-NITF Bhubaneswar Incubation Program (Atal Incubation Centre)",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://aicnitf.in/callForApplications/",
+      "official_website": "https://aicnitf.in/",
+      "official_program_page": "https://aicnitf.in/callForApplications/",
+      "source_url": "https://aicnitf.in/callForApplications/",
+      "organization": "AIC-Nalanda Institute of Technology Foundation",
+      "program_owner": "Atal Innovation Mission and NITI Aayog",
+      "sector": "sector-agnostic",
+      "focus_areas": ["agriculture", "IoT", "healthcare", "education", "financial inclusion", "environment and clean tech", "AI", "blockchain", "robotics"],
+      "benefits": ["seed fund up to INR 25 Lakhs via govt grants", "incubation support", "fabrication lab access", "mentoring", "investor connect", "market connect"],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 2500000,
+        "currency": "INR",
+        "equity_taken": "false",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Startups with innovative solutions in agriculture, IoT, healthcare, education, financial inclusion, clean tech, AI, blockchain, robotics; idea to early-stage"
+      },
+      "startup_stage": ["idea", "early-stage"],
+      "incubation_support": ["co-working space", "fabrication lab", "conference facilities"],
+      "mentorship_support": ["capacity building", "expert sessions", "investor network"],
+      "geography": {
+        "country": "India",
+        "state": "Odisha",
+        "city": "Bhubaneswar"
+      },
+      "sdg_alignment": ["SDG2", "SDG3", "SDG4", "SDG9"],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "aic-nitf-bhubaneswar",
+      "tags": ["academic", "government", "atal-innovation-mission", "incubation", "odisha"]
+    },
+    {
+      "program_name": "Boeing BUILD 2026 University Innovation Program at IIEC IIT Gandhinagar",
+      "program_type": "pre-incubation",
+      "status": "active",
+      "deadline_type": "recurring",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://iieciitgn.com/build2026/",
+      "official_website": "https://iieciitgn.com/",
+      "official_program_page": "https://iieciitgn.com/build2026/",
+      "source_url": "https://iieciitgn.com/build2026/",
+      "organization": "Boeing India and IIEC IIT Gandhinagar",
+      "program_owner": "Boeing India",
+      "sector": "deep-tech",
+      "focus_areas": ["aerospace", "defence", "social impact", "sustainability", "deep tech"],
+      "benefits": ["mentorship from Boeing leaders", "structured learning", "pitch refinement", "partner incubator access", "Boeing innovation day"],
+      "funding_support": {
+        "type": "",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Pre-seed/idea-stage startups and graduating students (2026 batch); no external funding received; open across all regions of India via partner incubators"
+      },
+      "startup_stage": ["idea", "pre-seed"],
+      "incubation_support": ["partner incubator network"],
+      "mentorship_support": ["Boeing mentorship", "industry knowledge", "pitch coaching"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [],
+      "is_government": false,
+      "is_private": false,
+      "is_corporate": true,
+      "is_academic": true,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "boeing-build-2026-iitgn",
+      "tags": ["corporate", "academic", "boeing", "pre-incubation", "aerospace", "iit-gandhinagar"]
+    }
+  ]
+}
+```
+[0m

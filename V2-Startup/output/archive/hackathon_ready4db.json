@@ -1,0 +1,274 @@
+{
+  "hackathons": [
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "D.E.S.I.G.N for BioE3 Challenge",
+      "full_name": "D.E.S.I.G.N for BioE3 Challenge: Empowering Youth to Solve Critical Issues of their TIMES",
+      "current_status": "active",
+      "registration_url": "https://innovateindia.mygov.in/",
+      "submission_url": "https://innovateindia.mygov.in/",
+      "official_website": "https://innovateindia.mygov.in/",
+      "official_event_page": "https://innovateindia.mygov.in/",
+      "source_url": "https://innovateindia.mygov.in/",
+      "hosting_organization": "Council of Scientific and Industrial Research (CSIR)",
+      "ministry": "Ministry of Science and Technology",
+      "institution_type": "government_research",
+      "platform": "MyGov Innovate India",
+      "domain": "biotechnology",
+      "theme": "Sustainable biotechnological solutions for societal challenges under the BioE3 policy framework",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "biotechnology",
+        "sustainability",
+        "innovation",
+        "youth empowerment"
+      ],
+      "problem_statements": [
+        "Developing innovative, sustainable, and scalable biotechnological solutions driven by young students and researchers"
+      ],
+      "deadline": "2026-05-20",
+      "registration_close_date": null,
+      "submission_close_date": "2026-05-20",
+      "application_deadline": null,
+      "eligibility_criteria": {
+        "summary": "Open to young students and researchers in India"
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "free"
+      },
+      "prizes": {
+        "summary": "Recognition and support for winners — specific prize details not published on official page"
+      },
+      "tags": [
+        "CSIR",
+        "BioE3",
+        "biotechnology",
+        "innovation",
+        "sustainability",
+        "youth",
+        "MyGov"
+      ],
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "SUBMISSION OPEN"
+        ],
+        "deadline_verified": true
+      }
+    },
+    {
+      "event_type": "hackathon",
+      "hackathon_name": "ZSI National Hackathon 2026",
+      "full_name": "Zoological Survey of India National Hackathon 2026 — Integrating Traditional Knowledge with Technology for Biodiversity Conservation",
+      "current_status": "active",
+      "registration_url": "https://hackathon.zsi.org.in/form/hackathon-registration",
+      "submission_url": "https://hackathon.zsi.org.in/",
+      "official_website": "https://zsi.org.in",
+      "official_event_page": "https://hackathon.zsi.org.in/",
+      "source_url": "https://hackathon.zsi.org.in/",
+      "hosting_organization": "Zoological Survey of India (ZSI)",
+      "ministry": "Ministry of Environment, Forest and Climate Change",
+      "institution_type": "government_research_institute",
+      "platform": "Official ZSI Hackathon Portal",
+      "domain": "biodiversity_conservation_technology",
+      "theme": "Traditional knowledge combined with contemporary technological advancements for biodiversity conservation",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "biodiversity conservation",
+        "traditional knowledge",
+        "AI",
+        "data science",
+        "digital transformation",
+        "environmental sustainability"
+      ],
+      "problem_statements": [
+        "16 themes covering various Indian ecosystems — combining traditional knowledge with innovation, AI, and data sciences to document, preserve, and utilize indigenous biodiversity knowledge systems"
+      ],
+      "deadline": "2026-05-20",
+      "registration_close_date": "2026-05-20",
+      "submission_close_date": null,
+      "application_deadline": null,
+      "eligibility_criteria": {
+        "summary": "Open to all Indian citizens — students (school, UG, PG), researchers, innovators, startups, community practitioners. No age bar. Teams of max 3 members."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": 3
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "free"
+      },
+      "prizes": {
+        "summary": "1st Prize: ₹1,00,000; 2nd Prize: ₹75,000; 3rd Prize: ₹50,000"
+      },
+      "tags": [
+        "ZSI",
+        "biodiversity",
+        "traditional knowledge",
+        "hackathon",
+        "conservation",
+        "technology",
+        "AI",
+        "indigenous knowledge"
+      ],
+      "source_validation": {
+        "source_type": "official_government_website",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Registration",
+          "Registration Opens"
+        ],
+        "deadline_verified": true
+      }
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "BIOPACKATHON 2026",
+      "full_name": "BIOPACKATHON 2026: Biodegradable Packaging Solution Challenge for Pan Masala & Gutkha Sachets",
+      "current_status": "active",
+      "registration_url": "https://services.bis.gov.in/php/BIS_2.0/biopackathon/",
+      "submission_url": "https://services.bis.gov.in/php/BIS_2.0/biopackathon/",
+      "official_website": "https://services.bis.gov.in/",
+      "official_event_page": "https://services.bis.gov.in/php/BIS_2.0/biopackathon/",
+      "source_url": "https://services.bis.gov.in/php/BIS_2.0/biopackathon/",
+      "hosting_organization": "Bureau of Indian Standards (BIS), Department of Consumer Affairs (DoCA)",
+      "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+      "institution_type": "government_standards_body",
+      "platform": "BIS Official Portal",
+      "domain": "material_science_biodegradable_packaging",
+      "theme": "Develop plastic-free, biodegradable, food-grade sachet packaging alternatives for pan masala and gutkha that meet functional requirements and are scalable for industry adoption",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "biodegradable packaging",
+        "plastic-free alternatives",
+        "material science",
+        "sustainable packaging",
+        "food safety",
+        "circular economy",
+        "waste reduction"
+      ],
+      "problem_statements": [
+        "Develop prototype-ready plastic-free, biodegradable sachet packaging for pan masala and gutkha with evidence of biodegradability, food safety, functional performance and scalability"
+      ],
+      "deadline": "2026-05-24",
+      "registration_close_date": null,
+      "submission_close_date": "2026-05-24",
+      "application_deadline": "2026-05-24",
+      "eligibility_criteria": {
+        "summary": "Open to all Indian individuals and entities (innovators, startups, researchers, NGOs, industry experts). Must present prototype-ready or already developed solution with supporting evidence (test reports, certifications)."
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "free"
+      },
+      "prizes": {
+        "summary": "Not publicly specified on portal"
+      },
+      "tags": [
+        "BIS",
+        "DoCA",
+        "biodegradable",
+        "packaging",
+        "sustainability",
+        "plastic-free",
+        "material science",
+        "innovation challenge",
+        "Government of India"
+      ],
+      "source_validation": {
+        "source_type": "official_government_website",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "List of active Problem Statement for BIOPackathon 2026",
+          "Create account for Registration"
+        ],
+        "deadline_verified": false
+      }
+    },
+    {
+      "event_type": "AI_challenge",
+      "hackathon_name": "Road Safety Hackathon 2026",
+      "full_name": "AI for Road Safety Hackathon 2026: National AI Hackathon on Road Safety by CoERS IIT Madras with MoRTH and MeitY",
+      "current_status": "active",
+      "registration_url": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
+      "submission_url": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
+      "official_website": "https://coers.iitm.ac.in/",
+      "official_event_page": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
+      "source_url": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
+      "hosting_organization": "Centre of Excellence for Road Safety (CoERS), IIT Madras; Ministry of Road Transport and Highways (MoRTH); Ministry of Electronics and Information Technology (MeitY)",
+      "ministry": "Ministry of Road Transport and Highways; Ministry of Electronics and Information Technology",
+      "institution_type": "government_academic_multi_ministry",
+      "platform": "CoERS IIT Madras Portal / Unstop",
+      "domain": "AI_road_safety_transportation",
+      "theme": "Develop AI-powered solutions for road safety including traffic law compliance, road condition monitoring, and emergency response systems",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "AI in road safety",
+        "traffic management",
+        "computer vision",
+        "driver assistance",
+        "emergency response",
+        "intelligent transportation",
+        "accident prevention"
+      ],
+      "problem_statements": [
+        "DriveLegal: Location-specific traffic laws, violations and fine schedules; RoadWatch: Citizen monitoring of road conditions and spending; RoadSoS: Location-based emergency services access"
+      ],
+      "deadline": "2026-05-31",
+      "registration_close_date": null,
+      "submission_close_date": "2026-05-31",
+      "application_deadline": "2026-05-31",
+      "eligibility_criteria": {
+        "summary": "Open to students, engineers, and technology enthusiasts aged 15+. Individual or team participation allowed. No professional qualifications necessary."
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "free"
+      },
+      "prizes": {
+        "summary": "1st Prize: ₹50,000; 2nd Prize: ₹30,000; 3rd Prize: ₹20,000. Participation certificates for all Stage 1 submitters. Internship opportunities for selected participants."
+      },
+      "tags": [
+        "MoRTH",
+        "MeitY",
+        "IIT Madras",
+        "CoERS",
+        "road safety",
+        "AI",
+        "hackathon",
+        "computer vision",
+        "traffic management",
+        "GovTech"
+      ],
+      "source_validation": {
+        "source_type": "official_government_academic_website_PIB",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Registration & Submission Extended to May 31",
+          "AI for Road Safety Summit",
+          "launched the nationwide AI for Road Safety Hackathon 2026"
+        ],
+        "deadline_verified": true
+      }
+    }
+  ]
+}
