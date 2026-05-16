@@ -1,0 +1,947 @@
+{
+  "sdg_research_opportunities": [
+    {
+      "project_name": "HCLTech Grant 11th Edition",
+      "funding_program": "HCLTech Grant - CSR Grant Program",
+      "funding_type": "csr_grant",
+      "status": "call_open",
+      "deadline_type": "annual_cycle_open",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.hclfoundation.org/hcl-grant",
+      "official_website": "https://www.hclfoundation.org",
+      "official_program_page": "https://www.hclfoundation.org/hcl-grant",
+      "source_url": "https://www.hclfoundation.org/hcl-grant",
+      "organization": "HCLFoundation",
+      "ministry": "",
+      "research_domain": "sustainable_development",
+      "focus_areas": ["water_conservation", "biodiversity", "healthcare", "education", "rural_development", "community_development"],
+      "sdg_alignment": [3, 4, 6, 15],
+      "funding_support": {
+        "grant_type": "project_grant",
+        "amount_min": 5000000,
+        "amount_max": 50000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Indian NGOs with proven track record. Winning NGO in each category receives Rs. 5 crore for 4-year projects. 8 runner-up NGOs receive Rs. 50 lakh for 2-year projects. Total grant outlay Rs. 24 crore. Categories: Water, Biodiversity, Healthcare, Education."
+      },
+      "target_entities": ["NGOs", "non_profits", "community_organizations"],
+      "institution_type": "non_profit",
+      "research_stage": ["implementation", "scaling", "community_intervention"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "HCLTECH-GRANT-11TH-EDITION",
+      "tags": ["CSR", "water", "biodiversity", "healthcare", "education", "rural", "SDG6", "SDG15"]
+    },
+    {
+      "project_name": "Infosys Foundation Aarohan Social Innovation Awards 2025",
+      "funding_program": "Aarohan Social Innovation Awards (4th Edition)",
+      "funding_type": "social_innovation_award_grant",
+      "status": "annual_cycle_open",
+      "deadline_type": "annual_cycle",
+      "deadline": "2025-06-15",
+      "deadline_iso": "2025-06-15T23:59:00+05:30",
+      "application_url": "https://www.infosys.com/newsroom/press-releases/2025/aarohan-social-innovation-awards2025.html",
+      "official_website": "https://www.infosys.org",
+      "official_program_page": "https://www.infosys.com/newsroom/press-releases/2025/aarohan-social-innovation-awards2025.html",
+      "source_url": "https://www.infosys.com/newsroom/press-releases/2025/aarohan-social-innovation-awards2025.html",
+      "organization": "Infosys Foundation",
+      "ministry": "",
+      "research_domain": "social_innovation",
+      "focus_areas": ["education", "healthcare", "environmental_sustainability", "technology_social_impact"],
+      "sdg_alignment": [3, 4, 9, 13],
+      "funding_support": {
+        "grant_type": "award_grant",
+        "amount_min": null,
+        "amount_max": 5000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Indian citizens aged 18+ with fully functioning prototype or finished project. Up to Rs. 50 lakh per winner. Total award purse Rs. 2 crore. Entries across Education, Healthcare, and Environmental Sustainability categories."
+      },
+      "target_entities": ["individuals", "teams", "NGOs", "social_enterprises"],
+      "institution_type": "mixed",
+      "research_stage": ["prototype_stage", "implemented_project", "scaling"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "INFOSYS-AAROHAN-SOCIAL-INNOVATION-AWARDS-2025",
+      "tags": ["CSR", "social_innovation", "education", "healthcare", "environment", "SDG9", "SDG3"]
+    },
+    {
+      "project_name": "HDFC Bank Parivartan Start-up Grants FY26",
+      "funding_program": "Parivartan Start-up Grants Programme FY26",
+      "funding_type": "csr_grant",
+      "status": "annual_cycle_open",
+      "deadline_type": "annual_cycle_open",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://thecsrjournal.in/csr-news-hdfc-bank-crore-social-impact-start-up/",
+      "official_website": "https://www.hdfcbank.com",
+      "official_program_page": "",
+      "source_url": "https://thecsrjournal.in/csr-news-hdfc-bank-crore-social-impact-start-up/",
+      "organization": "HDFC Bank Parivartan",
+      "ministry": "",
+      "research_domain": "social_impact_innovation",
+      "focus_areas": ["climate_innovation", "agriculture", "sustainable_livelihoods", "manufacturing_MSME_innovation", "financial_inclusion", "gender_diversity", "AI_deep_tech", "waste_management"],
+      "sdg_alignment": [1, 5, 8, 9, 10, 13],
+      "funding_support": {
+        "grant_type": "non_dilutive_grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Incubator-led portfolio model. Total disbursement Rs. 20 crore through partner incubators (IIT Madras IC, IISC FSID, SINE IIT Bombay, IIMB NSRCEL, BITS Pilani, Villgro, T-Works, etc.). Applications routed through partner incubators."
+      },
+      "target_entities": ["startups", "social_enterprises", "incubators"],
+      "institution_type": "mixed",
+      "research_stage": ["pilot", "validation", "early_scale_up"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": false,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "HDFC-PARIVARTAN-STARTUP-GRANTS-FY26",
+      "tags": ["CSR", "startup_grants", "climate_innovation", "financial_inclusion", "deep_tech", "SDG8", "SDG9"]
+    },
+    {
+      "project_name": "Cummins CSR Grant for Climate & Sustainability Tech",
+      "funding_program": "Cummins CSR Grant - Venture Center",
+      "funding_type": "csr_grant",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-05-20",
+      "deadline_iso": "2026-05-20T23:59:00+05:30",
+      "application_url": "https://www.startupgrantsindia.com/cummins-csr-grant-venture-center-2026",
+      "official_website": "https://www.venturecenter.co.in",
+      "official_program_page": "",
+      "source_url": "https://www.startupgrantsindia.com/cummins-csr-grant-venture-center-2026",
+      "organization": "Cummins India / Venture Center",
+      "ministry": "",
+      "research_domain": "climate_tech_and_sustainability",
+      "focus_areas": ["energy_efficiency", "renewable_energy", "air_pollution", "clean_drinking_water", "waste_to_value", "circular_economy", "biomass_utilisation", "carbon_capture_utilisation"],
+      "sdg_alignment": [6, 7, 11, 12, 13],
+      "funding_support": {
+        "grant_type": "csr_grant",
+        "amount_min": null,
+        "amount_max": 2000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Early-stage technology entrepreneurs and startups working on environmental sustainability and climate change solutions. Grant funds pilot trials, field testing, technology implementation, PoC development, prototyping. Administered by Venture Center (CSIR-NCL incubator). No equity dilution."
+      },
+      "target_entities": ["early_stage_startups", "climate_tech_entrepreneurs"],
+      "institution_type": "private",
+      "research_stage": ["pilot_trials", "field_testing", "proof_of_concept"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": "Pune"
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": false,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "CUMMINS-CSR-CLIMATE-TECH-GRANT-2026",
+      "tags": ["CSR", "climate_tech", "clean_energy", "sustainability", "pilot_funding", "SDG7", "SDG13"]
+    },
+    {
+      "project_name": "Azim Premji Foundation Grants for NGOs",
+      "funding_program": "Azim Premji Foundation Grant Programme",
+      "funding_type": "philanthropic_grant",
+      "status": "always_open",
+      "deadline_type": "continuous_intake",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://azimpremjifoundation.org/apply-for-a-grant/",
+      "official_website": "https://azimpremjifoundation.org",
+      "official_program_page": "https://azimpremjifoundation.org/who-we-are/how-we-are-organised/grants/",
+      "source_url": "https://azimpremjifoundation.org/apply-for-a-grant/",
+      "organization": "Azim Premji Foundation",
+      "ministry": "",
+      "research_domain": "social_development",
+      "focus_areas": ["land_water_forest", "urban_initiatives", "civil_society_strengthening", "governance", "gender_justice", "disability_mental_health", "constitutional_values", "children", "education", "health", "livelihoods"],
+      "sdg_alignment": [1, 3, 4, 5, 6, 10, 11, 15, 16],
+      "funding_support": {
+        "grant_type": "project_grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Not-for-profit organizations working with vulnerable communities. Multi-year grants from 1-10 years (typically 3-4 years). Grant sizes from few lakhs to tens of crores. Continuous application through NGO registration form."
+      },
+      "target_entities": ["NGOs", "civil_society_organizations", "non_profits"],
+      "institution_type": "non_profit",
+      "research_stage": ["direct_intervention", "community_development", "systems_strengthening"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "AZIM-PREMJI-FOUNDATION-GRANTS",
+      "tags": ["philanthropy", "NGOs", "social_justice", "education", "health", "SDG1", "SDG10"]
+    },
+    {
+      "project_name": "Villgro Startup India Seed Fund (SISFS Implementation)",
+      "funding_program": "Startup India Seed Fund Scheme via Villgro",
+      "funding_type": "seed_funding",
+      "status": "always_open",
+      "deadline_type": "rolling_applications",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://villgro.org/programs/startup-india-seed-fund-scheme-2/",
+      "official_website": "https://villgro.org",
+      "official_program_page": "https://villgro.org/programs/",
+      "source_url": "https://villgro.org/programs/startup-india-seed-fund-scheme-2/",
+      "organization": "Villgro Innovations Foundation",
+      "ministry": "",
+      "research_domain": "social_enterprise_incubation",
+      "focus_areas": ["climate_smart_agriculture", "healthcare", "climate_action", "inclusive_livelihoods", "renewable_energy", "waste_to_value"],
+      "sdg_alignment": [1, 2, 3, 7, 8, 12, 13],
+      "funding_support": {
+        "grant_type": "seed_funding",
+        "amount_min": null,
+        "amount_max": 7000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "DPIIT-recognized startups less than 2 years old. Rs. 20 lakhs grant + Rs. 50 lakhs convertible note. Must use technology in core product/service. Preference for climate-smart agriculture, healthcare, climate action sectors."
+      },
+      "target_entities": ["early_stage_startups", "social_enterprises"],
+      "institution_type": "private",
+      "research_stage": ["proof_of_concept", "prototype", "product_trials", "market_entry"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "VILLGRO-STARTUP-INDIA-SEED-FUND",
+      "tags": ["incubation", "seed_funding", "social_enterprise", "climate_agriculture", "SDG8", "SDG13"]
+    },
+    {
+      "project_name": "Villgro Capital for Impact Programme",
+      "funding_program": "Capital for Impact - 360 ONE Foundation Partnership",
+      "funding_type": "impact_investment_and_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://villgro.org/programs/capital-for-impact/",
+      "official_website": "https://villgro.org",
+      "official_program_page": "https://villgro.org/programs/capital-for-impact/",
+      "source_url": "https://villgro.org/programs/capital-for-impact/",
+      "organization": "Villgro Innovations Foundation / 360 ONE Foundation",
+      "ministry": "",
+      "research_domain": "impact_enterprise",
+      "focus_areas": ["agriculture", "climate_action", "livelihoods", "smallholder_farmers", "affordable_loans"],
+      "sdg_alignment": [1, 2, 8, 13],
+      "funding_support": {
+        "grant_type": "blended_finance",
+        "amount_min": null,
+        "amount_max": 2500000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Revenue-stage social enterprises in agriculture and climate-focused areas. Non-dilutive loans up to INR 25 lakhs from financial institutions + technical assistance up to INR 2 lakhs. Focus on small and marginal farmers."
+      },
+      "target_entities": ["social_enterprises", "revenue_stage_businesses"],
+      "institution_type": "private",
+      "research_stage": ["growth", "scaling_impact"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "VILLGRO-CAPITAL-FOR-IMPACT",
+      "tags": ["impact_investing", "agriculture", "livelihoods", "blended_finance", "SDG1", "SDG2"]
+    },
+    {
+      "project_name": "Villgro Powering Livelihoods - CEEW Partnership",
+      "funding_program": "Powering Livelihoods (CEEW-Villgro)",
+      "funding_type": "incubation_and_seed_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://villgro.org/programs/powering-livelihoods/",
+      "official_website": "https://villgro.org",
+      "official_program_page": "https://villgro.org/programs/powering-livelihoods/",
+      "source_url": "https://villgro.org/programs/powering-livelihoods/",
+      "organization": "Villgro Innovations Foundation / CEEW",
+      "ministry": "",
+      "research_domain": "clean_energy_livelihoods",
+      "focus_areas": ["decentralized_renewable_energy", "productive_use_RE", "rural_livelihoods", "women_led_enterprises", "clean_energy_solutions", "solar_dryers", "solar_cold_storage"],
+      "sdg_alignment": [1, 5, 7, 8, 13],
+      "funding_support": {
+        "grant_type": "seed_funding",
+        "amount_min": null,
+        "amount_max": 2500000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "For-profit entities with potential to positively impact rural livelihoods using renewable energy solutions. Seed funding up to INR 25 lakhs. Women-led enterprises encouraged. Customized gender-smart incubation provided."
+      },
+      "target_entities": ["for_profit_enterprises", "DRE_startups", "clean_energy_ventures"],
+      "institution_type": "private",
+      "research_stage": ["deployment", "market_expansion", "impact_scaling"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "VILLGRO-POWERING-LIVELIHOODS",
+      "tags": ["renewable_energy", "rural_livelihoods", "clean_energy", "SDG7", "SDG8", "women"]
+    },
+    {
+      "project_name": "Villgro Tech Innovation for Solid Waste Management (Accenture Partnership)",
+      "funding_program": "Tech Innovation for Solid Waste Management",
+      "funding_type": "incubation_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://villgro.org/programs/tech-innovation-for-solid-waste-management/",
+      "official_website": "https://villgro.org",
+      "official_program_page": "https://villgro.org/programs/tech-innovation-for-solid-waste-management/",
+      "source_url": "https://villgro.org/programs/tech-innovation-for-solid-waste-management/",
+      "organization": "Villgro Innovations Foundation / Accenture",
+      "ministry": "",
+      "research_domain": "waste_management_circular_economy",
+      "focus_areas": ["waste_to_value", "solid_waste_management", "circular_economy", "gender_inclusive_business", "women_led_enterprises"],
+      "sdg_alignment": [5, 11, 12, 13],
+      "funding_support": {
+        "grant_type": "incubation_grant",
+        "amount_min": null,
+        "amount_max": 20000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Women founder/co-founder with minimum 50% shareholding. Solutions in Waste to Value sector. Registered as Pvt Ltd company. Product/solution market-ready or ready to commercialize. Funding support up to INR 2 crore."
+      },
+      "target_entities": ["women_led_startups", "waste_management_ventures"],
+      "institution_type": "private",
+      "research_stage": ["commercialization", "scaling"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "VILLGRO-ACCENTURE-WASTE-MANAGEMENT",
+      "tags": ["women_led", "waste_management", "circular_economy", "SDG5", "SDG12"]
+    },
+    {
+      "project_name": "Karnataka ELEVATE NXT 2026 Deeptech Grant-in-Aid",
+      "funding_program": "ELEVATE NXT 2026 - Deeptech Grant-in-Aid Program",
+      "funding_type": "state_government_grant",
+      "status": "annual_cycle_open",
+      "deadline_type": "annual_cycle",
+      "deadline": "2026-02-17",
+      "deadline_iso": "2026-02-17T23:59:00+05:30",
+      "application_url": "https://www.missionstartupkarnataka.org/funding",
+      "official_website": "https://www.missionstartupkarnataka.org",
+      "official_program_page": "https://www.startupgrantsindia.com/elevate-nxt-2026-deeptech-grant-karnataka-324",
+      "source_url": "https://www.startupgrantsindia.com/elevate-nxt-2026-deeptech-grant-karnataka-324",
+      "organization": "Karnataka Biotechnology and Information Technology Services (KBITS)",
+      "ministry": "Department of Electronics, IT, BT and S&T, Government of Karnataka",
+      "research_domain": "deeptech_innovation",
+      "focus_areas": ["AI_ML", "IoT", "blockchain", "robotics", "AR_VR", "drones", "advanced_manufacturing", "semiconductors", "quantum_technologies", "green_energy", "cybersecurity"],
+      "sdg_alignment": [8, 9, 11, 13],
+      "funding_support": {
+        "grant_type": "grant_in_aid",
+        "amount_min": null,
+        "amount_max": 10000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Deeptech startups from across India. Pvt Ltd/LLP/Partnership. Less than 10 years old. Turnover under Rs. 100 crore. TRL 3-8. Selected startups outside Karnataka must relocate to Karnataka. Up to Rs. 1 crore grant."
+      },
+      "target_entities": ["deeptech_startups", "science_led_ventures"],
+      "institution_type": "private",
+      "research_stage": ["prototype", "commercialization", "scale_up"],
+      "geography": {
+        "country": "India",
+        "state": "Karnataka",
+        "city": ""
+      },
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": false,
+        "deadline_verified": true,
+        "active_confirmation": false,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "KARNATAKA-ELEVATE-NXT-2026",
+      "tags": ["state_government", "deeptech", "Karnataka", "startup_grant", "SDG9"]
+    },
+    {
+      "project_name": "Kerala AgriNext Startup Innovation Grant (K-CRVAMP)",
+      "funding_program": "AgriNext Startup Innovation Grant - Kerala Climate Resilient Agri Value Chain Modernization Project",
+      "funding_type": "state_government_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://kera.startupmission.in/",
+      "official_website": "https://startupmission.kerala.gov.in",
+      "official_program_page": "https://kera.startupmission.in/",
+      "source_url": "https://www.startupgrantsindia.com/agrinext-startup-innovation-grant-by-kerala-startup-mission-k-crvamp-219",
+      "organization": "Kerala Startup Mission / World Bank",
+      "ministry": "Government of Kerala / World Bank",
+      "research_domain": "agritech_climate_resilience",
+      "focus_areas": ["climate_resilient_agriculture", "agri_tech", "sustainable_farming", "farmer_technology", "agri_value_chain", "climate_smart_solutions"],
+      "sdg_alignment": [1, 2, 8, 12, 13],
+      "funding_support": {
+        "grant_type": "project_grant",
+        "amount_min": null,
+        "amount_max": 2500000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Agri-tech startups with solutions addressing real-world agri challenges. 150 startups to be supported with funding up to Rs. 25 lakhs + incubation. Collaboration with 40,000+ farmers and FPOs. Kerala Startup Mission implemented."
+      },
+      "target_entities": ["agritech_startups", "farm_technology_ventures"],
+      "institution_type": "mixed",
+      "research_stage": ["pilot", "commercialization", "market_integration"],
+      "geography": {
+        "country": "India",
+        "state": "Kerala",
+        "city": ""
+      },
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "KERALA-AGRINEXT-KCRVAMP",
+      "tags": ["state_government", "agritech", "climate_resilience", "Kerala", "World_Bank", "SDG2", "SDG13"]
+    },
+    {
+      "project_name": "Tamil Nadu Innovation Voucher Programme (IVP)",
+      "funding_program": "Innovation Voucher Programme - EDII Tamil Nadu",
+      "funding_type": "state_government_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.startupgrantsindia.com/edii-tamil-nadu-innovation-voucher-programme-ivp-voucher-a-voucher-b-384",
+      "official_website": "https://www.edii-tn.com",
+      "official_program_page": "",
+      "source_url": "https://www.startupgrantsindia.com/edii-tamil-nadu-innovation-voucher-programme-ivp-voucher-a-voucher-b-384",
+      "organization": "Entrepreneurship Development and Innovation Institute (EDII), Tamil Nadu",
+      "ministry": "Department of MSME, Government of Tamil Nadu",
+      "research_domain": "manufacturing_innovation",
+      "focus_areas": ["manufacturing", "hardware_innovation", "prototype_development", "commercialization", "automobile_EV", "electronics_semiconductors", "clean_energy", "aerospace_defence"],
+      "sdg_alignment": [8, 9, 12],
+      "funding_support": {
+        "grant_type": "voucher_grant",
+        "amount_min": 300000,
+        "amount_max": 700000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Manufacturing MSMEs and startups registered in Tamil Nadu. Voucher A: up to Rs. 3 lakhs for prototype development. Voucher B: up to Rs. 7 lakhs for commercialization. Co-financing required. Hardware-based innovations focus."
+      },
+      "target_entities": ["manufacturing_MSMEs", "hardware_startups"],
+      "institution_type": "private",
+      "research_stage": ["prototype", "commercialization", "product_development"],
+      "geography": {
+        "country": "India",
+        "state": "Tamil Nadu",
+        "city": ""
+      },
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": false,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "TAMIL-NADU-INNOVATION-VOUCHER",
+      "tags": ["state_government", "manufacturing", "MSME", "prototype", "Tamil_Nadu", "SDG9"]
+    },
+    {
+      "project_name": "Kerala KSCSTE Technology Development & Adaptation Programme (TDAP)",
+      "funding_program": "Technology Development & Adaptation Programme (TDAP)",
+      "funding_type": "state_government_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://kscste.kerala.gov.in/technology-development-adaptation-programme-tdap/",
+      "official_website": "https://kscste.kerala.gov.in",
+      "official_program_page": "https://kscste.kerala.gov.in/technology-development-adaptation-programme-tdap/",
+      "source_url": "https://kscste.kerala.gov.in/technology-development-adaptation-programme-tdap/",
+      "organization": "Kerala State Council for Science, Technology and Environment",
+      "ministry": "Government of Kerala",
+      "research_domain": "technology_development",
+      "focus_areas": ["innovative_technology", "need_based_technology", "technology_upgradation", "product_development", "commercial_demonstration"],
+      "sdg_alignment": [9, 12],
+      "funding_support": {
+        "grant_type": "project_grant",
+        "amount_min": null,
+        "amount_max": 2500000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Individual innovators with professional degree, scientists/researchers from research organizations, academic institutions, NGOs. Maximum grant Rs. 25 lakhs for 2 years. Projects should lead to demonstrable product in commercial environment."
+      },
+      "target_entities": ["individual_innovators", "researchers", "academic_institutions", "NGOs"],
+      "institution_type": "mixed",
+      "research_stage": ["technology_development", "prototype", "commercial_demonstration"],
+      "geography": {
+        "country": "India",
+        "state": "Kerala",
+        "city": ""
+      },
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "KERALA-KSCSTE-TDAP",
+      "tags": ["state_government", "technology_development", "product_innovation", "Kerala", "SDG9"]
+    },
+    {
+      "project_name": "Karnataka IDEA2POC Grant (ELEVATE)",
+      "funding_program": "IDEA2POC Grant / ELEVATE - Karnataka Startup Policy",
+      "funding_type": "state_government_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.missionstartupkarnataka.org/funding",
+      "official_website": "https://www.missionstartupkarnataka.org",
+      "official_program_page": "https://www.missionstartupkarnataka.org/funding",
+      "source_url": "https://www.missionstartupkarnataka.org/funding",
+      "organization": "Karnataka Innovation and Technology Society (KITS)",
+      "ministry": "Government of Karnataka - Dept of Electronics, IT, BT and S&T",
+      "research_domain": "early_stage_innovation",
+      "focus_areas": ["early_stage_innovation", "proof_of_concept", "prototype", "product_development", "market_development"],
+      "sdg_alignment": [8, 9],
+      "funding_support": {
+        "grant_type": "grant_in_aid",
+        "amount_min": null,
+        "amount_max": 5000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Open to anyone from Karnataka with an idea willing to commit to PoC stage. Up to Rs. 50 lakhs. First state in India to provide grant-in-aid to startups without taking equity."
+      },
+      "target_entities": ["startups", "innovators", "entrepreneurs"],
+      "institution_type": "private",
+      "research_stage": ["idea", "proof_of_concept", "prototype"],
+      "geography": {
+        "country": "India",
+        "state": "Karnataka",
+        "city": ""
+      },
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "KARNATAKA-IDEA2POC-ELEVATE",
+      "tags": ["state_government", "early_stage", "prototype", "Karnataka", "SDG9", "non_dilutive"]
+    },
+    {
+      "project_name": "Karnataka ELEVATE UNNATI for SC/ST Entrepreneurs",
+      "funding_program": "ELEVATE Unnati - Social Inclusion Program",
+      "funding_type": "state_government_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.missionstartupkarnataka.org/funding",
+      "official_website": "https://www.missionstartupkarnataka.org",
+      "official_program_page": "https://www.missionstartupkarnataka.org/funding",
+      "source_url": "https://www.missionstartupkarnataka.org/funding",
+      "organization": "Department of Social Welfare, Government of Karnataka",
+      "ministry": "Government of Karnataka",
+      "research_domain": "social_inclusion_entrepreneurship",
+      "focus_areas": ["SC_ST_entrepreneurship", "technology_solutions", "social_inclusion", "grant_in_aid", "incubation_support"],
+      "sdg_alignment": [8, 9, 10],
+      "funding_support": {
+        "grant_type": "grant_in_aid",
+        "amount_min": null,
+        "amount_max": 5000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Startups promoted by SC/ST entrepreneurs. Up to Rs. 50 lakhs grant + mentoring + incubation. Under SCSP/TCP scheme."
+      },
+      "target_entities": ["SC_ST_entrepreneurs", "startups"],
+      "institution_type": "private",
+      "research_stage": ["idea", "prototype", "scale_up"],
+      "geography": {
+        "country": "India",
+        "state": "Karnataka",
+        "city": ""
+      },
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "KARNATAKA-ELEVATE-UNNATI",
+      "tags": ["state_government", "social_inclusion", "SC_ST", "entrepreneurship", "SDG10", "SDG8"]
+    },
+    {
+      "project_name": "Grand Challenges Karnataka (GCK) - State SDG Innovation",
+      "funding_program": "Grand Challenges Karnataka (GCK)",
+      "funding_type": "state_government_challenge_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.missionstartupkarnataka.org/grandchallenge",
+      "official_website": "https://www.missionstartupkarnataka.org",
+      "official_program_page": "https://www.missionstartupkarnataka.org/grandchallenge",
+      "source_url": "https://www.missionstartupkarnataka.org",
+      "organization": "Karnataka Innovation and Technology Society (KITS)",
+      "ministry": "Government of Karnataka - Dept of Electronics, IT, BT and S&T",
+      "research_domain": "SDG_linked_innovation",
+      "focus_areas": ["urban_development", "healthcare", "food_security", "clean_environment", "education", "urban_mobility", "sustainable_cities"],
+      "sdg_alignment": [1, 2, 3, 4, 9, 11, 13],
+      "funding_support": {
+        "grant_type": "challenge_grant",
+        "amount_min": 1000000,
+        "amount_max": 5000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Startups, innovators, and individuals. Phase 1 funding Rs. 10 lakhs for selected awardees. Phase 2 funding Rs. 50 lakhs for one winner. Focus on societal problems linked to SDGs identified in consultation with state departments."
+      },
+      "target_entities": ["startups", "innovators", "individuals"],
+      "institution_type": "private",
+      "research_stage": ["prototype", "pilot", "scale_up"],
+      "geography": {
+        "country": "India",
+        "state": "Karnataka",
+        "city": ""
+      },
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "KARNATAKA-GRAND-CHALLENGES-GCK",
+      "tags": ["state_government", "SDG", "innovation_challenge", "urban_mobility", "Karnataka", "SDG11"]
+    },
+    {
+      "project_name": "UN Call for Innovations for the SDGs 2026",
+      "funding_program": "2026 UN Call for Innovations for the SDGs",
+      "funding_type": "innovation_recognition_and_capacity_building",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-05-07",
+      "deadline_iso": "2026-05-07T18:00:00+00:00",
+      "application_url": "https://www.engineeringforchange.org/challenge/2026-un-call-for-innovations/",
+      "official_website": "https://www.un.org",
+      "official_program_page": "https://www.engineeringforchange.org/challenge/2026-un-call-for-innovations/",
+      "source_url": "https://www.engineeringforchange.org/challenge/2026-un-call-for-innovations/",
+      "organization": "United Nations (DESA) / MGCY / Engineering for Change",
+      "ministry": "",
+      "research_domain": "SDG_innovation",
+      "focus_areas": ["clean_water_sanitation", "affordable_clean_energy", "industry_innovation_infrastructure", "sustainable_cities", "partnerships_for_goals"],
+      "sdg_alignment": [6, 7, 9, 11, 17],
+      "funding_support": {
+        "grant_type": "recognition_and_visibility",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Young innovators, women, indigenous innovators, and early-stage solution developers from Global South. Selected innovations highlighted at UN STI Forum. Virtual capacity-building program for selected innovators. Focus on SDG 6, 7, 9, 11, 17."
+      },
+      "target_entities": ["young_innovators", "startups", "researchers", "indigenous_innovators"],
+      "institution_type": "mixed",
+      "research_stage": ["innovation", "scalable_solutions"],
+      "geography": {
+        "country": "Global",
+        "state": "",
+        "city": ""
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "UN-CALL-FOR-INNOVATIONS-SDG-2026",
+      "tags": ["UN", "SDG", "global_innovation", "STI_Forum", "youth", "SDG6", "SDG7", "SDG9"]
+    },
+    {
+      "project_name": "Azim Premji University Health Research Funding Programme",
+      "funding_program": "Health Research Funding Programme",
+      "funding_type": "research_grant",
+      "status": "annual_cycle_open",
+      "deadline_type": "annual_cycle",
+      "deadline": "2026-04-30",
+      "deadline_iso": "2026-04-30T23:59:00+05:30",
+      "application_url": "https://azimpremjiuniversity.edu.in/funding/health-research-funding-programme-2025",
+      "official_website": "https://azimpremjiuniversity.edu.in",
+      "official_program_page": "https://azimpremjiuniversity.edu.in/funding/health-research-funding-programme-2025",
+      "source_url": "https://azimpremjiuniversity.edu.in/funding/health-research-funding-programme-2025",
+      "organization": "Azim Premji University / Azim Premji Foundation",
+      "ministry": "",
+      "research_domain": "public_health",
+      "focus_areas": ["public_health", "health_equity", "vulnerable_communities", "health_systems", "social_determinants_of_health", "mental_health"],
+      "sdg_alignment": [3, 10],
+      "funding_support": {
+        "grant_type": "research_grant",
+        "amount_min": 500000,
+        "amount_max": 4000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Researchers from public institutions and non-profit organisations. Independent researchers and for-profit organisations not eligible. Funding Rs. 5-40 lakhs. Duration 12-24 months. Studies addressing health realities of vulnerable communities."
+      },
+      "target_entities": ["researchers", "NGOs", "academic_institutions", "public_institutions"],
+      "institution_type": "academic",
+      "research_stage": ["health_research", "evidence_generation", "policy_relevance"],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "AZIM-PREMJI-HEALTH-RESEARCH-GRANT",
+      "tags": ["health_research", "public_health", "vulnerable_communities", "philanthropy", "SDG3"]
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Grand Challenges India - Catalyzing Equitable AI Use to Improve Global Health",
+      "reason": "Deadline passed (December 23, 2023). Project final reports due Nov 2026 but call closed."
+    },
+    {
+      "name": "GCI Climate Change Impact on Agriculture/Health Calls",
+      "reason": "Deadline passed (January 31, 2024). Specific calls closed."
+    },
+    {
+      "name": "Infosys Foundation Aarohan Social Innovation Awards 2025",
+      "reason": "Deadline was June 15, 2025. Awaiting next edition. Included for reference as annual program."
+    },
+    {
+      "name": "Azim Premji Health Research Grants 2025 cycle",
+      "reason": "Closed April 2025. Next cycle expected 2026-27."
+    },
+    {
+      "name": "Karnataka ELEVATE NXT 2026 Deeptech Grant",
+      "reason": "Deadline passed (February 17, 2026). Awaiting next cycle."
+    },
+    {
+      "name": "Grand Challenges India (GCI) - TB Diagnostics Call",
+      "reason": "Deadline passed (May 15, 2025). Specific call closed."
+    },
+    {
+      "name": "Grand Challenges India - Amrit Grand Challenge JanCARE",
+      "reason": "Registration not yet open. Awaiting launch."
+    },
+    {
+      "name": "Grand Challenges India - Primary Healthcare Challenge",
+      "reason": "Specific timelines not confirmed."
+    },
+    {
+      "name": "Karnataka State Mobility Grand Challenge 2022",
+      "reason": "Deadline passed (February 28, 2022). Historic."
+    }
+  ],
+  "sources_scanned": [
+    "https://www.hclfoundation.org/hcl-grant",
+    "https://www.infosys.org/infosys-foundation/newsroom.html",
+    "https://villgro.org/programs/",
+    "https://www.undp.org/india",
+    "https://azimpremjifoundation.org",
+    "https://www.missionstartupkarnataka.org",
+    "https://kscste.kerala.gov.in",
+    "https://startupmission.kerala.gov.in",
+    "https://birac.nic.in/grandchallengesindia",
+    "https://www.engineeringforchange.org",
+    "https://www.startupgrantsindia.com",
+    "https://thecsrjournal.in",
+    "https://www.csrtimes.org"
+  ],
+  "search_queries_used": [
+    "CSR SDG innovation grant India 2026 open call reliance tata infosys foundation",
+    "Villgro social enterprise funding 2026 India open call impact innovation",
+    "UNDP India 2026 grant call open SDG innovation challenge funding",
+    "Grand Challenges India 2026 call open health innovation grant",
+    "Azim Premji Foundation 2026 research grant call open India",
+    "state government innovation grant India 2026 call open SDG Kerala Karnataka Tamil Nadu"
+  ]
+}

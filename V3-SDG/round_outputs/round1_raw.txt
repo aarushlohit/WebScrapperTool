@@ -1,0 +1,133 @@
+[0m
+> build · big-pickle
+[0m
+[0m# [0mTodos
+[ ] Round 1: Discover major government SDG research funding ecosystems (DST, SERB, ICMR, DBT, BIRAC, CSIR, UGC, AICTE, ISRO, DRDO, MeitY, MNRE, MoEFCC, NITI)
+[ ] Round 2: Expand into sectoral ecosystems, CSR, private, university, international collaborations, state innovation
+[ ] Round 3: Long-tail university programs, PDF grant notices, hidden ministry ecosystems, regional innovation
+[ ] Generate all export files (round1, round2, round3, mega, final, db-ready)
+[0m
+[0m◈ [0mExa Web Search "DST India research funding call 2026 active proposal open SDG"
+[0m◈ [0mExa Web Search "SERB India research grant 2026 open call funding opportunities"
+[0m◈ [0mExa Web Search "ICMR India research grant 2026 call open health research funding"
+[0m◈ [0mExa Web Search "DBT BIRAC India 2026 funding call open biotechnology research grant"
+[0m◈ [0mExa Web Search "CSIR India research fellowship 2026 open call funding opportunities"
+[0m◈ [0mExa Web Search "UGC India research grant 2026 call open higher education funding"
+[0m◈ [0mExa Web Search "MeitY India 2026 research grant call open funding digital innovation"
+[0m◈ [0mExa Web Search "MNRE India 2026 research funding call renewable energy grant open"
+[0m◈ [0mExa Web Search "MoEFCC India 2026 research grant call open environment climate change biodiversity"
+[0m◈ [0mExa Web Search "NITI Aayog 2026 innovation funding call open SDG India"
+[0m◈ [0mExa Web Search "ISRO DRDO 2026 research grant call open space defence technology funding India"
+[0m◈ [0mExa Web Search "SERB POWER grant women research 2026 India open call"
+[0m◈ [0mExa Web Search "startupindia.gov.in seed fund 2026 grant open call"
+[0m◈ [0mExa Web Search "DST WISE fellowship women science 2026 India call open"
+[0m◈ [0mExa Web Search "ICSSR India 2026 research grant call open social science funding"
+[0m◈ [0mExa Web Search "ANRF India 2026 research funding call open Anusandhan National Research Foundation"
+[0m
+[0m← [0mWrite round1_final.json
+Wrote file successfully.
+[0m
+[0m# [0mTodos
+[x] Round 1: Discover major government SDG research funding ecosystems (DST, SERB, ICMR, DBT, BIRAC, CSIR, UGC, AICTE, ISRO, DRDO, MeitY, MNRE, MoEFCC, NITI)
+[ ] Round 2: Expand into sectoral ecosystems, CSR, private, university, international collaborations, state innovation
+[ ] Round 3: Long-tail university programs, PDF grant notices, hidden ministry ecosystems, regional innovation
+[ ] Generate all export files (round2, round3, mega, final, db-ready)
+[0m
+[0m◈ [0mExa Web Search "CSR SDG innovation grant India 2026 open call reliance tata infosys foundation"
+[0m◈ [0mExa Web Search "Villgro social enterprise funding 2026 India open call impact innovation"
+[0m◈ [0mExa Web Search "UNDP India 2026 grant call open SDG innovation challenge funding"
+[0m◈ [0mExa Web Search "Grand Challenges India 2026 call open health innovation grant"
+[0m◈ [0mExa Web Search "Azim Premji Foundation 2026 research grant call open India"
+[0m◈ [0mExa Web Search "state government innovation grant India 2026 call open SDG Kerala Karnataka Tamil Nadu"
+[0m
+[0m← [0mWrite round2_final.json
+Wrote file successfully.
+[0m
+## Goal
+- Continuously discover, validate, and structure active SDG-aligned funding ecosystems, sustainability innovation programs, and research grant opportunities relevant to India.
+
+## Constraints & Preferences
+- Return strict JSON only; no markdown, prose, explanations, reasoning, or commentary
+- Never hallucinate URLs, deadlines, ministries, funding amounts, or active status; prefer omission over fabrication
+- Only include opportunities with active statuses (call_open, rolling, annual_cycle_open, etc.); reject expired, closed, or historic entries
+- Maintain balanced ecosystem coverage across government, CSR, private, academic, international, and state-level domains
+- Use official sources as primary validation; aggregators allowed only as discovery hints
+
+## Progress
+### Done
+- Completed Round 1: Searched 11+ major government agencies (DST, SERB, ICMR, DBT/BIRAC, CSIR, UGC, MeitY, MNRE, MoEFCC, ISRO, DRDO) plus ANRF, NITI, Startup India, ICSSR
+- Completed Round 1: Generated `round1_final.json` with 30 active SDG research funding opportunities across government ecosystems
+- Completed Round 2 searches: Scanned CSR programs (HCLTech, Infosys, HDFC, Cummins, Azim Premji), private ecosystems (Villgro, Social Alpha), international (UNDP, UN DESA), and state-level (Karnataka ELEVATE, Tamil Nadu IVP, Kerala KSCSTE/AgriNext)
+- Completed Round 2: Generated `round2_final.json` with 17 active opportunities from CSR, private, state, and international ecosystems
+
+### In Progress
+- Round 3: Long-tail university programs, PDF grant notices, hidden ministry ecosystems, regional innovation systems
+
+### Blocked
+- None
+
+## Key Decisions
+- Fixed file output path to `/home/aarush/Myoffice/CodeLab Projects/WebScrapperTool/V3-SDG/` for all export files
+- Used `todowrite` to track progress across three recursive discovery rounds
+- Deduplication applied: excluded closed/expired calls (e.g., DST SUNIL, ICMR ANVESHAN, BIRAC PCP Jan call, KARNATAKA ELEVATE NXT) while preserving ongoing annual/rolling programs
+
+## Next Steps
+1. Execute Round 3: long-tail university programs, PDF grant notices, hidden ministry ecosystems, regional innovation systems, AI-for-good ecosystems, rural innovation
+2. Generate `round3_final.json` with remaining ecosystem opportunities
+3. Merge all rounds into `mega_sdg_research_export.json` and `final_sdg_research_funding.json`
+4. Generate `sdg_research_ready4db.json` with canonical IDs and normalized metadata
+5. Validate deduplication and ecosystem coverage across all output files
+
+## Critical Context
+- System date context suggests mid-May 2026; immediate deadlines (May 16, May 29, June 5, June 10, June 30, Aug 28) must be tracked
+- Multiple programs use rolling or continuous intake with no fixed deadline; these remain valid
+- Youth Co:Lab NITI/UNDP Challenge and UN Call for Innovations have deadlines that may or may not have passed depending on exact event dates
+- BIRAC operates evolving calls under BioE3 policy with rolling evaluation
+- ANRF is now the apex body superseding SERB for several schemes (CRG, POWER, SRG transitioning)
+
+## Relevant Files
+- `/home/aarush/Myoffice/CodeLab Projects/WebScrapperTool/V3-SDG/round1_final.json`: 30 government ecosystem SDG funding opportunities (DST, SERB, ICMR, BIRAC, CSIR, UGC, MeitY, MNRE, MoEFCC, ISRO, DRDO, ANRF, Startup India, ICSSR)
+- `/home/aarush/Myoffice/CodeLab Projects/WebScrapperTool/V3-SDG/round2_final.json`: 17 CSR, private, state, and international ecosystem opportunities (HCLTech, Infosys, HDFC, Villgro, Azim Premji, Karnataka, Kerala, Tamil Nadu, UN)
+[0m
+Continue if you have next steps, or stop and ask for clarification if you are unsure how to proceed.
+[0m
+[0m$ [0mls -la /home/aarush/Myoffice/CodeLab/Projects/WebScrapperTool/V3-SDG/*.json 2>/dev/null | head -20
+zsh:1: no matches found: /home/aarush/Myoffice/CodeLab/Projects/WebScrapperTool/V3-SDG/*.json
+[0m
+[0m# [0mTodos
+[ ] Round 3: Discover long-tail university programs, PDF grant notices, hidden ministry ecosystems, regional innovation systems, AI-for-good ecosystems, rural innovation
+[ ] Generate round3_final.json with remaining ecosystem opportunities
+[ ] Merge all rounds into mega_sdg_research_export.json
+[ ] Generate sdg_research_ready4db.json with canonical IDs and normalized metadata
+[ ] Validate deduplication and ecosystem coverage across all output files
+[0m
+[0m$ [0mls -la /home/aarush/Myoffice/CodeLab/Projects/WebScrapperTool/V3-SDG/
+ls: cannot access '/home/aarush/Myoffice/CodeLab/Projects/WebScrapperTool/V3-SDG/': Not a directory
+[0m
+[0m✗ [0mglob failed
+[91m[1mError: [0mNo such file or directory: '/home/aarush/Myoffice/CodeLab/Projects/WebScrapperTool'
+[0m→ [0mRead ..
+[0m→ [0mRead .
+[0m→ [0mRead round1_final.json
+[0m→ [0mRead round2_final.json
+[0m→ [0mRead systemprompt.md
+[0m→ [0mRead round_outputs
+[0m
+Let me review the existing rounds and the system prompt to understand the schema and coverage before launching Round 3 discovery.
+[0m
+[0m# [0mTodos
+[ ] Round 3: Discover long-tail university programs, PDF grant notices, hidden ministry ecosystems, regional innovation systems, AI-for-good ecosystems, rural innovation
+[ ] Generate round3_final.json with remaining ecosystem opportunities
+[ ] Merge all rounds into mega_sdg_research_export.json
+[ ] Generate sdg_research_ready4db.json with canonical IDs and normalized metadata
+[ ] Validate deduplication and ecosystem coverage across all output files
+[0m
+[0m• [0mRound 3: Hidden Ministry Ecosystems[90m General Agent[0m
+[0m• [0mRound 3: Long-tail University Programs[90m General Agent[0m
+[0m• [0mRound 3: Regional Innovation & More State Programs[90m General Agent[0m
+[0m• [0mRound 3: AI-for-good & International Bilateral[90m General Agent[0m
+[0m
+Now I have full context. Let me launch parallel discovery agents for Round 3 across the identified gaps: hidden ministries, long-tail university programs, rural/regional innovation, and AI-for-good ecosystems.
+[0m
+[0m✓ [0mRound 3: Hidden Ministry Ecosystems[90m General Agent[0m
+[0m✓ [0mRound 3: Long-tail University Programs[90m General Agent[0m

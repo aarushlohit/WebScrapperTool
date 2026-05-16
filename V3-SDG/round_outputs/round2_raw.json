@@ -1,0 +1,2061 @@
+{
+  "sdg_research_opportunities": [
+    {
+      "project_name": "UNICEF Venture Fund Climate Ventures",
+      "funding_program": "Climate Ventures Investment Programme",
+      "funding_type": "equity-free_grant",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-05-17",
+      "deadline_iso": "2026-05-17T23:59:59Z",
+      "application_url": "https://www.unicefventurefund.org/apply-funding",
+      "official_website": "https://www.unicefventurefund.org/",
+      "official_program_page": "https://www.unicef.org/innovation/call-for-application-climate-and-health-2026",
+      "source_url": "https://www.unicef.org/innovation/call-for-application-climate-and-health-2026",
+      "organization": "UNICEF Venture Fund",
+      "ministry": null,
+      "research_domain": "climate_tech_health",
+      "focus_areas": [
+        "climate resilience",
+        "child health",
+        "artificial intelligence",
+        "machine learning",
+        "blockchain",
+        "open source technology",
+        "early warning systems",
+        "healthcare readiness"
+      ],
+      "sdg_alignment": [
+        3,
+        13
+      ],
+      "funding_support": {
+        "grant_type": "equity-free",
+        "amount_min": null,
+        "amount_max": 100000,
+        "currency": "USD"
+      },
+      "eligibility": {
+        "summary": "Early-stage for-profit technology startups registered in UNICEF programme countries with working open-source prototypes. Women-led and young founders encouraged."
+      },
+      "target_entities": [
+        "startups",
+        "for-profit technology companies"
+      ],
+      "institution_type": "private",
+      "research_stage": [
+        "early_stage",
+        "prototype",
+        "deployment"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "unicef-venture-fund-climate-ventures-2026",
+      "tags": [
+        "climate",
+        "health",
+        "children",
+        "frontier-tech",
+        "open-source",
+        "equity-free"
+      ]
+    },
+    {
+      "project_name": "UNICEF Grant for Child-sensitive Advocacy on Heatwaves and Air Pollution",
+      "funding_program": "Child-sensitive Climate and Environmental Interventions",
+      "funding_type": "grant",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-04-24",
+      "deadline_iso": "2026-04-24T23:59:59Z",
+      "application_url": "https://www.unicef.org/india",
+      "official_website": "https://www.unicef.org/india",
+      "official_program_page": "https://ngoscope.com/funding-opportunities/apply-for-grant-opportunity-2026-for-child-sensitive-advocacy-on-heatwaves-and-air-pollution-including-compounding-impacts-for-early-action-and-preparedness-india/",
+      "source_url": "https://ngoscope.com/funding-opportunities/apply-for-grant-opportunity-2026-for-child-sensitive-advocacy-on-heatwaves-and-air-pollution-including-compounding-impacts-for-early-action-and-preparedness-india/",
+      "organization": "UNICEF India",
+      "ministry": null,
+      "research_domain": "climate_health_policy",
+      "focus_areas": [
+        "heatwaves",
+        "air pollution",
+        "child health",
+        "policy advocacy",
+        "evidence-based research",
+        "climate action",
+        "disaster risk reduction"
+      ],
+      "sdg_alignment": [
+        3,
+        13
+      ],
+      "funding_support": {
+        "grant_type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Civil society organizations, NGOs, academic and research institutions working in child health, climate change, disaster risk reduction, or policy advocacy. Must have operational capacity in Uttar Pradesh."
+      },
+      "target_entities": [
+        "NGOs",
+        "CSOs",
+        "academic institutions",
+        "research institutions"
+      ],
+      "institution_type": "nonprofit",
+      "research_stage": [
+        "applied_research",
+        "policy_analysis"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Uttar Pradesh",
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": false,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "unicef-india-heatwave-air-pollution-advocacy-2026",
+      "tags": [
+        "climate",
+        "child-health",
+        "policy",
+        "advocacy",
+        "uttar-pradesh"
+      ]
+    },
+    {
+      "project_name": "UNESCO TWAS-CSIR Postgraduate Fellowship 2026",
+      "funding_program": "TWAS-CSIR Postgraduate Fellowship Programme",
+      "funding_type": "fellowship",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-05-06",
+      "deadline_iso": "2026-05-06T23:59:59Z",
+      "application_url": "https://twas.org/opportunities/fellowships/twas-csir-postgraduate-fellowship-programme",
+      "official_website": "https://twas.org",
+      "official_program_page": "https://twas.org/opportunities/fellowships/twas-csir-postgraduate-fellowship-programme",
+      "source_url": "https://fdpzone.com/twas-csir-postgraduate-fellowship-2026/",
+      "organization": "UNESCO-TWAS and CSIR India",
+      "ministry": "CSIR",
+      "research_domain": "science_technology",
+      "focus_areas": [
+        "life sciences",
+        "medical sciences",
+        "biotechnology",
+        "chemistry",
+        "physics",
+        "engineering",
+        "agriculture",
+        "earth sciences",
+        "space sciences"
+      ],
+      "sdg_alignment": [
+        4,
+        9
+      ],
+      "funding_support": {
+        "grant_type": "fellowship",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Nationals of developing countries (excluding India) that are TWAS member states. Must hold a Master's degree, be under 35, not already residing in India."
+      },
+      "target_entities": [
+        "individual researchers",
+        "PhD scholars"
+      ],
+      "institution_type": "academic",
+      "research_stage": [
+        "phd_research"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "unesco-twas-csir-postgraduate-fellowship-2026",
+      "tags": [
+        "phd",
+        "fellowship",
+        "developing-countries",
+        "csir",
+        "science"
+      ]
+    },
+    {
+      "project_name": "UNESCO MAB Young Scientists Awards 2026",
+      "funding_program": "Man and the Biosphere Young Scientists Awards",
+      "funding_type": "award",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-05-07",
+      "deadline_iso": "2026-05-07T23:59:59Z",
+      "application_url": "https://www.unesco.org/en/mab/young-scientists-awards",
+      "official_website": "https://www.unesco.org/en/mab",
+      "official_program_page": "https://www.unesco.org/en/articles/applications-2025-mab-young-scientists-awards-now-open",
+      "source_url": "https://grantsdatabase.org/2026/05/04/unesco-mab-young-scientists-awards-2026-up-to-5000-funding/",
+      "organization": "UNESCO Man and the Biosphere Programme",
+      "ministry": null,
+      "research_domain": "environmental_science",
+      "focus_areas": [
+        "biodiversity conservation",
+        "ecosystem management",
+        "climate change adaptation",
+        "sustainable natural resource management",
+        "marine and coastal ecosystems",
+        "interdisciplinary environmental research"
+      ],
+      "sdg_alignment": [
+        13,
+        14,
+        15
+      ],
+      "funding_support": {
+        "grant_type": "award",
+        "amount_min": null,
+        "amount_max": 5000,
+        "currency": "USD"
+      },
+      "eligibility": {
+        "summary": "Young researchers aged 35 or under. Must obtain endorsement from National MAB Committee or National Commission for UNESCO. Research must align with MAB Programme objectives."
+      },
+      "target_entities": [
+        "early-career researchers",
+        "young scientists"
+      ],
+      "institution_type": "academic",
+      "research_stage": [
+        "early_career_research"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "unesco-mab-young-scientists-awards-2026",
+      "tags": [
+        "young-scientists",
+        "biodiversity",
+        "ecosystems",
+        "sustainability",
+        "award"
+      ]
+    },
+    {
+      "project_name": "UNDP RFP for Gender-Responsive SDG Framework Development",
+      "funding_program": "RFP-027-IND-2026",
+      "funding_type": "procurement_contract",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-04-24",
+      "deadline_iso": "2026-04-24T08:00:00Z",
+      "application_url": "https://procurement-notices.undp.org/view_negotiation.cfm?nego_id=43775",
+      "official_website": "https://www.undp.org/india",
+      "official_program_page": "https://procurement-notices.undp.org/view_negotiation.cfm?nego_id=43775",
+      "source_url": "https://devnetjobsindia.org/jobdescription.aspx?Job_Id=289658",
+      "organization": "UNDP India",
+      "ministry": null,
+      "research_domain": "gender_equality_sdg",
+      "focus_areas": [
+        "gender-responsive frameworks",
+        "SDG localization",
+        "gender equality",
+        "policy research",
+        "capacity building"
+      ],
+      "sdg_alignment": [
+        5,
+        10,
+        17
+      ],
+      "funding_support": {
+        "grant_type": "procurement",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "USD"
+      },
+      "eligibility": {
+        "summary": "Registered agencies/service providers with capacity to develop gender-responsive SDG frameworks. Must register on UNDP Quantum supplier portal."
+      },
+      "target_entities": [
+        "consulting agencies",
+        "research organizations",
+        "service providers"
+      ],
+      "institution_type": "any",
+      "research_stage": [
+        "policy_development",
+        "framework_design"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "undp-rfp-027-ind-2026-gender-sdg",
+      "tags": [
+        "gender",
+        "sdg-framework",
+        "undp",
+        "procurement",
+        "policy"
+      ]
+    },
+    {
+      "project_name": "UNDP RFP for SWM Capacity-Building Frameworks",
+      "funding_program": "RFP-018-IND-2026",
+      "funding_type": "procurement_contract",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-04-01",
+      "deadline_iso": "2026-04-01T08:00:00Z",
+      "application_url": "https://procurement-notices.undp.org/view_negotiation.cfm?nego_id=43775",
+      "official_website": "https://www.undp.org/india",
+      "official_program_page": "https://procurement-notices.undp.org/view_negotiation.cfm?nego_id=43775",
+      "source_url": "https://procurement-notices.undp.org/view_negotiation.cfm?nego_id=43775",
+      "organization": "UNDP India",
+      "ministry": null,
+      "research_domain": "waste_management_urban",
+      "focus_areas": [
+        "solid waste management",
+        "urban local bodies",
+        "capacity building",
+        "baseline assessment",
+        "evidence-based design"
+      ],
+      "sdg_alignment": [
+        11,
+        12
+      ],
+      "funding_support": {
+        "grant_type": "procurement",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "USD"
+      },
+      "eligibility": {
+        "summary": "Service providers registered on UNDP Quantum supplier portal. Must have expertise in solid waste management and capacity-building frameworks for urban local bodies."
+      },
+      "target_entities": [
+        "consulting firms",
+        "research organizations",
+        "service providers"
+      ],
+      "institution_type": "any",
+      "research_stage": [
+        "assessment",
+        "framework_design"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "undp-rfp-018-ind-2026-swm",
+      "tags": [
+        "waste-management",
+        "urban",
+        "capacity-building",
+        "undp",
+        "swm"
+      ]
+    },
+    {
+      "project_name": "Gates Foundation Addressing Physiological Barriers to Micronutrient Absorption",
+      "funding_program": "Grand Challenges Grant Opportunities",
+      "funding_type": "research_grant",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-04-28",
+      "deadline_iso": "2026-04-28T11:30:00Z",
+      "application_url": "https://submit.gatesfoundation.org/prog/addressing_physiological_barriers_to_micronutrient_absorption_from_fortified_foods",
+      "official_website": "https://www.gatesfoundation.org",
+      "official_program_page": "https://www.gatesfoundation.org/about/how-we-work/grant-opportunities",
+      "source_url": "https://submit.gatesfoundation.org/prog/addressing_physiological_barriers_to_micronutrient_absorption_from_fortified_foods",
+      "organization": "Bill & Melinda Gates Foundation",
+      "ministry": null,
+      "research_domain": "nutrition_health",
+      "focus_areas": [
+        "micronutrient absorption",
+        "fortified foods",
+        "nutrition",
+        "global health",
+        "physiological barriers"
+      ],
+      "sdg_alignment": [
+        2,
+        3
+      ],
+      "funding_support": {
+        "grant_type": "research_grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "USD"
+      },
+      "eligibility": {
+        "summary": "Research organizations and institutions working on nutrition and health. Part of Grand Challenges family."
+      },
+      "target_entities": [
+        "research institutions",
+        "universities",
+        "nonprofits"
+      ],
+      "institution_type": "academic",
+      "research_stage": [
+        "research",
+        "innovation"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "gates-foundation-micronutrient-absorption-2026",
+      "tags": [
+        "nutrition",
+        "global-health",
+        "grand-challenges",
+        "micronutrient"
+      ]
+    },
+    {
+      "project_name": "Evidence for AI in Health (EVAH) Initiative",
+      "funding_program": "EVAH AI in Primary Health Care",
+      "funding_type": "research_grant",
+      "status": "call_open",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/02/ai-impact-health",
+      "official_website": "https://www.gatesfoundation.org",
+      "official_program_page": "https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/02/ai-impact-health",
+      "source_url": "https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/02/ai-impact-health",
+      "organization": "Gates Foundation, Novo Nordisk Foundation, Wellcome",
+      "ministry": null,
+      "research_domain": "ai_health",
+      "focus_areas": [
+        "AI health tools",
+        "primary care",
+        "decision support",
+        "LMICs",
+        "implementation science",
+        "randomized controlled trials",
+        "economic analysis"
+      ],
+      "sdg_alignment": [
+        3,
+        9
+      ],
+      "funding_support": {
+        "grant_type": "research_grant",
+        "amount_min": null,
+        "amount_max": 60000000,
+        "currency": "USD"
+      },
+      "eligibility": {
+        "summary": "Research teams in LMICs including India conducting evaluations of AI-enabled decision support tools in primary and community health care settings."
+      },
+      "target_entities": [
+        "research institutions",
+        "universities",
+        "health research organizations"
+      ],
+      "institution_type": "academic",
+      "research_stage": [
+        "evaluation",
+        "implementation_science"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "gates-wellcome-novo-eva-health-ai-2026",
+      "tags": [
+        "ai",
+        "health",
+        "primary-care",
+        "lmic",
+        "evaluation"
+      ]
+    },
+    {
+      "project_name": "DBT/Wellcome Trust India Alliance Biomedical Research Fellowships",
+      "funding_program": "Biomedical Research Career Programme Phase III",
+      "funding_type": "fellowship",
+      "status": "rolling",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://indiaalliance.org/",
+      "official_website": "https://indiaalliance.org",
+      "official_program_page": "https://indiaalliance.org/",
+      "source_url": "https://indiaalliance.org/",
+      "organization": "DBT/Wellcome Trust India Alliance",
+      "ministry": "Department of Biotechnology",
+      "research_domain": "biomedical_science",
+      "focus_areas": [
+        "basic biomedical research",
+        "clinical research",
+        "public health research",
+        "infectious diseases",
+        "mental health",
+        "climate and health"
+      ],
+      "sdg_alignment": [
+        3
+      ],
+      "funding_support": {
+        "grant_type": "fellowship",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Indian researchers and non-Indians willing to work in India. Four tracks: Early Career, Intermediate, Senior, and Margdarshi Fellowships. Phase III approved with INR 1500 Crore funding."
+      },
+      "target_entities": [
+        "individual researchers",
+        "postdoctoral fellows",
+        "clinicians",
+        "public health researchers"
+      ],
+      "institution_type": "academic",
+      "research_stage": [
+        "early_career",
+        "mid_career",
+        "senior_research"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "dbt-wellcome-india-alliance-phase3",
+      "tags": [
+        "biomedical",
+        "fellowship",
+        "dbt",
+        "wellcome",
+        "research-career"
+      ]
+    },
+    {
+      "project_name": "NABARD National Climate Stack Innovation Challenge",
+      "funding_program": "National Climate Stack Innovation Challenge",
+      "funding_type": "challenge_grant",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://www.climatestackinnovationchallenge.com/",
+      "official_website": "https://www.climatestackinnovationchallenge.com/",
+      "official_program_page": "https://www.climatestackinnovationchallenge.com/",
+      "source_url": "https://www.webnewswire.com/2026/03/06/nabard-in-partnership-with-gates-foundation-and-dalberg-launches-national-climate-stack-innovation-challenge-to-build-climate-intelligence-for-rural-india/",
+      "organization": "NABARD, Gates Foundation, Dalberg Advisors",
+      "ministry": null,
+      "research_domain": "climate_intelligence",
+      "focus_areas": [
+        "climate hazard forecasting",
+        "climate dashboards",
+        "rural climate intelligence",
+        "agriculture resilience",
+        "digital public infrastructure"
+      ],
+      "sdg_alignment": [
+        1,
+        2,
+        13
+      ],
+      "funding_support": {
+        "grant_type": "challenge_prize",
+        "amount_min": 500000,
+        "amount_max": 1500000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Research institutions, universities, startups, and private-sector innovators. Challenge structured in multi-stage process from March to June 2026."
+      },
+      "target_entities": [
+        "research institutions",
+        "universities",
+        "startups",
+        "private-sector innovators"
+      ],
+      "institution_type": "any",
+      "research_stage": [
+        "development",
+        "prototype",
+        "pilot"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "nabard-climate-stack-innovation-challenge-2026",
+      "tags": [
+        "climate",
+        "agriculture",
+        "data",
+        "digital-public-infrastructure",
+        "nabard"
+      ]
+    },
+    {
+      "project_name": "Reliance Foundation and Gates Foundation ShikshaNext Initiative",
+      "funding_program": "ShikshaNext EdTech and AI Initiative",
+      "funding_type": "grant_program",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://beta.reliancefoundation.org/",
+      "official_website": "https://beta.reliancefoundation.org/",
+      "official_program_page": "https://beta.reliancefoundation.org/media/media-release/shikshanext",
+      "source_url": "https://beta.reliancefoundation.org/media/media-release/shikshanext",
+      "organization": "Reliance Foundation and Gates Foundation",
+      "ministry": null,
+      "research_domain": "education_technology",
+      "focus_areas": [
+        "EdTech",
+        "AI in education",
+        "learning outcomes",
+        "underserved communities",
+        "digital infrastructure",
+        "innovation hub"
+      ],
+      "sdg_alignment": [
+        4,
+        9
+      ],
+      "funding_support": {
+        "grant_type": "grant",
+        "amount_min": null,
+        "amount_max": 1700000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "EdTech and AI solution providers targeting underserved communities in India. Multi-donor initiative with EdTech ScaleX, EdTech Accelerator, and Innovation Hub components."
+      },
+      "target_entities": [
+        "EdTech companies",
+        "AI startups",
+        "nonprofits",
+        "research institutions"
+      ],
+      "institution_type": "any",
+      "research_stage": [
+        "scale",
+        "deployment",
+        "innovation"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "reliance-gates-shikshanext-2026",
+      "tags": [
+        "education",
+        "edtech",
+        "ai",
+        "philanthropy",
+        "digital-learning"
+      ]
+    },
+    {
+      "project_name": "Reliance Foundation and Gates Foundation SheConnects Digital Accelerator",
+      "funding_program": "SheConnects Digital Accelerator",
+      "funding_type": "grant_program",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://beta.reliancefoundation.org/",
+      "official_website": "https://beta.reliancefoundation.org/",
+      "official_program_page": "https://beta.reliancefoundation.org/media/media-release/SheConnects",
+      "source_url": "https://beta.reliancefoundation.org/media/media-release/SheConnects",
+      "organization": "Reliance Foundation and Gates Foundation",
+      "ministry": null,
+      "research_domain": "digital_inclusion_gender",
+      "focus_areas": [
+        "women digital inclusion",
+        "gender equality",
+        "digital literacy",
+        "economic empowerment",
+        "South-South knowledge sharing"
+      ],
+      "sdg_alignment": [
+        5,
+        10
+      ],
+      "funding_support": {
+        "grant_type": "grant",
+        "amount_min": null,
+        "amount_max": 2000000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Organizations with evidence-backed solutions for women's digital inclusion in India. Three-year initiative with grants to scale high-impact solutions."
+      },
+      "target_entities": [
+        "nonprofits",
+        "social enterprises",
+        "research organizations"
+      ],
+      "institution_type": "any",
+      "research_stage": [
+        "scale",
+        "deployment"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "reliance-gates-sheconnects-2026",
+      "tags": [
+        "women",
+        "digital-inclusion",
+        "gender",
+        "philanthropy",
+        "global-south"
+      ]
+    },
+    {
+      "project_name": "Social Alpha Techtonic Innovations for Sustainability",
+      "funding_program": "Techtonic: Innovations for Sustainability",
+      "funding_type": "grant_and_incubation",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://www.socialalpha.org/techtonic-innovations-for-sustainability/",
+      "official_website": "https://www.socialalpha.org",
+      "official_program_page": "https://www.socialalpha.org/techtonic-innovations-for-sustainability/",
+      "source_url": "https://www.socialalpha.org/techtonic-innovations-for-sustainability/",
+      "organization": "Social Alpha",
+      "ministry": null,
+      "research_domain": "cleantech_sustainability",
+      "focus_areas": [
+        "energy transition",
+        "new materials",
+        "natural resources",
+        "clean energy",
+        "circular economy",
+        "climate tech"
+      ],
+      "sdg_alignment": [
+        7,
+        9,
+        12,
+        13
+      ],
+      "funding_support": {
+        "grant_type": "grant",
+        "amount_min": 3000000,
+        "amount_max": 6000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Startups working in energy transition, new materials, and natural resources across three tracks: R&D (up to INR 30L), Pilot (up to INR 40L), and Scale-up (up to INR 60L). Non-dilutive grant support."
+      },
+      "target_entities": [
+        "startups",
+        "innovators",
+        "entrepreneurs"
+      ],
+      "institution_type": "private",
+      "research_stage": [
+        "rd",
+        "pilot",
+        "scale_up"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "social-alpha-techtonic-sustainability-2026",
+      "tags": [
+        "clean-tech",
+        "energy",
+        "materials",
+        "sustainability",
+        "incubation"
+      ]
+    },
+    {
+      "project_name": "Social Alpha Techtonic Innovations for Agriculture and Rural Livelihoods",
+      "funding_program": "Techtonic: Innovations for Agriculture and Rural Livelihoods",
+      "funding_type": "grant_and_incubation",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://www.socialalpha.org/techtonic-innovations-for-agriculture-and-rural-livelihoods2025/",
+      "official_website": "https://www.socialalpha.org",
+      "official_program_page": "https://www.socialalpha.org/techtonic-innovations-for-agriculture-and-rural-livelihoods2025/",
+      "source_url": "https://www.socialalpha.org/techtonic-innovations-for-agriculture-and-rural-livelihoods2025/",
+      "organization": "Social Alpha and MSSRF",
+      "ministry": null,
+      "research_domain": "agriculture_rural_livelihoods",
+      "focus_areas": [
+        "soil rejuvenation",
+        "biogas",
+        "small farm mechanization",
+        "agritech",
+        "smallholder farmers",
+        "rural livelihoods"
+      ],
+      "sdg_alignment": [
+        1,
+        2,
+        8
+      ],
+      "funding_support": {
+        "grant_type": "grant",
+        "amount_min": 5000000,
+        "amount_max": 20000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Innovators and startups with technology-based solutions for small and marginal farmers. Pilot deployment funding up to INR 50L, deployment funding up to INR 2 Cr."
+      },
+      "target_entities": [
+        "startups",
+        "innovators",
+        "entrepreneurs",
+        "agritech ventures"
+      ],
+      "institution_type": "private",
+      "research_stage": [
+        "pilot",
+        "deployment",
+        "scale"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "social-alpha-techtonic-agriculture-2026",
+      "tags": [
+        "agriculture",
+        "rural",
+        "smallholder-farmers",
+        "agritech",
+        "incubation"
+      ]
+    },
+    {
+      "project_name": "Villgro MAP-Health Accelerator",
+      "funding_program": "Market Access Partnerships for Health",
+      "funding_type": "accelerator",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://villgro.org/programs/map-health/",
+      "official_website": "https://villgro.org",
+      "official_program_page": "https://villgro.org/programs/map-health/",
+      "source_url": "https://villgro.org/programs/map-health/",
+      "organization": "Villgro Innovations Foundation",
+      "ministry": null,
+      "research_domain": "healthcare_innovation",
+      "focus_areas": [
+        "point-of-care diagnostics",
+        "digital health",
+        "non-communicable diseases",
+        "women's health",
+        "climate-sensitive diseases",
+        "maternal and child health"
+      ],
+      "sdg_alignment": [
+        3,
+        5
+      ],
+      "funding_support": {
+        "grant_type": "accelerator",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Social enterprises with market-ready healthcare innovations. Solutions must target NCDs, women's health, or climate-sensitive diseases. Go-to-market strategy support and pilot implementation."
+      },
+      "target_entities": [
+        "social enterprises",
+        "healthcare startups"
+      ],
+      "institution_type": "private",
+      "research_stage": [
+        "market_deployment",
+        "pilot",
+        "commercialization"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "villgro-map-health-2026",
+      "tags": [
+        "healthcare",
+        "social-enterprise",
+        "accelerator",
+        "market-access",
+        "diagnostics"
+      ]
+    },
+    {
+      "project_name": "Villgro The Water Lab",
+      "funding_program": "The Water Lab",
+      "funding_type": "pilot_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://villgro.org/programs/the-water-lab/",
+      "official_website": "https://villgro.org",
+      "official_program_page": "https://villgro.org/programs/the-water-lab/",
+      "source_url": "https://villgro.org/programs/the-water-lab/",
+      "organization": "Villgro in partnership with Accenture in India",
+      "ministry": null,
+      "research_domain": "water_management",
+      "focus_areas": [
+        "wastewater management",
+        "non-revenue water reduction",
+        "water distribution",
+        "groundwater recharge",
+        "water technology pilots"
+      ],
+      "sdg_alignment": [
+        6
+      ],
+      "funding_support": {
+        "grant_type": "pilot_grant",
+        "amount_min": null,
+        "amount_max": 2500000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Innovative startups with water solutions. Funding of INR 25 lakhs for pilot deployments with urban local bodies."
+      },
+      "target_entities": [
+        "startups",
+        "water technology ventures"
+      ],
+      "institution_type": "private",
+      "research_stage": [
+        "pilot",
+        "deployment"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "villgro-water-lab-2025",
+      "tags": [
+        "water",
+        "sanitation",
+        "pilot",
+        "urban",
+        "wastewater"
+      ]
+    },
+    {
+      "project_name": "Climate-KIC ClimateLaunchpad 2026",
+      "funding_program": "ClimateLaunchpad 2026",
+      "funding_type": "competition_and_accelerator",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-05-15",
+      "deadline_iso": "2026-05-15T23:59:00Z",
+      "application_url": "https://www.climate-kic.org/open-call/start-ups-applications-for-climatelaunchpad-2026/",
+      "official_website": "https://www.climate-kic.org",
+      "official_program_page": "https://www.climate-kic.org/open-call/start-ups-applications-for-climatelaunchpad-2026/",
+      "source_url": "https://www.climate-kic.org/open-call/start-ups-applications-for-climatelaunchpad-2026/",
+      "organization": "Climate KIC",
+      "ministry": null,
+      "research_domain": "climate_innovation",
+      "focus_areas": [
+        "green business",
+        "climate tech",
+        "clean energy",
+        "sustainable agriculture",
+        "circular economy",
+        "climate adaptation"
+      ],
+      "sdg_alignment": [
+        7,
+        9,
+        12,
+        13
+      ],
+      "funding_support": {
+        "grant_type": "competition",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "EUR"
+      },
+      "eligibility": {
+        "summary": "Sustainability ventures under 2 years old, raised less than €200,000, and not yet sold products commercially. Free to join. Global Grand Final in Singapore."
+      },
+      "target_entities": [
+        "startups",
+        "green business ventures",
+        "climate innovators"
+      ],
+      "institution_type": "private",
+      "research_stage": [
+        "idea",
+        "early_stage"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "climate-kic-climatelaunchpad-2026",
+      "tags": [
+        "climate",
+        "green-business",
+        "competition",
+        "global",
+        "clean-tech"
+      ]
+    },
+    {
+      "project_name": "Climate-KIC Circular Economy Innovation Clusters India",
+      "funding_program": "CEIC Circular Economy & Social Impact Programme",
+      "funding_type": "grant_and_capacity_building",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-04-15",
+      "deadline_iso": "2026-04-15T23:59:00Z",
+      "application_url": "https://www.climate-kic.org/open-call/design-and-run-your-own-circular-economy-programme-applications-open-for-entrepreneurship-support-organisations-esos-in-india-and-kenya/",
+      "official_website": "https://www.climate-kic.org",
+      "official_program_page": "https://www.climate-kic.org/open-call/design-and-run-your-own-circular-economy-programme-applications-open-for-entrepreneurship-support-organisations-esos-in-india-and-kenya/",
+      "source_url": "https://www.climate-kic.org/open-call/design-and-run-your-own-circular-economy-programme-applications-open-for-entrepreneurship-support-organisations-esos-in-india-and-kenya/",
+      "organization": "Climate KIC with IKEA Foundation",
+      "ministry": null,
+      "research_domain": "circular_economy",
+      "focus_areas": [
+        "circular economy",
+        "waste management",
+        "textile recycling",
+        "social inclusion",
+        "entrepreneurship support",
+        "innovation clusters"
+      ],
+      "sdg_alignment": [
+        8,
+        11,
+        12,
+        13
+      ],
+      "funding_support": {
+        "grant_type": "grant",
+        "amount_min": null,
+        "amount_max": 50000,
+        "currency": "EUR"
+      },
+      "eligibility": {
+        "summary": "Entrepreneurship Support Organisations (ESOs) in Bengaluru, India. Must have active track record of entrepreneurship programmes. Grants of up to 50,000 EUR to design circular economy programmes."
+      },
+      "target_entities": [
+        "incubators",
+        "accelerators",
+        "entrepreneurship support organizations"
+      ],
+      "institution_type": "any",
+      "research_stage": [
+        "programme_design",
+        "capacity_building"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Karnataka",
+        "city": "Bengaluru"
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "climate-kic-ceic-india-eso-2026",
+      "tags": [
+        "circular-economy",
+        "bengaluru",
+        "incubator",
+        "waste",
+        "social-inclusion"
+      ]
+    },
+    {
+      "project_name": "Nasscom Foundation Climate Tech Challenge",
+      "funding_program": "Climate Tech Challenge with Cadence",
+      "funding_type": "csr_grant",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://climatetech.nasscomfoundation.org/",
+      "official_website": "https://www.nasscomfoundation.org",
+      "official_program_page": "https://climatetech.nasscomfoundation.org/",
+      "source_url": "https://climatetech.nasscomfoundation.org/",
+      "organization": "Nasscom Foundation and Cadence",
+      "ministry": null,
+      "research_domain": "climate_tech",
+      "focus_areas": [
+        "renewable energy",
+        "energy efficiency",
+        "waste management",
+        "GHG emissions reduction",
+        "climate innovation",
+        "green technology"
+      ],
+      "sdg_alignment": [
+        7,
+        12,
+        13
+      ],
+      "funding_support": {
+        "grant_type": "csr_grant",
+        "amount_min": null,
+        "amount_max": 1000000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "DPIIT-recognized startups with innovative climate tech solutions. Two finalists receive INR 10 lakhs each CSR grant plus mentoring support."
+      },
+      "target_entities": [
+        "startups",
+        "climate tech ventures"
+      ],
+      "institution_type": "private",
+      "research_stage": [
+        "prototype",
+        "early_traction"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "medium"
+      },
+      "canonical_id": "nasscom-cadence-climate-tech-challenge-2026",
+      "tags": [
+        "climate-tech",
+        "csr-grant",
+        "nasscom",
+        "green-tech",
+        "startup"
+      ]
+    },
+    {
+      "project_name": "Nasscom Foundation and Ciena TechForChange",
+      "funding_program": "TechForChange Student Innovation Program",
+      "funding_type": "innovation_program",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://www.nasscomfoundation.org/techforgood",
+      "official_website": "https://www.nasscomfoundation.org",
+      "official_program_page": "https://www.nasscomfoundation.org/techforgood",
+      "source_url": "https://one.news18.com/english/article/news/business/nasscom-foundation-ciena-launch-techforchange-to-scale-student-innovation-mce-1313919706",
+      "organization": "Nasscom Foundation and Ciena",
+      "ministry": null,
+      "research_domain": "student_innovation",
+      "focus_areas": [
+        "student innovation",
+        "prototype development",
+        "mentorship",
+        "tech for good",
+        "social impact",
+        "AI",
+        "IoT",
+        "ML"
+      ],
+      "sdg_alignment": [
+        4,
+        9
+      ],
+      "funding_support": {
+        "grant_type": "prototype_support",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Student innovators from leading Indian institutions. Program bridges campus creativity with real-world application. Has engaged 360+ ideas, 200+ teams, 40+ prototypes."
+      },
+      "target_entities": [
+        "students",
+        "student teams",
+        "educational institutions"
+      ],
+      "institution_type": "academic",
+      "research_stage": [
+        "idea",
+        "prototype"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": true,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": false,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "low"
+      },
+      "canonical_id": "nasscom-ciena-techforchange-2026",
+      "tags": [
+        "student-innovation",
+        "mentorship",
+        "tech-for-good",
+        "prototype"
+      ]
+    },
+    {
+      "project_name": "Acumen India Fellowship 2026",
+      "funding_program": "India Acumen Fellowship",
+      "funding_type": "leadership_fellowship",
+      "status": "annual_cycle_open",
+      "deadline_type": "recurring",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://acumenacademy.org/fellowship/india/",
+      "official_website": "https://acumenacademy.org",
+      "official_program_page": "https://acumenacademy.org/fellowship/india/",
+      "source_url": "https://acumenacademy.org/fellowship/india/",
+      "organization": "Acumen Academy",
+      "ministry": null,
+      "research_domain": "social_entrepreneurship",
+      "focus_areas": [
+        "social impact",
+        "poverty alleviation",
+        "leadership development",
+        "social entrepreneurship",
+        "moral leadership",
+        "systems change"
+      ],
+      "sdg_alignment": [
+        1,
+        8,
+        10
+      ],
+      "funding_support": {
+        "grant_type": "fellowship",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "USD"
+      },
+      "eligibility": {
+        "summary": "Social entrepreneurs and senior decision-makers with 5+ years experience solving problems of poverty. Applications open annually (Sep-Oct). 6-month hybrid program."
+      },
+      "target_entities": [
+        "social entrepreneurs",
+        "intrapreneurs",
+        "nonprofit leaders"
+      ],
+      "institution_type": "private",
+      "research_stage": [
+        "leadership",
+        "scale"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "acumen-india-fellowship-annual-2026",
+      "tags": [
+        "fellowship",
+        "social-entrepreneurship",
+        "leadership",
+        "poverty",
+        "acumen"
+      ]
+    },
+    {
+      "project_name": "Azim Premji Foundation Grants for NGOs",
+      "funding_program": "Azim Premji Foundation Grant Programme",
+      "funding_type": "grant",
+      "status": "rolling",
+      "deadline_type": "continuous_intake",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://azimpremjifoundation.org/apply-for-a-grant/",
+      "official_website": "https://azimpremjifoundation.org",
+      "official_program_page": "https://azimpremjifoundation.org/apply-for-a-grant/",
+      "source_url": "https://azimpremjifoundation.org/who-we-are/how-we-are-organised/grants/",
+      "organization": "Azim Premji Foundation",
+      "ministry": null,
+      "research_domain": "social_development",
+      "focus_areas": [
+        "education",
+        "livelihoods",
+        "health",
+        "land water forest",
+        "urban initiatives",
+        "governance",
+        "gender justice",
+        "disability and mental health",
+        "children"
+      ],
+      "sdg_alignment": [
+        1,
+        3,
+        4,
+        5,
+        10,
+        11,
+        16
+      ],
+      "funding_support": {
+        "grant_type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Not-for-profit organizations working with vulnerable communities in India. Multi-year grants from a few lakhs to tens of crores. Tenure 1-10 years, most 3-4 years."
+      },
+      "target_entities": [
+        "NGOs",
+        "CSOs",
+        "nonprofits"
+      ],
+      "institution_type": "nonprofit",
+      "research_stage": [
+        "implementation",
+        "research",
+        "advocacy"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "azim-premji-foundation-grants-rolling",
+      "tags": [
+        "philanthropy",
+        "ngo-grants",
+        "education",
+        "health",
+        "governance"
+      ]
+    },
+    {
+      "project_name": "GIZ Technical Assistance for Waste Management and Green Public Spaces India",
+      "funding_program": "Technical Assistance for Gender-Responsive SWM/Circular Economy and Green Public Spaces India",
+      "funding_type": "technical_assistance_procurement",
+      "status": "call_open",
+      "deadline_type": "fixed",
+      "deadline": "2026-05-19",
+      "deadline_iso": "2026-05-19T23:59:00Z",
+      "application_url": "https://ausschreibungen.giz.de/Satellite/common/project/search.do?fromExternal=true&method=showExtendedSearch",
+      "official_website": "https://www.giz.de/India",
+      "official_program_page": "https://ausschreibungen.giz.de/",
+      "source_url": "https://www.patterno.de/en/ausschreibungen/giz",
+      "organization": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ)",
+      "ministry": null,
+      "research_domain": "waste_management_urban",
+      "focus_areas": [
+        "solid waste management",
+        "circular economy",
+        "green public spaces",
+        "gender-responsive approaches",
+        "urban development",
+        "environmental sustainability"
+      ],
+      "sdg_alignment": [
+        5,
+        11,
+        12
+      ],
+      "funding_support": {
+        "grant_type": "procurement",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "EUR"
+      },
+      "eligibility": {
+        "summary": "Service providers registered on GIZ procurement platform. Technical assistance for implementing gender-responsive solid waste management and green public spaces in India."
+      },
+      "target_entities": [
+        "consulting firms",
+        "service providers",
+        "development organizations"
+      ],
+      "institution_type": "any",
+      "research_stage": [
+        "implementation",
+        "technical_assistance"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "high"
+      },
+      "canonical_id": "giz-india-swm-green-spaces-2026",
+      "tags": [
+        "giz",
+        "waste-management",
+        "circular-economy",
+        "urban",
+        "gender"
+      ]
+    },
+    {
+      "project_name": "Green Climate Fund BEACON INDIA Climate Innovation Incubation",
+      "funding_program": "BEACON INDIA - Building Eco-system for Accelerating Contribution to NDC through Climate Innovation Incubation",
+      "funding_type": "grant_and_loan",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": null,
+      "official_website": "https://www.greenclimate.fund",
+      "official_program_page": "https://gcf.co/sap064",
+      "source_url": "https://gcf.co/sap064",
+      "organization": "Green Climate Fund",
+      "ministry": null,
+      "research_domain": "climate_innovation_incubation",
+      "focus_areas": [
+        "climate technology incubation",
+        "startup support",
+        "climate adaptation",
+        "mitigation",
+        "NDC contribution",
+        "early-stage climate ventures"
+      ],
+      "sdg_alignment": [
+        7,
+        9,
+        13
+      ],
+      "funding_support": {
+        "grant_type": "grant_and_loan",
+        "amount_min": null,
+        "amount_max": 24997890,
+        "currency": "USD"
+      },
+      "eligibility": {
+        "summary": "Climate technology ventures in India. Programme approved Oct 2025. Will incubate 100 early-stage climate ventures, prepare 50 for scale-up, provide step-up financing to 30 ventures."
+      },
+      "target_entities": [
+        "climate tech startups",
+        "climate ventures",
+        "innovators"
+      ],
+      "institution_type": "private",
+      "research_stage": [
+        "early_stage",
+        "incubation",
+        "scale_up"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Tamil Nadu",
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "gcf-beacon-india-2025",
+      "tags": [
+        "climate",
+        "incubation",
+        "green-climate-fund",
+        "ndc",
+        "tamil-nadu"
+      ]
+    },
+    {
+      "project_name": "Wipro Sustainability Educators Program",
+      "funding_program": "Wipro Sustainability Educators Network",
+      "funding_type": "organizational_grant",
+      "status": "active",
+      "deadline_type": "continuous_intake",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://wiprofoundation.org/earthian/sustainability-educator-network/new-cohort/",
+      "official_website": "https://wiprofoundation.org",
+      "official_program_page": "https://wiprofoundation.org/earthian/sustainability-educator-network/",
+      "source_url": "https://wiprofoundation.org/earthian/sustainability-educator-network/",
+      "organization": "Wipro Foundation",
+      "ministry": null,
+      "research_domain": "sustainability_education",
+      "focus_areas": [
+        "sustainability education",
+        "environmental education",
+        "teacher training",
+        "biodiversity",
+        "waste management",
+        "water conservation",
+        "climate action"
+      ],
+      "sdg_alignment": [
+        4,
+        12,
+        13,
+        15
+      ],
+      "funding_support": {
+        "grant_type": "organizational_grant",
+        "amount_min": null,
+        "amount_max": 300000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Partner organizations and individuals interested in sustainability education in schools. Grant up to INR 3 lakh per annum for up to 3 years. Multiple cohorts across India."
+      },
+      "target_entities": [
+        "NGOs",
+        "schools",
+        "community organizations",
+        "educators"
+      ],
+      "institution_type": "nonprofit",
+      "research_stage": [
+        "implementation",
+        "education"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "wipro-sustainability-educators-program",
+      "tags": [
+        "sustainability-education",
+        "environmental-education",
+        "teacher-training",
+        "wipro"
+      ]
+    },
+    {
+      "project_name": "Social Alpha Techtonic Innovations in Sustainable Urban Transition",
+      "funding_program": "Techtonic: Innovations in Sustainable Urban Transition",
+      "funding_type": "pilot_grant_and_incubation",
+      "status": "active",
+      "deadline_type": "rolling",
+      "deadline": null,
+      "deadline_iso": null,
+      "application_url": "https://www.socialalpha.org/techtonic-innovations-in-sustainable-urban-transition/",
+      "official_website": "https://www.socialalpha.org",
+      "official_program_page": "https://www.socialalpha.org/techtonic-innovations-in-sustainable-urban-transition/",
+      "source_url": "https://www.socialalpha.org/techtonic-innovations-in-sustainable-urban-transition/",
+      "organization": "Social Alpha and U of T India Foundation",
+      "ministry": null,
+      "research_domain": "sustainable_urban_development",
+      "focus_areas": [
+        "urban climate resilience",
+        "green building materials",
+        "circular construction",
+        "energy efficiency",
+        "electric mobility",
+        "EV charging infrastructure",
+        "smart urban transit"
+      ],
+      "sdg_alignment": [
+        7,
+        9,
+        11,
+        13
+      ],
+      "funding_support": {
+        "grant_type": "pilot_grant",
+        "amount_min": null,
+        "amount_max": 3500000,
+        "currency": "INR"
+      },
+      "eligibility": {
+        "summary": "Startups developing technology-led solutions for urban climate resilience. Pilot grants up to INR 35 lakhs, potential seed capital up to INR 1 Cr. Pilots with urban local bodies."
+      },
+      "target_entities": [
+        "startups",
+        "urban tech innovators",
+        "cleantech ventures"
+      ],
+      "institution_type": "private",
+      "research_stage": [
+        "pilot",
+        "deployment"
+      ],
+      "geography": {
+        "country": "India",
+        "state": null,
+        "city": null
+      },
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "social-alpha-urban-transition-techtonic",
+      "tags": [
+        "urban",
+        "climate-resilience",
+        "mobility",
+        "pilots",
+        "cleantech"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "name": "UNDP RFP-005-IND-2026 Compilation and Technical Services",
+      "reason": "Deadline passed (09-Feb-2026)"
+    },
+    {
+      "name": "UNDP RFP-001-IND-2026 Implementation Roadmap",
+      "reason": "Deadline passed (27-Jan-2026)"
+    },
+    {
+      "name": "UNDP RFP-009-IND-2026 AI for Justice Dissemination",
+      "reason": "Deadline passed (05-Mar-2026)"
+    },
+    {
+      "name": "UNDP RFP-011-IND-2026 Gender-Responsive SDG Framework (earlier version)",
+      "reason": "Deadline passed (16-Mar-2026), superseded by RFP-027-IND-2026"
+    },
+    {
+      "name": "UNDP RFP-004-IND-2024 Air Quality Hyperlocal Mapping",
+      "reason": "Deadline passed (27-Sep-2024)"
+    },
+    {
+      "name": "UNDP RFP-004-IND-2024 National Adaptation Plan Support",
+      "reason": "Deadline passed (20-Jan-2025)"
+    },
+    {
+      "name": "UNICEF Venture Fund Blockchain Ventures Call",
+      "reason": "Deadline passed (10-Mar-2026)"
+    },
+    {
+      "name": "UNICEF Climate Innovation Challenge 2025",
+      "reason": "Deadline passed (21-Oct-2025)"
+    },
+    {
+      "name": "UNICEF National Children Innovation Challenge",
+      "reason": "Closed as of March 31, 2023"
+    },
+    {
+      "name": "Grand Challenges India Climate Change Agriculture Call 2023",
+      "reason": "Deadline passed (31-Jan-2024)"
+    },
+    {
+      "name": "Grand Challenges India Climate Change Health Call 2023",
+      "reason": "Deadline passed (31-Jan-2024)"
+    },
+    {
+      "name": "Grand Challenges India AI for Health Call 2023",
+      "reason": "Deadline passed (23-Dec-2023)"
+    },
+    {
+      "name": "UNESCO Promoting Sustainable Development through UNESCO sites programme",
+      "reason": "Europe-focused, limited India relevance"
+    },
+    {
+      "name": "UNICEF Grant for Legislators Engagement Maharashtra",
+      "reason": "Aggregator source, not directly verifiable on official UNICEF portal"
+    },
+    {
+      "name": "UNICEF Grant for Child Protection Maharashtra",
+      "reason": "Aggregator source, deadline 18-May-2026 - pending verification on official portal"
+    },
+    {
+      "name": "Climate-KIC CEIC Catalytic Grant Facility 2025",
+      "reason": "Deadline passed (04-Apr-2025)"
+    },
+    {
+      "name": "Climate-KIC ClimAccelerator 2026",
+      "reason": "Deadline passed (28-Feb-2026)"
+    },
+    {
+      "name": "Climate-KIC Climathon 2026",
+      "reason": "Deadline passed (31-Mar-2026)"
+    },
+    {
+      "name": "Tata Social Enterprise Challenge 2025",
+      "reason": "Deadline passed (30-Apr-2025)"
+    },
+    {
+      "name": "AIC RAISE Startup Challenge for Climate and Green Solutions",
+      "reason": "Deadline passed (31-Jan-2026)"
+    },
+    {
+      "name": "Reliance Foundation Scholarships 2025-26",
+      "reason": "Applications closed, results announced. Annual recurring program."
+    },
+    {
+      "name": "Azim Premji University Health Research Funding Programme 2025",
+      "reason": "Deadline passed (30-Apr-2025)"
+    },
+    {
+      "name": "Mahindra EmpowerHer Scholarship 2025-26",
+      "reason": "Deadline passed (15-Nov-2025)"
+    },
+    {
+      "name": "Infosys Foundation Institutional Grants",
+      "reason": "No open call for proposals; institutional grant-making only"
+    },
+    {
+      "name": "Nasscom Social Innovation Forum (NSIF)",
+      "reason": "Historic program, latest edition details unclear"
+    }
+  ],
+  "sources_scanned": [
+    "https://www.unicef.org/innovation/call-for-application-climate-and-health-2026",
+    "https://www.unicefventurefund.org/",
+    "https://procurement-notices.undp.org/",
+    "https://www.ungm.org/",
+    "https://twas.org/",
+    "https://www.unesco.org/en/mab",
+    "https://www.gatesfoundation.org/about/how-we-work/grant-opportunities",
+    "https://submit.gatesfoundation.org/",
+    "https://indiaalliance.org/",
+    "https://wellcome.org/grant-funding/schemes",
+    "https://www.giz.de/India",
+    "https://ausschreibungen.giz.de/",
+    "https://www.climate-kic.org/open-calls/",
+    "https://climatetech.nasscomfoundation.org/",
+    "https://www.nasscomfoundation.org/",
+    "https://acumenacademy.org/fellowship/india/",
+    "https://www.socialalpha.org/",
+    "https://villgro.org/programs/",
+    "https://azimpremjifoundation.org/apply-for-a-grant/",
+    "https://beta.reliancefoundation.org/",
+    "https://wiprofoundation.org/earthian/",
+    "https://climatestackinnovationchallenge.com/",
+    "https://gcf.co/sap064",
+    "https://www.worldbank.org/ext/en/country/india",
+    "https://www.adb.org/where-we-work/india/projects-results"
+  ],
+  "search_queries_used": [
+    "UNDP India SDG research funding grant 2026 active call proposal open",
+    "UNICEF India innovation grant 2026 funding active call sustainable development",
+    "UNESCO India research grant 2026 active funding SDG science",
+    "World Bank India innovation grant 2026 sustainable development research funding active",
+    "Asian Development Bank India research grant 2026 climate sustainability funding",
+    "Gates Foundation India research grant 2026 active call proposals health agriculture development",
+    "Wellcome Trust India research funding 2026 grant active call",
+    "GIZ India innovation grant 2026 sustainable development research funding active call",
+    "Reliance Foundation India grant 2026 active research sustainability innovation",
+    "Infosys Foundation India research grant 2026 active call proposals",
+    "Azim Premji Foundation research grant 2026 active call education development India",
+    "NASSCOM Foundation India grant 2026 startup innovation social impact active",
+    "Social Alpha India grant 2026 deep tech sustainability innovation active call",
+    "Villgro India innovation grant 2026 social enterprise healthcare agriculture active",
+    "Grand Challenges India 2026 2027 active call proposals climate health agriculture",
+    "Wipro Foundation India grant 2026 sustainability education research active",
+    "Acumen India fellowship 2026 social enterprise leadership development active",
+    "Climate-KIC India 2026 innovation funding sustainable climate active program",
+    "Mahindra Foundation India grant 2026 education research active call proposals",
+    "Tata Social Enterprise Challenge 2026 India grant active call"
+  ]
+}

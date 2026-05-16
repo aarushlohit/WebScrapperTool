@@ -108,23 +108,43 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 
 
 def clear_previous_outputs():
-    """Remove previous round outputs and the final consolidated file."""
-    for file_path in OUTPUT_DIR.glob("round*_raw.json"):
-        file_path.unlink(missing_ok=True)
-
-    for file_path in OUTPUT_DIR.glob("round*_raw.txt"):
-        file_path.unlink(missing_ok=True)
-
-    for file_path in OUTPUT_DIR.glob("round*_final.json"):
-        file_path.unlink(missing_ok=True)
-
-    (OUTPUT_DIR / "final_results.json").unlink(missing_ok=True)
-
-    Path("final_results.json").unlink(missing_ok=True)
-    Path("mega_sdg_research_export.json").unlink(missing_ok=True)
-    Path("final_sdg_research_funding.json").unlink(missing_ok=True)
-    Path("sdg_research_ready4db.json").unlink(missing_ok=True)
-    (Path("output") / "archive" / "sdg_research_ready4db.json").unlink(missing_ok=True)
+    """Archive final consolidated file, then clear all round outputs and intermediate files."""
+    
+    # Step 1: Archive the final consolidated file (only 1 file)
+    archive_dir = Path("output") / "archive"
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    
+    final_file_to_archive = Path("sdg_research_ready4db.json")
+    if final_file_to_archive.exists():
+        import shutil
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        archived_name = f"sdg_research_ready4db_{timestamp}.json"
+        archived_path = archive_dir / archived_name
+        shutil.copy2(final_file_to_archive, archived_path)
+        print(f"📦 Archived final file: {archived_path}")
+    
+    # Step 2: Completely clear round_outputs folder
+    if OUTPUT_DIR.exists():
+        import shutil
+        shutil.rmtree(OUTPUT_DIR)
+        OUTPUT_DIR.mkdir(exist_ok=True)
+        print(f"🗑️  Cleared round_outputs folder")
+    
+    # Step 3: Delete all intermediate/final files from root
+    intermediate_files = [
+        "final_results.json",
+        "mega_sdg_research_export.json",
+        "final_sdg_research_funding.json",
+        "sdg_research_ready4db.json",
+    ]
+    
+    for filename in intermediate_files:
+        filepath = Path(filename)
+        if filepath.exists():
+            filepath.unlink()
+            print(f"🗑️  Deleted: {filename}")
+    
+    print("✅ Ready for fresh run")
 
 
 def extract_json_payload(text):
@@ -740,7 +760,7 @@ except FileNotFoundError:
 # Parse arguments
 parser = argparse.ArgumentParser(description="Run OpenCode rounds for SDG research funding intelligence and consolidate output.")
 parser.add_argument("--clear", action="store_true", help="Clear previous round outputs before running.")
-parser.add_argument("--round-timeout", type=int, default=1200, help="Max seconds to wait per OpenCode round before timing out.")
+parser.add_argument("--round-timeout", type=int, default=700, help="Max seconds to wait per OpenCode round before timing out.")
 args = parser.parse_args()
 
 if args.clear:
