@@ -153,6 +153,7 @@ Return this JSON schema exactly:
       "official_website": "",
       "official_program_page": "",
       "source_url": "",
+      "description:"",
       "organization": "",
       "program_owner": "",
       "sector": "",
