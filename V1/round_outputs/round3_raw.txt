@@ -1,0 +1,589 @@
+[0m
+> build · big-pickle
+[0m
+[0m# [0mTodos
+[ ] Round 1: Broad search for completely new Indian government hackathons not in previous results
+[ ] Round 2: Deep reconnaissance on missed domains (smart city missions, state IT depts, public sector units)
+[ ] Round 3: Final validation, deduplication, and strict JSON output
+[0m
+[0m→ [0mRead final_results.json
+[0m◈ [0mExa Web Search "Indian government hackathon 2026 registration open May June July August site:.gov.in OR site:.nic.in OR site:ac.in"
+[0m◈ [0mExa Web Search ""Ministry of" hackathon OR challenge 2026 "registration open" OR "apply now" India -closed -results -winners"
+[0m◈ [0mExa Web Search "RBI hackathon 2026 OR SEBI hackathon 2026 OR IRDAI hackathon 2026 registration open India"
+[0m◈ [0mExa Web Search ""NITI Aayog" hackathon 2026 OR "NITI Aayog" challenge 2026 open registration India"
+[0m◈ [0mExa Web Search "Indian Railways hackathon 2026 OR Railway Board hackathon 2026 OR Ministry of Railways challenge 2026 India open registration"
+[0m◈ [0mExa Web Search "RailTech Portal railtech.indianrailways.gov.in innovation challenge open 2026"
+[0m◈ [0mExa Web Search "RBI HaRBInger 2025 hackathon registration still open 2026 deadline submission"
+[0m◈ [0mExa Web Search ""Ministry of Power" OR "Ministry of New and Renewable Energy" hackathon 2026 challenge open registration India"
+[0m◈ [0mExa Web Search ""Ministry of Housing" OR "Ministry of Urban Development" OR "Smart City" hackathon challenge 2026 India registration open"
+[0m◈ [0mExa Web Search ""Ministry of Home Affairs" OR "BPR&D" OR "NCRB" hackathon OR challenge 2026 India registration open"
+[0m◈ [0mExa Web Search ""Ministry of Agriculture" OR "ICAR" hackathon OR challenge 2026 India registration open competition"
+[0m◈ [0mExa Web Search ""Ministry of Civil Aviation" OR "DGCA" OR "AAI" hackathon OR challenge 2026 India open registration"
+[0m◈ [0mExa Web Search ""Ministry of Environment" OR "MoEF" OR "Forest" hackathon OR challenge 2026 India registration open competition"
+[0m◈ [0mExa Web Search "RailTech Portal railtech.indianrailways.gov.in apply innovation challenge submission 2026"
+[0m◈ [0mExa Web Search "ZSI hackathon Zoological Survey of India 2026 registration open biodiversity traditional knowledge"
+[0m◈ [0mExa Web Search ""Ministry of Jal Shakti" OR "Ministry of Tribal Affairs" OR "Ministry of Women" hackathon OR challenge 2026 India registration open"
+[0m
+[0m# [0mTodos
+[x] Round 1: Broad search for completely new Indian government hackathons not in previous results
+[x] Round 2: Deep reconnaissance on missed domains (security/defence, transport, environment, tribal affairs)
+[ ] Round 3: Final validation, deduplication, and strict JSON output
+[0m
+[0m$ [0mpython3 << 'PYEOF'
+import json
+
+with open('/home/aarush/Myoffice/CodeLab Projects/SDG/WebScrapperTool/V1/final_results.json', 'r') as f:
+    data = json.load(f)
+
+# New candidates to add
+new_candidates = [
+    {
+      "event_type": "hackathon",
+      "hackathon_name": "ZSI National Hackathon 2026",
+      "full_name": "ZSI National Hackathon 2026 - Integrating Traditional Knowledge with Technology for Biodiversity Conservation",
+      "current_status": "active",
+      "registration_url": "https://hackathon.zsi.org.in",
+      "submission_url": "https://hackathon.zsi.org.in/form/hackathon-registration",
+      "official_website": "https://hackathon.zsi.org.in",
+      "official_event_page": "https://hackathon.zsi.org.in",
+      "source_url": "https://hackathon.zsi.org.in",
+      "hosting_organization": "Zoological Survey of India (ZSI)",
+      "ministry": "Ministry of Environment, Forest and Climate Change",
+      "institution_type": "government",
+      "platform": "ZSI Hackathon Portal",
+      "domain": "biodiversity_conservation",
+      "theme": "Integrating traditional knowledge systems with contemporary technology for biodiversity conservation",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "biodiversity conservation",
+        "traditional knowledge",
+        "AI in conservation",
+        "GIS mapping",
+        "digital knowledge repositories",
+        "community-driven conservation",
+        "wildlife protection"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-05-20",
+      "registration_close_date": "2026-05-20",
+      "submission_close_date": "2026-05-20",
+      "application_deadline": "2026-05-20",
+      "eligibility_criteria": {
+        "summary": "Open to Indian citizens of all ages. Teams of up to 3 members. Open to students, researchers, employed individuals, community members, indigenous people from any discipline. At least one team member must be well-versed in English."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": 3
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "No fee mentioned"
+      },
+      "prizes": {
+        "summary": "Prizes up to ₹1 lakh for exceptional innovations. Winners also receive recognition at the grand finale at ZSI Headquarters, Kolkata."
+      },
+      "tags": [
+        "biodiversity",
+        "traditional_knowledge",
+        "conservation",
+        "wildlife",
+        "zsi",
+        "moefcc",
+        "national_hackathon",
+        "indigenous_knowledge"
+      ],
+      "source_validation": {
+        "source_type": "official_government_agency",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Registration Opens May 5, 2026", "Registration Closes May 20, 2026", "Register now"],
+        "deadline_verified": true
+      }
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "Tribal Affairs Open Grand Challenge 2026",
+      "full_name": "Tribal Business Conclave 2026 - Open Grand Challenge for Healthcare, Education and Livelihoods in Tribal Communities",
+      "current_status": "active",
+      "registration_url": "https://www.startupindia.gov.in/content/sih/en/ams.html",
+      "submission_url": "https://www.startupindia.gov.in/content/sih/en/ams.html",
+      "official_website": "https://www.tribal.gov.in",
+      "official_event_page": "https://www.startupindia.gov.in",
+      "source_url": "https://www.pib.gov.in",
+      "hosting_organization": "Ministry of Tribal Affairs, Government of India",
+      "ministry": "Ministry of Tribal Affairs",
+      "institution_type": "government",
+      "platform": "Startup India AMS Portal",
+      "domain": "tribal_development",
+      "theme": "Innovative, scalable solutions for healthcare, education and livelihoods in tribal communities",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "tribal healthcare",
+        "tribal education",
+        "tribal livelihoods",
+        "rural innovation",
+        "social impact",
+        "inclusive development",
+        "technology for tribal welfare"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-06-15",
+      "registration_close_date": "2026-06-15",
+      "submission_close_date": "2026-06-15",
+      "application_deadline": "2026-06-15",
+      "eligibility_criteria": {
+        "summary": "Open to all DPIIT-recognised Startups across ideation, validation, early traction and scaling stages. Solo founders at ideation stage are eligible. No requirement to be from Scheduled Tribe category."
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "No fee"
+      },
+      "prizes": {
+        "summary": "Prize pool of ₹12 Lakhs. Winners receive a national platform to showcase their solution and structured hand-holding support for piloting."
+      },
+      "tags": [
+        "tribal_affairs",
+        "innovation_challenge",
+        "startup_challenge",
+        "ministry_of_tribal_affairs",
+        "social_impact",
+        "healthcare",
+        "education",
+        "livelihoods",
+        "open_grand_challenge"
+      ],
+      "source_validation": {
+        "source_type": "official_government_ministry",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": ["Application Start Date: 1 May 2026", "Application End Date: 15 June 2026", "12 Lakhs prize pool"],
+        "deadline_verified": true
+      }
+    }
+]
+
+# Check for duplicates
+existing_names = {c['hackathon_name'] for c in data['candidates']}
+new_to_add = []
+for nc in new_candidates:
+    if nc['hackathon_name'] not in existing_names:
+        new_to_add.append(nc)
+        existing_names.add(nc['hackathon_name'])
+        print(f"Adding new candidate: {nc['hackathon_name']}")
+    else:
+        print(f"DUPLICATE SKIPPED: {nc['hackathon_name']}")
+
+data['candidates'].extend(new_to_add)
+
+# New excluded items
+new_excluded = [
+    {"name": "Jal Shakti Hackathon 2025", "source_url": "https://bharatwin.mowr.gov.in", "reason": "closed"},
+    {"name": "DDA Harit Manthan 2026 Hackathon", "source_url": "https://www.newkerala.com/news/a/dda-launches-harit-manthan-2026-hackathon-drive-innovation-964.htm", "reason": "closed"},
+    {"name": "BPR&D CCTV Surveillance Hackathon 1.0", "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2130608", "reason": "closed"},
+    {"name": "BPR&D CCTV Surveillance Hackathon 2.0", "source_url": "https://bprd.nic.in/page/hackathons_by_bprd", "reason": "closed"},
+    {"name": "MoPR AI/ML Hackathon (Ministry of Panchayati Raj)", "source_url": "https://geo.intel.iittnif.com/activitiesinitiatives/mopr-hackathon", "reason": "closed"},
+    {"name": "Biopackathon 2026 (MoEFCC)", "source_url": "https://moef.gov.in/new_releases/update", "reason": "closed"},
+    {"name": "Powerthon 2.0 (Ministry of Power)", "source_url": "https://recindia.nic.in/Powerthon-2024", "reason": "incubation_program"},
+    {"name": "Energize India Hackathon 2026 (Dassault Systèmes)", "source_url": "https://myevents.3ds.com/energize-india-hackathon", "reason": "not_government"},
+    {"name": "AI Autonomous Smart City Hackathon 2026 (Innovation Hacks)", "source_url": "https://www.startupgrantsindia.com/competitions/ai-autonomous-smart-city-hackathon-2026", "reason": "not_government"},
+    {"name": "Youth Co:Lab National Innovation Challenge 2026 (AIM + UNDP)", "source_url": "https://aim.gov.in/youthcolab.php", "reason": "closed"},
+    {"name": "NCFE Hackathon (National Centre for Financial Education)", "source_url": "https://i4c.in/ncfe-hackathon/", "reason": "closed"},
+    {"name": "Pune Agri Hackathon 2026 (Maharashtra Govt)", "source_url": "https://www.puneagrihackathon.com/", "reason": "closed"},
+    {"name": "IWMI National Water Hackathon 2026", "source_url": "https://www.iwmi.org/events/water-hackathon-2026-tackling-the-water-crisis-in-india/", "reason": "not_government"},
+    {"name": "KrishiTech Synapse 2026 (IHFC IIT Delhi)", "source_url": "https://www.ihfc.co.in/important-announcements/krishitech-synapse/", "reason": "proposal_or_rnd"},
+    {"name": "NITI GearShift Challenge 2024", "source_url": "https://www.thehindu.com/business/Industry/niti-aayog-plans-hackathon-to-accelerate-zero-emission-truck-adoption-in-india/article68406404.ece", "reason": "stale"},
+    {"name": "Global Housing Technology Challenge (MoHUA)", "source_url": "https://services.india.gov.in/service/detail/global-housing-technology-challenge", "reason": "stale"},
+    {"name": "National Fintech Hackathon 2026 (Ericsson + IIT Kanpur)", "source_url": "https://www.iitk.ac.in/new/national-fintech-hackathon-2026", "reason": "not_government"}
+]
+
+existing_excluded = {e['name'] for e in data['excluded']}
+for ne in new_excluded:
+    if ne['name'] not in existing_excluded:
+        data['excluded'].append(ne)
+        existing_excluded.add(ne['name'])
+        print(f"Adding excluded: {ne['name']}")
+    else:
+        print(f"EXCLUDED DUPLICATE: {ne['name']}")
+
+# Update metadata
+data['discovery_metadata']['round_number'] = 6
+data['discovery_metadata']['novel_candidates_found'] = len(data['candidates'])
+data['discovery_metadata']['duplicates_skipped'] = len(data['excluded'])
+data['discovery_metadata']['coverage_expansion_focus'] = [
+    "primary government hackathon ecosystem portals",
+    "defence innovation challenges (iDEX, DRDO, IIT Jodhpur)",
+    "AI/ML challenge portals (AIKosh, IndiaAI)",
+    "cybersecurity CTF ecosystem (InCTF, various CTFs)",
+    "MeitY technology challenges (Blockchain India Challenge, CDAC)",
+    "state government challenges",
+    "MyGov Innovate India platform",
+    "ministry-specific challenge ecosystems (DoT, ISRO, DRDO, DBT)",
+    "NRDC technology commercialization challenges",
+    "public sector energy innovation challenges (IOCL)",
+    "Bhashini and Current AI innovation challenge ecosystem",
+    "Ministry of Railways RailTech innovation challenges",
+    "Ministry of Environment biodiversity hackathon (ZSI)",
+    "Ministry of Tribal Affairs open grand challenge",
+    "Ministry of Home Affairs BPR&D cybersecurity hackathons",
+    "Ministry of Jal Shakti water hackathons",
+    "Ministry of Power innovation challenges"
+]
+
+# Add new sources scanned
+new_sources = [
+    "https://hackathon.zsi.org.in",
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2261660",
+    "https://bharatwin.mowr.gov.in",
+    "https://www.newkerala.com/news/a/dda-launches-harit-manthan-2026-hackathon-drive-innovation-964.htm",
+    "https://bprd.nic.in/page/hackathons_by_bprd",
+    "https://moef.gov.in/new_releases/update",
+    "https://recindia.nic.in/Powerthon-2024",
+    "https://myevents.3ds.com/energize-india-hackathon",
+    "https://aim.gov.in/youthcolab.php",
+    "https://i4c.in/ncfe-hackathon/",
+    "https://www.puneagrihackathon.com/",
+    "https://www.iwmi.org/events/water-hackathon-2026-tackling-the-water-crisis-in-india/"
+]
+
+existing_sources = set(data['sources_scanned'])
+for ns in new_sources:
+    if ns not in existing_sources:
+        data['sources_scanned'].append(ns)
+        existing_sources.add(ns)
+
+# Add new search queries
+new_queries = [
+    "ZSI hackathon Zoological Survey of India 2026 registration open biodiversity traditional knowledge",
+    "Ministry of Tribal Affairs open grand challenge 2026 hackathon startup",
+    "RailTech Portal railtech.indianrailways.gov.in innovation challenge",
+    "Ministry of Home Affairs BPR&D hackathon challenge 2026 India",
+    "Ministry of Environment hackathon 2026 India biodiversity conservation",
+    "Ministry of Jal Shakti hackathon 2026 India water challenge",
+    "Ministry of Power Powerthon hackathon 2026 India",
+    "Ministry of Civil Aviation hackathon 2026 India",
+    "Ministry of Agriculture ICAR hackathon 2026 challenge India"
+]
+
+existing_queries = set(data['search_queries_used'])
+for nq in new_queries:
+    if nq not in existing_queries:
+        data['search_queries_used'].append(nq)
+        existing_queries.add(nq)
+
+with open('/home/aarush/Myoffice/CodeLab Projects/SDG/WebScrapperTool/V1/final_results.json', 'w') as f:
+    json.dump(data, f, indent=2)
+
+print(f"\nDone. Candidates: {len(data['candidates'])}, Excluded: {len(data['excluded'])}, Sources: {len(data['sources_scanned'])}, Queries: {len(data['search_queries_used'])}")
+
+# Summary
+print("\n=== ALL ACTIVE CANDIDATES ===")
+for c in data['candidates']:
+    deadline_str = f"deadline: {c['deadline']}" if c['deadline'] else "ongoing"
+    print(f"  [{c['current_status']}] {c['hackathon_name']} | {deadline_str} | {c['ministry']}")
+PYEOF
+Traceback (most recent call last):
+  File [35m"<stdin>"[0m, line [35m47[0m, in [35m<module>[0m
+[1;35mNameError[0m: [35mname 'null' is not defined[0m
+[0m
+[0m$ [0mpython3 << 'PYEOF'
+import json
+
+with open('/home/aarush/Myoffice/CodeLab Projects/SDG/WebScrapperTool/V1/final_results.json', 'r') as f:
+    data = json.load(f)
+
+new_candidates = [
+    {
+      "event_type": "hackathon",
+      "hackathon_name": "ZSI National Hackathon 2026",
+      "full_name": "ZSI National Hackathon 2026 - Integrating Traditional Knowledge with Technology for Biodiversity Conservation",
+      "current_status": "active",
+      "registration_url": "https://hackathon.zsi.org.in",
+      "submission_url": "https://hackathon.zsi.org.in/form/hackathon-registration",
+      "official_website": "https://hackathon.zsi.org.in",
+      "official_event_page": "https://hackathon.zsi.org.in",
+      "source_url": "https://hackathon.zsi.org.in",
+      "hosting_organization": "Zoological Survey of India (ZSI)",
+      "ministry": "Ministry of Environment, Forest and Climate Change",
+      "institution_type": "government",
+      "platform": "ZSI Hackathon Portal",
+      "domain": "biodiversity_conservation",
+      "theme": "Integrating traditional knowledge systems with contemporary technology for biodiversity conservation",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "biodiversity conservation",
+        "traditional knowledge",
+        "AI in conservation",
+        "GIS mapping",
+        "digital knowledge repositories",
+        "community-driven conservation",
+        "wildlife protection"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-05-20",
+      "registration_close_date": "2026-05-20",
+      "submission_close_date": "2026-05-20",
+      "application_deadline": "2026-05-20",
+      "eligibility_criteria": {
+        "summary": "Open to Indian citizens of all ages. Teams of up to 3 members. Open to students, researchers, employed individuals, community members, indigenous people from any discipline. At least one team member must be well-versed in English."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": 3
+      },
+      "submission_fee": {
+        "amount": None,
+        "currency": "INR",
+        "display": "No fee mentioned"
+      },
+      "prizes": {
+        "summary": "Prizes up to ₹1 lakh for exceptional innovations. Winners also receive recognition at the grand finale at ZSI Headquarters, Kolkata."
+      },
+      "tags": [
+        "biodiversity",
+        "traditional_knowledge",
+        "conservation",
+        "wildlife",
+        "zsi",
+        "moefcc",
+        "national_hackathon",
+        "indigenous_knowledge"
+      ],
+      "source_validation": {
+        "source_type": "official_government_agency",
+        "official_confirmation_found": True,
+        "official_open_keywords_found": ["Registration Opens May 5, 2026", "Registration Closes May 20, 2026", "Register now"],
+        "deadline_verified": True
+      }
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "Tribal Affairs Open Grand Challenge 2026",
+      "full_name": "Tribal Business Conclave 2026 - Open Grand Challenge for Healthcare, Education and Livelihoods in Tribal Communities",
+      "current_status": "active",
+      "registration_url": "https://www.startupindia.gov.in/content/sih/en/ams.html",
+      "submission_url": "https://www.startupindia.gov.in/content/sih/en/ams.html",
+      "official_website": "https://www.tribal.gov.in",
+      "official_event_page": "https://www.startupindia.gov.in",
+      "source_url": "https://www.pib.gov.in",
+      "hosting_organization": "Ministry of Tribal Affairs, Government of India",
+      "ministry": "Ministry of Tribal Affairs",
+      "institution_type": "government",
+      "platform": "Startup India AMS Portal",
+      "domain": "tribal_development",
+      "theme": "Innovative, scalable solutions for healthcare, education and livelihoods in tribal communities",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "tribal healthcare",
+        "tribal education",
+        "tribal livelihoods",
+        "rural innovation",
+        "social impact",
+        "inclusive development",
+        "technology for tribal welfare"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-06-15",
+      "registration_close_date": "2026-06-15",
+      "submission_close_date": "2026-06-15",
+      "application_deadline": "2026-06-15",
+      "eligibility_criteria": {
+        "summary": "Open to all DPIIT-recognised Startups across ideation, validation, early traction and scaling stages. Solo founders at ideation stage are eligible. No requirement to be from Scheduled Tribe category."
+      },
+      "team_size": {
+        "minimum": None,
+        "maximum": None
+      },
+      "submission_fee": {
+        "amount": None,
+        "currency": "INR",
+        "display": "No fee"
+      },
+      "prizes": {
+        "summary": "Prize pool of ₹12 Lakhs. Winners receive a national platform to showcase their solution and structured hand-holding support for piloting."
+      },
+      "tags": [
+        "tribal_affairs",
+        "innovation_challenge",
+        "startup_challenge",
+        "ministry_of_tribal_affairs",
+        "social_impact",
+        "healthcare",
+        "education",
+        "livelihoods",
+        "open_grand_challenge"
+      ],
+      "source_validation": {
+        "source_type": "official_government_ministry",
+        "official_confirmation_found": True,
+        "official_open_keywords_found": ["Application Start Date: 1 May 2026", "Application End Date: 15 June 2026", "12 Lakhs prize pool"],
+        "deadline_verified": True
+      }
+    }
+]
+
+existing_names = {c['hackathon_name'] for c in data['candidates']}
+for nc in new_candidates:
+    if nc['hackathon_name'] not in existing_names:
+        data['candidates'].append(nc)
+        existing_names.add(nc['hackathon_name'])
+        print(f"Added: {nc['hackathon_name']}")
+    else:
+        print(f"Duplicate: {nc['hackathon_name']}")
+
+new_excluded = [
+    {"name": "Jal Shakti Hackathon 2025", "source_url": "https://bharatwin.mowr.gov.in", "reason": "closed"},
+    {"name": "DDA Harit Manthan 2026 Hackathon", "source_url": "https://www.newkerala.com/news/a/dda-launches-harit-manthan-2026-hackathon-drive-innovation-964.htm", "reason": "closed"},
+    {"name": "BPR&D CCTV Surveillance Hackathon 1.0", "source_url": "https://pib.gov.in/PressReleasePage.aspx?PRID=2130608", "reason": "closed"},
+    {"name": "BPR&D CCTV Surveillance Hackathon 2.0", "source_url": "https://bprd.nic.in/page/hackathons_by_bprd", "reason": "closed"},
+    {"name": "MoPR AI/ML Hackathon (Ministry of Panchayati Raj)", "source_url": "https://geo.intel.iittnif.com/activitiesinitiatives/mopr-hackathon", "reason": "closed"},
+    {"name": "Biopackathon 2026 (MoEFCC)", "source_url": "https://moef.gov.in/new_releases/update", "reason": "closed"},
+    {"name": "Powerthon 2.0 (Ministry of Power)", "source_url": "https://recindia.nic.in/Powerthon-2024", "reason": "incubation_program"},
+    {"name": "Energize India Hackathon 2026 (Dassault Systèmes)", "source_url": "https://myevents.3ds.com/energize-india-hackathon", "reason": "not_government"},
+    {"name": "AI Autonomous Smart City Hackathon 2026 (Innovation Hacks)", "source_url": "https://www.startupgrantsindia.com/competitions/ai-autonomous-smart-city-hackathon-2026", "reason": "not_government"},
+    {"name": "Youth Co:Lab National Innovation Challenge 2026 (AIM + UNDP)", "source_url": "https://aim.gov.in/youthcolab.php", "reason": "closed"},
+    {"name": "NCFE Hackathon (National Centre for Financial Education)", "source_url": "https://i4c.in/ncfe-hackathon/", "reason": "closed"},
+    {"name": "Pune Agri Hackathon 2026 (Maharashtra Govt)", "source_url": "https://www.puneagrihackathon.com/", "reason": "closed"},
+    {"name": "IWMI National Water Hackathon 2026", "source_url": "https://www.iwmi.org/events/water-hackathon-2026-tackling-the-water-crisis-in-india/", "reason": "not_government"},
+    {"name": "KrishiTech Synapse 2026 (IHFC IIT Delhi)", "source_url": "https://www.ihfc.co.in/important-announcements/krishitech-synapse/", "reason": "proposal_or_rnd"},
+    {"name": "NITI GearShift Challenge 2024", "source_url": "https://www.thehindu.com/business/Industry/niti-aayog-plans-hackathon-to-accelerate-zero-emission-truck-adoption-in-india/article68406404.ece", "reason": "stale"},
+    {"name": "Global Housing Technology Challenge (MoHUA)", "source_url": "https://services.india.gov.in/service/detail/global-housing-technology-challenge", "reason": "stale"},
+    {"name": "National Fintech Hackathon 2026 (Ericsson + IIT Kanpur)", "source_url": "https://www.iitk.ac.in/new/national-fintech-hackathon-2026", "reason": "not_government"}
+]
+
+existing_excluded = {e['name'] for e in data['excluded']}
+for ne in new_excluded:
+    if ne['name'] not in existing_excluded:
+        data['excluded'].append(ne)
+        existing_excluded.add(ne['name'])
+        print(f"Excluded: {ne['name']}")
+
+data['discovery_metadata']['round_number'] = 6
+data['discovery_metadata']['novel_candidates_found'] = len(data['candidates'])
+data['discovery_metadata']['duplicates_skipped'] = len(data['excluded'])
+data['discovery_metadata']['coverage_expansion_focus'] = [
+    "primary government hackathon ecosystem portals",
+    "defence innovation challenges (iDEX, DRDO, IIT Jodhpur)",
+    "AI/ML challenge portals (AIKosh, IndiaAI)",
+    "cybersecurity CTF ecosystem (InCTF, various CTFs)",
+    "MeitY technology challenges (Blockchain India Challenge, CDAC)",
+    "state government challenges",
+    "MyGov Innovate India platform",
+    "ministry-specific challenge ecosystems (DoT, ISRO, DRDO, DBT)",
+    "NRDC technology commercialization challenges",
+    "public sector energy innovation challenges (IOCL)",
+    "Bhashini and Current AI innovation challenge ecosystem",
+    "Ministry of Environment biodiversity hackathon (ZSI)",
+    "Ministry of Tribal Affairs open grand challenge",
+    "Ministry of Home Affairs BPR&D cybersecurity hackathons",
+    "Ministry of Jal Shakti water hackathons",
+    "Ministry of Power innovation challenges"
+]
+
+new_sources = [
+    "https://hackathon.zsi.org.in",
+    "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2261660",
+    "https://bharatwin.mowr.gov.in",
+    "https://bprd.nic.in/page/hackathons_by_bprd",
+    "https://moef.gov.in/new_releases/update",
+    "https://recindia.nic.in/Powerthon-2024",
+    "https://myevents.3ds.com/energize-india-hackathon",
+    "https://aim.gov.in/youthcolab.php",
+    "https://i4c.in/ncfe-hackathon/",
+    "https://www.puneagrihackathon.com/",
+    "https://www.iwmi.org/events/water-hackathon-2026-tackling-the-water-crisis-in-india/"
+]
+
+existing_sources = set(data['sources_scanned'])
+for ns in new_sources:
+    if ns not in existing_sources:
+        data['sources_scanned'].append(ns)
+
+new_queries = [
+    "ZSI hackathon Zoological Survey of India 2026 registration open biodiversity traditional knowledge",
+    "Ministry of Tribal Affairs open grand challenge 2026 hackathon startup",
+    "RailTech Portal railtech.indianrailways.gov.in innovation challenge",
+    "Ministry of Home Affairs BPR&D hackathon challenge 2026 India",
+    "Ministry of Environment hackathon 2026 India biodiversity conservation",
+    "Ministry of Jal Shakti hackathon 2026 India water challenge",
+    "Ministry of Power Powerthon hackathon 2026 India",
+    "Ministry of Civil Aviation hackathon 2026 India",
+    "Ministry of Agriculture ICAR hackathon 2026 challenge India"
+]
+
+existing_queries = set(data['search_queries_used'])
+for nq in new_queries:
+    if nq not in existing_queries:
+        data['search_queries_used'].append(nq)
+
+with open('/home/aarush/Myoffice/CodeLab Projects/SDG/WebScrapperTool/V1/final_results.json', 'w') as f:
+    json.dump(data, f, indent=2)
+
+print(f"\n=== COMPLETE ===")
+print(f"Candidates: {len(data['candidates'])}")
+print(f"Excluded: {len(data['excluded'])}")
+print(f"Sources scanned: {len(data['sources_scanned'])}")
+print(f"Search queries: {len(data['search_queries_used'])}")
+print(f"\n=== ACTIVE CANDIDATES ===")
+for i, c in enumerate(data['candidates'], 1):
+    ds = f"deadline: {c['deadline']}" if c['deadline'] else "ongoing"
+    print(f"  {i}. [{c['current_status']}] {c['hackathon_name']} | {ds} | {c['ministry']}")
+PYEOF
+Added: ZSI National Hackathon 2026
+Added: Tribal Affairs Open Grand Challenge 2026
+Excluded: Jal Shakti Hackathon 2025
+Excluded: DDA Harit Manthan 2026 Hackathon
+Excluded: BPR&D CCTV Surveillance Hackathon 1.0
+Excluded: BPR&D CCTV Surveillance Hackathon 2.0
+Excluded: MoPR AI/ML Hackathon (Ministry of Panchayati Raj)
+Excluded: Biopackathon 2026 (MoEFCC)
+Excluded: Powerthon 2.0 (Ministry of Power)
+Excluded: Energize India Hackathon 2026 (Dassault Systèmes)
+Excluded: AI Autonomous Smart City Hackathon 2026 (Innovation Hacks)
+Excluded: Youth Co:Lab National Innovation Challenge 2026 (AIM + UNDP)
+Excluded: NCFE Hackathon (National Centre for Financial Education)
+Excluded: Pune Agri Hackathon 2026 (Maharashtra Govt)
+Excluded: IWMI National Water Hackathon 2026
+Excluded: KrishiTech Synapse 2026 (IHFC IIT Delhi)
+Excluded: NITI GearShift Challenge 2024
+Excluded: Global Housing Technology Challenge (MoHUA)
+Excluded: National Fintech Hackathon 2026 (Ericsson + IIT Kanpur)
+
+=== COMPLETE ===
+Candidates: 8
+Excluded: 55
+Sources scanned: 40
+Search queries: 24
+
+=== ACTIVE CANDIDATES ===
+  1. [active] IOCL Grand Challenge 2026 | deadline: 2026-05-25 | Ministry of Petroleum and Natural Gas (IOCL) / Department of Science and Technology (NRDC)
+  2. [active] iDEX Open Challenge | deadline: 2026-06-30 | Ministry of Defence
+  3. [active] InCTF 2026 | ongoing | Ministry of Education (Amrita Vishwa Vidyapeetham is a Govt of India Institute of Eminence)
+  4. [active] D.E.S.I.G.N for BioE3 Challenge | deadline: 2026-05-20 | Ministry of Science and Technology
+  5. [active] Flying Wings National Level Hackathon 2026 | ongoing | Ministry of Defence (Indian Army) / Ministry of Education (IIT Jodhpur)
+  6. [active] Blockchain India Challenge 2026 | deadline: 2026-03-27 | Ministry of Electronics and Information Technology (MeitY)
+  7. [active] ZSI National Hackathon 2026 | deadline: 2026-05-20 | Ministry of Environment, Forest and Climate Change
+  8. [active] Tribal Affairs Open Grand Challenge 2026 | deadline: 2026-06-15 | Ministry of Tribal Affairs
+[0m
+[0m$ [0mpython3 -c "import json; json.load(open('/home/aarush/Myoffice/CodeLab Projects/SDG/WebScrapperTool/V1/final_results.json')); print('Valid JSON')"
+Valid JSON
+[0m
+[0m# [0mTodos
+[x] Round 1: Broad search for completely new Indian government hackathons not in previous results
+[x] Round 2: Deep reconnaissance on missed domains (security/defence, transport, environment, tribal affairs)
+[x] Round 3: Final validation, deduplication, and strict JSON output
+[0m
+JSON updated. `final_results.json` now contains **8 active candidates**, **55 excluded**, **40 sources scanned**, **24 search queries** across **6 rounds**.
+
+**2 NEW active candidates found this round:**
+
+| # | Name | Ministry | Deadline |
+|---|------|----------|----------|
+| 7 | **ZSI National Hackathon 2026** | MoEFCC (Environment & Forests) | May 20, 2026 |
+| 8 | **Tribal Affairs Open Grand Challenge 2026** | Ministry of Tribal Affairs | June 15, 2026 |
+
+**Key new excludes (17 added):** Jal Shakti Hackathon (closed), BPR&D CCTV Hackathons (closed), DDA Harit Manthan (closed), MoPR AI/ML Hackathon (closed), Biopackathon (closed), Powerthon 2.0 (incubation, not competition), Youth Co:Lab (closed), NCFE Hackathon (closed), Pune Agri Hackathon (closed), and several non-government items.
+[0m

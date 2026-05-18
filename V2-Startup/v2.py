@@ -10,9 +10,42 @@ import re
 from pathlib import Path
 from datetime import datetime, date
 
-MODEL = "opencode/big-pickle"
-SYSTEM_PROMPT_FILE = "systemprompt.md"
+MODEL = "bigpickle"
 TOTAL_ROUNDS = 3
+
+BASE_DIR = Path(__file__).resolve().parent
+SYSTEM_PROMPT_FILE = BASE_DIR / "systemprompt.md"
+
+
+MODEL_ALIASES = {
+    "minimaxm2.5": "opencode/minimax-m2.5-free",
+    "gpt5mini": "github-copilot/gpt-5-mini",
+    "kimi2.6": "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.6",
+    "ring2.6": "opencode/ring-2.6-1t-free",
+    "nemotron3": "opencode/nemotron-3-super-free",
+    "bigpickle": "opencode/big-pickle",
+    "gemini3pro": "google/gemini-3-pro-preview",
+    "minimax-m2.5-free": "opencode/minimax-m2.5-free",
+    "gpt-5-mini": "github-copilot/gpt-5-mini",
+    "kimi-k2.6": "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.6",
+    "ring-2.6-1t-free": "opencode/ring-2.6-1t-free",
+    "nemotron-3-super-free": "opencode/nemotron-3-super-free",
+    "big-pickle": "opencode/big-pickle",
+    "gemini-3-pro-preview": "google/gemini-3-pro-preview",
+}
+
+
+def resolve_model_alias(model_name):
+    value = (model_name or "").strip()
+    if not value:
+        return MODEL_ALIASES[MODEL]
+    if value in MODEL_ALIASES:
+        return MODEL_ALIASES[value]
+    if "/" in value:
+        return value
+    return MODEL_ALIASES.get(value, value)
+
+
 
 ACTIVE_STATUSES = {
     "application_open",
@@ -41,28 +74,72 @@ ROLLING_DEADLINE_TYPES = {
     "incubation_open",
 }
 
-OUTPUT_DIR = Path("round_outputs")
+OUTPUT_DIR = BASE_DIR / "round_outputs"
 OUTPUT_DIR.mkdir(exist_ok=True)
+
+ARCHIVE_DIR = BASE_DIR / "output" / "archive"
 
 
 def clear_previous_outputs():
-    """Remove previous round outputs and the final consolidated file."""
+    """
+    Remove previous round outputs and archive old final results.
+    
+    - Archive old final_result.json with timestamp before clearing
+    - Clear all JSON files in V2-Startup folder and round_outputs/
+    - Clear JSON files in outputs/archive/ if present
+    - Store old results in output/archive/ for backup/debugging
+    """
+    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    
+    # Step 1: Archive old final_result.json files before clearing
+    files_to_archive = [
+        BASE_DIR / "final_results.json",
+        BASE_DIR / "mega_funding_export.json",
+        BASE_DIR / "final_startup_funding.json",
+        BASE_DIR / "startup_funding_ready4db.json",
+    ]
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    
+    for file_path in files_to_archive:
+        if file_path.exists():
+            try:
+                archived_name = f"{file_path.stem}_{timestamp}.json"
+                archived_path = ARCHIVE_DIR / archived_name
+                file_path.rename(archived_path)
+                print(f"📦 Archived: {file_path.name} → {archived_path.relative_to(BASE_DIR)}")
+            except Exception as e:
+                print(f"⚠️  Could not archive {file_path.name}: {e}")
+    
+    # Step 2: Clear all JSON/TXT files in round_outputs/
+    print(f"\n🗑️  Clearing round_outputs/...")
     for file_path in OUTPUT_DIR.glob("round*_raw.json"):
         file_path.unlink(missing_ok=True)
-
     for file_path in OUTPUT_DIR.glob("round*_raw.txt"):
         file_path.unlink(missing_ok=True)
-
     for file_path in OUTPUT_DIR.glob("round*_final.json"):
         file_path.unlink(missing_ok=True)
-
+    
     (OUTPUT_DIR / "final_results.json").unlink(missing_ok=True)
-
-    Path("final_results.json").unlink(missing_ok=True)
-    Path("mega_funding_export.json").unlink(missing_ok=True)
-    Path("final_startup_funding.json").unlink(missing_ok=True)
-    Path("startup_funding_ready4db.json").unlink(missing_ok=True)
-    (Path("output") / "archive" / "startup_funding_ready4db.json").unlink(missing_ok=True)
+    
+    # Step 3: Clear any JSON files in outputs/archive/ if it exists
+    outputs_archive = BASE_DIR / "outputs" / "archive"
+    if outputs_archive.exists():
+        print(f"🗑️  Clearing outputs/archive/...")
+        for file_path in outputs_archive.glob("*.json"):
+            try:
+                file_path.unlink(missing_ok=True)
+                print(f"  Removed: {file_path.name}")
+            except Exception as e:
+                print(f"  ⚠️  Could not remove {file_path.name}: {e}")
+    
+    # Step 4: Verify V2-Startup folder is clean of JSON files
+    print(f"🗑️  Verifying V2-Startup folder cleanup...")
+    v2_startup_jsons = list(BASE_DIR.glob("*.json"))
+    if not v2_startup_jsons:
+        print(f"  ✅ V2-Startup folder is clean (no JSON files)\n")
+    else:
+        print(f"  ℹ️  Remaining JSON files in V2-Startup: {len(v2_startup_jsons)}\n")
 
 
 def extract_json_payload(text):
@@ -236,6 +313,47 @@ def resolve_round_json(round_num, output_text):
     return None, None
 
 
+def build_previous_round_summary(extracted_json, round_num):
+    """Build a compact summary for the next round prompt."""
+    if isinstance(extracted_json, dict):
+        programs = (
+            extracted_json.get("funding_opportunities")
+            or extracted_json.get("startup_funding_programs")
+            or extracted_json.get("funding_programs")
+            or extracted_json.get("candidates")
+            or []
+        )
+    elif isinstance(extracted_json, list):
+        programs = extracted_json
+    else:
+        programs = []
+
+    compact_programs = []
+    for program in programs[:25]:
+        if not isinstance(program, dict):
+            continue
+        compact_programs.append(
+            {
+                "program_name": normalize_text(program.get("program_name") or program.get("program")),
+                "program_type": normalize_text(program.get("program_type")),
+                "organization": normalize_text(program.get("organization") or program.get("program_owner")),
+                "canonical_id": normalize_text(program.get("canonical_id")),
+                "source_url": normalize_text(program.get("source_url")),
+                "label": normalize_text(program.get("label") or "startup") or "startup",
+            }
+        )
+
+    return json.dumps(
+        {
+            "round": round_num,
+            "count": len(programs),
+            "programs": compact_programs,
+        },
+        indent=2,
+        ensure_ascii=False,
+    )
+
+
 def extract_json_from_text(text):
     """Legacy wrapper for backward compatibility."""
     return extract_json_payload(text)
@@ -257,6 +375,45 @@ def coerce_bool(value):
     return False
 
 
+def coerce_sdg_value(value):
+    """Return a numeric SDG id from values like 9, "9", "SDG9", or "SDG 9"."""
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, (int, float)):
+        sdg = int(value)
+        return sdg if 1 <= sdg <= 17 else None
+
+    match = re.search(r"(?:sdg\s*)?(\d{1,2})", normalize_text(value).lower())
+    if not match:
+        return None
+
+    sdg = int(match.group(1))
+    return sdg if 1 <= sdg <= 17 else None
+
+
+def normalize_sdg_alignment(values):
+    if values is None:
+        return []
+    if not isinstance(values, (list, tuple, set)):
+        values = [values]
+
+    normalized = set()
+    for value in values:
+        if isinstance(value, str) and "," in value:
+            candidates = value.split(",")
+        else:
+            candidates = [value]
+
+        for candidate in candidates:
+            sdg = coerce_sdg_value(candidate)
+            if sdg is not None:
+                normalized.add(sdg)
+
+    return sorted(normalized)
+
+
 def infer_sdg_alignment(program):
     text_fields = [
         normalize_text(program.get("sector")),
@@ -268,15 +425,15 @@ def infer_sdg_alignment(program):
     blob = " ".join(text_fields).lower()
 
     keyword_to_sdg = {
-        "health": "SDG3",
-        "education": "SDG4",
-        "climate": "SDG13",
-        "agri": "SDG2",
-        "agriculture": "SDG2",
-        "women": "SDG5",
+        "health": 3,
+        "education": 4,
+        "climate": 13,
+        "agri": 2,
+        "agriculture": 2,
+        "women": 5,
     }
 
-    inferred = set(program.get("sdg_alignment") or [])
+    inferred = set(normalize_sdg_alignment(program.get("sdg_alignment")))
     for token, sdg in keyword_to_sdg.items():
         if token in blob:
             inferred.add(sdg)
@@ -330,6 +487,7 @@ def normalize_program(raw_program):
     eligibility_criteria = raw_program.get("eligibility_criteria") if isinstance(raw_program.get("eligibility_criteria"), dict) else {}
 
     normalized = {
+        "label": normalize_text(raw_program.get("label") or "startup") or "startup",
         "program_name": normalize_text(raw_program.get("program_name") or raw_program.get("hackathon_name") or raw_program.get("full_name")),
         "program_type": normalize_text(raw_program.get("program_type") or raw_program.get("event_type")),
         "status": normalize_text(raw_program.get("status") or raw_program.get("current_status") or "active").lower(),
@@ -364,7 +522,7 @@ def normalize_program(raw_program):
             "state": normalize_text(geography.get("state")),
             "city": normalize_text(geography.get("city")),
         },
-        "sdg_alignment": list(raw_program.get("sdg_alignment") or []),
+        "sdg_alignment": normalize_sdg_alignment(raw_program.get("sdg_alignment")),
         "is_government": coerce_bool(raw_program.get("is_government")),
         "is_private": coerce_bool(raw_program.get("is_private")),
         "is_academic": coerce_bool(raw_program.get("is_academic")),
@@ -559,7 +717,7 @@ def process_rounds_and_generate_final():
     
     # Save to final file
     try:
-        final_file = Path("final_results.json")
+        final_file = BASE_DIR / "final_results.json"
         with open(final_file, "w", encoding="utf-8") as f:
             json.dump(final_data, f, indent=2, ensure_ascii=False)
         
@@ -571,7 +729,7 @@ def process_rounds_and_generate_final():
 
     # Export additional files
     try:
-        mega_file = Path("mega_funding_export.json")
+        mega_file = BASE_DIR / "mega_funding_export.json"
         with open(mega_file, "w", encoding="utf-8") as f:
             json.dump({"funding_opportunities": unique_opportunities}, f, indent=2, ensure_ascii=False)
         print(f"📁 Saved to: {mega_file}")
@@ -579,7 +737,7 @@ def process_rounds_and_generate_final():
         print(f"\n❌ Error saving mega_funding_export.json: {e}")
 
     try:
-        final_startup_file = Path("final_startup_funding.json")
+        final_startup_file = BASE_DIR / "final_startup_funding.json"
         with open(final_startup_file, "w", encoding="utf-8") as f:
             json.dump({"funding_opportunities": unique_opportunities}, f, indent=2, ensure_ascii=False)
         print(f"📁 Saved to: {final_startup_file}")
@@ -587,12 +745,12 @@ def process_rounds_and_generate_final():
         print(f"\n❌ Error saving final_startup_funding.json: {e}")
 
     try:
-        startup_ready_file = Path("startup_funding_ready4db.json")
+        startup_ready_file = BASE_DIR / "startup_funding_ready4db.json"
         with open(startup_ready_file, "w", encoding="utf-8") as f:
             json.dump({"funding_opportunities": unique_opportunities}, f, indent=2, ensure_ascii=False)
         print(f"📁 Saved to: {startup_ready_file}")
 
-        archive_dir = Path("output") / "archive"
+        archive_dir = BASE_DIR / "output" / "archive"
         archive_dir.mkdir(parents=True, exist_ok=True)
         archive_ready_file = archive_dir / "startup_funding_ready4db.json"
         with open(archive_ready_file, "w", encoding="utf-8") as f:
@@ -615,7 +773,11 @@ except FileNotFoundError:
 # Parse arguments
 parser = argparse.ArgumentParser(description="Run OpenCode rounds and consolidate output.")
 parser.add_argument("--clear", action="store_true", help="Clear previous round outputs before running.")
+parser.add_argument("--model", "--MODEL", dest="model", default=MODEL, help="Model alias to use for generation")
 args = parser.parse_args()
+
+REQUESTED_MODEL = args.model or MODEL
+MODEL = resolve_model_alias(REQUESTED_MODEL)
 
 if args.clear:
     print("🗑️  Clearing previous outputs...")
@@ -623,11 +785,14 @@ if args.clear:
 
 print(f"\n{'='*80}")
 print(f"🚀 STARTUP FUNDING INTELLIGENCE ENGINE")
-print(f"Model: {MODEL} | Rounds: {TOTAL_ROUNDS}")
+if REQUESTED_MODEL != MODEL:
+    print(f"Model: {REQUESTED_MODEL} -> {MODEL} | Rounds: {TOTAL_ROUNDS}")
+else:
+    print(f"Model: {MODEL} | Rounds: {TOTAL_ROUNDS}")
 print(f"{'='*80}\n")
 
 run_started_at = time.perf_counter()
-previous_outputs = []
+previous_round_summaries = []
 
 # Main scraper loop
 for round_num in range(1, TOTAL_ROUNDS + 1):
@@ -662,7 +827,7 @@ Mandatory discovery domains include:
 Return STRICT JSON ONLY.
 """
     elif round_num == 2:
-        previous_json = "\n\n".join(previous_outputs)
+        previous_json = "\n\n".join(previous_round_summaries)
         user_prompt = f"""
 Previously discovered opportunities:
 
@@ -675,7 +840,7 @@ DO NOT repeat previously discovered opportunities.
 Return STRICT JSON ONLY.
 """
     else:
-        previous_json = "\n\n".join(previous_outputs)
+        previous_json = "\n\n".join(previous_round_summaries)
         user_prompt = f"""
 Previously discovered opportunities:
 
@@ -810,7 +975,7 @@ Return STRICT JSON ONLY.
             if excluded_count > 0:
                 print(f"[JSON] Excluded count: {excluded_count}")
             print(f"[JSON] Opportunities found: {candidate_count}")
-            previous_outputs.append(output_text)
+            previous_round_summaries.append(build_previous_round_summary(extracted_json, round_num))
         else:
             # Fallback: save empty structure
             with open(json_output_file, "w", encoding="utf-8") as f:
@@ -821,7 +986,7 @@ Return STRICT JSON ONLY.
 
             print(f"⚠️  No JSON extracted from round {round_num} output")
             print(f"[JSON] Parse failed - saved empty opportunities")
-            previous_outputs.append("{}")
+            previous_round_summaries.append(json.dumps({"round": round_num, "count": 0, "programs": []}, indent=2, ensure_ascii=False))
 
     except Exception as e:
         print(f"\n❌ Error saving round {round_num}: {e}")
@@ -832,7 +997,7 @@ Return STRICT JSON ONLY.
                 json.dump({"funding_opportunities": []}, f, indent=2)
         except Exception:
             pass
-        previous_outputs.append("{}")
+        previous_round_summaries.append(json.dumps({"round": round_num, "count": 0, "programs": []}, indent=2, ensure_ascii=False))
     
     print(f"⏱️  Round {round_num} took {time.perf_counter() - round_started_at:.2f}s")
 

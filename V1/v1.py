@@ -10,9 +10,38 @@ import re
 from pathlib import Path
 from datetime import datetime, date
 
-MODEL = "opencode/big-pickle"
+MODEL = "bigpickle"
 SYSTEM_PROMPT_FILE = "systemprompt.md"
 TOTAL_ROUNDS = 3
+
+
+MODEL_ALIASES = {
+    "minimaxm2.5": "opencode/minimax-m2.5-free",
+    "gpt5mini": "github-copilot/gpt-5-mini",
+    "kimi2.6": "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.6",
+    "ring2.6": "opencode/ring-2.6-1t-free",
+    "nemotron3": "opencode/nemotron-3-super-free",
+    "bigpickle": "opencode/big-pickle",
+    "gemini3pro": "google/gemini-3-pro-preview",
+    "minimax-m2.5-free": "opencode/minimax-m2.5-free",
+    "gpt-5-mini": "github-copilot/gpt-5-mini",
+    "kimi-k2.6": "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.6",
+    "ring-2.6-1t-free": "opencode/ring-2.6-1t-free",
+    "nemotron-3-super-free": "opencode/nemotron-3-super-free",
+    "big-pickle": "opencode/big-pickle",
+    "gemini-3-pro-preview": "google/gemini-3-pro-preview",
+}
+
+
+def resolve_model_alias(model_name):
+    value = (model_name or "").strip()
+    if not value:
+        return MODEL_ALIASES[MODEL]
+    if value in MODEL_ALIASES:
+        return MODEL_ALIASES[value]
+    if "/" in value:
+        return value
+    return MODEL_ALIASES.get(value, value)
 
 OUTPUT_DIR = Path("round_outputs")
 OUTPUT_DIR.mkdir(exist_ok=True)
@@ -389,7 +418,11 @@ except FileNotFoundError:
 # Parse arguments
 parser = argparse.ArgumentParser(description="Run OpenCode rounds and consolidate output.")
 parser.add_argument("--clear", action="store_true", help="Clear previous round outputs before running.")
+parser.add_argument("--model", default=MODEL, help="Model alias to use for the scraper run.")
 args = parser.parse_args()
+
+REQUESTED_MODEL = args.model or MODEL
+MODEL = resolve_model_alias(REQUESTED_MODEL)
 
 if args.clear:
     print("🗑️  Clearing previous outputs...")
@@ -397,7 +430,10 @@ if args.clear:
 
 print(f"\n{'='*80}")
 print(f"🚀 GOVERNMENT HACKATHON SCRAPER")
-print(f"Model: {MODEL} | Rounds: {TOTAL_ROUNDS}")
+if REQUESTED_MODEL != MODEL:
+    print(f"Model: {REQUESTED_MODEL} -> {MODEL} | Rounds: {TOTAL_ROUNDS}")
+else:
+    print(f"Model: {MODEL} | Rounds: {TOTAL_ROUNDS}")
 print(f"{'='*80}\n")
 
 run_started_at = time.perf_counter()

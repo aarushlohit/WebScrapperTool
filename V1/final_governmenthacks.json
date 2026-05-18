@@ -1,0 +1,335 @@
+{
+  "government_hackathons": [
+    {
+      "event_type": "defence_innovation_challenge",
+      "hackathon_name": "iDEX Open Challenge",
+      "full_name": "iDEX Open Challenge - Defence India Startup Challenge",
+      "current_status": "active",
+      "registration_url": "https://idex.gov.in/challenges",
+      "submission_url": "https://idex.gov.in/d/form/open_challenge",
+      "official_website": "https://idex.gov.in",
+      "official_event_page": "https://idex.gov.in/disc-category/18",
+      "source_url": "https://idex.gov.in/challenges",
+      "hosting_organization": "Defence Innovation Organisation (DIO), iDEX",
+      "ministry": "Ministry of Defence",
+      "institution_type": "government",
+      "platform": "iDEX Portal",
+      "domain": "defence_and_aerospace",
+      "theme": "Open innovation for defence and aerospace technologies",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "autonomous systems",
+        "intelligent machines",
+        "advanced materials",
+        "predictive algorithms",
+        "rocket engines",
+        "defence technology",
+        "aerospace technology"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-06-30",
+      "registration_close_date": "2026-06-30",
+      "submission_close_date": "2026-06-30",
+      "application_deadline": "2026-06-30",
+      "eligibility_criteria": {
+        "summary": "Open to innovators, startups, and MSMEs in India. Individual innovators, entrepreneurs, and MSMEs can apply."
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "No fee mentioned"
+      },
+      "prizes": {
+        "summary": "Grants up to Rs. 1.5 crore for selected applicants. Selected applicants pitch to iDEX grand jury for grants and investments."
+      },
+      "tags": [
+        "defence",
+        "innovation",
+        "defence_innovation",
+        "startup_challenge",
+        "ministry_of_defence",
+        "idex",
+        "open_challenge"
+      ],
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "CHALLENGE OPEN",
+          "APPLY NOW",
+          "Last Date - 30 Jun, 2026"
+        ],
+        "deadline_verified": true
+      }
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "D.E.S.I.G.N for BioE3 Challenge",
+      "full_name": "D.E.S.I.G.N for BioE3 Challenge - Empowering Youth to Solve Critical Issues of their TIMES",
+      "current_status": "active",
+      "registration_url": "https://innovateindia.mygov.in",
+      "submission_url": "https://innovateindia.mygov.in",
+      "official_website": "https://innovateindia.mygov.in",
+      "official_event_page": "https://innovateindia.mygov.in",
+      "source_url": "https://innovateindia.mygov.in",
+      "hosting_organization": "Department of Biotechnology (under BioE3 policy framework)",
+      "ministry": "Ministry of Science and Technology",
+      "institution_type": "government",
+      "platform": "MyGov Innovate India",
+      "domain": "biotechnology",
+      "theme": "Sustainable and scalable biotechnological solutions for critical national issues",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "biotechnology",
+        "sustainable_solutions",
+        "bioeconomy",
+        "biomanufacturing",
+        "environment",
+        "employment"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-05-20",
+      "registration_close_date": "2026-05-20",
+      "submission_close_date": "2026-05-20",
+      "application_deadline": "2026-05-20",
+      "eligibility_criteria": {
+        "summary": "Open to young students and researchers in India. Part of the BioE3 (Biotechnology for Economy, Environment and Employment) policy framework."
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "No fee mentioned"
+      },
+      "prizes": {
+        "summary": "Not specified - challenge is under BioE3 policy framework"
+      },
+      "tags": [
+        "biotechnology",
+        "innovation_challenge",
+        "student_challenge",
+        "mygov",
+        "bioe3",
+        "department_of_biotechnology"
+      ],
+      "source_validation": {
+        "source_type": "official_government_portal",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "SUBMISSION OPEN",
+          "01/11/2025 - 20/05/2026"
+        ],
+        "deadline_verified": true
+      }
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "IOCL Grand Challenge 2026",
+      "full_name": "IOCL Grand Challenge 2026 - Development of Affordable, Efficient & Scalable Indoor Cooking Device powered by Solar Energy",
+      "current_status": "active",
+      "registration_url": "https://www.nrdcindia.com/Pages/IOCL%20GRAND%20CHALLENGE%202026",
+      "submission_url": "https://www.nrdcindia.com/Pages/IOCL%20GRAND%20CHALLENGE%202026",
+      "official_website": "https://www.nrdcindia.com",
+      "official_event_page": "https://www.nrdcindia.com/Pages/IOCL%20GRAND%20CHALLENGE%202026",
+      "source_url": "https://www.nrdcindia.com/Pages/IOCL%20GRAND%20CHALLENGE%202026",
+      "hosting_organization": "National Research Development Corporation (NRDC) and IndianOil Corporation Limited (IOCL)",
+      "ministry": "Ministry of Petroleum and Natural Gas (IOCL) / Department of Science and Technology (NRDC)",
+      "institution_type": "government",
+      "platform": "NRDC Portal",
+      "domain": "clean_energy_cooking",
+      "theme": "Development of affordable, efficient and scalable indoor cooking device powered by solar energy",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "solar energy",
+        "clean cooking",
+        "indoor cooking device",
+        "renewable energy",
+        "affordable technology",
+        "energy independence",
+        "sustainable development"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-05-25",
+      "registration_close_date": "2026-05-25",
+      "submission_close_date": "2026-05-25",
+      "application_deadline": "2026-05-25",
+      "eligibility_criteria": {
+        "summary": "Open to registered entities of India only: companies incorporated under Companies Act, DPIIT-registered startups, registered MSMEs with Udyam registration, registered educational institutions, research institutes, academic institutions, autonomous bodies, and any other registered entities. Individual or group participation not allowed. Entity registration date must be on or before 31st March 2026."
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "No fee mentioned"
+      },
+      "prizes": {
+        "summary": "Not specified on the page — winners to receive recognition and potential collaboration with NRDC and IndianOil"
+      },
+      "tags": [
+        "solar_energy",
+        "clean_cooking",
+        "renewable_energy",
+        "iocl",
+        "nrdc",
+        "grand_challenge",
+        "energy_innovation",
+        "indoor_cooking",
+        "ministry_of_petroleum",
+        "dst"
+      ],
+      "source_validation": {
+        "source_type": "official_government_agency",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Application Submission will begin from 23.04.2026 at 03:00 PM and close on 25.05.2026 at 11:00 PM"
+        ],
+        "deadline_verified": true
+      }
+    },
+    {
+      "event_type": "hackathon",
+      "hackathon_name": "ZSI National Hackathon 2026",
+      "full_name": "ZSI National Hackathon 2026 - Integrating Traditional Knowledge with Technology for Biodiversity Conservation",
+      "current_status": "active",
+      "registration_url": "https://hackathon.zsi.org.in",
+      "submission_url": "https://hackathon.zsi.org.in/form/hackathon-registration",
+      "official_website": "https://hackathon.zsi.org.in",
+      "official_event_page": "https://hackathon.zsi.org.in",
+      "source_url": "https://hackathon.zsi.org.in",
+      "hosting_organization": "Zoological Survey of India (ZSI)",
+      "ministry": "Ministry of Environment, Forest and Climate Change",
+      "institution_type": "government",
+      "platform": "ZSI Hackathon Portal",
+      "domain": "biodiversity_conservation",
+      "theme": "Integrating traditional knowledge systems with contemporary technology for biodiversity conservation",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "biodiversity conservation",
+        "traditional knowledge",
+        "AI in conservation",
+        "GIS mapping",
+        "digital knowledge repositories",
+        "community-driven conservation",
+        "wildlife protection"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-05-20",
+      "registration_close_date": "2026-05-20",
+      "submission_close_date": "2026-05-20",
+      "application_deadline": "2026-05-20",
+      "eligibility_criteria": {
+        "summary": "Open to Indian citizens of all ages. Teams of up to 3 members. Open to students, researchers, employed individuals, community members, indigenous people from any discipline. At least one team member must be well-versed in English."
+      },
+      "team_size": {
+        "minimum": 1,
+        "maximum": 3
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "No fee mentioned"
+      },
+      "prizes": {
+        "summary": "Prizes up to ₹1 lakh for exceptional innovations. Winners also receive recognition at the grand finale at ZSI Headquarters, Kolkata."
+      },
+      "tags": [
+        "biodiversity",
+        "traditional_knowledge",
+        "conservation",
+        "wildlife",
+        "zsi",
+        "moefcc",
+        "national_hackathon",
+        "indigenous_knowledge"
+      ],
+      "source_validation": {
+        "source_type": "official_government_agency",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Registration Opens May 5, 2026",
+          "Registration Closes May 20, 2026",
+          "Register now"
+        ],
+        "deadline_verified": true
+      }
+    },
+    {
+      "event_type": "innovation_challenge",
+      "hackathon_name": "Tribal Affairs Open Grand Challenge 2026",
+      "full_name": "Tribal Business Conclave 2026 - Open Grand Challenge for Healthcare, Education and Livelihoods in Tribal Communities",
+      "current_status": "active",
+      "registration_url": "https://www.startupindia.gov.in/content/sih/en/ams.html",
+      "submission_url": "https://www.startupindia.gov.in/content/sih/en/ams.html",
+      "official_website": "https://www.tribal.gov.in",
+      "official_event_page": "https://www.startupindia.gov.in",
+      "source_url": "https://www.pib.gov.in",
+      "hosting_organization": "Ministry of Tribal Affairs, Government of India",
+      "ministry": "Ministry of Tribal Affairs",
+      "institution_type": "government",
+      "platform": "Startup India AMS Portal",
+      "domain": "tribal_development",
+      "theme": "Innovative, scalable solutions for healthcare, education and livelihoods in tribal communities",
+      "sdg_alignment": [],
+      "focus_areas": [
+        "tribal healthcare",
+        "tribal education",
+        "tribal livelihoods",
+        "rural innovation",
+        "social impact",
+        "inclusive development",
+        "technology for tribal welfare"
+      ],
+      "problem_statements": [],
+      "deadline": "2026-06-15",
+      "registration_close_date": "2026-06-15",
+      "submission_close_date": "2026-06-15",
+      "application_deadline": "2026-06-15",
+      "eligibility_criteria": {
+        "summary": "Open to all DPIIT-recognised Startups across ideation, validation, early traction and scaling stages. Solo founders at ideation stage are eligible. No requirement to be from Scheduled Tribe category."
+      },
+      "team_size": {
+        "minimum": null,
+        "maximum": null
+      },
+      "submission_fee": {
+        "amount": null,
+        "currency": "INR",
+        "display": "No fee"
+      },
+      "prizes": {
+        "summary": "Prize pool of ₹12 Lakhs. Winners receive a national platform to showcase their solution and structured hand-holding support for piloting."
+      },
+      "tags": [
+        "tribal_affairs",
+        "innovation_challenge",
+        "startup_challenge",
+        "ministry_of_tribal_affairs",
+        "social_impact",
+        "healthcare",
+        "education",
+        "livelihoods",
+        "open_grand_challenge"
+      ],
+      "source_validation": {
+        "source_type": "official_government_ministry",
+        "official_confirmation_found": true,
+        "official_open_keywords_found": [
+          "Application Start Date: 1 May 2026",
+          "Application End Date: 15 June 2026",
+          "12 Lakhs prize pool"
+        ],
+        "deadline_verified": true
+      }
+    }
+  ]
+}

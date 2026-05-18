@@ -1,0 +1,428 @@
+{
+  "funding_opportunities": [
+    {
+      "program_name": "Startup India Seed Fund Scheme (SISFS)",
+      "program_type": "seed_grant",
+      "status": "rolling_applications",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://seedfund.startupindia.gov.in/",
+      "official_website": "https://www.startupindia.gov.in/",
+      "official_program_page": "https://www.startupindia.gov.in/content/sih/en/startup-scheme.html",
+      "source_url": "https://www.startupindia.gov.in/content/sih/en/funding.html",
+      "organization": "Department for Promotion of Industry and Internal Trade (DPIIT)",
+      "program_owner": "Startup India",
+      "sector": "multi-sector",
+      "focus_areas": [
+        "proof_of_concept",
+        "prototype_development",
+        "product_trials",
+        "market_entry",
+        "commercialization"
+      ],
+      "benefits": [
+        "grant up to INR 20 lakhs",
+        "loan up to INR 50 lakhs",
+        "mentorship",
+        "incubator connect"
+      ],
+      "funding_support": {
+        "type": "grant_and_loan",
+        "amount_min": 200000,
+        "amount_max": 5000000,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": "grant_and_debt"
+      },
+      "eligibility": {
+        "summary": "DPIIT-recognized startups at proof-of-concept, prototype, product trials, or market entry stage. Must be incorporated as Pvt Ltd, LLP, or Partnership. Should not have received more than INR 50 lakhs from other government schemes."
+      },
+      "startup_stage": [
+        "idea",
+        "validation",
+        "early_traction"
+      ],
+      "incubation_support": [
+        "incubator_connect",
+        "office_space",
+        "mentorship"
+      ],
+      "mentorship_support": [
+        "technical_mentorship",
+        "business_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        8,
+        9,
+        17
+      ],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "startup-india-seed-fund-scheme-sisfs",
+      "tags": [
+        "government_grant",
+        "seed_funding",
+        "startup_india",
+        "dpiit",
+        "rolling_applications"
+      ],
+      "label": "startup"
+    },
+    {
+      "program_name": "BIRAC BioNEST Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://birac.nic.in/birac_registration_page.php",
+      "official_website": "https://birac.nic.in/",
+      "official_program_page": "https://birac.nic.in/bionest.php",
+      "source_url": "https://birac.nic.in/bionest.php",
+      "organization": "Biotechnology Industry Research Assistance Council (BIRAC)",
+      "program_owner": "BIRAC",
+      "sector": "biotechnology",
+      "focus_areas": [
+        "biotech",
+        "lifesciences",
+        "healthcare",
+        "medtech",
+        "pharma",
+        "agritech",
+        "cleantech",
+        "industrial_biotechnology"
+      ],
+      "benefits": [
+        "incubation space",
+        "high-end instrumentation",
+        "technical mentorship",
+        "business mentorship",
+        "IP support",
+        "funding facilitation"
+      ],
+      "funding_support": {
+        "type": "incubation",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "varies_by_incubator",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Biotech and life sciences startups and entrepreneurs. Available through 73+ BioNEST incubators across India. Must apply to individual incubator partners."
+      },
+      "startup_stage": [
+        "idea",
+        "validation",
+        "early_traction"
+      ],
+      "incubation_support": [
+        "wet_lab",
+        "dry_lab",
+        "office_space",
+        "equipment_access",
+        "prototyping"
+      ],
+      "mentorship_support": [
+        "technical_mentorship",
+        "business_mentorship",
+        "IP_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        2,
+        3,
+        9,
+        17
+      ],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "birac-bionest-incubation-program",
+      "tags": [
+        "biotech_incubation",
+        "government_program",
+        "rolling_applications",
+        "laboratory_access",
+        "startup_support"
+      ],
+      "label": "startup"
+    },
+    {
+      "program_name": "KSUM Idea Grant",
+      "program_type": "grant",
+      "status": "application_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://grants.startupmission.in/",
+      "official_website": "https://www.startupmission.kerala.gov.in/",
+      "official_program_page": "https://www.startupmission.kerala.gov.in/schemes/early-stage-funding",
+      "source_url": "https://www.startupmission.kerala.gov.in/schemes/early-stage-funding",
+      "organization": "Kerala Startup Mission (KSUM)",
+      "program_owner": "Government of Kerala",
+      "sector": "multi-sector",
+      "focus_areas": [
+        "idea_validation",
+        "proof_of_concept",
+        "feasibility_studies",
+        "technology_innovation"
+      ],
+      "benefits": [
+        "non-dilutive grant up to INR 3 lakhs",
+        "incubation support",
+        "mentorship"
+      ],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 300000,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Early-stage innovators in Kerala with scalable technology ideas. Must have KSUM Unique ID. First-time founders and student innovators preferred."
+      },
+      "startup_stage": [
+        "idea"
+      ],
+      "incubation_support": [
+        "pre_incubation",
+        "prototyping_support"
+      ],
+      "mentorship_support": [
+        "technical_mentorship",
+        "business_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Kerala",
+        "city": ""
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "ksum-idea-grant",
+      "tags": [
+        "state_government_grant",
+        "kerala",
+        "idea_stage",
+        "non_dilutive",
+        "early_stage"
+      ],
+      "label": "startup"
+    },
+    {
+      "program_name": "T-Hub Foundation Program",
+      "program_type": "accelerator",
+      "status": "cohort_open",
+      "deadline_type": "cohort",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://t-hub.co/foundation",
+      "official_website": "https://t-hub.co/",
+      "official_program_page": "https://t-hub.co/foundation",
+      "source_url": "https://t-hub.co/programs/",
+      "organization": "T-Hub",
+      "program_owner": "T-Hub",
+      "sector": "multi-sector",
+      "focus_areas": [
+        "scaling",
+        "growth",
+        "fundraising",
+        "market_access"
+      ],
+      "benefits": [
+        "structured scaling program",
+        "mentorship",
+        "investor connect",
+        "ecosystem access",
+        "global markets"
+      ],
+      "funding_support": {
+        "type": "none",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Startups ready to scale from initial traction to growth stage. Must have a built product and some market validation."
+      },
+      "startup_stage": [
+        "early_traction",
+        "growth"
+      ],
+      "incubation_support": [
+        "acceleration",
+        "coworking",
+        "ecosystem_access"
+      ],
+      "mentorship_support": [
+        "founder_mentorship",
+        "growth_mentorship",
+        "investor_preparation"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Telangana",
+        "city": "Hyderabad"
+      },
+      "sdg_alignment": [
+        8,
+        9,
+        17
+      ],
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "t-hub-foundation-program",
+      "tags": [
+        "acceleration",
+        "t_hub",
+        "hyderabad",
+        "scaling",
+        "cohort_based"
+      ],
+      "label": "startup"
+    },
+    {
+      "program_name": "100X.VC Pre-Seed and Seed Funding",
+      "program_type": "venture_capital",
+      "status": "rolling_applications",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://form.jotform.com/100xvc/100xvc-startup-application",
+      "official_website": "https://100x.vc/",
+      "official_program_page": "https://100x.vc/",
+      "source_url": "https://100x.vc/",
+      "organization": "100X.VC",
+      "program_owner": "100X.VC",
+      "sector": "multi-sector",
+      "focus_areas": [
+        "pre_seed",
+        "seed_funding",
+        "saas",
+        "fintech",
+        "healthtech",
+        "consumer",
+        "enterprise",
+        "deeptech"
+      ],
+      "benefits": [
+        "pre-seed/seed investment via India SAFE Notes",
+        "mentorship from 100+ mentors",
+        "VC network connect",
+        "portfolio support"
+      ],
+      "funding_support": {
+        "type": "equity",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "yes",
+        "grant_or_equity": "equity"
+      },
+      "eligibility": {
+        "summary": "Early-stage Indian startups with high-growth potential. Open to startups across sectors. Investment via founder-friendly India SAFE Notes."
+      },
+      "startup_stage": [
+        "idea",
+        "validation",
+        "early_traction"
+      ],
+      "incubation_support": [],
+      "mentorship_support": [
+        "founder_mentorship",
+        "investor_connect",
+        "growth_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        3,
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "100xvc-pre-seed-seed-funding",
+      "tags": [
+        "venture_capital",
+        "pre_seed",
+        "seed_funding",
+        "private_investor",
+        "safe_notes",
+        "rolling_applications"
+      ],
+      "label": "startup"
+    }
+  ]
+}
