@@ -21,7 +21,6 @@ This tool operates as an autonomous intelligence agent that:
 - Innovation challenges
 - AI/ML competitions
 - Cybersecurity competitions
-- CTF challenges
 - Defence innovation competitions
 - GovTech technical competitions
 - Code competitions from government agencies

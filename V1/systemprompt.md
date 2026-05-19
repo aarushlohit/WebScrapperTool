@@ -47,7 +47,6 @@ ONLY include opportunities matching one or more:
 - AI challenge
 - machine learning challenge
 - cybersecurity competition
-- CTF competition
 - defence innovation challenge
 - technical challenge
 - govtech challenge
@@ -151,7 +150,6 @@ Search using combinations of:
 - "submission open"
 - "hackathon"
 - "innovation challenge"
-- "CTF"
 - "AI challenge"
 - "cybersecurity competition"
 - "coding competition"
@@ -608,7 +606,6 @@ ONLY ALLOW:
 * AI challenges
 * cybersecurity competitions
 * defence innovation competitions
-* CTFs
 * engineering competitions
 * technical build competitions
 
