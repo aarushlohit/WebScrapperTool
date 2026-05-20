@@ -79,78 +79,88 @@ def extract_json_payload(text):
     if not text or not text.strip():
         print("[JSON] No text to extract from")
         return None
+
+    def is_candidate_payload(data):
+        if isinstance(data, dict):
+            if any(key in data for key in ["candidates", "government_hackathons", "hackathons"]):
+                return True
+            if data and all(isinstance(value, dict) for value in data.values()):
+                return True
+        if isinstance(data, list) and data and isinstance(data[0], dict):
+            return any(
+                key in data[0]
+                for key in ["hackathon_name", "event_type", "registration_url", "current_status"]
+            )
+        return False
+
+    def normalize_payload(data):
+        if isinstance(data, list) and data and isinstance(data[0], dict):
+            if any(key in data[0] for key in ["hackathon_name", "event_type", "registration_url"]):
+                return {"candidates": data}
+        return data
+
+    def try_parse_json_snippet(snippet):
+        try:
+            return normalize_payload(json.loads(snippet))
+        except json.JSONDecodeError:
+            return None
     
     # CASE 2: Try markdown fenced JSON first (most reliable)
     markdown_blocks = re.findall(r'```(?:json)?\s*\n(.*?)\n```', text, re.DOTALL)
     if markdown_blocks:
         for block in markdown_blocks:
-            try:
-                data = json.loads(block)
+            data = try_parse_json_snippet(block)
+            if data is not None:
                 print(f"[JSON] Extracted from markdown fence: {type(data).__name__} with {len(data) if isinstance(data, (list, dict)) else 'N/A'} items")
-                # Normalize wrapped arrays
-                if isinstance(data, list) and data and isinstance(data[0], dict):
-                    if "hackathon_name" in data[0] or "event_type" in data[0]:
-                        return {"candidates": data}
-                return data
-            except json.JSONDecodeError:
-                continue
+                if is_candidate_payload(data):
+                    return data
     
-    # CASE 1 & 3: Find first [ or { and try to extract
-    brace_idx = text.find('{')
-    bracket_idx = text.find('[')
-    
-    def try_extract_at_position(start_idx, is_array):
-        """Try extracting JSON starting at position."""
-        if start_idx == -1:
-            return None
-        
+    # CASE 1 & 3: Scan every JSON-looking snippet and prefer real candidate payloads.
+    start_positions = sorted({idx for idx, char in enumerate(text) if char in "[{"})
+
+    first_valid_json = None
+
+    for start_idx in start_positions:
+        is_array = text[start_idx] == '['
         if is_array:
-            bracket_count = 0
-            for i in range(start_idx, len(text)):
-                if text[i] == '[':
-                    bracket_count += 1
-                elif text[i] == ']':
-                    bracket_count -= 1
-                    if bracket_count == 0:
-                        try:
-                            json_str = text[start_idx:i+1]
-                            data = json.loads(json_str)
-                            print(f"[JSON] Extracted array: {len(data)} items")
-                            # Wrap raw arrays of candidates
-                            if isinstance(data, list) and data and isinstance(data[0], dict):
-                                if any(key in data[0] for key in ["hackathon_name", "event_type", "registration_url"]):
-                                    return {"candidates": data}
+            depth = 0
+            for end_idx in range(start_idx, len(text)):
+                if text[end_idx] == '[':
+                    depth += 1
+                elif text[end_idx] == ']':
+                    depth -= 1
+                    if depth == 0:
+                        data = try_parse_json_snippet(text[start_idx:end_idx + 1])
+                        if data is None:
+                            break
+                        if first_valid_json is None:
+                            first_valid_json = data
+                        if is_candidate_payload(data):
+                            print(f"[JSON] Extracted array: {len(data) if isinstance(data, list) else 'N/A'} items")
                             return data
-                        except json.JSONDecodeError:
-                            pass
+                        break
         else:
-            brace_count = 0
-            for i in range(start_idx, len(text)):
-                if text[i] == '{':
-                    brace_count += 1
-                elif text[i] == '}':
-                    brace_count -= 1
-                    if brace_count == 0:
-                        try:
-                            json_str = text[start_idx:i+1]
-                            data = json.loads(json_str)
-                            print(f"[JSON] Extracted object with keys: {list(data.keys())[:3] if isinstance(data, dict) else 'N/A'}")
+            depth = 0
+            for end_idx in range(start_idx, len(text)):
+                if text[end_idx] == '{':
+                    depth += 1
+                elif text[end_idx] == '}':
+                    depth -= 1
+                    if depth == 0:
+                        data = try_parse_json_snippet(text[start_idx:end_idx + 1])
+                        if data is None:
+                            break
+                        if first_valid_json is None:
+                            first_valid_json = data
+                        if is_candidate_payload(data):
+                            keys = list(data.keys())[:3] if isinstance(data, dict) else 'N/A'
+                            print(f"[JSON] Extracted object with keys: {keys}")
                             return data
-                        except json.JSONDecodeError:
-                            pass
-        return None
-    
-    # Try array first if it comes first
-    if bracket_idx != -1 and (brace_idx == -1 or bracket_idx < brace_idx):
-        result = try_extract_at_position(bracket_idx, True)
-        if result:
-            return result
-    
-    # Try object
-    if brace_idx != -1:
-        result = try_extract_at_position(brace_idx, False)
-        if result:
-            return result
+                        break
+
+    if first_valid_json is not None:
+        print("[JSON] Found JSON but not a candidate payload")
+        return first_valid_json
     
     print("[JSON] No valid JSON found in output")
     return None

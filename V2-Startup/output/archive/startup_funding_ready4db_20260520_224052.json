@@ -1,0 +1,1761 @@
+{
+  "funding_opportunities": [
+    {
+      "label": "startup",
+      "program_name": "Startup India Seed Fund Scheme",
+      "program_type": "seed_funding",
+      "status": "rolling_applications",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://seedfund.startupindia.gov.in/",
+      "official_website": "https://seedfund.startupindia.gov.in/",
+      "official_program_page": "https://seedfund.startupindia.gov.in/",
+      "source_url": "https://seedfund.startupindia.gov.in/",
+      "organization": "Department for Promotion of Industry and Internal Trade (DPIIT)",
+      "program_owner": "Startup India",
+      "sector": "sector_agnostic",
+      "focus_areas": [
+        "technology",
+        "innovation",
+        "product_development",
+        "commercialization"
+      ],
+      "benefits": [
+        "Seed funding up to INR 20 lakhs for proof of concept",
+        "Up to INR 50 lakhs for prototype development",
+        "Up to INR 50 lakhs for market entry and commercialization"
+      ],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": 2000000,
+        "amount_max": 5000000,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "DPIIT-recognized startup, incorporated not more than 2 years ago, with a business idea for product/service with market fit and commercialization scope. Must apply through eligible incubators."
+      },
+      "startup_stage": [
+        "idea",
+        "prototype",
+        "early_traction"
+      ],
+      "incubation_support": [
+        "access_to_incubator_network",
+        "mentorship"
+      ],
+      "mentorship_support": [
+        "technical_mentorship",
+        "business_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "startup-india-seed-fund-scheme",
+      "tags": [
+        "seed_funding",
+        "government_scheme",
+        "dpiit",
+        "startup_india",
+        "pan_india"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "STPI Next Generation Incubation Scheme",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://startup.stpi.in/",
+      "official_website": "https://stpi.in/",
+      "official_program_page": "https://startup.stpi.in/",
+      "source_url": "https://startup.stpi.in/",
+      "organization": "Software Technology Parks of India (STPI), MeitY",
+      "program_owner": "STPI",
+      "sector": "technology",
+      "focus_areas": [
+        "AI",
+        "IoT",
+        "Blockchain",
+        "Computer Vision",
+        "AR_VR",
+        "FinTech",
+        "MedTech",
+        "AgriTech",
+        "Cybersecurity",
+        "Industry 4.0",
+        "Drone"
+      ],
+      "benefits": [
+        "Seed funding up to INR 25 lakhs",
+        "Incubation infrastructure",
+        "Lab network access",
+        "Mentorship",
+        "Industry connect",
+        "IPR support",
+        "Internship grants"
+      ],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 2500000,
+        "currency": "INR",
+        "equity_taken": "",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Tech startups in IT/ITeS/ESDM sectors. Open to registered companies and individual innovators. Must work in emerging technology domains. Annual turnover less than INR 100 crore."
+      },
+      "startup_stage": [
+        "idea",
+        "prototype",
+        "mvp",
+        "early_traction"
+      ],
+      "incubation_support": [
+        "physical_incubation",
+        "seed_funding",
+        "lab_access",
+        "ipr_support",
+        "industry_connect"
+      ],
+      "mentorship_support": [
+        "technical_mentorship",
+        "business_mentorship",
+        "mentor_pool_access"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": "Agartala, Bhilai, Bhopal, Bhubaneswar, Dehradun, Guwahati, Jaipur, Lucknow, Prayagraj, Mohali, Patna, Vijayawada"
+      },
+      "sdg_alignment": [
+        2,
+        8,
+        9
+      ],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "stpi-next-generation-incubation-scheme",
+      "tags": [
+        "incubation",
+        "seed_funding",
+        "stpi",
+        "meity",
+        "pan_india",
+        "tier_2_tier_3"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "STPI MedTech CoE Incubation",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://medtech.stpi.in/",
+      "official_website": "https://medtech.stpi.in/",
+      "official_program_page": "https://medtech.stpi.in/",
+      "source_url": "https://medtech.stpi.in/",
+      "organization": "Software Technology Parks of India (STPI), SGPGI Lucknow, UP Govt",
+      "program_owner": "STPI MedTech CoE",
+      "sector": "healthcare",
+      "focus_areas": [
+        "MediElectronics",
+        "Health Informatics",
+        "Medical Devices",
+        "HealthTech"
+      ],
+      "benefits": [
+        "Plug-and-play incubation space",
+        "Seed funding guidance",
+        "Mentorship from medical practitioners",
+        "Lab access",
+        "VC funding connect",
+        "IPR support",
+        "Marketing assistance"
+      ],
+      "funding_support": {
+        "type": "grant_and_equity",
+        "amount_min": null,
+        "amount_max": 5000000,
+        "currency": "INR",
+        "equity_taken": "yes",
+        "grant_or_equity": "mix"
+      },
+      "eligibility": {
+        "summary": "Private Limited Company, Registered Partnership Firm, or LLP. Incorporation not beyond 10 years. Annual turnover not exceeding INR 100 crore. Must work in MediElectronics or Health Informatics."
+      },
+      "startup_stage": [
+        "idea",
+        "prototype",
+        "mvp"
+      ],
+      "incubation_support": [
+        "physical_incubation",
+        "lab_access",
+        "investor_connect",
+        "ipr_support"
+      ],
+      "mentorship_support": [
+        "medical_mentorship",
+        "technical_mentorship",
+        "business_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Uttar Pradesh",
+        "city": "Lucknow"
+      },
+      "sdg_alignment": [
+        3
+      ],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "stpi-medtech-coe-incubation",
+      "tags": [
+        "medtech",
+        "incubation",
+        "stpi",
+        "healthtech",
+        "lucknow"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "Kerala Startup Mission Idea Grant",
+      "program_type": "grant",
+      "status": "rolling_applications",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://startupmission.kerala.gov.in/schemes/early-stage-funding",
+      "official_website": "https://startupmission.kerala.gov.in/",
+      "official_program_page": "https://startupmission.kerala.gov.in/schemes/early-stage-funding",
+      "source_url": "https://startupmission.kerala.gov.in/schemes/early-stage-funding",
+      "organization": "Kerala Startup Mission (KSUM), Government of Kerala",
+      "program_owner": "Kerala Startup Mission",
+      "sector": "sector_agnostic",
+      "focus_areas": [
+        "technology",
+        "innovation",
+        "product_development"
+      ],
+      "benefits": [
+        "Non-dilutive grant for idea validation",
+        "Proof-of-concept development support",
+        "Feasibility study funding"
+      ],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Startups registered with KSUM or Kerala-based innovators. Technology-driven ideas with scalability and market orientation."
+      },
+      "startup_stage": [
+        "idea",
+        "pre_prototype"
+      ],
+      "incubation_support": [
+        "pre_incubation"
+      ],
+      "mentorship_support": [
+        "technical_mentorship",
+        "business_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Kerala",
+        "city": ""
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "ksum-idea-grant",
+      "tags": [
+        "grant",
+        "kerala",
+        "state_government",
+        "early_stage",
+        "non_dilutive"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "NIDHI PRAYAS 2.0",
+      "program_type": "grant",
+      "status": "active",
+      "deadline_type": "recurring",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://nidhi-prayas.org/",
+      "official_website": "https://nidhi.dst.gov.in/schemes-programmes/nidhiprayas/",
+      "official_program_page": "https://nidhi-prayas.org/",
+      "source_url": "https://nidhi-prayas.org/",
+      "organization": "Department of Science & Technology (DST), Government of India",
+      "program_owner": "DST-NIDHI",
+      "sector": "sector_agnostic",
+      "focus_areas": [
+        "deep_tech",
+        "prototype_development",
+        "innovation",
+        "product_development"
+      ],
+      "benefits": [
+        "Prototype grant up to INR 20 lakhs (PRAYAS Centre)",
+        "Prototype grant up to INR 40 lakhs (Advanced PRAYAS Centre)",
+        "Infrastructure access at TBIs",
+        "Mentorship and guidance",
+        "Industry connections"
+      ],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 4000000,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Individual innovators (Indian citizens, 18+) or early-stage startups. Must demonstrate clear ownership of IP. Deep-tech ideas eligible for Advanced PRAYAS. Physical product development focus."
+      },
+      "startup_stage": [
+        "idea",
+        "prototype",
+        "proof_of_concept"
+      ],
+      "incubation_support": [
+        "tbi_access",
+        "infrastructure_access"
+      ],
+      "mentorship_support": [
+        "technical_mentorship",
+        "business_mentorship",
+        "ip_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "nidhi-prayas-2-0",
+      "tags": [
+        "prototype_grant",
+        "dst",
+        "government_scheme",
+        "deep_tech",
+        "pre_incubation"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "BIRAC SBIRI (Small Business Innovation Research Initiative)",
+      "program_type": "grant",
+      "status": "recurring",
+      "deadline_type": "recurring",
+      "deadline": "31 July 2026",
+      "deadline_iso": "2026-07-31",
+      "application_url": "https://birac.nic.in/sbiri.php",
+      "official_website": "https://birac.nic.in/",
+      "official_program_page": "https://birac.nic.in/sbiri.php",
+      "source_url": "https://birac.nic.in/sbiri.php",
+      "organization": "Biotechnology Industry Research Assistance Council (BIRAC), DBT",
+      "program_owner": "BIRAC",
+      "sector": "biotechnology",
+      "focus_areas": [
+        "healthcare",
+        "agriculture",
+        "food_and_nutrition",
+        "biotech",
+        "industrial_biotechnology"
+      ],
+      "benefits": [
+        "Early-stage grant-in-aid funding",
+        "PPP platform for biotech innovation",
+        "Product and process development support"
+      ],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Indian companies with 51%+ Indian shareholding, LLPs. Must have in-house R&D facility or be incubated at recognized incubator. Academic collaborators from public/private universities and national labs."
+      },
+      "startup_stage": [
+        "research",
+        "early_stage",
+        "pre_proof_of_concept"
+      ],
+      "incubation_support": [],
+      "mentorship_support": [
+        "technical_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        2,
+        3,
+        9
+      ],
+      "is_government": true,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "birac-sbiri",
+      "tags": [
+        "biotechnology",
+        "grant",
+        "birac",
+        "dbt",
+        "early_stage",
+        "ppp"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "T-Hub Lab32 Market Readiness Program",
+      "program_type": "accelerator",
+      "status": "cohort_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://programs.t-hub.co/lab-32-market-readiness-program/",
+      "official_website": "https://t-hub.co/",
+      "official_program_page": "https://programs.t-hub.co/",
+      "source_url": "https://programs.t-hub.co/lab-32-market-readiness-program/",
+      "organization": "T-Hub",
+      "program_owner": "T-Hub",
+      "sector": "sector_agnostic",
+      "focus_areas": [
+        "technology",
+        "deep_tech",
+        "enterprise_tech",
+        "consumer_tech",
+        "sustainability",
+        "mobility"
+      ],
+      "benefits": [
+        "100-day structured accelerator program",
+        "Go-to-market strategy refinement",
+        "Mentorship from industry experts",
+        "Investor connect",
+        "T-Hub ecosystem access"
+      ],
+      "funding_support": {
+        "type": "equity_free",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": "equity_free"
+      },
+      "eligibility": {
+        "summary": "MVP-ready or market-ready startups from the Indian subcontinent. Focus on innovative solutions. Program fee of INR 90,000 + GST."
+      },
+      "startup_stage": [
+        "mvp",
+        "growth"
+      ],
+      "incubation_support": [
+        "accelerator_program",
+        "ecosystem_access"
+      ],
+      "mentorship_support": [
+        "industry_mentorship",
+        "go_to_market_support"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Telangana",
+        "city": "Hyderabad"
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "thub-lab32-cohort14",
+      "tags": [
+        "accelerator",
+        "market_readiness",
+        "t_hub",
+        "hyderabad",
+        "mvp_stage"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "100X.VC Investment Program",
+      "program_type": "venture_capital",
+      "status": "rolling_applications",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.100x.vc/apply",
+      "official_website": "https://www.100x.vc/",
+      "official_program_page": "https://www.100x.vc/apply",
+      "source_url": "https://www.100x.vc/apply",
+      "organization": "100X.VC",
+      "program_owner": "100X.VC",
+      "sector": "sector_agnostic",
+      "focus_areas": [
+        "B2B SaaS",
+        "consumer",
+        "fintech",
+        "healthtech",
+        "deep_tech",
+        "biotech"
+      ],
+      "benefits": [
+        "Seed investment of INR 1.25 Cr",
+        "Mentoring and network access",
+        "iSAFE note (founder-friendly)",
+        "Follow-on funding support",
+        "100+ mentor network"
+      ],
+      "funding_support": {
+        "type": "equity",
+        "amount_min": 12500000,
+        "amount_max": 12500000,
+        "currency": "INR",
+        "equity_taken": "15% future equity",
+        "grant_or_equity": "equity"
+      },
+      "eligibility": {
+        "summary": "Early-stage Indian startups looking to raise their first institutional cheque. Must have an incorporated Indian entity. Building from India for Indian/global markets."
+      },
+      "startup_stage": [
+        "seed",
+        "pre_seed"
+      ],
+      "incubation_support": [],
+      "mentorship_support": [
+        "mentor_network",
+        "investor_connect"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": "Mumbai"
+      },
+      "sdg_alignment": [
+        3,
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "100x-vc-investment-program",
+      "tags": [
+        "venture_capital",
+        "seed_funding",
+        "isafe",
+        "mumbai",
+        "rolling_applications"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "IAN LiftOff Acceleration Program",
+      "program_type": "accelerator",
+      "status": "active",
+      "deadline_type": "cohort_open",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.startupgrantsindia.com/liftoff-acceleration-program-ian-wadhwani",
+      "official_website": "https://iangroup.vc/",
+      "official_program_page": "https://iangroup.vc/",
+      "source_url": "https://www.startupgrantsindia.com/liftoff-acceleration-program-ian-wadhwani",
+      "organization": "Indian Angel Network (IAN) & Wadhwani Foundation",
+      "program_owner": "Indian Angel Network",
+      "sector": "sector_agnostic",
+      "focus_areas": [
+        "technology",
+        "innovation",
+        "scalable_business"
+      ],
+      "benefits": [
+        "14-week structured acceleration",
+        "CXO mentorship",
+        "Pitch opportunity to IAN investors",
+        "Fundraising readiness preparation",
+        "Financial modelling support"
+      ],
+      "funding_support": {
+        "type": "equity",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "",
+        "grant_or_equity": "equity"
+      },
+      "eligibility": {
+        "summary": "MVP-stage startups with traction (early users, initial revenue, or validated demand). Sector-agnostic. No geographic restriction. Founders preparing for first serious investor conversations."
+      },
+      "startup_stage": [
+        "mvp",
+        "early_revenue"
+      ],
+      "incubation_support": [
+        "virtual_accelerator"
+      ],
+      "mentorship_support": [
+        "cxo_mentorship",
+        "investor_readiness",
+        "pitch_preparation"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": false,
+        "deadline_verified": false,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "ian-liftoff-acceleration",
+      "tags": [
+        "accelerator",
+        "angel_investing",
+        "ian",
+        "wadhwani",
+        "virtual_program"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "LetsVenture LV Fuel",
+      "program_type": "syndicate_investment",
+      "status": "rolling_applications",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.letsventure.com/lv-fuel",
+      "official_website": "https://www.letsventure.com/",
+      "official_program_page": "https://www.letsventure.com/lv-fuel",
+      "source_url": "https://www.letsventure.com/lv-fuel",
+      "organization": "LetsVenture",
+      "program_owner": "LetsVenture / LVX Ventures",
+      "sector": "sector_agnostic",
+      "focus_areas": [
+        "D2C",
+        "fintech",
+        "SaaS",
+        "deep_tech",
+        "agritech",
+        "space_tech",
+        "consumer"
+      ],
+      "benefits": [
+        "Syndicate investment from founder-investors",
+        "Media coverage and PR",
+        "VC connect for future rounds",
+        "Cloud credits",
+        "Founder community access"
+      ],
+      "funding_support": {
+        "type": "equity",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "",
+        "grant_or_equity": "equity"
+      },
+      "eligibility": {
+        "summary": "Sector and stage agnostic. Open from napkin stage to revenue stage. Indian founders building for Indian or global markets."
+      },
+      "startup_stage": [
+        "idea",
+        "prototype",
+        "mvp",
+        "early_revenue"
+      ],
+      "incubation_support": [
+        "portfolio_benefits"
+      ],
+      "mentorship_support": [
+        "founder_mentorship",
+        "investor_connect"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": "Bengaluru"
+      },
+      "sdg_alignment": [
+        2,
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "letsventure-lv-fuel",
+      "tags": [
+        "syndicate",
+        "funding",
+        "letsventure",
+        "founder_led",
+        "rolling"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "SAMRIDH Impact Accelerator Program 2026",
+      "program_type": "accelerator",
+      "status": "application_open",
+      "deadline_type": "fixed",
+      "deadline": "15 June 2026",
+      "deadline_iso": "2026-06-15",
+      "application_url": "https://www.startupgrantsindia.com/samridh-impact-accelerator-program-2026",
+      "official_website": "https://samridh.in/",
+      "official_program_page": "",
+      "source_url": "https://www.startupgrantsindia.com/samridh-impact-accelerator-program-2026",
+      "organization": "SAMRIDH Impact Solutions Pvt. Ltd.",
+      "program_owner": "SAMRIDH",
+      "sector": "healthcare_climate",
+      "focus_areas": [
+        "healthcare",
+        "climate_tech",
+        "social_impact"
+      ],
+      "benefits": [
+        "Up to INR 1 Cr accelerator funding",
+        "Structured acceleration program",
+        "Impact measurement support",
+        "Investor connect"
+      ],
+      "funding_support": {
+        "type": "grant_and_equity",
+        "amount_min": null,
+        "amount_max": 10000000,
+        "currency": "INR",
+        "equity_taken": "",
+        "grant_or_equity": "mix"
+      },
+      "eligibility": {
+        "summary": "Early-to-mid-stage startups in healthcare or climate-tech. TRL 4 or higher. Early evidence of real-world impact. Based anywhere in India."
+      },
+      "startup_stage": [
+        "early_revenue",
+        "growth"
+      ],
+      "incubation_support": [
+        "accelerator"
+      ],
+      "mentorship_support": [
+        "industry_mentorship",
+        "impact_measurement"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        3,
+        13
+      ],
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": false,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "medium"
+      },
+      "canonical_id": "samridh-impact-accelerator-2026",
+      "tags": [
+        "accelerator",
+        "healthcare",
+        "climate_tech",
+        "impact_investing"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "IIMA Ventures Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://ahmedabad.iimaventures.com/incubation",
+      "official_website": "https://ahmedabad.iimaventures.com/",
+      "official_program_page": "https://ahmedabad.iimaventures.com/incubation",
+      "source_url": "https://ahmedabad.iimaventures.com/incubation",
+      "organization": "IIMA Ventures (formerly IIMA-CIIE), IIM Ahmedabad",
+      "program_owner": "IIMA Ventures",
+      "sector": "sector_agnostic",
+      "focus_areas": [
+        "technology",
+        "innovation",
+        "enterprise"
+      ],
+      "benefits": [
+        "Physical incubation infrastructure",
+        "Equity, grant and community support",
+        "Mentoring and office hours",
+        "Market access",
+        "$500K partner benefits",
+        "Networking and events"
+      ],
+      "funding_support": {
+        "type": "equity_and_grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "",
+        "grant_or_equity": "mix"
+      },
+      "eligibility": {
+        "summary": "Early-stage startups in POC/MVP to early traction/revenue stage. Sector-agnostic. Open to applications from across India."
+      },
+      "startup_stage": [
+        "prototype",
+        "mvp",
+        "early_revenue"
+      ],
+      "incubation_support": [
+        "physical_incubation",
+        "virtual_incubation",
+        "grant_support",
+        "investor_connect"
+      ],
+      "mentorship_support": [
+        "expert_mentorship",
+        "office_hours",
+        "insights_and_learning"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Gujarat",
+        "city": "Ahmedabad"
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "iima-ventures-incubation",
+      "tags": [
+        "incubation",
+        "iim_ahmedabad",
+        "iima_ventures",
+        "early_stage",
+        "physical_incubation"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "IIT Delhi FITT Incubation Program",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://fitt-iitd.com/web/incubation",
+      "official_website": "https://fitt-iitd.com/",
+      "official_program_page": "https://fitt-iitd.com/web/incubation",
+      "source_url": "https://fitt-iitd.com/web/incubation",
+      "organization": "Foundation for Innovation and Technology Transfer (FITT), IIT Delhi",
+      "program_owner": "FITT IIT Delhi",
+      "sector": "technology",
+      "focus_areas": [
+        "deep_tech",
+        "engineering",
+        "technology_innovation"
+      ],
+      "benefits": [
+        "Incubation space at IIT Delhi Research & Innovation Park",
+        "Mentorship from IIT Delhi faculty",
+        "Access to lab facilities",
+        "Investor connect",
+        "Industry partnerships"
+      ],
+      "funding_support": {
+        "type": "equity",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "",
+        "grant_or_equity": "equity"
+      },
+      "eligibility": {
+        "summary": "Technology-driven startups with innovative products/processes (preferably first 5 years). Registered as Pvt Ltd in India. >50% shares held by Indian citizens. At least one full-time promoter."
+      },
+      "startup_stage": [
+        "idea",
+        "prototype",
+        "mvp"
+      ],
+      "incubation_support": [
+        "physical_incubation",
+        "lab_access",
+        "ipr_support"
+      ],
+      "mentorship_support": [
+        "faculty_mentorship",
+        "technical_guidance"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Delhi",
+        "city": "New Delhi"
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "iit-delhi-fitt-incubation",
+      "tags": [
+        "incubation",
+        "iit_delhi",
+        "fitt",
+        "deep_tech",
+        "physical_incubation"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "NICE Incubation at IIT Hyderabad",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://itic.iith.ac.in/nice.html",
+      "official_website": "https://itic.iith.ac.in/",
+      "official_program_page": "https://itic.iith.ac.in/nice.html",
+      "source_url": "https://itic.iith.ac.in/nice.html",
+      "organization": "iTIC Incubator, IIT Hyderabad & NMDC Limited",
+      "program_owner": "iTIC Incubator IITH",
+      "sector": "deep_tech",
+      "focus_areas": [
+        "AI_ML",
+        "Quantum Computing",
+        "AR_VR",
+        "Cybersecurity",
+        "Robotics",
+        "IoT",
+        "Blockchain",
+        "Advanced Materials",
+        "Drones",
+        "Biotechnology"
+      ],
+      "benefits": [
+        "NICE Fellowship: upto INR 9.6L for 12 months",
+        "NICE Incubation: upto INR 25L (2 years, ~3% equity)",
+        "Co-working space",
+        "Access to IITH Makerlab",
+        "Investor connections"
+      ],
+      "funding_support": {
+        "type": "grant_and_equity",
+        "amount_min": 960000,
+        "amount_max": 2500000,
+        "currency": "INR",
+        "equity_taken": "upto 3%",
+        "grant_or_equity": "mix"
+      },
+      "eligibility": {
+        "summary": "Indian citizen founders with Engineering/Science graduate background. Deep-tech idea. For Incubation: Prototype/MVP stage, tech with possible IP, DPIIT-registered Pvt Ltd company."
+      },
+      "startup_stage": [
+        "idea",
+        "prototype",
+        "mvp"
+      ],
+      "incubation_support": [
+        "fellowship",
+        "physical_incubation",
+        "lab_access",
+        "prototype_funding"
+      ],
+      "mentorship_support": [
+        "technical_mentorship",
+        "business_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Telangana",
+        "city": "Hyderabad"
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "iith-nice-incubation",
+      "tags": [
+        "incubation",
+        "iit_hyderabad",
+        "deep_tech",
+        "nice",
+        "fellowship"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "ABIF IIT Kharagpur Incubation",
+      "program_type": "incubation",
+      "status": "incubation_open",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://abif.iitkgp.ac.in/",
+      "official_website": "https://abif.iitkgp.ac.in/",
+      "official_program_page": "https://abif.iitkgp.ac.in/",
+      "source_url": "https://abif.iitkgp.ac.in/",
+      "organization": "Agricultural and Food Engineering Department, IIT Kharagpur & NABARD",
+      "program_owner": "ABIF IIT Kharagpur",
+      "sector": "agriculture",
+      "focus_areas": [
+        "agritech",
+        "rural_development",
+        "food_technology",
+        "sustainable_agriculture"
+      ],
+      "benefits": [
+        "Incubation support for agri-startups",
+        "Expert mentorship",
+        "Lab and research facilities",
+        "IIT Kharagpur network access",
+        "Investor connect"
+      ],
+      "funding_support": {
+        "type": "",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "",
+        "grant_or_equity": ""
+      },
+      "eligibility": {
+        "summary": "Startups in agriculture, rural development, and allied domains. Early-stage ventures with innovative solutions for agricultural challenges."
+      },
+      "startup_stage": [
+        "idea",
+        "prototype",
+        "early_traction"
+      ],
+      "incubation_support": [
+        "physical_incubation",
+        "lab_access",
+        "research_support"
+      ],
+      "mentorship_support": [
+        "industry_mentorship",
+        "technical_guidance"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "West Bengal",
+        "city": "Kharagpur"
+      },
+      "sdg_alignment": [
+        2,
+        8
+      ],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "abif-iit-kharagpur-incubation",
+      "tags": [
+        "incubation",
+        "iit_kharagpur",
+        "agriculture",
+        "agritech",
+        "nabard"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "IIT Mandi Catalyst Startup Exploration Program",
+      "program_type": "incubation",
+      "status": "active",
+      "deadline_type": "cohort_open",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://research.iitmandi.ac.in/main/Catalyst/iitmandi_catalyst.php",
+      "official_website": "https://www.iitmandicatalyst.in/",
+      "official_program_page": "https://research.iitmandi.ac.in/main/Catalyst/iitmandi_catalyst.php",
+      "source_url": "https://www.startupgrantsindia.com/startup-exploration-program-2026-iit-mandi-catalyst-379",
+      "organization": "IIT Mandi Catalyst, Indian Institute of Technology Mandi",
+      "program_owner": "IIT Mandi Catalyst",
+      "sector": "sector_agnostic",
+      "focus_areas": [
+        "healthtech",
+        "edtech",
+        "fintech",
+        "agrotech",
+        "biotech",
+        "clean_energy",
+        "AI_ML",
+        "IoT"
+      ],
+      "benefits": [
+        "Structured 3-month incubation",
+        "Co-working space access",
+        "Lab and technical facilities",
+        "Networking with investors and clients",
+        "Grant funding support up to INR 9 Cr"
+      ],
+      "funding_support": {
+        "type": "grant_and_equity",
+        "amount_min": null,
+        "amount_max": 90000000,
+        "currency": "INR",
+        "equity_taken": "",
+        "grant_or_equity": "mix"
+      },
+      "eligibility": {
+        "summary": "Startups and innovators at prototyping or product development stage. Founders looking to move from idea/prototype to market-ready solutions."
+      },
+      "startup_stage": [
+        "idea",
+        "prototype"
+      ],
+      "incubation_support": [
+        "physical_incubation",
+        "lab_access",
+        "ecosystem_access"
+      ],
+      "mentorship_support": [
+        "technical_mentorship",
+        "business_mentorship"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "Himachal Pradesh",
+        "city": "Mandi"
+      },
+      "sdg_alignment": [
+        3,
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "iit-mandi-catalyst-exploration",
+      "tags": [
+        "incubation",
+        "iit_mandi",
+        "catalyst",
+        "himachal_pradesh",
+        "tbi"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "NSRCEL Impact Orbit - Tech-enabled Social Innovations",
+      "program_type": "incubation",
+      "status": "accepting_startups",
+      "deadline_type": "cohort_open",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://nsrcel.org/impact-orbit/",
+      "official_website": "https://nsrcel.org/",
+      "official_program_page": "https://nsrcel.org/impact-orbit/",
+      "source_url": "https://nsrcel.org/impact-orbit/",
+      "organization": "NSRCEL, IIM Bangalore",
+      "program_owner": "NSRCEL",
+      "sector": "social_impact",
+      "focus_areas": [
+        "social_enterprise",
+        "tech_for_good",
+        "digital_inclusion",
+        "sustainable_development"
+      ],
+      "benefits": [
+        "Grants up to INR 15 lakhs",
+        "Incubation support (8-9 months)",
+        "For-profit and non-profit tracks",
+        "Impact measurement support",
+        "Access to IIMB network"
+      ],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 1500000,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "For-profit and non-profit tech-enabled registered ventures. More than 1 year in operation. Early revenue to growth stage with proven POCs. Impact-first with potential to impact at least 3 SDGs."
+      },
+      "startup_stage": [
+        "early_revenue",
+        "growth"
+      ],
+      "incubation_support": [
+        "virtual_incubation",
+        "grant_support"
+      ],
+      "mentorship_support": [
+        "impact_mentorship",
+        "social_enterprise_guidance"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": "Bengaluru"
+      },
+      "sdg_alignment": [
+        1,
+        5,
+        8,
+        10,
+        13
+      ],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": true,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "nsrcel-impact-orbit",
+      "tags": [
+        "social_impact",
+        "incubation",
+        "nsrcel",
+        "iim_bangalore",
+        "sdg"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "Kotak BizLabs Accelerator Programme Season 2",
+      "program_type": "accelerator",
+      "status": "application_open",
+      "deadline_type": "cohort_open",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://kotakbizlabs.accubate.app/ext/form/8675/1/apply",
+      "official_website": "https://www.kotak.com/",
+      "official_program_page": "",
+      "source_url": "https://indiacsr.in/csr-kotak-bizlabs-season-2-set-to-support-75-innovative-startups/",
+      "organization": "Kotak Mahindra Bank",
+      "program_owner": "Kotak Mahindra Bank",
+      "sector": "sector_agnostic",
+      "focus_areas": [
+        "deep_tech",
+        "sustainability",
+        "clean_energy",
+        "fintech",
+        "edtech",
+        "agritech",
+        "healthtech",
+        "digital_technology",
+        "inclusive_tech"
+      ],
+      "benefits": [
+        "Grant support up to INR 30 lakhs",
+        "Structured mentorship and incubation",
+        "Hands-on learning bootcamps",
+        "Demo Day with investor pitch",
+        "NSRCEL Startup Kit (AWS, RazorpayX, Stripe, Zoho credits)"
+      ],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": 3000000,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "DPIIT-registered, revenue-generating startups. Post-MVP and market-ready. Existing customer base. Focus sectors: AgriTech, ClimaTech, FinTech, InclusiveTech, Sustainability, EdTech, Healthcare, Deep Tech."
+      },
+      "startup_stage": [
+        "early_revenue",
+        "growth"
+      ],
+      "incubation_support": [
+        "accelerator",
+        "mentorship",
+        "csr_backed"
+      ],
+      "mentorship_support": [
+        "industry_mentorship",
+        "partner_incubator_support"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        2,
+        3,
+        8,
+        9,
+        13
+      ],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": false,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": true,
+        "confidence": "high"
+      },
+      "canonical_id": "kotak-bizlabs-season-2",
+      "tags": [
+        "accelerator",
+        "csr",
+        "kotak",
+        "grant",
+        "pan_india"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "Reliance Foundation SheConnects Digital Accelerator",
+      "program_type": "accelerator",
+      "status": "active",
+      "deadline_type": "cohort_open",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://beta.reliancefoundation.org/media/media-release/SheConnects",
+      "official_website": "https://www.reliancefoundation.org/",
+      "official_program_page": "https://beta.reliancefoundation.org/media/media-release/SheConnects",
+      "source_url": "https://beta.reliancefoundation.org/media/media-release/SheConnects",
+      "organization": "Reliance Foundation & Gates Foundation",
+      "program_owner": "Reliance Foundation",
+      "sector": "social_impact",
+      "focus_areas": [
+        "women_digital_inclusion",
+        "gender_equality",
+        "digital_access",
+        "livelihoods",
+        "financial_inclusion"
+      ],
+      "benefits": [
+        "Grant funding for scaling",
+        "Technical advisory support",
+        "South-South knowledge sharing",
+        "Ecosystem strengthening"
+      ],
+      "funding_support": {
+        "type": "grant",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": "grant"
+      },
+      "eligibility": {
+        "summary": "Organizations with evidence-backed solutions for women's digital inclusion. Focus on locally led innovations in India and Sub-Saharan Africa. Proven high-impact solutions ready to scale."
+      },
+      "startup_stage": [
+        "growth",
+        "scale"
+      ],
+      "incubation_support": [
+        "grant_support",
+        "technical_assistance"
+      ],
+      "mentorship_support": [
+        "technical_advisory"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        5,
+        10,
+        17
+      ],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "reliance-sheconnects-digital-accelerator",
+      "tags": [
+        "accelerator",
+        "women_empowerment",
+        "digital_inclusion",
+        "reliance_foundation",
+        "gates_foundation",
+        "csr"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "NASSCOM 10,000 Startups Virtual Incubate Program",
+      "program_type": "incubation",
+      "status": "rolling_applications",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://10000startups.com/virtual-incubate-program",
+      "official_website": "https://10000startups.com/",
+      "official_program_page": "https://10000startups.com/virtual-incubate-program",
+      "source_url": "https://10000startups.com/",
+      "organization": "NASSCOM",
+      "program_owner": "NASSCOM 10,000 Startups",
+      "sector": "technology",
+      "focus_areas": [
+        "SaaS",
+        "B2B",
+        "B2C",
+        "technology_innovation",
+        "product_development"
+      ],
+      "benefits": [
+        "Free cloud credits ($25K+ value)",
+        "Mentorship from industry veterans",
+        "Investor connect",
+        "Quarterly workshops",
+        "Legal and accounting support",
+        "Networking events"
+      ],
+      "funding_support": {
+        "type": "equity_free",
+        "amount_min": null,
+        "amount_max": null,
+        "currency": "INR",
+        "equity_taken": "no",
+        "grant_or_equity": "equity_free"
+      },
+      "eligibility": {
+        "summary": "Early to mid-stage tech startups. Product-based (not services). Registered in India or Indian founders with India operations. Full-time founders with diverse skill sets."
+      },
+      "startup_stage": [
+        "early_stage",
+        "mid_stage"
+      ],
+      "incubation_support": [
+        "virtual_incubation",
+        "startup_kit",
+        "cloud_credits"
+      ],
+      "mentorship_support": [
+        "industry_mentorship",
+        "workshops",
+        "legal_support"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": true,
+      "is_academic": false,
+      "is_corporate": false,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "nasscom-10k-virtual-incubate",
+      "tags": [
+        "virtual_incubation",
+        "nasscom",
+        "cloud_credits",
+        "tech_startups",
+        "rolling"
+      ]
+    },
+    {
+      "label": "startup",
+      "program_name": "Microsoft for Startups",
+      "program_type": "founders_program",
+      "status": "rolling_applications",
+      "deadline_type": "rolling",
+      "deadline": "",
+      "deadline_iso": "",
+      "application_url": "https://www.microsoft.com/en-in/startups",
+      "official_website": "https://www.microsoft.com/en-in/startups",
+      "official_program_page": "https://www.microsoft.com/en-in/startups",
+      "source_url": "https://www.microsoft.com/en-in/startups",
+      "organization": "Microsoft",
+      "program_owner": "Microsoft India",
+      "sector": "technology",
+      "focus_areas": [
+        "AI",
+        "cloud_computing",
+        "SaaS",
+        "enterprise_tech"
+      ],
+      "benefits": [
+        "Azure credits up to USD 150K (investor network)",
+        "Azure credits up to USD 5K (direct signup)",
+        "AI tools and models access",
+        "Technical resources and guidance",
+        "Go-to-market support"
+      ],
+      "funding_support": {
+        "type": "cloud_credits",
+        "amount_min": null,
+        "amount_max": 150000,
+        "currency": "USD",
+        "equity_taken": "no",
+        "grant_or_equity": "grant_in_kind"
+      },
+      "eligibility": {
+        "summary": "Startups associated with Microsoft for Startups Investor Network (referral code required for top tier). Pre-seed to Series A. For lower tier: no investor funding required, direct signup."
+      },
+      "startup_stage": [
+        "pre_seed",
+        "seed",
+        "series_a"
+      ],
+      "incubation_support": [],
+      "mentorship_support": [
+        "technical_guidance",
+        "go_to_market_support"
+      ],
+      "geography": {
+        "country": "India",
+        "state": "",
+        "city": ""
+      },
+      "sdg_alignment": [
+        8,
+        9
+      ],
+      "is_government": false,
+      "is_private": false,
+      "is_academic": false,
+      "is_corporate": true,
+      "verification": {
+        "official_source": true,
+        "official_url_confirmed": true,
+        "deadline_verified": true,
+        "active_confirmation": true,
+        "aggregator_only": false,
+        "confidence": "high"
+      },
+      "canonical_id": "microsoft-for-startups",
+      "tags": [
+        "cloud_credits",
+        "microsoft",
+        "azure",
+        "corporate_program",
+        "rolling"
+      ]
+    }
+  ]
+}

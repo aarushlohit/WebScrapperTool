@@ -1,209 +1,35 @@
 {
-  "total_count": 5,
-  "generated_date": "2026-05-18",
-  "generated_at": "2026-05-18T23:59:29.106957",
-  "hack_count": 5,
+  "total_count": 2,
+  "generated_date": "2026-05-20",
+  "generated_at": "2026-05-20T21:56:23.105455",
+  "hack_count": 2,
   "hackathons": [
     {
-      "event_type": "innovation_challenge",
-      "hackathon_name": "D.E.S.I.G.N for BioE3 Challenge",
-      "full_name": "D.E.S.I.G.N for BioE3 Challenge – Empowering Youth to Solve Critical Issues of their TIMES",
-      "current_status": "active",
-      "registration_url": "https://innovateindia.mygov.in",
-      "submission_url": "https://innovateindia.mygov.in",
-      "official_website": "https://innovateindia.mygov.in",
-      "official_event_page": "https://innovateindia.mygov.in",
-      "source_url": "https://innovateindia.mygov.in",
-      "hosting_organization": "CSIR / Ministry of Science and Technology",
-      "ministry": "Ministry of Science and Technology",
-      "institution_type": "central_government",
-      "platform": "MyGov Innovate India",
-      "domain": "biotechnology",
-      "theme": "BioE3 – Biotechnology for Economy, Environment and Employment",
-      "sdg_alignment": [],
-      "focus_areas": [
-        "biotechnology",
-        "sustainability",
-        "circular economy",
-        "climate action"
-      ],
-      "problem_statements": [],
-      "deadline": "2026-05-20",
-      "registration_close_date": "2026-05-20",
-      "submission_close_date": "2026-05-20",
-      "application_deadline": "2026-05-20",
-      "eligibility_criteria": {
-        "summary": "Open to young students and researchers of India"
-      },
-      "team_size": {
-        "minimum": null,
-        "maximum": null
-      },
-      "submission_fee": {
-        "amount": null,
-        "currency": "INR",
-        "display": ""
-      },
-      "prizes": {
-        "summary": ""
-      },
-      "tags": [
-        "innovation_challenge",
-        "biotechnology",
-        "bioe3",
-        "csir",
-        "mygov"
-      ],
-      "source_validation": {
-        "source_type": "official_government_portal",
-        "official_confirmation_found": true,
-        "official_open_keywords_found": [
-          "SUBMISSION OPEN"
-        ],
-        "deadline_verified": true
-      }
-    },
-    {
-      "event_type": "innovation_challenge",
-      "hackathon_name": "CSIR Societal Platform 2024",
-      "full_name": "CSIR Societal Platform 2024",
-      "current_status": "active",
-      "registration_url": "https://innovateindia.mygov.in",
-      "submission_url": "https://innovateindia.mygov.in",
-      "official_website": "https://innovateindia.mygov.in",
-      "official_event_page": "https://innovateindia.mygov.in",
-      "source_url": "https://innovateindia.mygov.in",
-      "hosting_organization": "Council of Scientific & Industrial Research (CSIR)",
-      "ministry": "Ministry of Science and Technology",
-      "institution_type": "central_government",
-      "platform": "MyGov Innovate India",
-      "domain": "science_and_technology",
-      "theme": "Societal Technology Solutions",
-      "sdg_alignment": [],
-      "focus_areas": [
-        "science",
-        "technology",
-        "societal_impact",
-        "R&D"
-      ],
-      "problem_statements": [],
-      "deadline": "2026-12-31",
-      "registration_close_date": "2026-12-31",
-      "submission_close_date": "2026-12-31",
-      "application_deadline": "2026-12-31",
-      "eligibility_criteria": {
-        "summary": "Open – details on MyGov portal"
-      },
-      "team_size": {
-        "minimum": null,
-        "maximum": null
-      },
-      "submission_fee": {
-        "amount": null,
-        "currency": "INR",
-        "display": ""
-      },
-      "prizes": {
-        "summary": ""
-      },
-      "tags": [
-        "innovation_challenge",
-        "csir",
-        "societal_platform",
-        "mygov"
-      ],
-      "source_validation": {
-        "source_type": "official_government_portal",
-        "official_confirmation_found": true,
-        "official_open_keywords_found": [
-          "SUBMISSION OPEN"
-        ],
-        "deadline_verified": true
-      }
-    },
-    {
       "event_type": "hackathon",
-      "hackathon_name": "Road Safety Hackathon 2026",
-      "full_name": "National Road Safety Hackathon 2026",
+      "hackathon_name": "iDEX Open Challenge 2026",
+      "full_name": "iDEX Open Challenge 2026 — Innovations for Defence Excellence",
       "current_status": "active",
-      "registration_url": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
-      "submission_url": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
-      "official_website": "https://coers.iitm.ac.in",
-      "official_event_page": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
-      "source_url": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
-      "hosting_organization": "IIT Madras – CoERS / RBG Labs",
-      "ministry": "Ministry of Education (IIT Madras)",
-      "institution_type": "academic_government",
-      "platform": "IIT Madras",
-      "domain": "road_safety",
-      "theme": "Road Safety and Transportation",
-      "sdg_alignment": [],
-      "focus_areas": [
-        "road_safety",
-        "transportation",
-        "AI",
-        "technology"
-      ],
-      "problem_statements": [],
-      "deadline": "2026-05-31",
-      "registration_close_date": "2026-05-31",
-      "submission_close_date": "2026-05-31",
-      "application_deadline": "2026-05-31",
-      "eligibility_criteria": {
-        "summary": "Open – Indian and BIMSTEC participants"
-      },
-      "team_size": {
-        "minimum": null,
-        "maximum": null
-      },
-      "submission_fee": {
-        "amount": null,
-        "currency": "INR",
-        "display": ""
-      },
-      "prizes": {
-        "summary": ""
-      },
-      "tags": [
-        "hackathon",
-        "road_safety",
-        "iit_madras",
-        "transportation"
-      ],
-      "source_validation": {
-        "source_type": "official_academic_institution",
-        "official_confirmation_found": true,
-        "official_open_keywords_found": [
-          "Registration & Submission Extended to May 31"
-        ],
-        "deadline_verified": true
-      }
-    },
-    {
-      "event_type": "defence_innovation_challenge",
-      "hackathon_name": "iDEX Open Challenge",
-      "full_name": "iDEX Open Challenge – Ministry of Defence",
-      "current_status": "active",
-      "registration_url": "https://www.ddpmod.gov.in/offerings/innovations",
+      "registration_url": "https://idex.gov.in/disc-category/18",
       "submission_url": "https://idex.gov.in/challenge-categories",
       "official_website": "https://idex.gov.in",
-      "official_event_page": "https://www.ddpmod.gov.in/offerings/innovations",
-      "source_url": "https://www.ddpmod.gov.in/offerings/innovations",
-      "hosting_organization": "Defence Innovation Organisation (DIO) / iDEX",
+      "official_event_page": "https://idex.gov.in/disc-category/18",
+      "source_url": "https://idex.gov.in/disc-category/18",
+      "hosting_organization": "Defence Innovation Organisation (DIO)",
       "ministry": "Ministry of Defence",
-      "institution_type": "central_government",
-      "platform": "iDEX",
-      "domain": "defence",
-      "theme": "Open Challenge – Defence Technology Innovation",
+      "institution_type": "government",
+      "platform": "iDEX Portal",
+      "domain": "defence_innovation",
+      "theme": "Dual-Use and Frontier Technologies for Defence & Aerospace",
       "sdg_alignment": [],
       "focus_areas": [
-        "autonomous_systems",
-        "AI",
-        "sensors",
-        "drones",
-        "advanced_materials",
+        "aerospace",
+        "autonomous systems",
+        "artificial intelligence",
+        "quantum technologies",
+        "advanced materials",
+        "robotics",
         "cybersecurity",
-        "defence"
+        "propulsion"
       ],
       "problem_statements": [],
       "deadline": "2026-06-30",
@@ -211,7 +37,7 @@
       "submission_close_date": "2026-06-30",
       "application_deadline": "2026-06-30",
       "eligibility_criteria": {
-        "summary": "Startups, MSMEs, Individual Innovators, R&D institutes, academia"
+        "summary": "Open to Indian startups (DPIIT-recognized), MSMEs, and individual innovators. Solutions must have applicability in defence or aerospace sectors."
       },
       "team_size": {
         "minimum": null,
@@ -223,62 +49,67 @@
         "display": ""
       },
       "prizes": {
-        "summary": "Grants up to ₹1.5 Cr (SPARK framework)"
+        "summary": "Grants up to Rs. 1.5 Cr per selected proposal (SPARK framework). Non-dilutive, milestone-based. Follow-on iDEX PRIME grants up to Rs. 10 Cr."
       },
       "tags": [
-        "defence_innovation",
-        "idex",
-        "ministry_of_defence",
-        "open_challenge",
-        "spark_grant"
+        "defence",
+        "aerospace",
+        "startup",
+        "innovation_challenge",
+        "grant",
+        "prototype_funding"
       ],
       "source_validation": {
         "source_type": "official_government_portal",
         "official_confirmation_found": true,
         "official_open_keywords_found": [
-          "Open",
+          "CHALLENGE OPEN",
           "Apply Now",
-          "Application window open throughout the year"
+          "open throughout the year"
         ],
         "deadline_verified": true
       }
     },
     {
-      "event_type": "hackathon",
-      "hackathon_name": "ZSI Hackathon 2026",
-      "full_name": "Zoological Survey of India National Hackathon 2026 – Traditional Knowledge and Biodiversity",
+      "event_type": "cybersecurity_competition",
+      "hackathon_name": "PSB Cybersecurity Fraud & AI Hackathon 2026",
+      "full_name": "PSB's Cybersecurity, Fraud & Artificial Intelligence Hackathon 2026 — Bank of India x IIT Hyderabad",
       "current_status": "active",
-      "registration_url": "https://hackathon.zsi.org.in/",
-      "submission_url": "https://hackathon.zsi.org.in/",
-      "official_website": "https://zsi.gov.in",
-      "official_event_page": "https://hackathon.zsi.org.in/",
-      "source_url": "https://hackathon.zsi.org.in/",
-      "hosting_organization": "Zoological Survey of India (ZSI)",
-      "ministry": "Ministry of Environment, Forest and Climate Change",
-      "institution_type": "central_government",
-      "platform": "ZSI Hackathon Portal",
-      "domain": "biodiversity_and_traditional_knowledge",
-      "theme": "Integrating Traditional Knowledge with Technology for Biodiversity Conservation",
+      "registration_url": "https://boihackathon.cse.iith.ac.in/hackathon2026/hackathonReg/newReg/",
+      "submission_url": "https://boihackathon.cse.iith.ac.in/hackathon2026/hackathonReg/newReg/",
+      "official_website": "https://boihackathon.cse.iith.ac.in",
+      "official_event_page": "https://boihackathon.cse.iith.ac.in/hackathon2026/hackathonReg/newReg/",
+      "source_url": "https://boihackathon.cse.iith.ac.in/hackathon2026/hackathonReg/newReg/",
+      "hosting_organization": "Bank of India (BOI) in collaboration with IIT Hyderabad",
+      "ministry": "Ministry of Finance (Department of Financial Services)",
+      "institution_type": "government_backed_academic",
+      "platform": "IIT Hyderabad Hackathon Portal",
+      "domain": "cybersecurity",
+      "theme": "Cybersecurity, Fraud Detection & AI in Banking",
       "sdg_alignment": [],
       "focus_areas": [
-        "biodiversity",
-        "traditional_knowledge",
-        "AI",
-        "data_science",
-        "conservation",
-        "innovation"
+        "generative AI",
+        "reverse engineering",
+        "malware analysis",
+        "fraud detection",
+        "AI/ML",
+        "transaction monitoring",
+        "mule account detection"
       ],
-      "problem_statements": [],
-      "deadline": "2026-05-20",
-      "registration_close_date": "2026-05-20",
-      "submission_close_date": "2026-05-20",
-      "application_deadline": "2026-05-20",
+      "problem_statements": [
+        "Harnessing Generative AI for Automated Reverse Engineering, Static and Dynamic Analysis, and Risk Scoring of Fraudulent Mobile Applications (APKs) and Malwares",
+        "Developing AI/ML capabilities for detecting suspicious transactions and mule accounts by ingesting financial transactions, fraud alerts, and government cyber fraud feeds"
+      ],
+      "deadline": "2026-06-15",
+      "registration_close_date": "2026-06-15",
+      "submission_close_date": "2026-06-15",
+      "application_deadline": "2026-06-15",
       "eligibility_criteria": {
-        "summary": "Indian citizens, any age, teams up to 3 members; school/UG/PG students, researchers, innovators, startups, community/indigenous people"
+        "summary": "Open to all students from any institute/university, young entrepreneurs, startup founders, and non-students. Team size 3-4 members. Preferably 1+ female participants per team."
       },
       "team_size": {
-        "minimum": null,
-        "maximum": 3
+        "minimum": 3,
+        "maximum": 4
       },
       "submission_fee": {
         "amount": null,
@@ -286,22 +117,23 @@
         "display": ""
       },
       "prizes": {
-        "summary": "1st Prize: ₹1,00,000; 2nd Prize: ₹75,000; 3rd Prize: ₹50,000"
+        "summary": "Prize pool to be announced. Prototype presentations on August 27-28, 2026. Winners announced August 28, 2026."
       },
       "tags": [
+        "cybersecurity",
+        "fraud_detection",
+        "AI",
+        "banking",
         "hackathon",
-        "biodiversity",
-        "zsi",
-        "traditional_knowledge",
-        "environment",
-        "ministry_of_environment"
+        "student"
       ],
       "source_validation": {
-        "source_type": "official_government_portal",
+        "source_type": "official_academic_portal",
         "official_confirmation_found": true,
         "official_open_keywords_found": [
-          "Registration Opens",
-          "Registration Closes"
+          "Registration Open",
+          "Registration start date : 07th May 2026",
+          "Application Deadline : 15th June 2026"
         ],
         "deadline_verified": true
       }

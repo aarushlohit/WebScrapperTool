@@ -1,232 +1,171 @@
 [0m
 > build · big-pickle
 [0m
-[0m◈ [0mExa Web Search ""hackathon" "registration open" "2026" site:gov.in -closed -archived -concluded -completed"
-[0m◈ [0mExa Web Search "Smart India Hackathon 2026 registration open hardware software edition"
-[0m◈ [0mExa Web Search "MeitY challenge 2026 hackathon open "apply" India May June"
-[0m◈ [0mExa Web Search "site:event.data.gov.in hackathon challenge 2026 open submission"
-[0m◈ [0mExa Web Search "AICTE hackathon 2026 India open registration challenge competition"
-[0m◈ [0mExa Web Search "government hackathon India May June 2026 "registration open" "apply now" "submissions open" -closed"
-[0m◈ [0mExa Web Search ""Bio Packathon" 2026 BIS Department of Consumer Affairs registration deadline"
-[0m◈ [0mExa Web Search "site:mygov.in hackathon 2026 "submission open" OR "registration open" OR "apply" May"
-[0m◈ [0mExa Web Search "BIS hackathon India 2026 challenge competition open registration consumer affairs"
-[0m◈ [0mExa Web Search ""Ministry of Housing and Urban Affairs" hackathon 2026 India open registration challenge"
-[0m◈ [0mExa Web Search "Indian railway hackathon 2026 open registration challenge competition govt"
-[0m◈ [0mExa Web Search ""smart city" hackathon India 2026 open registration "mission" challenge government May June"
-[0m◈ [0mExa Web Search "idex.gov.in "open challenge" 2026 "apply" OR "submission" -closed -completed May June"
-[0m◈ [0mExa Web Search ""Ministry of" "hackathon" OR "challenge" "2026" "last date" OR "deadline" "May" OR "June" site:gov.in OR site:nic.in -closed -awarded -winners"
-[0m◈ [0mExa Web Search "India government "innovation challenge" OR "grand challenge" 2026 open "last date" May June July -startup -incubation -grant -fellowship"
-[0m→ [0mRead ..
+[0m✗ [0mSkill "efficient-coding" failed
+[91m[1mError: [0mSkill "efficient-coding" not found. Available skills: customize-opencode, db-admin, ci-cd, Aesthetic Web Design, performance-profiler, impeccable, runbook-gen, windows-powershell, seo-geo, flutter, whendone-plus, auth-architect, portfolio-auto, zen-comprehensive-review, react-native, agent-browser, research, code-review, terraform, shokunin-update, kubernetes, component-forge, humanize, api-forge, kagen, ui-ux-pro-max, strategy, agent-tools, neon-postgres, legal-counsel, skill-creator, find-skills, chromadb, emil-design-eng, content-marketing, init, taste, documentation, Efficient Coding, docker, Web Security, error-handler, git-workflow, kami, business-proposals, translate-craft, responsive-engine, communication, playwright, zen-review, cross-review, finance, comprehensive-review, motion-craft, plan, landing-craft, db-sculptor, memory, Senior Engineer Coding, taste-soft, taste-minimalist, test-commander, executing-plans, test-driven-development, receiving-code-review, brainstorming, systematic-debugging, requesting-code-review, verification-before-completion, dispatching-parallel-agents, writing-skills, using-superpowers, using-git-worktrees, writing-plans, subagent-driven-development, finishing-a-development-branch
+[0m◈ [0mParallel Web Search "STPI hackathon challenge 2026 India registration open"
+[0m◈ [0mParallel Web Search "Bhashini hackathon 2026 registration open India challenge"
+[0m◈ [0mParallel Web Search "Kerala Karnataka Tamil Nadu government hackathon 2026 registration open challenge"
+[0m◈ [0mParallel Web Search "ministry of agriculture ICAR hackathon challenge 2026 India registration open"
+[0m◈ [0mParallel Web Search "ministry of health India hackathon 2026 open registration challenge"
+[0m◈ [0mParallel Web Search "SEBI IRDAI TRAI NABARD hackathon challenge 2026 India registration open"
+[0m◈ [0mParallel Web Search "Bhashini "VaniSangam hackathon" OR "AksharDrishti" OR "Open Source Multilingual" 2026 registration open deadline"
+[0m◈ [0mParallel Web Search "NABARD hackathon 2026 MRV monitoring reporting verification registration open deadline"
+[0m◈ [0mParallel Web Search "Gujarat Maharashtra Karnataka Telangana state government hackathon innovation challenge 2026 "registration open" OR "apply now""
+[0m◈ [0mParallel Web Search ""Kerala Space Innovation Hackathon" 2026 KSPACE registration open"
+[0m◈ [0mParallel Web Search "ministry of power renewable energy hackathon India 2026 open registration challenge"
+[0m◈ [0mParallel Web Search "NITI Aayog ministry of railways ministry of environment hackathon challenge India 2026 registration"
+[0m◈ [0mParallel Web Search "Bhashini VaniSangam hackathon 2026 registration status open last date apply"
+[0m◈ [0mParallel Web Search "ministry of railways hackathon 2026 India registration open challenge competition"
+[0m◈ [0mParallel Web Search "DBT biotechnology department hackathon India 2026 registration open challenge"
+[0m◈ [0mParallel Web Search "DoT 5G hackathon 2026 India registration open last date deadline"
+[0m◈ [0mParallel Web Search "ministry of civil aviation ministry of tourism ministry of ports India hackathon 2026 registration open"
+[0m◈ [0mParallel Web Search "AICTE Ministry of Education hackathon challenge India 2026 "registration open" OR "apply now" student"
 [0m
 ```json
 {
-  "candidates": [
-    {
-      "event_type": "innovation_challenge",
-      "hackathon_name": "BIOPACKATHON 2026",
-      "full_name": "BIOPACKATHON 2026 – Biodegradable Packaging Solution Challenge for Pan Masala & Gutkha Sachets",
-      "current_status": "active",
-      "registration_url": "https://services.bis.gov.in/php/BIS_2.0/biopackathon/",
-      "submission_url": "https://services.bis.gov.in/php/BIS_2.0/biopackathon/",
-      "official_website": "https://services.bis.gov.in",
-      "official_event_page": "https://services.bis.gov.in/php/BIS_2.0/biopackathon/",
-      "source_url": "https://services.bis.gov.in/php/BIS_2.0/biopackathon/about-us",
-      "hosting_organization": "Bureau of Indian Standards (BIS), Department of Consumer Affairs (DoCA)",
-      "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
-      "institution_type": "central_government",
-      "platform": "BIS Portal",
-      "domain": "material_science_engineering",
-      "theme": "Biodegradable packaging solutions for pan masala and gutkha sachets – plastic-free, food-grade, scalable alternatives",
-      "sdg_alignment": [],
-      "focus_areas": ["biodegradable_packaging", "material_science", "plastic_free_alternatives", "environmental_sustainability", "circular_economy"],
-      "problem_statements": ["Develop plastic-free, biodegradable, food-grade sachet packaging for pan masala and gutkha that meets functional requirements (mechanical properties, barrier properties, shelf-life stability) and supports scalable industry adoption"],
-      "deadline": "2026-05-24",
-      "registration_close_date": "2026-05-24",
-      "submission_close_date": "2026-05-24",
-      "application_deadline": "2026-05-24",
-      "eligibility_criteria": {
-        "summary": "Open to Indian individuals and entities – faculties, students, research scholars, startups, research institutions, laboratories, industry, NGOs, societies, trusts"
-      },
-      "team_size": {
-        "minimum": 1,
-        "maximum": null
-      },
-      "submission_fee": {
-        "amount": null,
-        "currency": "INR",
-        "display": ""
-      },
-      "prizes": {
-        "summary": "Attractive prizes (specific amounts not disclosed on official portal)"
-      },
-      "tags": ["innovation_challenge", "biopackathon", "bis", "department_of_consumer_affairs", "biodegradable_packaging", "material_science", "engineering_challenge", "government_of_india"],
-      "source_validation": {
-        "source_type": "official_government_portal",
-        "official_confirmation_found": true,
-        "official_open_keywords_found": ["registration portal active", "login available", "submission template available"],
-        "deadline_verified": true
-      }
-    }
-  ],
+  "candidates": [],
   "excluded": [
     {
-      "name": "Spiti-AI Hackathon",
-      "source_url": "https://devpost.com/submit-to/29481-spiti-ai-hackathon/manage/submissions",
+      "name": "DoT 5G Innovation Hackathon 2026",
+      "source_url": "https://eservices.dot.gov.in/5ghackathon/",
       "reason": "closed"
     },
     {
-      "name": "GDTA Hackathon 2026 (SNS Institutions Coimbatore)",
-      "source_url": "https://unstop.com/hackathons/gdta-hackathon-2026-sns-institutions-coimbatore-tamil-nadu-1682162/amp",
-      "reason": "not_government"
-    },
-    {
-      "name": "DDA Harit Manthan 2026 Hackathon",
-      "source_url": "https://www.newkerala.com/news/a/dda-launches-harit-manthan-2026-hackathon-drive-innovation-964.htm",
+      "name": "Bhashini VaniSangam Hackathon 2026",
+      "source_url": "https://bhashini.gov.in/sahyogi/hackathon/vanisangam-hackathon",
       "reason": "closed"
     },
     {
-      "name": "6th NHAI Innovation Hackathon 2026",
-      "source_url": "https://www.lawctopus.com/6th-nhai-innovation-hackathon-2026/",
+      "name": "Bhashini AksharDrishti Hackathon 2026",
+      "source_url": "https://bhashini.gov.in/sahyogi/hackathon/akshardrishti-hackathon",
       "reason": "closed"
     },
     {
-      "name": "AI Autonomous Smart City Hackathon 2026 (Innovation Hacks)",
-      "source_url": "https://ai-smart-city-2026.devpost.com/",
-      "reason": "closed"
-    },
-    {
-      "name": "IndiaAI Transforming Governance Challenge (Andhra Pradesh/Municipal Admin)",
-      "source_url": "https://aikosha.indiaai.gov.in/home/competitions/details/d1167621-acfa-4d9a-be3f-d59c0099dd1b",
-      "reason": "closed"
-    },
-    {
-      "name": "CDSCO-IndiaAI Health Innovation Acceleration Hackathon",
-      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fad61a56-c8f7-4bb4-9510-00e0b696c6f1",
-      "reason": "closed"
-    },
-    {
-      "name": "DRISHTI Challenges (iDEX/DPSUs)",
-      "source_url": "https://idex.gov.in/disc-category/46",
-      "reason": "closed"
-    },
-    {
-      "name": "Blockchain India Challenge (MeitY/C-DAC)",
-      "source_url": "https://challenge.cdac.in",
-      "reason": "closed"
-    },
-    {
-      "name": "Bharat Startup Grand Challenge (BSGC) 2026 – DPIIT",
-      "source_url": "https://www.startupgrantsindia.com/bharat-startup-grand-challenge-2026-dpiit-startup-india-351",
-      "reason": "forbidden_type"
-    },
-    {
-      "name": "RailTech Portal – Indian Railways (continuous intake policy)",
-      "source_url": "https://www.thehindu.com/news/national/railway-minister-announces-portal-to-attract-innovative-tech-solutions/article70680594.ece",
+      "name": "Bhashini Open Source Multilingual Handheld AI Innovation Challenge 2026",
+      "source_url": "https://bhashini.gov.in/sahyogi/hackathon/open-handheld-ai",
       "reason": "no_active_workflow"
     },
     {
-      "name": "Mascot Design Contest for Eat Right India (FSSAI/MyGov)",
-      "source_url": "https://innovateindia.mygov.in/mascot-design-contest-for-eat-right-india/",
-      "reason": "forbidden_type"
-    },
-    {
-      "name": "Akashvani at 90 National Signature Tune Contest (Prasar Bharati/MyGov)",
-      "source_url": "https://www.mygov.in/task/akashvani-90-national-signature-tune-contest/",
-      "reason": "forbidden_type"
-    },
-    {
-      "name": "Drop the Oil Challenge – Oil-free Cooking Challenge (FSSAI/MyGov)",
-      "source_url": "https://www.mygov.in/task/drop-oil-challenge-oil-free-cooking-challenge-healthier-india/",
-      "reason": "forbidden_type"
-    },
-    {
-      "name": "India Pitch Pilot Scale Startup Challenge (MoHUA/AMRUT 2.0)",
-      "source_url": "https://innovateindia.mygov.in/ministry/ministry-of-housing-and-urban-affairs/",
+      "name": "NABARD Hackathon MRV Systems",
+      "source_url": "https://hack2skill.com/event/nabard-hackathon",
       "reason": "closed"
     },
     {
-      "name": "DGQA Hackathon",
-      "source_url": "https://www.startupgrantsindia.com/idex-open-challenge-innovations-for-defence-excellence-dio-387",
+      "name": "Goldman Sachs India Hackathon 2026",
+      "source_url": "https://www.goldmansachs.com/careers/students/programs-and-internships/india/hackathon",
+      "reason": "not_government"
+    },
+    {
+      "name": "Bhashini Startup Velocity 2.0",
+      "source_url": "https://bhashini.gov.in/sahyogi/hackathon/bsv2",
+      "reason": "closed"
+    },
+    {
+      "name": "SPACE Innovation Hackathon 2026 (Kerala KSPACE)",
+      "source_url": "https://kspace.kerala.gov.in/event/KSPACE_SIH26",
+      "reason": "no_active_workflow"
+    },
+    {
+      "name": "HackIndia Spark 6 NCR Central Region 2026",
+      "source_url": "https://internshala.com/competitions/hackindia-spark-6-ncr-central-region-2026",
+      "reason": "closed"
+    },
+    {
+      "name": "NRDC-IOCL Grand Challenge 2026",
+      "source_url": "https://www.nrdcindia.com/Pages/IOCL%20GRAND%20CHALLENGE%202026",
+      "reason": "closed"
+    },
+    {
+      "name": "Goldman Sachs India Hackathon 2026",
+      "source_url": "https://www.hackerrank.com/goldman-sachs-india-hackathon-2026",
+      "reason": "not_government"
+    },
+    {
+      "name": "NITI Aayog GearShift Challenge (Zero Emission Trucks)",
+      "source_url": "https://www.thestatesman.com/india/niti-aayog-launches-hackathon-to-accelerate-zero-emission-truck-adoption-in-india-1503320495.html",
+      "reason": "stale"
+    },
+    {
+      "name": "HSBC Technology India Hackathon 2026",
+      "source_url": "https://thenewviews.com/upcoming-hackathons-in-india/",
+      "reason": "not_government"
+    },
+    {
+      "name": "SoCH Awards BIRAC Hackathon-Ideathon",
+      "source_url": "https://www.mygov.in/blog/soch-awards-hackthon-ideathon-healthy-swachh-bharat",
+      "reason": "stale"
+    },
+    {
+      "name": "Wadhwani AI for Education Hackathon",
+      "source_url": "https://blogs.reskilll.com/upcoming-hackathons-in-india-2026-complete-list-updated-monthly/",
+      "reason": "not_government"
+    },
+    {
+      "name": "Build With AI Campus Bootcamp (Reskilll x Google Cloud)",
+      "source_url": "https://buildwithai.reskilll.com",
+      "reason": "not_government"
+    },
+    {
+      "name": "USAII Global AI Hackathon 2026",
+      "source_url": "https://usaii-global-ai-hackathon-2026.devpost.com/",
+      "reason": "not_government"
+    },
+    {
+      "name": "Hyperspace Innovation Hackathon 2026",
+      "source_url": "https://hack2skill.com/event/hyperspace-hackathon",
       "reason": "closed"
     }
   ],
   "sources_scanned": [
-    "https://sih.gov.in",
-    "https://idex.gov.in",
-    "https://aikosh.indiaai.gov.in",
-    "https://indiaai.gov.in",
-    "https://innovateindia.mygov.in",
-    "https://event.data.gov.in/challenge",
-    "https://event.data.gov.in/all-challenges/",
+    "https://bhashini.gov.in/hackathon",
+    "https://bhashini.gov.in/sahyogi/hackathon/vanisangam-hackathon",
+    "https://bhashini.gov.in/sahyogi/hackathon/akshardrishti-hackathon",
+    "https://bhashini.gov.in/sahyogi/hackathon/open-handheld-ai",
+    "https://bhashini.gov.in/sahyogi/hackathon/bsv2",
     "https://eservices.dot.gov.in/5ghackathon/",
-    "https://challenge.cdac.in",
-    "https://bhashini.gov.in/hackathons",
-    "https://bhashini.gov.in/sahyogi/startup/maha-innovation",
-    "https://www.ddpmod.gov.in/offerings/innovations",
-    "https://www.pib.gov.in",
-    "https://pib.gov.in/PressReleasePage.aspx?PRID=2251434",
-    "https://services.bis.gov.in/php/BIS_2.0/biopackathon/",
-    "https://services.bis.gov.in/php/BIS_2.0/biopackathon/about-us",
-    "https://services.bis.gov.in/php/BIS_2.0/biopackathon/guidelines",
-    "https://consumeraffairs.nic.in/pressrelease/bureau-indian-standards-launches-hackathon-students-20-aug-2024",
-    "https://www.fssai.gov.in/cms/biopackathon.php",
-    "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
-    "https://www.inctf.in/championship",
-    "https://hackathon.zsi.org.in/",
-    "https://www.nrdcindia.com/Pages/IOCL%20GRAND%20CHALLENGE%202026",
-    "https://www.startupindia.gov.in/content/sih/en/bharat-startup-grand-challenge.html",
-    "https://www.startupgrantsindia.com/competitions/tribal-business-conclave-2026-open-grand-challenge",
-    "https://idex.gov.in/challenges",
-    "https://idex.gov.in/disc-category/46",
-    "https://www.ddpmod.gov.in/idex_open_challenge_announcement",
-    "https://www.psa.gov.in/article/result-idex-open-challenges-30-announced/3647",
-    "https://ngoscope.com/funding-opportunities/applications-open-for-startups-grant-opportunity-2026-offered-by-idex-open-challenge-india/",
-    "https://www.startupgrantsindia.com/blockchain-india-challenge-meity-cdac-410",
-    "https://www.newkerala.com/news/a/dda-launches-harit-manthan-2026-hackathon-drive-innovation-964.htm",
-    "https://www.lawctopus.com/6th-nhai-innovation-hackathon-2026/",
-    "https://ai-smart-city-2026.devpost.com/",
-    "https://www.startupgrantsindia.com/competitions/ai-autonomous-smart-city-hackathon-2026",
-    "https://devpost.com/submit-to/29481-spiti-ai-hackathon/manage/submissions",
-    "https://unstop.com/hackathons/gdta-hackathon-2026-sns-institutions-coimbatore-tamil-nadu-1682162/amp",
-    "https://smartnet.niua.org/smartcode/",
-    "https://kiac.iisc.ac.in/urban-vision-hackathon/",
-    "https://www.mygov.in/task/innovation-challenge-indian-railways/",
-    "https://swarajyamag.com/news-brief/indian-railways-unveils-rail-tech-portal-to-connect-startups-with-innovation-challenges-across-network",
-    "https://www.thehindu.com/news/national/railway-minister-announces-portal-to-attract-innovative-tech-solutions/article70680594.ece",
-    "https://indianexpress.com/article/india/railways-reform-plan-2026-railtech-portal-launched-railway-claims-tribunal-goes-online-10550356/",
-    "https://www.startupgrantsindia.com/bharat-startup-grand-challenge-2026-dpiit-startup-india-351",
-    "https://www.startupgrantsindia.com/ab-pmjay-auto-adjudication-hackathon-2026-nha-indiaai",
-    "https://internshala.com/competitions/biopackathon-2026/",
-    "https://internshala.com/competitions/idex-open-challenge-2026/"
+    "https://www.pib.gov.in/PressReleseDetail.aspx?PRID=2243209",
+    "https://kspace.kerala.gov.in/event/KSPACE_SIH26",
+    "https://www.goldmansachs.com/careers/students/programs-and-internships/india/hackathon",
+    "https://hack2skill.com/event/nabard-hackathon",
+    "https://innovateindia.mygov.in/bhashini-challenge",
+    "https://niti.gov.in/",
+    "https://www.aicte-india.org/Initiatives/smart-india-hackathon",
+    "https://sih.gov.in/",
+    "https://www.civilaviation.gov.in/",
+    "https://tourism.gov.in/",
+    "https://www.ra.dbt.gov.in/",
+    "https://www.mygov.in/group/department-biotechnology",
+    "https://powermin.gov.in/",
+    "https://mnre.gov.in/"
   ],
   "search_queries_used": [
-    "site:event.data.gov.in hackathon challenge 2026 open submission",
-    "AICTE hackathon 2026 India open registration challenge competition",
-    "government hackathon India May June 2026 registration open apply now submissions open -closed",
-    "Bio Packathon 2026 BIS Department of Consumer Affairs registration deadline",
-    "site:mygov.in hackathon 2026 submission open OR registration open OR apply May",
-    "BIS hackathon India 2026 challenge competition open registration consumer affairs",
-    "Ministry of Housing and Urban Affairs hackathon 2026 India open registration challenge",
-    "Indian railway hackathon 2026 open registration challenge competition govt",
-    "smart city hackathon India 2026 open registration mission challenge ministry housing urban affairs",
-    "idex.gov.in open challenge 2026 apply OR submission -closed -completed May June",
-    "Ministry of hackathon OR challenge 2026 last date OR deadline May OR June site:gov.in OR site:nic.in -closed -awarded -winners",
-    "India government innovation challenge OR grand challenge 2026 open last date May June July -startup -incubation -grant -fellowship"
+    "Bhashini hackathon 2026 registration open India challenge",
+    "STPI hackathon challenge 2026 India registration open",
+    "Kerala Karnataka Tamil Nadu government hackathon 2026 registration open challenge",
+    "ministry of agriculture ICAR hackathon challenge 2026 India registration open",
+    "ministry of health India hackathon 2026 open registration challenge",
+    "SEBI IRDAI TRAI NABARD hackathon challenge 2026 India registration open",
+    "Bhashini VaniSangam hackathon 2026 registration status open last date apply",
+    "DoT 5G hackathon 2026 India registration open last date deadline",
+    "ministry of railways hackathon 2026 India registration open challenge competition",
+    "DBT biotechnology department hackathon India 2026 registration open challenge",
+    "ministry of civil aviation ministry of tourism ministry of ports India hackathon 2026 registration open",
+    "AICTE Ministry of Education hackathon challenge India 2026 registration open OR apply now student",
+    "ministry of power renewable energy hackathon India 2026 open registration challenge",
+    "NITI Aayog ministry of railways ministry of environment hackathon challenge India 2026 registration"
   ],
   "discovery_metadata": {
-    "round_number": 5,
-    "novel_candidates_found": 1,
-    "duplicates_skipped": 16,
+    "round_number": 6,
+    "novel_candidates_found": 0,
+    "duplicates_skipped": 18,
     "coverage_expansion_focus": [
-      "bis_doca_biopackathon_ecosystem",
-      "event.data.gov.in_exhaustive_rescan",
-      "mygov_innovate_india_active_tasks_audit",
-      "idex_all_active_challenges_rescan",
-      "ministry_of_consumer_affairs_hackathons",
-      "ministry_of_housing_urban_affairs_rescan",
-      "indian_railways_innovation_portal_evaluation",
-      "state_government_hackathons_karnataka_maharashtra_tamil_nadu_rescan",
-      "devpost_unstop_government_affiliated_hackathons_filter"
+      "Bhashini ecosystem hackathons",
+      "DoT 5G Innovation Hackathon",
+      "Kerala KSPACE Space Innovation Hackathon",
+      "ministry of power/railways/civil aviation/DBT ecosystems",
+      "state government hackathon ecosystems",
+      "PSU hackathons across energy and banking sectors"
     ]
   }
 }

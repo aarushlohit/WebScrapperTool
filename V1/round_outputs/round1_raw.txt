@@ -1,201 +1,62 @@
 [0m
 > build · big-pickle
 [0m
-[0m% [0mWebFetch https://sih.gov.in
-[0m% [0mWebFetch https://aikosh.indiaai.gov.in
-[0m% [0mWebFetch https://idex.gov.in
-[0m% [0mWebFetch https://innovateindia.mygov.in
 [0m◈ [0mExa Web Search "Indian government hackathon 2026 registration open"
-[0m◈ [0mExa Web Search "India govt innovation challenge 2026 applications open"
-[0m% [0mWebFetch https://indiaai.gov.in
-[0m% [0mWebFetch https://event.data.gov.in/challenge
-[0m◈ [0mExa Web Search "Indian government cybersecurity challenge competition 2026 registration open"
-[0m◈ [0mExa Web Search "defence innovation hackathon India 2026 applications open idex drdo"
-[0m% [0mWebFetch https://bhashini.gov.in/hackathons
-[0m◈ [0mExa Web Search "state government hackathon India 2026 open competition Karnataka Maharashtra Tamil Nadu"
-[0m◈ [0mExa Web Search "MeitY hackathon challenge 2026 open registration India"
-[0m% [0mWebFetch https://eservices.dot.gov.in/5ghackathon/
-[0m◈ [0mExa Web Search "IIT IIIT government hackathon 2026 India open for registration coding competition"
-[0m✗ [0mwebfetch failed
-[91m[1mError: [0mTransport error (GET https://challenge.cdac.in)
-[0m% [0mWebFetch https://www.inctf.in/championship
-[0m% [0mWebFetch https://bhashini.gov.in/sahyogi/startup/maha-innovation
-[0m% [0mWebFetch https://innovateindia.mygov.in
-[0m% [0mWebFetch https://www.ddpmod.gov.in/offerings/innovations
-[0m% [0mWebFetch https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/
-[0m◈ [0mExa Web Search "Eat Right Youth Hackathon Uttarakhand 2026 registration open"
-[0m◈ [0mExa Web Search "MNNIT Central Bank cybersecurity hackathon 2026 registration open"
-[0m◈ [0mExa Web Search "India government hackathon open registration June July 2026"
-[0m% [0mWebFetch https://hackathon.zsi.org.in/
-[0m◈ [0mExa Web Search "Cyber Security Innovation Challenge CSIC 1.0 MeitY 2026 registration deadline"
-[0m% [0mWebFetch https://www.iitj.ac.in/flying-wings/en/flying-wings
+[0m◈ [0mExa Web Search "India AI challenge competition 2026 open"
+[0m◈ [0mExa Web Search "India defence innovation challenge 2026 open registration"
+[0m◈ [0mExa Web Search "MeitY hackathon challenge 2026 open"
+[0m◈ [0mExa Web Search "India government hackathon May 2026 still open registration"
+[0m◈ [0mExa Web Search "MyGov innovate India hackathon 2026 open"
+[0m◈ [0mExa Web Search ""aikosh" OR "indiaai" hackathon competition May 2026"
+[0m◈ [0mExa Web Search "SIH hackathon 2026 registration open"
+[0m◈ [0mExa Web Search ""Blockchain India Challenge" deadline registration date 2026"
+[0m◈ [0mExa Web Search ""AI for All" challenge hackathon India 2026 aikosh registration"
+[0m◈ [0mExa Web Search "MyGov India hackathon challenge June July 2026 open submission"
+[0m◈ [0mExa Web Search ""iDEX" OR "DISC" defence challenge India 2026 open now deadline"
+[0m◈ [0mExa Web Search "GovTech India challenge competition 2026 open now"
+[0m◈ [0mExa Web Search "India cybersecurity hackathon competition 2026 government"
+[0m◈ [0mExa Web Search ""D.E.S.I.G.N for BioE3" challenge India deadline"
+[0m◈ [0mExa Web Search ""Smart India Hackathon" 2026 registration dates problem statement"
+[0m◈ [0mExa Web Search "DSCI BFSI Hackathon 2026 registration open deadline May"
+[0m◈ [0mExa Web Search "site:boihackathon.cse.iith.ac.in registration 2026"
+[0m
+Now I have comprehensive data. Let me compile the final analysis.
+[0m
+[0m# [0mTodos
+[✓] Run round 1 of web searches for active Indian government hackathons
+[✓] Run round 2 of web searches for AI/defence/government challenges
+[✓] Run round 3 of web searches for niche/specialized competitions
+[✓] Run round 4 of web searches for specific active portals
+[•] Compile and output final JSON results
 [0m
 ```json
 {
   "candidates": [
     {
-      "event_type": "innovation_challenge",
-      "hackathon_name": "D.E.S.I.G.N for BioE3 Challenge",
-      "full_name": "D.E.S.I.G.N for BioE3 Challenge – Empowering Youth to Solve Critical Issues of their TIMES",
-      "current_status": "active",
-      "registration_url": "https://innovateindia.mygov.in",
-      "submission_url": "https://innovateindia.mygov.in",
-      "official_website": "https://innovateindia.mygov.in",
-      "official_event_page": "https://innovateindia.mygov.in",
-      "source_url": "https://innovateindia.mygov.in",
-      "hosting_organization": "CSIR / Ministry of Science and Technology",
-      "ministry": "Ministry of Science and Technology",
-      "institution_type": "central_government",
-      "platform": "MyGov Innovate India",
-      "domain": "biotechnology",
-      "theme": "BioE3 – Biotechnology for Economy, Environment and Employment",
-      "sdg_alignment": [],
-      "focus_areas": ["biotechnology", "sustainability", "circular economy", "climate action"],
-      "problem_statements": [],
-      "deadline": "2026-05-20",
-      "registration_close_date": "2026-05-20",
-      "submission_close_date": "2026-05-20",
-      "application_deadline": "2026-05-20",
-      "eligibility_criteria": {
-        "summary": "Open to young students and researchers of India"
-      },
-      "team_size": {
-        "minimum": null,
-        "maximum": null
-      },
-      "submission_fee": {
-        "amount": null,
-        "currency": "INR",
-        "display": ""
-      },
-      "prizes": {
-        "summary": ""
-      },
-      "tags": ["innovation_challenge", "biotechnology", "bioe3", "csir", "mygov"],
-      "source_validation": {
-        "source_type": "official_government_portal",
-        "official_confirmation_found": true,
-        "official_open_keywords_found": ["SUBMISSION OPEN"],
-        "deadline_verified": true
-      }
-    },
-    {
-      "event_type": "innovation_challenge",
-      "hackathon_name": "CSIR Societal Platform 2024",
-      "full_name": "CSIR Societal Platform 2024",
-      "current_status": "active",
-      "registration_url": "https://innovateindia.mygov.in",
-      "submission_url": "https://innovateindia.mygov.in",
-      "official_website": "https://innovateindia.mygov.in",
-      "official_event_page": "https://innovateindia.mygov.in",
-      "source_url": "https://innovateindia.mygov.in",
-      "hosting_organization": "Council of Scientific & Industrial Research (CSIR)",
-      "ministry": "Ministry of Science and Technology",
-      "institution_type": "central_government",
-      "platform": "MyGov Innovate India",
-      "domain": "science_and_technology",
-      "theme": "Societal Technology Solutions",
-      "sdg_alignment": [],
-      "focus_areas": ["science", "technology", "societal_impact", "R&D"],
-      "problem_statements": [],
-      "deadline": "2026-12-31",
-      "registration_close_date": "2026-12-31",
-      "submission_close_date": "2026-12-31",
-      "application_deadline": "2026-12-31",
-      "eligibility_criteria": {
-        "summary": "Open – details on MyGov portal"
-      },
-      "team_size": {
-        "minimum": null,
-        "maximum": null
-      },
-      "submission_fee": {
-        "amount": null,
-        "currency": "INR",
-        "display": ""
-      },
-      "prizes": {
-        "summary": ""
-      },
-      "tags": ["innovation_challenge", "csir", "societal_platform", "mygov"],
-      "source_validation": {
-        "source_type": "official_government_portal",
-        "official_confirmation_found": true,
-        "official_open_keywords_found": ["SUBMISSION OPEN"],
-        "deadline_verified": true
-      }
-    },
-    {
       "event_type": "hackathon",
-      "hackathon_name": "Road Safety Hackathon 2026",
-      "full_name": "National Road Safety Hackathon 2026",
+      "hackathon_name": "iDEX Open Challenge 2026",
+      "full_name": "iDEX Open Challenge 2026 — Innovations for Defence Excellence",
       "current_status": "active",
-      "registration_url": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
-      "submission_url": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
-      "official_website": "https://coers.iitm.ac.in",
-      "official_event_page": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
-      "source_url": "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
-      "hosting_organization": "IIT Madras – CoERS / RBG Labs",
-      "ministry": "Ministry of Education (IIT Madras)",
-      "institution_type": "academic_government",
-      "platform": "IIT Madras",
-      "domain": "road_safety",
-      "theme": "Road Safety and Transportation",
-      "sdg_alignment": [],
-      "focus_areas": ["road_safety", "transportation", "AI", "technology"],
-      "problem_statements": [],
-      "deadline": "2026-05-31",
-      "registration_close_date": "2026-05-31",
-      "submission_close_date": "2026-05-31",
-      "application_deadline": "2026-05-31",
-      "eligibility_criteria": {
-        "summary": "Open – Indian and BIMSTEC participants"
-      },
-      "team_size": {
-        "minimum": null,
-        "maximum": null
-      },
-      "submission_fee": {
-        "amount": null,
-        "currency": "INR",
-        "display": ""
-      },
-      "prizes": {
-        "summary": ""
-      },
-      "tags": ["hackathon", "road_safety", "iit_madras", "transportation"],
-      "source_validation": {
-        "source_type": "official_academic_institution",
-        "official_confirmation_found": true,
-        "official_open_keywords_found": ["Registration & Submission Extended to May 31"],
-        "deadline_verified": true
-      }
-    },
-    {
-      "event_type": "defence_innovation_challenge",
-      "hackathon_name": "iDEX Open Challenge",
-      "full_name": "iDEX Open Challenge – Ministry of Defence",
-      "current_status": "active",
-      "registration_url": "https://www.ddpmod.gov.in/offerings/innovations",
+      "registration_url": "https://idex.gov.in/disc-category/18",
       "submission_url": "https://idex.gov.in/challenge-categories",
       "official_website": "https://idex.gov.in",
-      "official_event_page": "https://www.ddpmod.gov.in/offerings/innovations",
-      "source_url": "https://www.ddpmod.gov.in/offerings/innovations",
-      "hosting_organization": "Defence Innovation Organisation (DIO) / iDEX",
+      "official_event_page": "https://idex.gov.in/disc-category/18",
+      "source_url": "https://idex.gov.in/disc-category/18",
+      "hosting_organization": "Defence Innovation Organisation (DIO)",
       "ministry": "Ministry of Defence",
-      "institution_type": "central_government",
-      "platform": "iDEX",
-      "domain": "defence",
-      "theme": "Open Challenge – Defence Technology Innovation",
+      "institution_type": "government",
+      "platform": "iDEX Portal",
+      "domain": "defence_innovation",
+      "theme": "Dual-Use and Frontier Technologies for Defence & Aerospace",
       "sdg_alignment": [],
-      "focus_areas": ["autonomous_systems", "AI", "sensors", "drones", "advanced_materials", "cybersecurity", "defence"],
+      "focus_areas": ["aerospace", "autonomous systems", "artificial intelligence", "quantum technologies", "advanced materials", "robotics", "cybersecurity", "propulsion"],
       "problem_statements": [],
       "deadline": "2026-06-30",
       "registration_close_date": "2026-06-30",
       "submission_close_date": "2026-06-30",
       "application_deadline": "2026-06-30",
       "eligibility_criteria": {
-        "summary": "Startups, MSMEs, Individual Innovators, R&D institutes, academia"
+        "summary": "Open to Indian startups (DPIIT-recognized), MSMEs, and individual innovators. Solutions must have applicability in defence or aerospace sectors."
       },
       "team_size": {
         "minimum": null,
@@ -207,41 +68,41 @@
         "display": ""
       },
       "prizes": {
-        "summary": "Grants up to ₹1.5 Cr (SPARK framework)"
+        "summary": "Grants up to Rs. 1.5 Cr per selected proposal (SPARK framework). Non-dilutive, milestone-based. Follow-on iDEX PRIME grants up to Rs. 10 Cr."
       },
-      "tags": ["defence_innovation", "idex", "ministry_of_defence", "open_challenge", "spark_grant"],
+      "tags": ["defence", "aerospace", "startup", "innovation_challenge", "grant", "prototype_funding"],
       "source_validation": {
         "source_type": "official_government_portal",
         "official_confirmation_found": true,
-        "official_open_keywords_found": ["Open", "Apply Now", "Application window open throughout the year"],
+        "official_open_keywords_found": ["CHALLENGE OPEN", "Apply Now", "open throughout the year"],
         "deadline_verified": true
       }
     },
     {
-      "event_type": "cybersecurity_competition",
-      "hackathon_name": "InCTF 2026 National Championship",
-      "full_name": "InCTF 2026 – India's National Cybersecurity Championship",
+      "event_type": "innovation_challenge",
+      "hackathon_name": "Blockchain India Challenge",
+      "full_name": "Blockchain India Challenge by MeitY & C-DAC",
       "current_status": "active",
-      "registration_url": "https://www.inctf.in/championship",
-      "submission_url": "https://www.inctf.in/championship",
-      "official_website": "https://www.inctf.in",
-      "official_event_page": "https://www.inctf.in/championship",
-      "source_url": "https://www.inctf.in/championship",
-      "hosting_organization": "Amrita Vishwa Vidyapeetham / Team bi0s",
-      "ministry": "Ministry of Education (via deemed university status)",
-      "institution_type": "academic_government",
-      "platform": "InCTF",
-      "domain": "cybersecurity",
-      "theme": "National Cybersecurity Championship – CTF",
+      "registration_url": "https://challenge.cdac.in",
+      "submission_url": "https://challenge.cdac.in",
+      "official_website": "https://challenge.cdac.in",
+      "official_event_page": "https://challenge.cdac.in",
+      "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2232339",
+      "hosting_organization": "Centre for Development of Advanced Computing (C-DAC)",
+      "ministry": "Ministry of Electronics and Information Technology (MeitY)",
+      "institution_type": "government",
+      "platform": "challenge.cdac.in",
+      "domain": "blockchain",
+      "theme": "Permissioned Blockchain Solutions for Digital Governance",
       "sdg_alignment": [],
-      "focus_areas": ["cybersecurity", "ethical_hacking", "CTF", "capture_the_flag", "penetration_testing"],
+      "focus_areas": ["e-procurement", "supply chain management", "public distribution system", "education", "healthcare", "agriculture", "power", "IoT", "land records", "sustainability"],
       "problem_statements": [],
-      "deadline": "",
-      "registration_close_date": "",
-      "submission_close_date": "",
-      "application_deadline": "",
+      "deadline": null,
+      "registration_close_date": null,
+      "submission_close_date": null,
+      "application_deadline": null,
       "eligibility_criteria": {
-        "summary": "College students and working professionals in India"
+        "summary": "Indian startups recognized by DPIIT. DPIIT registration not required at time of applying but must have applied if shortlisted for Prototype stage. At least 18 years old. One registration per startup."
       },
       "team_size": {
         "minimum": null,
@@ -253,45 +114,48 @@
         "display": ""
       },
       "prizes": {
-        "summary": "Prize pool worth ₹5 Lakhs, internships, certification, advanced training"
+        "summary": "Total prize pool Rs. 8.80 Cr. Prototype Stage: Rs. 1.5 Lakh each (up to 40 participants). MVP Stage: Rs. 4 Lakh each (up to 30 participants). Deployment Stage: Rs. 10 Lakh each (up to 20 participants). Winners per category: Rs. 50 Lakh each (10 categories)."
       },
-      "tags": ["cybersecurity", "CTF", "national_championship", "ethical_hacking", "inctf"],
+      "tags": ["blockchain", "web3", "digital_governance", "startup", "innovation_challenge"],
       "source_validation": {
-        "source_type": "official_academic_institution",
+        "source_type": "official_PIB_release",
         "official_confirmation_found": true,
-        "official_open_keywords_found": ["REGISTRATIONS ARE ONGOING", "ALERT STATUS: ACTIVE", "Register Now"],
+        "official_open_keywords_found": ["invited to participate", "sign up immediately", "stage-wise funding"],
         "deadline_verified": false
       }
     },
     {
-      "event_type": "hackathon",
-      "hackathon_name": "ZSI Hackathon 2026",
-      "full_name": "Zoological Survey of India National Hackathon 2026 – Traditional Knowledge and Biodiversity",
+      "event_type": "cybersecurity_competition",
+      "hackathon_name": "PSB Cybersecurity Fraud & AI Hackathon 2026",
+      "full_name": "PSB's Cybersecurity, Fraud & Artificial Intelligence Hackathon 2026 — Bank of India x IIT Hyderabad",
       "current_status": "active",
-      "registration_url": "https://hackathon.zsi.org.in/",
-      "submission_url": "https://hackathon.zsi.org.in/",
-      "official_website": "https://zsi.gov.in",
-      "official_event_page": "https://hackathon.zsi.org.in/",
-      "source_url": "https://hackathon.zsi.org.in/",
-      "hosting_organization": "Zoological Survey of India (ZSI)",
-      "ministry": "Ministry of Environment, Forest and Climate Change",
-      "institution_type": "central_government",
-      "platform": "ZSI Hackathon Portal",
-      "domain": "biodiversity_and_traditional_knowledge",
-      "theme": "Integrating Traditional Knowledge with Technology for Biodiversity Conservation",
+      "registration_url": "https://boihackathon.cse.iith.ac.in/hackathon2026/hackathonReg/newReg/",
+      "submission_url": "https://boihackathon.cse.iith.ac.in/hackathon2026/hackathonReg/newReg/",
+      "official_website": "https://boihackathon.cse.iith.ac.in",
+      "official_event_page": "https://boihackathon.cse.iith.ac.in/hackathon2026/hackathonReg/newReg/",
+      "source_url": "https://boihackathon.cse.iith.ac.in/hackathon2026/hackathonReg/newReg/",
+      "hosting_organization": "Bank of India (BOI) in collaboration with IIT Hyderabad",
+      "ministry": "Ministry of Finance (Department of Financial Services)",
+      "institution_type": "government_backed_academic",
+      "platform": "IIT Hyderabad Hackathon Portal",
+      "domain": "cybersecurity",
+      "theme": "Cybersecurity, Fraud Detection & AI in Banking",
       "sdg_alignment": [],
-      "focus_areas": ["biodiversity", "traditional_knowledge", "AI", "data_science", "conservation", "innovation"],
-      "problem_statements": [],
-      "deadline": "2026-05-20",
-      "registration_close_date": "2026-05-20",
-      "submission_close_date": "2026-05-20",
-      "application_deadline": "2026-05-20",
+      "focus_areas": ["generative AI", "reverse engineering", "malware analysis", "fraud detection", "AI/ML", "transaction monitoring", "mule account detection"],
+      "problem_statements": [
+        "Harnessing Generative AI for Automated Reverse Engineering, Static and Dynamic Analysis, and Risk Scoring of Fraudulent Mobile Applications (APKs) and Malwares",
+        "Developing AI/ML capabilities for detecting suspicious transactions and mule accounts by ingesting financial transactions, fraud alerts, and government cyber fraud feeds"
+      ],
+      "deadline": "2026-06-15",
+      "registration_close_date": "2026-06-15",
+      "submission_close_date": "2026-06-15",
+      "application_deadline": "2026-06-15",
       "eligibility_criteria": {
-        "summary": "Indian citizens, any age, teams up to 3 members; school/UG/PG students, researchers, innovators, startups, community/indigenous people"
+        "summary": "Open to all students from any institute/university, young entrepreneurs, startup founders, and non-students. Team size 3-4 members. Preferably 1+ female participants per team."
       },
       "team_size": {
-        "minimum": null,
-        "maximum": 3
+        "minimum": 3,
+        "maximum": 4
       },
       "submission_fee": {
         "amount": null,
@@ -299,61 +163,21 @@
         "display": ""
       },
       "prizes": {
-        "summary": "1st Prize: ₹1,00,000; 2nd Prize: ₹75,000; 3rd Prize: ₹50,000"
+        "summary": "Prize pool to be announced. Prototype presentations on August 27-28, 2026. Winners announced August 28, 2026."
       },
-      "tags": ["hackathon", "biodiversity", "zsi", "traditional_knowledge", "environment", "ministry_of_environment"],
+      "tags": ["cybersecurity", "fraud_detection", "AI", "banking", "hackathon", "student"],
       "source_validation": {
-        "source_type": "official_government_portal",
+        "source_type": "official_academic_portal",
         "official_confirmation_found": true,
-        "official_open_keywords_found": ["Registration Opens", "Registration Closes"],
+        "official_open_keywords_found": ["Registration Open", "Registration start date : 07th May 2026", "Application Deadline : 15th June 2026"],
         "deadline_verified": true
       }
     }
   ],
   "excluded": [
     {
-      "name": "AB PM-JAY Auto-Adjudication Hackathon 2026",
-      "source_url": "https://nha.gov.in/hackathon",
-      "reason": "closed"
-    },
-    {
       "name": "UIDAI Data Hackathon 2026",
       "source_url": "https://event.data.gov.in/challenge/uidai-data-hackathon-2026/",
-      "reason": "closed"
-    },
-    {
-      "name": "PFRDA Hackathon 2026",
-      "source_url": "https://www.pfrda.org.in/web/pfrda/w/pfrda-hackathon-2026",
-      "reason": "closed"
-    },
-    {
-      "name": "IndiaAI Innovation Challenge 2026 (MSME – ODR)",
-      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fd1889f2-bcd8-477b-aa36-901cc0941ed9",
-      "reason": "closed"
-    },
-    {
-      "name": "IndiaAI Innovation Challenge 2026 (MSME – TEAMS)",
-      "source_url": "https://aikosha.indiaai.gov.in/home/competitions/details/149036ea-6d4d-496e-a844-faa3dc39e23c",
-      "reason": "closed"
-    },
-    {
-      "name": "IndiaAI Innovation Challenge 2026 (Ministry of AYUSH)",
-      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fecad37f-d959-4e9c-acb6-397ddd86e6c8",
-      "reason": "closed"
-    },
-    {
-      "name": "IndiaAI Financial Reporting Compliance Challenge",
-      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/b5ebae1e-73d1-4ba8-baa1-21beaabd1f6d",
-      "reason": "closed"
-    },
-    {
-      "name": "IndiaAI Innovation Challenge for Transforming Governance (all depts)",
-      "source_url": "https://aikosh.indiaai.gov.in/home/competitions",
-      "reason": "closed"
-    },
-    {
-      "name": "5G Innovation Hackathon 2026",
-      "source_url": "https://eservices.dot.gov.in/5ghackathon/",
       "reason": "closed"
     },
     {
@@ -362,195 +186,189 @@
       "reason": "closed"
     },
     {
-      "name": "Cyber Security Grand Challenge 2.0",
+      "name": "AB PM-JAY Auto-Adjudication Hackathon 2026",
+      "source_url": "https://nha.gov.in/hackathon",
+      "reason": "closed"
+    },
+    {
+      "name": "5G Innovation Hackathon 2026 (DoT)",
+      "source_url": "https://eservices.dot.gov.in/5ghackathon/",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge 2026 (Ministry of AYUSH)",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fecad37f-d959-4e9c-acb6-397ddd86e6c8",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge 2026 (MSME – TEAMS)",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/149036ea-6d4d-496e-a844-faa3dc39e23c",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge 2026 (MSME – ODR)",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/fd1889f2-bcd8-477b-aa36-901cc0941ed9",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI Financial Reporting Compliance Challenge",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions/details/b5ebae1e-73d1-4ba8-baa1-21beaabd1f6d",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge for Transforming Governance (AP — all tracks)",
+      "source_url": "https://aikosh.indiaai.gov.in/home/competitions",
+      "reason": "closed"
+    },
+    {
+      "name": "DISC 14 — Defence India Startup Challenge",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed"
+    },
+    {
+      "name": "ADITI 4.0 — iDEX Defence Innovation Program",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed"
+    },
+    {
+      "name": "DRISHTI Challenges (DPSU Defence Innovation)",
+      "source_url": "https://idex.gov.in/challenges",
+      "reason": "closed"
+    },
+    {
+      "name": "PFRDA Hackathon 2026",
+      "source_url": "https://www.pfrda.org.in/web/pfrda/w/pfrda-hackathon-2026",
+      "reason": "closed"
+    },
+    {
+      "name": "Agri-Excellence Innovation Hackathon 2026 (C-DAC)",
+      "source_url": "https://agriexcellence.in/hackathon/",
+      "reason": "closed"
+    },
+    {
+      "name": "AI for All Challenge (Factly/Meta/AIKosh)",
+      "source_url": "https://reskilll.com/hack/aiopendata",
+      "reason": "closed"
+    },
+    {
+      "name": "AI for ALL Global Impact Challenge (IndiaAI Impact Summit)",
+      "source_url": "https://impact.indiaai.gov.in/events/ai-for-all",
+      "reason": "closed"
+    },
+    {
+      "name": "Cyber Security Grand Challenge 2.0 (MeitY/DSCI)",
       "source_url": "https://innovateindia.mygov.in/cyber-security-grand-challenge/",
       "reason": "closed"
     },
     {
-      "name": "National Level Cybersecurity Competition (ISEA)",
-      "source_url": "https://innovateindia.mygov.in/national-level-cybersecurity-competition/",
-      "reason": "closed"
-    },
-    {
       "name": "HACK IITK 2026 (C3iHub IIT Kanpur)",
-      "source_url": "https://iitk.ac.in/hackathon-2026",
+      "source_url": "https://www.iitk.ac.in/hackathon-2026",
       "reason": "closed"
     },
     {
-      "name": "eRaksha Hackathon 2026",
-      "source_url": "https://www.cyberchallenge.in/eraksha",
+      "name": "KAALCHAKRA CTF 2026 (NFSU Goa)",
+      "source_url": "https://kaalchakractf.com/",
       "reason": "closed"
     },
     {
-      "name": "Youth Co:Lab National Innovation Challenge 2026",
-      "source_url": "https://aim.gov.in/youthcolab.php",
+      "name": "CyberAIthon 2026 (BAOU/Gujarat Government)",
+      "source_url": "https://cyberaithon.baou.edu.in/",
       "reason": "closed"
     },
     {
-      "name": "Blockchain India Challenge",
-      "source_url": "https://challenge.cdac.in/",
+      "name": "PSB Cybersecurity Hackathon 2026 (PNB/IIT Kanpur)",
+      "source_url": "https://pnb.bank.in/PSBs-Cybersecurity-Hackathon.html",
       "reason": "closed"
     },
     {
-      "name": "Flying Wings Hackathon 2026 (IIT Jodhpur)",
-      "source_url": "https://www.iitj.ac.in/flying-wings/en/flying-wings",
-      "reason": "closed"
-    },
-    {
-      "name": "DISC 14 – Defence India Startup Challenge",
-      "source_url": "https://idex.gov.in/challenge-categories",
-      "reason": "closed"
-    },
-    {
-      "name": "ADITI 4 – iDEX",
-      "source_url": "https://idex.gov.in/challenge-categories",
-      "reason": "closed"
-    },
-    {
-      "name": "DRISHTI Challenges",
-      "source_url": "https://idex.gov.in/challenge-categories",
-      "reason": "closed"
-    },
-    {
-      "name": "PSB Hackathon 2026 (UCO Bank / DFS)",
+      "name": "PSB Hackathon Series 2026 (IIT Kharagpur)",
       "source_url": "https://onlineappl.ucoonline.bank.in/HackathonPortal/",
       "reason": "closed"
     },
     {
-      "name": "PSB Cybersecurity Hackathon (PNB / IIT Kanpur)",
-      "source_url": "https://pnb.bank.in/psbs-cybersecurity-hackathon.html",
+      "name": "D.E.S.I.G.N for BioE3 Challenge (May 2026 cycle)",
+      "source_url": "https://www.bric.nic.in/bioe3challenge/",
       "reason": "closed"
     },
     {
-      "name": "Eat Right Youth Hackathon Uttarakhand 2026",
-      "source_url": "https://nutritionconnect.org/eat-right-youth-hackathon",
-      "reason": "closed"
+      "name": "DSCI BFSI Hackathon 2026",
+      "source_url": "https://www.dsci.in/content/dsci-bfsi-hackathon-2026",
+      "reason": "low_confidence"
     },
     {
-      "name": "Pune Agri Hackathon 2026",
-      "source_url": "https://www.puneagrihackathon.com/",
-      "reason": "closed"
-    },
-    {
-      "name": "SANKALP 2026 AI Hackathon (MNNIT)",
-      "source_url": "https://hackathon.sankalp2026.com/",
-      "reason": "closed"
-    },
-    {
-      "name": "Agri-Excellence Innovation Hackathon 2026 (CDAC)",
-      "source_url": "http://agriexcellence.in/hackathon/",
-      "reason": "closed"
-    },
-    {
-      "name": "Maha Hackathon Challenge 1.0 (Bhashini/Maharashtra)",
-      "source_url": "https://bhashini.gov.in/sahyogi/startup/maha-innovation",
-      "reason": "closed"
-    },
-    {
-      "name": "Cyber Security Innovation Challenge (CSIC) 1.0",
-      "source_url": "https://innovation.isea.app/cyber_security_innovation_challenge",
-      "reason": "closed"
-    },
-    {
-      "name": "National Fintech Hackathon 2026 (Ericsson/IIT Kanpur)",
-      "source_url": "https://www.iitk.ac.in/new/national-fintech-hackathon-2026",
-      "reason": "closed"
-    },
-    {
-      "name": "Bharat Bricks Hacks 2026 (IIT Indore)",
-      "source_url": "https://bb2026-iiti.devpost.com/",
-      "reason": "closed"
-    },
-    {
-      "name": "Open Source Hardware Hackathon 2026 (FOSSEE IIT Bombay)",
-      "source_url": "https://oshw26.fossee.in/",
-      "reason": "closed"
-    },
-    {
-      "name": "MahaGAD AI Sahayak Grand Challenge",
-      "source_url": "https://www.startupgrantsindia.com/mahagad-ai-sahayak-grand-challenge-by-maharashtra-state-innovation-society-msins-337",
-      "reason": "forbidden_type"
-    },
-    {
-      "name": "Karnataka State Mobility Grand Challenge",
-      "source_url": "https://www.missionstartupkarnataka.org/grandchallenge",
-      "reason": "stale"
-    },
-    {
-      "name": "iDEX Prime Re-Open (IAF)",
-      "source_url": "https://idex.gov.in/disc-category/42",
-      "reason": "closed"
-    },
-    {
-      "name": "8CPC Memorandum Submission",
-      "source_url": "https://innovateindia.mygov.in",
-      "reason": "forbidden_type"
-    },
-    {
-      "name": "MNNIT Cybersecurity Hackathon 2026 (Central Bank of India)",
-      "source_url": "https://timesofindia.indiatimes.com/city/allahabad/mnnit-to-host-national-level-cybersecurity-hackathon/articleshow/131076240.cms",
+      "name": "Smart India Hackathon 2026",
+      "source_url": "https://www.sih.gov.in/",
       "reason": "no_active_workflow"
     },
     {
-      "name": "PanIIT-Karnataka Hackathon 2026",
-      "source_url": "https://www.thehindu.com/news/cities/bangalore/paniit-alumni-india-and-government-of-karnataka-to-organise-day-long-summit-on-sovereignty-in-technology/article70979224.ece",
-      "reason": "no_active_workflow"
+      "name": "Defence Innovation Summit 2026 (IIT Delhi)",
+      "source_url": "https://startupmandi.in/news/fundraising/defence-innovation-summit-2026/",
+      "reason": "closed"
+    },
+    {
+      "name": "Cyber Smart Idea Challenge (I4C/MHA)",
+      "source_url": "https://www.mygov.in/task/cyber-smart-idea-challenge-building-cybercrime-free-digital-bharat/",
+      "reason": "closed"
+    },
+    {
+      "name": "IndiaAI CyberGuard AI Hackathon",
+      "source_url": "https://www.digitalindia.gov.in/ai/",
+      "reason": "closed"
+    },
+    {
+      "name": "Mascot Design Contest for Eat Right India (FSSAI)",
+      "source_url": "https://innovateindia.mygov.in/",
+      "reason": "forbidden_type"
+    },
+    {
+      "name": "Yoga My Pride Photography Contest (Ministry of AYUSH)",
+      "source_url": "https://innovateindia.mygov.in/",
+      "reason": "forbidden_type"
     }
   ],
   "sources_scanned": [
     "https://sih.gov.in",
     "https://idex.gov.in",
-    "https://aikosh.indiaai.gov.in",
-    "https://indiaai.gov.in",
+    "https://aikosh.indiaai.gov.in/home/competitions",
     "https://innovateindia.mygov.in",
-    "https://event.data.gov.in/challenge",
-    "https://eservices.dot.gov.in/5ghackathon/",
+    "https://event.data.gov.in",
     "https://challenge.cdac.in",
-    "https://bhashini.gov.in/hackathons",
-    "https://bhashini.gov.in/hackathon",
-    "https://www.ddpmod.gov.in/offerings/innovations",
-    "https://www.pib.gov.in",
-    "https://coers.iitm.ac.in/event/national-road-safety-hackathon-2026/",
-    "https://www.inctf.in/championship",
-    "https://hackathon.zsi.org.in/",
-    "https://www.iitj.ac.in/flying-wings/en/flying-wings",
-    "https://www.mnnit.ac.in/hackathon2026/",
-    "https://onlineappl.ucoonline.bank.in/HackathonPortal/",
-    "https://pnb.bank.in/psbs-cybersecurity-hackathon.html",
-    "https://nutritionconnect.org/eat-right-youth-hackathon",
-    "https://www.puneagrihackathon.com/",
-    "https://hackathon.sankalp2026.com/",
-    "https://www.iitk.ac.in/new/national-fintech-hackathon-2026",
-    "https://oshw26.fossee.in/",
-    "https://bb2026-iiti.devpost.com/",
-    "https://www.digitalindia.gov.in/cyber-security/",
-    "https://www.missionstartupkarnataka.org/grandchallenge",
-    "https://negd.gov.in/press_release/cyber-security-innovation-challenge-csic-1-0-launched-by-ministry-of-electronics-and-information-technology-meity/"
+    "https://pib.gov.in",
+    "https://indiaai.gov.in",
+    "https://digitalindia.gov.in",
+    "https://boihackathon.cse.iith.ac.in",
+    "https://bric.nic.in/bioe3challenge/"
   ],
   "search_queries_used": [
     "Indian government hackathon 2026 registration open",
-    "India govt innovation challenge 2026 applications open",
-    "Indian government cybersecurity challenge competition 2026 registration open",
-    "defence innovation hackathon India 2026 applications open idex drdo",
-    "MeitY hackathon challenge 2026 open registration India",
-    "state government hackathon India 2026 open competition Karnataka Maharashtra Tamil Nadu",
-    "IIT IIIT government hackathon 2026 India open for registration coding competition",
-    "Eat Right Youth Hackathon Uttarakhand 2026 registration open",
-    "MNNIT Central Bank cybersecurity hackathon 2026 registration open",
-    "India government hackathon open registration June July 2026",
-    "Cyber Security Innovation Challenge CSIC 1.0 MeitY 2026 registration deadline"
+    "India AI challenge competition 2026 open",
+    "India defence innovation challenge 2026 open registration",
+    "MeitY hackathon challenge 2026 open",
+    "India government hackathon May 2026 still open registration",
+    "MyGov innovate India hackathon 2026 open",
+    "aikosh OR indiaai hackathon competition May 2026",
+    "SIH hackathon 2026 registration open",
+    "Blockchain India Challenge deadline registration date 2026",
+    "AI for All challenge hackathon India 2026 aikosh registration",
+    "iDEX OR DISC defence challenge India 2026 open now deadline",
+    "MyGov India hackathon challenge June July 2026 open submission",
+    "GovTech India challenge competition 2026 open now",
+    "India cybersecurity hackathon competition 2026 government",
+    "D.E.S.I.G.N for BioE3 challenge India deadline",
+    "Smart India Hackathon 2026 registration dates problem statement",
+    "DSCI BFSI Hackathon 2026 registration open deadline May",
+    "site:boihackathon.cse.iith.ac.in registration 2026"
   ],
   "discovery_metadata": {
-    "round_number": 3,
-    "novel_candidates_found": 6,
-    "duplicates_skipped": 30,
+    "round_number": 4,
+    "novel_candidates_found": 3,
+    "duplicates_skipped": 25,
     "coverage_expansion_focus": [
-      "central_government_portals",
-      "defence_innovation_ecosystem",
-      "cybersecurity_championships",
-      "state_government_hackathons",
-      "academic_gov_institutions",
-      "ministry_specific_challenges"
+      "official government portals",
+      "defence innovation ecosystem",
+      "AI challenge platforms",
+      "cybersecurity competitions",
+      "state government ecosystems"
     ]
   }
 }
